@@ -30,7 +30,7 @@ Five parallel deep-research investigations (Perplexity `sonar-deep-research`, ~$
 
 3. **The strongest revenue opportunity isn't consumer subscriptions — it's B2B.** Interior designers, art consultants, and corporate art programs have genuine pain points that our dimension/classification/tag data directly addresses. They'd pay $300-500/month.
 
-4. **The strongest artist-side feature is something we already have: PolyWiz.** Automated social media campaigns across 14 platforms for $10/month replaces $250-500/month of freelancer work. No competitor offers anything comparable at any price.
+4. **The strongest artist-side feature is exhibition auto-matching — a greenfield opportunity.** No platform currently does AI-powered matching of artist profiles to open calls based on medium, style, tags, and location. The enriched data already exists for this. Future integrations like automated social media promotion could further increase stickiness.
 
 5. **Even if revenue never materializes, the platform has substantial value as a lead generation engine** — driving exhibition submissions, building segmented contact lists, strengthening grant applications, and growing the Arterial/NRA/Artsville ecosystem.
 
@@ -83,7 +83,7 @@ The research is unambiguous: **show the art freely, gate the contact mechanism.*
 | **Free Account** | Free (email required) | 5 wishlists, follow 20 artists, full bios, obfuscated contact |
 | **Collector Premium** | $9.99/mo or $99/yr | Direct messaging, unlimited saves, price alerts, AR visualization, advanced filters |
 | **Artist Free** | Free | Profile + uploads, basic analytics, receive inquiries |
-| **Artist Pro** | $19.99/mo or $199/yr | PolyWiz social campaigns, exhibition matching, lead CRM, SEO, analytics |
+| **Artist Pro** | $19.99/mo or $199/yr | Exhibition matching, lead CRM, advanced analytics, SEO, grant/residency alerts |
 | **Institutional** | $299/mo or $2,990/yr | Database access, bulk search, API, multi-user |
 
 ### Conversion Benchmarks
@@ -107,13 +107,7 @@ The research is unambiguous: **show the art freely, gate the contact mechanism.*
 | Inventory management | $9-42 | Artwork Archive |
 | **Total** | **$30-100/month** across fragmented tools |
 
-### PolyWiz Is the Killer Feature
-
-No competitor offers automated AI social media campaign generation across 14 platforms at any price. At $10/month, this replaces $250-500/month of freelancer social media management. The value proposition: **"Upload your artwork, we handle the marketing."**
-
-This addresses the two biggest barriers artists face with self-promotion: time (40% feel they lack it) and skill/confidence (40% feel unconfident in professional communication).
-
-### Exhibition Auto-Matching Is a Greenfield Opportunity
+### Exhibition Auto-Matching — The Headline Feature
 
 No platform currently does AI-powered matching of artist profiles to open calls based on medium, style, tags, location, career stage. CaFE and Submittable host calls but don't match. The enriched data already in the system (tags, medium, classifications) is exactly what matching requires.
 
@@ -130,6 +124,10 @@ Supporting data:
 - **Collector CRM** — track inquiries, interested buyers, follow-up reminders
 - **SEO-optimized profiles** — 1,000+ Google-indexable pages with AI descriptions = compounding organic traffic
 - **Cross-promotion network** — "Artists Similar to This" among 1,000+ members
+
+### Future Integration: Automated Social Media Promotion
+
+Automated social media campaign tools (like Polymash's PolyWiz, which generates AI content and schedules across 14 platforms) represent a future integration opportunity that could significantly increase artist stickiness. However, this is a separate product that would need its own development trajectory — not a launch feature. It could serve as an add-on or connected service for artists who want "upload your artwork, we handle the marketing" automation. Research shows 40% of artists feel unconfident in self-promotion, and done-for-you social media management costs $250-500/month — so the demand signal is strong. But building this out for general availability (not just art-centric campaigns) is a meaningful investment beyond the directory platform itself.
 
 ### Revenue Reality Check (Artist Side Only)
 
@@ -294,14 +292,14 @@ The $350K figure requires 1,000 paying subscribers — a number that even Artsy 
 
 Regardless of the revenue model chosen, Arterial has genuine differentiators:
 
-1. **PolyWiz** — Automated social media campaigns across 14 platforms. No competitor offers this at any price.
-2. **AI enrichment pipeline** — Can scale artist profile generation, artwork classification, and data enrichment faster than any manual process. This is the real moat.
-3. **Exhibition infrastructure** — Already runs open calls, has the intake pipeline, and can extend to outbound exhibition matching.
-4. **1,000+ artists with deep data** — Not just names and images, but AI-researched profiles, validated citations, classified artworks with dimensions and tags.
-5. **501(c)(3) status** — Trust factor, grant eligibility, tax advantages on mission-aligned revenue. "Built by a nonprofit to serve artists, not extract from them."
-6. **Existing audience** — Not Real Art podcast (200 episodes, 4.9 stars), 30+ First Friday exhibitions, Artsville USA, ArtCall.org — existing distribution channels to seed the platform.
-7. **ActiveCampaign CRM** — Already in place for segmented email marketing and follow-up sequences.
-8. **Google Arts & Culture eligibility** — As a 501(c)(3), Arterial qualifies for institutional partnership, which would be a significant traffic and credibility boost.
+1. **AI enrichment pipeline** — Can scale artist profile generation, artwork classification, and data enrichment faster than any manual process. This is the real moat.
+2. **Exhibition infrastructure** — Already runs open calls, has the intake pipeline, and can extend to outbound exhibition matching — the headline artist feature.
+3. **1,000+ artists with deep data** — Not just names and images, but AI-researched profiles, validated citations, classified artworks with dimensions and tags.
+4. **501(c)(3) status** — Trust factor, grant eligibility, tax advantages on mission-aligned revenue. "Built by a nonprofit to serve artists, not extract from them."
+5. **Existing audience** — Not Real Art podcast (200 episodes, 4.9 stars), 30+ First Friday exhibitions, Artsville USA, ArtCall.org — existing distribution channels to seed the platform.
+6. **ActiveCampaign CRM** — Already in place for segmented email marketing and follow-up sequences.
+7. **Google Arts & Culture eligibility** — As a 501(c)(3), Arterial qualifies for institutional partnership, which would be a significant traffic and credibility boost.
+8. **Future integration potential** — Tools like automated social media promotion (e.g., Polymash's PolyWiz) could be connected as add-on services, creating additional stickiness and value for artist members over time.
 
 ---
 
