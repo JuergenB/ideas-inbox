@@ -142,7 +142,7 @@ With 1,000 artists:
 
 ### Galleries Are Not the Primary Market
 
-The project team's skepticism is well-founded. Galleries don't have a discovery problem — they have an **oversupply problem**. The contemporary art auction market dropped 36% in 2024. Free channels (Instagram, referrals, MFA shows) are deeply entrenched.
+The research confirms that galleries don't have a discovery problem — they have an **oversupply problem**. The contemporary art auction market dropped 36% in 2024. Free channels (Instagram, referrals, MFA shows) are deeply entrenched.
 
 Small gallery economics: median revenue ~$519K/year, median owner earnings ~$149K, tech spending $200-500/year. A $25-50/month subscription is a very hard sell.
 
