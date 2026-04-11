@@ -25,6 +25,7 @@ ideas/
 | # | Idea | Status | Origin | Date |
 |---|------|--------|--------|------|
 | 001 | [Artist Directory / Gallery Platform](ideas/001-artist-directory/) | Research & Discussion | Scott Power | 2026-04-10 |
+| 002 | [PolyWiz Demo & Boilerplate Pitch for Vista Growth](ideas/002-polywiz-demo-vista-growth/) | Captured | Juergen Berkessel | 2026-04-11 |
 
 ## Idea Lifecycle
 
