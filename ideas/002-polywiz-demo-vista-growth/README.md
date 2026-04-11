@@ -93,7 +93,7 @@ This positions Steve and Jackie as navigators of structural change rather than t
 
 ### What to Show
 
-**Marketing site first** (polywiz.polymash.com) — the public-facing story:
+**Marketing site first** (polywiz-marketing.vercel.app) — the public-facing story:
 - Hero: "Give your art the sustained social media presence it deserves"
 - The "one post on opening night" problem
 - 5-step workflow: URL → AI generates → Smart scheduling → Review & approve → Publish everywhere
@@ -220,7 +220,7 @@ Jackie has already proven she can work with Claude Code. The boilerplate is the 
 
 | Resource | URL | Why |
 |----------|-----|-----|
-| PolyWiz marketing site | https://polywiz.polymash.com | See the public story |
+| PolyWiz marketing site | https://polywiz-marketing.vercel.app | See the public story |
 | Bart's video | https://www.youtube.com/watch?v=uHpUVBA8dWE | The "Build 10X Faster" workflow that started it all |
 | Bart's original repo | https://github.com/Barty-Bart/nextjs-supabase-shadcn-boilerplate | The starting point |
 | Polymash Supabase boilerplate | https://github.com/JuergenB/polymash-nextjs-supabase-shadcn-boilerplate | Extended version with Polymash patterns |
@@ -243,7 +243,7 @@ Steve and Jackie are positioning Vista Growth as navigators of structural change
 
 1. **Open with the tagline** — "I built a marketing agency in a box. Let me show you what that means." Don't oversell the AI angle — let the system speak for itself. Steve will see the AI; that's his lens. The point is that it *works*.
 
-2. **Marketing site walkthrough** (5 min) — polywiz.polymash.com. Note how it doesn't scream "AI" — it leads with the problem (one post on opening night, then silence) and the solution (sustained presence with human approval). This is intentional positioning for the arts audience.
+2. **Marketing site walkthrough** (5 min) — polywiz-marketing.vercel.app. Note how it doesn't scream "AI" — it leads with the problem (one post on opening night, then silence) and the solution (sustained presence with human approval). This is intentional positioning for the arts audience.
 
 3. **App demo** (15 min) — paste a URL, generate a campaign, show the voice system, walk through approval queue, show the calendar, show publishing. Let them see the depth — this isn't a wrapper around ChatGPT.
 

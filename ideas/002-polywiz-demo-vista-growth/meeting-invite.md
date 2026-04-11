@@ -23,7 +23,7 @@ I think this is relevant to the conversation about Vista Growth in two ways: fir
 
 ## Links to Explore Beforehand (Optional)
 
-- **PolyWiz marketing site:** https://polywiz.polymash.com
+- **PolyWiz marketing site:** https://polywiz-marketing.vercel.app
 - **The video that started it all:** https://www.youtube.com/watch?v=uHpUVBA8dWE — Bart Slodyczka's "Build 10X Faster With This Simple Claude Code Workflow"
 - **Boilerplate repos:**
   - https://github.com/JuergenB/polymash-nextjs-supabase-shadcn-boilerplate (Supabase version)
