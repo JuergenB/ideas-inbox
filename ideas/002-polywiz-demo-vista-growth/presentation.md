@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 style: |
-  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Raleway:wght@100;200;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Raleway:wght@300;400&display=swap');
 
   :root {
     --a: #ff6b1a;
@@ -25,7 +25,7 @@ style: |
     background-image: radial-gradient(ellipse at 50% 50%, transparent 30%, rgba(255,107,26,0.12) 100%);
     color: var(--t);
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     padding: 56px 72px;
     line-height: 1.5;
   }
@@ -229,107 +229,6 @@ So we built PolyWiz — not to replace anyone, but to **free people up** for the
 
 ---
 
-<!-- _class: bg-glow-green -->
-
-### PolyWiz
-
-# Not a Prototype. Production.
-
-<div style="display: flex; gap: 14px; margin-top: 20px;">
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--a), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 2em; color: var(--t); line-height: 1;">13</div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-top: 4px;">PLATFORMS</div>
-    <div style="font-size: 0.6em; color: var(--label); margin-top: 6px;">Instagram, Facebook, X, LinkedIn, Threads, Bluesky, TikTok, Pinterest, YouTube, Tumblr, Mastodon, Reddit, Google Business</div>
-  </div>
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--g), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 2em; color: var(--g); line-height: 1;">4</div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-top: 4px;">ORGANIZATIONS</div>
-    <div style="font-size: 0.6em; color: var(--label); margin-top: 6px;">Running production campaigns right now — real posts, real platforms, real approval workflows</div>
-  </div>
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--y), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 2em; color: var(--y); line-height: 1;">11</div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-top: 4px;">CAMPAIGN TYPES</div>
-    <div style="font-size: 0.6em; color: var(--label); margin-top: 6px;">Newsletter, Exhibition, Artist Profile, Podcast, Event, Open Call, and more</div>
-  </div>
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--a), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 2em; color: var(--t); line-height: 1;">1</div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-top: 4px;">PERSON</div>
-    <div style="font-size: 0.6em; color: var(--label); margin-top: 6px;">Built and operated by one person using AI-assisted development</div>
-  </div>
-</div>
-
-<div style="margin-top: 20px; text-align: center;">
-  <img src="./images/dashboard-overview-publishing-pipeline.png" style="width: 85%; border-radius: 8px; border: 1px solid var(--b);" />
-</div>
-
----
-
-<!-- _class: bg-dots -->
-
-### PolyWiz — Brand Voice
-
-# 8-Dimension Voice System
-
-<div style="display: flex; gap: 24px; margin-top: 12px; align-items: center;">
-  <div style="flex: 1;">
-    <div style="font-size: 0.8em; color: var(--body); margin-bottom: 16px; line-height: 1.7;">Every organization sounds different. PolyWiz doesn't use one-size-fits-all prompts — it calibrates across **8 tonal dimensions** so that each brand's voice is distinct and consistent across all platforms.</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 8px;">
-  <span class="tag" style="background: #ff6b1a12; color: var(--a); border: 1px solid #ff6b1a22;">Wit</span>
-  <span class="tag" style="background: #ff6b1a12; color: var(--a); border: 1px solid #ff6b1a22;">Warmth</span>
-  <span class="tag" style="background: #ff6b1a12; color: var(--a); border: 1px solid #ff6b1a22;">Opinion</span>
-  <span class="tag" style="background: #ff6b1a12; color: var(--a); border: 1px solid #ff6b1a22;">Skepticism</span>
-  <span class="tag" style="background: #ff6b1a12; color: var(--a); border: 1px solid #ff6b1a22;">Playfulness</span>
-  <span class="tag" style="background: #ff6b1a12; color: var(--a); border: 1px solid #ff6b1a22;">Urgency</span>
-  <span class="tag" style="background: #ff6b1a12; color: var(--a); border: 1px solid #ff6b1a22;">Authority</span>
-  <span class="tag" style="background: #ff6b1a12; color: var(--a); border: 1px solid #ff6b1a22;">Intimacy</span>
-</div>
-
-<div style="font-size: 0.7em; color: var(--label); margin-top: 14px;">Each slider ranges 0-10. The AI adapts its writing style per brand, per platform, per post type.</div>
-  </div>
-  <div style="width: 420px;">
-    <img src="./images/tone-dimensions-eight-sliders.png" style="width: 100%; border-radius: 8px; border: 1px solid var(--b);" />
-  </div>
-</div>
-
----
-
-<!-- _class: bg-glow-green -->
-
-### PolyWiz — Human Control
-
-# Approval Queue
-
-<div style="display: flex; gap: 24px; margin-top: 12px; align-items: center;">
-  <div style="flex: 1;">
-    <div style="font-size: 0.8em; color: var(--body); line-height: 1.7;">
-
-**Nothing auto-fires.** Every AI-generated post enters the approval queue as a draft.
-
-Humans review, edit, approve, or reject. The AI is the engine — the humans are the drivers.
-
-Your team stays in control. The AI handles the production grind — your people focus on engagement, community, and creative strategy.
-
-</div>
-    <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px; margin-top: 12px;">
-      <div style="display: flex; align-items: center; gap: 6px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g)" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        <span style="font-family: 'Outfit'; font-weight: 600; font-size: 0.65em; color: var(--t);">Key principle:</span>
-        <span style="font-size: 0.65em; color: var(--body);">AI generates, humans decide</span>
-      </div>
-    </div>
-  </div>
-  <div style="width: 440px;">
-    <img src="./images/approval-queue-pending-posts.png" style="width: 100%; border-radius: 8px; border: 1px solid var(--b);" />
-  </div>
-</div>
-
----
-
 <!-- _class: lead bg-hero -->
 
 <div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.65em; color: var(--a); text-transform: uppercase; letter-spacing: 0.25em; margin-bottom: 14px;">Live Demo</div>
@@ -384,9 +283,9 @@ Your team stays in control. The AI handles the production grind — your people 
 
 ### The Strategic Point
 
-# Don't Recommend Tools. Navigate Change.
+# Helping Organizations Through the AI Transition
 
-<div style="font-size: 0.78em; color: var(--body); margin-bottom: 16px; line-height: 1.6;">This space moves so fast that recommending specific AI tools is a losing game. Whatever you recommend in April will be surpassed by July. Tools like PolyWiz will be **commonplace within a year**.</div>
+<div style="font-size: 0.78em; color: var(--body); margin-bottom: 16px; line-height: 1.6;">This space moves so fast that recommending specific AI tools is a losing game. Whatever you recommend in April will be surpassed by July. Tools like PolyWiz are **already emerging across every industry**.</div>
 
 <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.6em; color: var(--m); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;">What Vista Growth should advise on instead</div>
 

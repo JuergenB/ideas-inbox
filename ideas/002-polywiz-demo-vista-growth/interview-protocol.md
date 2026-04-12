@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 style: |
-  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Raleway:wght@100;200;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Raleway:wght@300;400&display=swap');
 
   :root {
     --a: #ff6b1a;
@@ -25,7 +25,7 @@ style: |
     background-image: radial-gradient(ellipse at 50% 50%, transparent 30%, rgba(255,107,26,0.12) 100%);
     color: var(--t);
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     padding: 56px 72px;
     line-height: 1.5;
   }
