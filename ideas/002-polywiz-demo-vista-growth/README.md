@@ -175,17 +175,21 @@ A $7,500 consulting engagement delivered over two weeks:
 An **interactive self-service assessment tool** that lives at a subdomain and does the following:
 
 **Phase 1 — Qualification & Lead Generation (build first)**
-- Guided questionnaire (15-20 questions) about the prospect's marketing operations, tech stack, team size, current AI usage
-- AI-scored results with a "transformation readiness" score
+- **Conversational AI interview** (15-20 min, audio-only) that adapts follow-up questions based on responses — NOT a static form. [Research](research-ai-interview-platforms.md) shows conversational AI achieves 70-90% completion vs 10-30% for forms, with 2.5-8x richer response data. Audio-only recommended over video avatars (95% completion vs 40-60%).
+- Covers marketing operations, tech stack, team size, current AI usage — but conversationally, with intelligent follow-ups
+- AI-scored results with a "transformation readiness" score across multiple pillars
 - Personalized recommendations based on responses
-- Beautiful PDF report with Vista Growth branding
+- Beautiful PDF report with Vista Growth branding, including key quotes from the interview
 - CTA: "Want the full audit? Book a call with Steve and Jackie"
-- Data flows into CRM for follow-up
+- Data flows into Airtable → CRM for follow-up. Steve and Jackie see full transcript, AI summary, and readiness score before any human call.
+- **Recommended platforms:** Start with TheySaid ($49/mo) for validation, build custom with Retell.ai (~$1-1.50/interview) at scale
 
-**Phase 2 — Interview Protocols (add later)**
-- Structured interview templates that Steve and Jackie use during the paid audit
-- Automated data collection from client teams
-- Scoring rubrics that feed into the Opportunity Matrix
+**Phase 2 — Multi-Participant Organizational Assessment (add next)**
+- Multiple stakeholders from the same organization (CMO, Marketing Director, Content Manager) each take the AI interview independently
+- System generates per-participant summaries plus an **organizational rollup** — aggregate readiness score, areas of agreement/divergence across participants
+- Divergence between stakeholders reveals organizational alignment issues — a consultable finding Steve and Jackie can address
+- Scoring rubrics feed into the AI Opportunity Matrix
+- See [AI Interview Platforms Research](research-ai-interview-platforms.md) for full platform comparison, pricing, and architecture
 
 **Phase 3 — Full Audit Platform (aspirational)**
 - Client portal where audit findings live
@@ -205,10 +209,11 @@ That's a fundamentally different conversation with prospects. It's the differenc
 Using the Polymash Supabase boilerplate + Claude Code:
 
 1. Clone the boilerplate → instant Next.js app with auth, database, dashboard
-2. Feature-prompt the questionnaire flow → Claude builds the forms against the existing UI patterns
+2. Integrate conversational AI interview via Retell.ai or Vapi.ai API → prospects experience an adaptive conversation, not a form
 3. Feature-prompt the scoring engine → Claude creates the assessment logic against the database schema
-4. Feature-prompt the PDF generation → Claude adds report output
-5. Deploy to Vercel on a subdomain → live in days, not months
+4. Feature-prompt the PDF generation → Claude adds branded report output with interview highlights
+5. Wire up webhooks → interview transcripts, scores, and summaries flow to Airtable automatically
+6. Deploy to Vercel on a subdomain → live in days, not months
 
 Jackie has already proven she can work with Claude Code. The boilerplate is the bridge to building real tools, not just websites.
 
@@ -263,3 +268,4 @@ Steve and Jackie are positioning Vista Growth as navigators of structural change
 - PolyWiz marketing site and CLAUDE.md feature inventory
 - Polymash boilerplate repos (local: `/Users/juergenberkessel/Projects/polymash-nextjs-supabase-shadcn-boilerplate/` and `/Users/juergenberkessel/Projects/polymash-nextjs-airtable-boilerplate/`)
 - Bart Slodyczka YouTube channel and original boilerplate repo
+- **[AI Interview Platforms Research](research-ai-interview-platforms.md)** — Comprehensive market analysis of 17+ AI interview and voice AI platforms for lead qualification and self-assessment. Covers build-vs-buy, video vs audio, pricing, case studies, and implementation roadmap. 5 parallel Perplexity deep-research agents, 50+ sources. (2026-04-11)

@@ -201,10 +201,10 @@ The leanest validation: create 3 landing pages with different pricing tiers, spe
 | 1-2 | Launch simple public gallery from existing data | Baseline traffic |
 | 2-3 | Gate contact info behind signup with qualifying questions | **15%+ signup = promising** |
 | 3-4 | Monitor engagement: time on site, searches, saves | **5+ min = strong engagement** |
-| 4-5 | Van Westendorp pricing survey to 1,000+ artists | **200+ responses needed** |
-| 5-6 | Smoke test: pricing pages + $300-600 ad spend | **8%+ CTR = strong signal** |
+| 4-5 | Van Westendorp pricing study via **AI conversational interviews** (~$1-1.50/interview, [research](research/research-ai-interviews-for-artist-directory.md)) — 5x richer responses than surveys | **200+ responses needed** |
+| 5-6 | Smoke test: pricing pages + $300-600 ad spend. Consider "Schedule your AI portfolio review" CTA to validate demand AND collect onboarding data | **8%+ CTR = strong signal** |
 | 6-8 | Segment analysis by role | Any segment showing $5+/mo WTP |
-| 8-9 | 15-20 qualitative interviews | Explicit "I would pay" statements |
+| 8-9 | **AI-conducted qualitative interviews** at scale — conversational AI achieves 70-90% completion vs 10-30% for forms, with 2.5-8x longer responses ([research](research/research-ai-interviews-for-artist-directory.md)) | Explicit "I would pay" statements |
 | 9-12 | Synthesize and decide | See framework below |
 
 ### Qualifying Onboarding — Gold Regardless of Payment
@@ -214,6 +214,8 @@ The onboarding sequence should ask:
 1. **"What best describes you?"** — Artist, Gallery Owner, Curator, Collector, Interior Designer, Art Educator, Art Lover, Other
 2. **"What brings you here?"** — Discover new artists, Find art for a project, Get my art seen, Research artists, Build a collection
 3. **"How did you hear about us?"** — Exhibition partner, Social media, Search, Friend, Art publication, University
+
+**Enhancement opportunity:** For artists specifically, a short **AI conversational interview** (5-10 min, audio-only) during onboarding could replace these dropdown questions with a natural conversation that captures richer data — artistic philosophy, influences, career stage, exhibition goals, medium preferences. Research shows this yields 2.5-8x more content than forms, with 70-90% completion rates. The AI summarizes responses into structured profile fields for Supabase. Cost: ~$1-1.50/artist via Retell.ai. See [AI Interview Research](research/research-ai-interviews-for-artist-directory.md) for full analysis.
 
 This segmentation data feeds directly into ActiveCampaign and tells you who your audience is before you commit to a monetization model. The routing:
 - **Galleries/curators/collectors** → white-glove sequence, personal outreach within 48 hours
