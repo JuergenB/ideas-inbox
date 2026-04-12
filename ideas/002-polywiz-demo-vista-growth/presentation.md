@@ -90,13 +90,13 @@ footer: ''
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--a), transparent);"></div>
     <div style="font-family: 'Outfit'; font-weight: 700; font-size: 1.5em; color: var(--a); line-height: 1;">01</div>
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--t); margin-top: 10px;">PolyWiz Demo</div>
-    <div style="font-size: 0.65em; color: var(--body); margin-top: 6px;">A real AI marketing tool — the kind of solution Vista Growth could bring to clients</div>
+    <div style="font-size: 0.65em; color: var(--body); margin-top: 6px;">What one person built with AI — and how it's freeing up arts organizations to do higher-value work</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 20px; position: relative; overflow: hidden;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--g), transparent);"></div>
     <div style="font-family: 'Outfit'; font-weight: 700; font-size: 1.5em; color: var(--g); line-height: 1;">02</div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--t); margin-top: 10px;">Strategic Framing</div>
-    <div style="font-size: 0.65em; color: var(--body); margin-top: 6px;">Why Vista Growth should advise on navigating structural change, not recommending specific tools</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--t); margin-top: 10px;">The AI Transition</div>
+    <div style="font-size: 0.65em; color: var(--body); margin-top: 6px;">How organizations are navigating structural change — and where advisory firms can help</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 20px; position: relative; overflow: hidden;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--y), transparent);"></div>
@@ -281,13 +281,13 @@ So we built PolyWiz — not to replace anyone, but to **free people up** for the
 
 <!-- _class: bg-glow-orange -->
 
-### The Strategic Point
+### The Landscape
 
 # Helping Organizations Through the AI Transition
 
-<div style="font-size: 0.78em; color: var(--body); margin-bottom: 16px; line-height: 1.6;">This space moves so fast that recommending specific AI tools is a losing game. Whatever you recommend in April will be surpassed by July. Tools like PolyWiz are **already emerging across every industry**.</div>
+<div style="font-size: 0.78em; color: var(--body); margin-bottom: 16px; line-height: 1.6;">This space moves fast. Off-the-shelf AI tools are emerging across every industry — and they'll keep changing. Whatever's cutting-edge today will be surpassed tomorrow. That's the nature of commodity tooling.</div>
 
-<div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.6em; color: var(--m); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;">What Vista Growth should advise on instead</div>
+<div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.6em; color: var(--m); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;">Where organizations need help</div>
 
 <div style="display: flex; gap: 12px;">
   <div style="flex: 1;">
@@ -318,7 +318,7 @@ So we built PolyWiz — not to replace anyone, but to **free people up** for the
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--a)" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
       <div>
         <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.65em; color: var(--t);">Compete Better</div>
-        <div style="font-size: 0.58em; color: var(--label);">Your competitors will have AI marketing. Will you?</div>
+        <div style="font-size: 0.58em; color: var(--label);">Organizations that adopt AI tools gain reach and capacity</div>
       </div>
     </div>
     <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 10px 8px;">
@@ -328,8 +328,47 @@ So we built PolyWiz — not to replace anyone, but to **free people up** for the
         <div style="font-size: 0.58em; color: var(--label);">Retraining, redeployment, morale, the internal narrative</div>
       </div>
     </div>
-    <div style="background: var(--s); border: 1px solid var(--b); border-radius: 8px; padding: 12px; margin-top: 8px;">
-      <div style="font-size: 0.62em; color: var(--body); line-height: 1.5; font-style: italic;">"I'm not telling you to use PolyWiz. I'm showing you what one person built. Your clients need someone to help them navigate what happens when these tools exist."</div>
+  </div>
+</div>
+
+---
+
+<!-- _class: bg-glow-green -->
+
+### The Lasting Advantage
+
+# Bespoke Tools Are Not Commodities
+
+<div style="display: flex; gap: 24px; margin-top: 16px; align-items: center;">
+  <div style="flex: 1;">
+    <div style="font-size: 0.82em; color: var(--body); line-height: 1.7;">
+
+PolyWiz is an example of a pattern that's becoming a real differentiator: **organizations building bespoke AI tools** tailored to their specific workflows, not subscribing to generic platforms.
+
+The gap is growing. Organizations that can build or commission in-house tools gain a proprietary advantage. Those that can't — or don't know where to start — are falling behind. That gap is an opportunity for firms that can **bridge it**.
+
+</div>
+  </div>
+  <div style="width: 1px; background: var(--b);"></div>
+  <div style="width: 300px;">
+    <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px;">
+      <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--g); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px;">The Growing Gap</div>
+      <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 10px;">
+        <svg width="8" height="8" viewBox="0 0 8 8" style="margin-top: 5px;"><circle cx="4" cy="4" r="4" fill="var(--r)"/></svg>
+        <span style="font-size: 0.68em; color: var(--body);">Generic platforms — anyone can subscribe</span>
+      </div>
+      <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 10px;">
+        <svg width="8" height="8" viewBox="0 0 8 8" style="margin-top: 5px;"><circle cx="4" cy="4" r="4" fill="var(--g)"/></svg>
+        <span style="font-size: 0.68em; color: var(--body);">Bespoke tools — encode your methodology</span>
+      </div>
+      <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 10px;">
+        <svg width="8" height="8" viewBox="0 0 8 8" style="margin-top: 5px;"><circle cx="4" cy="4" r="4" fill="var(--g)"/></svg>
+        <span style="font-size: 0.68em; color: var(--body);">Orgs that build — gaining advantage</span>
+      </div>
+      <div style="display: flex; align-items: flex-start; gap: 8px;">
+        <svg width="8" height="8" viewBox="0 0 8 8" style="margin-top: 5px;"><circle cx="4" cy="4" r="4" fill="var(--y)"/></svg>
+        <span style="font-size: 0.68em; color: var(--body);">Orgs that can't — need someone to bridge it</span>
+      </div>
     </div>
   </div>
 </div>
