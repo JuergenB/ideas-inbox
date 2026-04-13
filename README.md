@@ -13,10 +13,16 @@ Cross-project ideas inbox for **Arterial**, **Not Real Art**, **Artsville USA**,
 
 ```
 ideas/
-├── 001-artist-directory/       # Paid artist directory/gallery platform
-│   ├── README.md               # Discussion paper
-│   └── research/               # Supporting research documents
-├── 002-next-idea/
+├── 001-artist-directory/                  # Paid artist directory/gallery platform
+│   ├── README.md                          # Discussion paper
+│   └── research/                          # Supporting research documents
+├── 002-polywiz-demo-vista-growth/         # Vista Growth meeting materials
+│   ├── presentation.md                    # Main deck (dark theme, Marp)
+│   ├── interview-protocol.md              # AI interview protocol deck
+│   ├── presentation-light.md              # Light theme variant
+│   ├── images/                            # Slide assets
+│   ├── exports/                           # PDF + HTML exports for presenting
+│   └── research-ai-interview-platforms.md # Interview platform research
 └── ...
 ```
 
@@ -25,7 +31,7 @@ ideas/
 | # | Idea | Status | Origin | Date |
 |---|------|--------|--------|------|
 | 001 | [Artist Directory / Gallery Platform](ideas/001-artist-directory/) | Research & Discussion | Scott Power | 2026-04-10 |
-| 002 | [PolyWiz Demo & Boilerplate Pitch for Vista Growth](ideas/002-polywiz-demo-vista-growth/) | Captured | Juergen Berkessel | 2026-04-11 |
+| 002 | [PolyWiz Demo & Vista Growth Pitch](ideas/002-polywiz-demo-vista-growth/) | Presentation Ready | Juergen Berkessel | 2026-04-11 |
 
 ## Idea Lifecycle
 

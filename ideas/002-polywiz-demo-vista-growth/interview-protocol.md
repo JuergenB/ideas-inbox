@@ -489,6 +489,46 @@ The voice AI is an API call. **Retell.ai** handles speech-to-text, the conversat
 
 ---
 
+<!-- _class: bg-glow-gold -->
+
+### The Bigger Picture
+
+# The Interview Is Just the Intake
+
+<div style="font-size: 0.78em; color: var(--body); margin-bottom: 14px;">The AI interview gathers one layer of data. But the real value is what happens when you combine it with everything else you learn about an organization — and run it through a **proprietary scoring algorithm** that reflects Vista Growth's methodology.</div>
+
+<div style="display: flex; gap: 14px; margin-top: 8px;">
+  <div style="flex: 1;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.6em; color: var(--a); margin-bottom: 8px;">DATA SOURCES FLOWING IN</div>
+    <div style="font-size: 0.62em; color: var(--body); line-height: 1.7;">
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--a)"/></svg> AI interview transcripts (per stakeholder, role-specific)</div>
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--a)"/></svg> Automated research — tech stack, web presence, competitors</div>
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--a)"/></svg> Client-provided documentation and materials</div>
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--a)"/></svg> Conversation transcripts from discovery calls</div>
+      <div style="display: flex; align-items: center; gap: 6px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--a)"/></svg> Industry benchmarks and public data</div>
+    </div>
+  </div>
+  <div style="display: flex; align-items: center;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--m)" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+  </div>
+  <div style="flex: 1;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.6em; color: var(--g); margin-bottom: 8px;">PROPRIETARY SCORING ENGINE</div>
+    <div style="font-size: 0.62em; color: var(--body); line-height: 1.7;">
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--g)"/></svg> AI Readiness Score across multiple dimensions</div>
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--g)"/></svg> Weighted algorithm reflecting Vista Growth's expertise</div>
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--g)"/></svg> Stakeholder alignment / divergence analysis</div>
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--g)"/></svg> Personalized recommendations and priority areas</div>
+      <div style="display: flex; align-items: center; gap: 6px;"><svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="var(--g)"/></svg> Branded PDF report with actionable roadmap</div>
+    </div>
+  </div>
+</div>
+
+<div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 12px; margin-top: 14px;">
+  <div style="font-size: 0.65em; color: var(--body); text-align: center;">This is the same pattern behind <a href="https://visibilitylabs.polymash.com" style="color: var(--a); text-decoration: none;">Visibility Labs</a> — where we built readiness audits for SEO/GEO, headline scoring algorithms, and brand voice calibration across 15 categories. **The algorithm is the moat.** It encodes your experience in a way no competitor can replicate.</div>
+</div>
+
+---
+
 <!-- _class: lead bg-hero -->
 <!-- _paginate: false -->
 
