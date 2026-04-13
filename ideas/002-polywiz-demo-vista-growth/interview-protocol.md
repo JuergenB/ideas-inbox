@@ -489,53 +489,6 @@ The voice AI is an API call. **Retell.ai** handles speech-to-text, the conversat
 
 ---
 
-<!-- _class: bg-glow-green -->
-
-### The Numbers
-
-# Buy vs. Build
-
-<div style="display: flex; gap: 14px; margin-top: 16px;">
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--r); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px;">Buy — Use a Platform</div>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-      <span style="font-size: 0.68em; color: var(--body);">Ribbon AI (real-time voice)</span>
-      <span style="font-family: 'Outfit'; font-weight: 600; font-size: 0.68em; color: var(--y);">$499-999/mo</span>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-      <span style="font-size: 0.68em; color: var(--body);">TheySaid (text-based, simpler)</span>
-      <span style="font-family: 'Outfit'; font-weight: 600; font-size: 0.68em; color: var(--g);">$49-149/mo</span>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--b); padding-top: 8px; margin-top: 4px;">
-      <span style="font-size: 0.68em; color: var(--t); font-weight: 400;">Year 1 cost</span>
-      <span style="font-family: 'Outfit'; font-weight: 600; font-size: 0.68em; color: var(--y);">$1,800-12,000</span>
-    </div>
-    <div style="font-size: 0.58em; color: var(--label); margin-top: 10px; line-height: 1.5;">Fast to start. Limited branding and customization. No multi-stakeholder rollup. You're renting someone else's infrastructure.</div>
-  </div>
-  <div style="flex: 1; background: var(--s); border: 1px solid #22c55e33; border-radius: 10px; padding: 18px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--g); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px;">Build — Own It</div>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-      <span style="font-size: 0.68em; color: var(--body);">Voice AI API (~50 interviews/mo @ $2-5 each)</span>
-      <span style="font-family: 'Outfit'; font-weight: 600; font-size: 0.68em; color: var(--g);">~$100-250/mo</span>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-      <span style="font-size: 0.68em; color: var(--body);">Vercel + Supabase + email</span>
-      <span style="font-family: 'Outfit'; font-weight: 600; font-size: 0.68em; color: var(--g);">~$50/mo</span>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--b); padding-top: 8px; margin-top: 4px;">
-      <span style="font-size: 0.68em; color: var(--t); font-weight: 400;">Year 1 cost</span>
-      <span style="font-family: 'Outfit'; font-weight: 600; font-size: 0.68em; color: var(--g);">~$2,000-3,600</span>
-    </div>
-    <div style="font-size: 0.58em; color: var(--label); margin-top: 10px; line-height: 1.5;">Jackie builds it with the boilerplate + Claude Code. Full brand control. Multi-stakeholder rollups. White-labeled at audit.vistagrowth.ai. <strong>And it proves Vista Growth's AI capabilities to every prospect who uses it.</strong></div>
-  </div>
-</div>
-
-<div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px; margin-top: 14px;">
-  <div style="font-size: 0.68em; color: var(--body); text-align: center;">Either path: <strong>1 closed audit ($7,500) covers a full year of operating costs.</strong> The build path costs the same to run — and doubles as a showcase of what Vista Growth can do with AI.</div>
-</div>
-
----
-
 <!-- _class: lead bg-hero -->
 <!-- _paginate: false -->
 
