@@ -11,18 +11,27 @@ Cross-project ideas inbox for **Arterial**, **Not Real Art**, **Artsville USA**,
 
 ## Structure
 
+Each idea folder keeps only `README.md` at the root so it's immediately visible on GitHub. Everything else is organized into subfolders:
+
 ```
 ideas/
-├── 001-artist-directory/                  # Paid artist directory/gallery platform
-│   ├── README.md                          # Discussion paper
-│   └── research/                          # Supporting research documents
-├── 002-polywiz-demo-vista-growth/         # Vista Growth meeting materials
-│   ├── presentation.md                    # Main deck (dark theme, Marp)
-│   ├── interview-protocol.md              # AI interview protocol deck
-│   ├── presentation-light.md              # Light theme variant
-│   ├── images/                            # Slide assets
-│   ├── exports/                           # PDF + HTML exports for presenting
-│   └── research-ai-interview-platforms.md # Interview platform research
+├── 001-artist-directory/
+│   ├── README.md              # Discussion paper
+│   ├── presentations/         # Slide deck sources
+│   ├── research/              # Market research documents
+│   └── exports/               # PDF, HTML, PPTX exports
+├── 002-polywiz-demo-vista-growth/
+│   ├── README.md              # Discussion paper
+│   ├── presentations/         # Decks + slide images
+│   ├── research/              # Interview platform research
+│   ├── docs/                  # Meeting invite, communications
+│   └── exports/               # PDF + HTML exports
+├── 003-podcast-website-automation/
+│   ├── README.md              # Market research & product discussion
+│   ├── presentations/         # Advisory deck + slides
+│   ├── research/              # (future research docs)
+│   ├── docs/                  # Cover email, communications
+│   └── exports/               # PDF exports
 └── ...
 ```
 
@@ -32,6 +41,7 @@ ideas/
 |---|------|--------|--------|------|
 | 001 | [Artist Directory / Gallery Platform](ideas/001-artist-directory/) | Research & Discussion | Scott Power | 2026-04-10 |
 | 002 | [PolyWiz Demo & Vista Growth Pitch](ideas/002-polywiz-demo-vista-growth/) | Presentation Ready | Juergen Berkessel | 2026-04-11 |
+| 003 | [Podcast Website Automation](ideas/003-podcast-website-automation/) | Research & Discussion | Lindo.ai / Emma | 2026-04-13 |
 
 ## Idea Lifecycle
 
