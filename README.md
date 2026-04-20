@@ -43,6 +43,14 @@ ideas/
 | 002 | [PolyWiz Demo & Vista Growth Pitch](ideas/002-polywiz-demo-vista-growth/) | Presentation Ready | Juergen Berkessel | 2026-04-11 |
 | 003 | [Podcast Website Automation](ideas/003-podcast-website-automation/) | Research & Discussion | Lindo.ai / Emma | 2026-04-13 |
 
+## Current Issues
+
+Technical issue write-ups for active client and project work — separate from ideas. Each brief is self-contained with root-cause analysis, implementation plan, and acceptance criteria for the team or vendor resolving it. See [`problems/`](problems/) for the index.
+
+| # | Issue | Subject | Status | Date |
+|---|-------|---------|--------|------|
+| 001 | [Curated.co deliverability + cross-domain SPF/DKIM audit](problems/001-curated-deliverability-nra/) | Not Real Art / Crewest Studio domains | Open — awaiting vendor | 2026-04-19 |
+
 ## Idea Lifecycle
 
 | Stage | Description |
