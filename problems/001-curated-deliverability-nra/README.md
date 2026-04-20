@@ -18,9 +18,13 @@
 
 **What we're asking CloudFuze to do.** Switch the sender in the Curated.co admin panel to `editor@notrealart.com`, then publish the DNS records Curated tells them to publish on `notrealart.com` (the correct values only appear in Curated's admin panel *after* the sender change is saved). While DNS is being touched, also clean up and audit all four domains — `notrealart.com`, `artsvilleusa.com`, `creweststudio.com`, `arterial.org` — so email authentication is solid everywhere. ActiveCampaign is believed to already be configured correctly; it just gets a verification pass.
 
-**Your action.** You've already approved the sender change to `editor@notrealart.com`. The only optional thing: if CloudFuze wants access to DMARC Report (our monitoring tool) so they can verify their own DNS changes end-to-end without pinging us, grant them Account Member access on the Crewest team. That just saves round-trips.
+**Your action.** You've already approved the sender change to `editor@notrealart.com` — that's the only decision this needs. You already have Account Member access to DMARC Report under `scott@creweststudio.com` if you want to watch the aggregate reports during and after the fix — log in at [app.dmarcreport.com](https://app.dmarcreport.com/). CloudFuze access to DMARC Report is a Juergen-side concern: if anyone on the CloudFuze team wants their own access so they can self-verify changes, they should reach out to Juergen (`juergen@polymash.com`) directly to be provisioned.
 
-**Expected outcome.** Not Real Art newsletter delivered to inboxes instead of junk, and a clean bill of health on email authentication across all four domains.
+**Expected outcomes.**
+- Not Real Art newsletter delivered to inboxes (not junk) via Curated.co.
+- `notrealart.com` SPF record is no longer malformed — single record, one `v=spf1` token, all senders consolidated.
+- **ActiveCampaign DKIM and SPF records validated as present and correctly configured for all four domains:** `notrealart.com`, `artsvilleusa.com`, `creweststudio.com`, `arterial.org`.
+- Clean bill of health on email authentication across all four domains.
 
 ---
 
@@ -173,7 +177,7 @@ Plus [DMARC Report SPF lookup](https://app.dmarcreport.com/lookups/spf) — must
 - **Curated.co admin:** `https://my.curated.co/notrealart/settings/hosting_email` — **this is the authoritative source for Curated's SPF include value and DKIM TXT record content** once the Reply-To is changed to `editor@notrealart.com`. Read values directly from this page; do not copy from this brief.
 - **ActiveCampaign admin** — confirm current login with Scott. ActiveCampaign's own documentation and in-app sending-domain pages are the source of truth for the ActiveCampaign SPF include and DKIM selector.
 - **Mailbox admin** (Google Workspace and/or Microsoft 365) per domain — confirm with Scott.
-- **DMARC Report** (`app.dmarcreport.com`) — source of truth for SPF/DKIM/DMARC validation and DNS lookup budget. Account Member access is **offered**: Scott can add CloudFuze as a member on the Crewest team so Chaitanya can verify changes end-to-end (SPF/DKIM lookups, aggregate report flow) rather than relying on Scott or Juergen to confirm. Request access in a comment on the issue if useful.
+- **DMARC Report** ([app.dmarcreport.com](https://app.dmarcreport.com/)) — source of truth for SPF/DKIM/DMARC validation, DNS lookup budget, and post-change aggregate report review. Scott already has Account Member access under `scott@creweststudio.com`. If CloudFuze wants their own access so Chaitanya can verify changes end-to-end without pinging the team, reach out to Juergen (`juergen@polymash.com`) directly to be provisioned.
 
 ## Open questions (resolve during execution)
 

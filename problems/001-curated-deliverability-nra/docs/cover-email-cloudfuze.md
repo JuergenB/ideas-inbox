@@ -35,7 +35,7 @@ One important operational note, called out in the issue but worth flagging here 
 
 The issue also lists a few open questions to resolve during execution — including identifying what `include:emsd1.com` currently represents on `notrealart.com`, since it may be legacy.
 
-One offer: Scott can add you as an Account Member on our **DMARC Report** team (`app.dmarcreport.com`) so you can verify your own changes end-to-end — SPF/DKIM lookups and aggregate report flow after each DNS update — without pinging us to confirm. If you'd find that useful, just say so in a comment on the issue and Scott will provision it.
+One offer: if you'd like your own DMARC Report access (`app.dmarcreport.com`) so you can verify your own changes end-to-end — SPF/DKIM lookups and aggregate report flow after each DNS update — without pinging us to confirm, reach out to me directly (`juergen@polymash.com`) and I'll provision it. Scott already has his own login there.
 
 Could you confirm an ETA and flag anything in the brief that looks off? Happy to jump on a call if that's faster.
 
