@@ -6,12 +6,12 @@
 **Context:** Demo of PolyWiz system + inspiration for Vista Growth's internal tool development
 
 <p>
-  <a href="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-demo-vista-growth/deck-light.html">
+  <a href="https://ideas-inbox-mocha.vercel.app/ideas/002-polywiz-demo-vista-growth/exports/presentation-light.html">
     <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-demo-vista-growth-slide-1.png" width="480" alt="PolyWiz Demo & Vista Growth Pitch — click to open full-screen presentation">
   </a>
 </p>
 
-**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-demo-vista-growth/deck-light.html) · [dark version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-demo-vista-growth/deck.html)
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/002-polywiz-demo-vista-growth/exports/presentation-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/002-polywiz-demo-vista-growth/exports/presentation.html)
 **📄 Slide deck (PDF):** [exports/presentation.pdf](exports/presentation.pdf) — download for print or offline.
 **📄 Interview protocol:** [exports/interview-protocol.pdf](exports/interview-protocol.pdf)
 **📄 Supporting research (AI interview platforms):** [exports/research-ai-interview-platforms.pdf](exports/research-ai-interview-platforms.pdf)

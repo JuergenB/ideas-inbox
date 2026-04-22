@@ -32,38 +32,38 @@ Ideas are often shared with colleagues by dropping a GitHub link to the idea's R
 
 **Rule:** If an idea has a MARP deck, the README MUST surface it near the top — between the metadata block (Origin / Status / Date) and the first content section — as a clickable slide-1 thumbnail that opens the **hosted HTML deck** on Vercel Blob.
 
+**Hosting split — HTML on Vercel, images on Blob.** Vercel Blob always serves HTML with `Content-Disposition: attachment` — clicking a `.html` on the Blob domain downloads it instead of rendering it. So HTML decks live in the repo under `ideas/<folder>/exports/*.html` and are served by the Vercel static deployment of this repo (`ideas-inbox-mocha.vercel.app`). Images and the slide-1 thumbnail PNG live on Vercel Blob (they serve `inline` fine and stay out of the repo as binary bloat).
+
 **Publishing the deck:** run `scripts/publish-deck.mjs <idea-folder> [<deck-basename>]` from the repo root with `BLOB_READ_WRITE_TOKEN` in the environment. The script:
 1. Uploads any local image references to Blob at `presentations/<idea-slug>/<filename>`.
-2. Rewrites the deck source to use absolute Blob URLs.
-3. Regenerates the dark HTML, a transformed light HTML, the PDF, and a slide-1 PNG thumbnail (from the light variant).
-4. Uploads both HTMLs + the thumbnail to Blob.
+2. Rewrites the deck source to use absolute Blob URLs for images.
+3. Regenerates the dark HTML, a transformed light HTML, and the PDF into `ideas/<folder>/exports/`.
+4. Renders a slide-1 PNG from the light variant and uploads that thumbnail to Blob.
 
-Re-run any time the deck source changes. The light variant is derived automatically from the dark source by substituting the `:root` palette tokens — orange / blue / green / red accent colors are preserved; only background, surface, text, and greyscale tokens flip.
+Commit and push — the Vercel deployment picks up the new HTML files from the repo on the next deploy. The light variant is derived automatically from the dark source by substituting the `:root` palette tokens — orange / blue / green / red accent colors are preserved; only background, surface, text, and greyscale tokens flip.
 
-**Format** — thumbnail of slide 1 (clickable, links to the hosted light HTML), followed by one text line per artifact leading with 📄 or 🎬:
+**Format** — thumbnail of slide 1 (clickable, links to the Vercel-hosted light HTML), followed by one text line per artifact leading with 📄 or 🎬:
 
 ```markdown
 <p>
-  <a href="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/<slug>/deck-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/<slug>-slide-1.png" width="480" alt="Deck title — click to open full-screen presentation">
+  <a href="https://ideas-inbox-mocha.vercel.app/ideas/<idea-folder>/exports/<deck-basename>-light.html">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/<idea-slug>-slide-1.png" width="480" alt="Deck title — click to open full-screen presentation">
   </a>
 </p>
 
-**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/<slug>/deck-light.html) · [dark version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/<slug>/deck.html)
-**📄 Slide deck (PDF):** [exports/deck.pdf](exports/deck.pdf) — download for print or offline.
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/<idea-folder>/exports/<deck-basename>-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/<idea-folder>/exports/<deck-basename>.html)
+**📄 Slide deck (PDF):** [exports/<deck-basename>.pdf](exports/<deck-basename>.pdf) — download for print or offline.
 **📄 Interview protocol:** [exports/interview-protocol.pdf](exports/interview-protocol.pdf)
 ```
 
 Rules:
 - **Thumbnail is mandatory**, not optional. A small link buried in prose is nearly invisible. The slide-1 image at ~480px wide anchors the README visually and pulls the eye to the deck.
-- **Thumbnail and primary link default to the LIGHT variant** (`deck-light.html`). Dark is offered as a secondary link on the same line. Rationale: light renders better for embeds, snapshots, and default professional audiences; dark remains available for operators who prefer it.
+- **Thumbnail and primary link default to the LIGHT variant** (`<deck-basename>-light.html`). Dark is offered as a secondary link on the same line. Rationale: light renders better for embeds, snapshots, and default professional audiences; dark remains available for operators who prefer it.
 - **Thumbnail image is rendered from the light variant** so the preview matches the default experience.
-- **Hosting paths (from `publish-deck.mjs`):**
-  - Light HTML (default): `presentations/<idea-slug>/deck-light.html`
-  - Dark HTML (secondary): `presentations/<idea-slug>/deck.html`
-  - Slide-1 thumbnail (from light): `presentations/<idea-slug>-slide-1.png`
-  - Per-deck images (logos, generated illustrations): `presentations/<idea-slug>/<filename>`
-- **The blob store** `itcls3wqp5koksgn.public.blob.vercel-storage.com` is Polymash's shared public Vercel Blob store. Credentials live in `the-intersect-curator/.env.local` as `BLOB_READ_WRITE_TOKEN`.
+- **URL bases:**
+  - Vercel static site: `https://ideas-inbox-mocha.vercel.app` — serves HTML inline. All deck HTML paths follow `/ideas/<idea-folder>/exports/<deck-basename>[-light].html`.
+  - Vercel Blob public store: `https://itcls3wqp5koksgn.public.blob.vercel-storage.com` — serves images inline. Thumbnails at `/presentations/<idea-slug>-slide-1.png`; per-deck images at `/presentations/<idea-slug>/<filename>`.
+- **Blob credentials** live in `the-intersect-curator/.env.local` as `BLOB_READ_WRITE_TOKEN`. Export before running `publish-deck.mjs`.
 - **If only the source deck exists** and hasn't been published yet, skip the thumbnail block and link the source with `*(MARP source — run scripts/publish-deck.mjs to publish)*`.
 - **If the idea has no presentation**, omit the block entirely — don't add placeholder lines.
 - **Research PDFs and supporting documents** get their own `📄` lines under the deck link, labeled by what they are — no thumbnail needed for these.

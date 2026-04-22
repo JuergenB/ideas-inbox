@@ -5,12 +5,12 @@
 **Status:** Research & Discussion
 
 <p>
-  <a href="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform/deck-light.html">
+  <a href="https://ideas-inbox-mocha.vercel.app/ideas/004-multi-tenant-curator-platform/exports/deck-light.html">
     <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform-slide-1.png" width="480" alt="Multi-Tenant Curator Platform — click to open full-screen presentation">
   </a>
 </p>
 
-**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform/deck-light.html) · [dark version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform/deck.html)
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/004-multi-tenant-curator-platform/exports/deck-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/004-multi-tenant-curator-platform/exports/deck.html)
 **📄 Slide deck (PDF):** [exports/deck.pdf](exports/deck.pdf) — download for print or offline.
 
 ---

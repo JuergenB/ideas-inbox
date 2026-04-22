@@ -186,19 +186,19 @@ const slideOnePath = fs
   .sort()[0]
 const slideOneAbs = path.join(thumbnailTmpDir, slideOnePath)
 
-const darkHtmlBlobPath = `presentations/${ideaSlug}/deck.html`
-const lightHtmlBlobPath = `presentations/${ideaSlug}/deck-light.html`
 const thumbnailBlobPath = `presentations/${ideaSlug}-slide-1.png`
-
-const darkHtmlUrl = await uploadFile(darkHtmlOut, darkHtmlBlobPath, "text/html; charset=utf-8")
-const lightHtmlUrl = await uploadFile(lightHtmlOut, lightHtmlBlobPath, "text/html; charset=utf-8")
 const thumbUrl = await uploadFile(slideOneAbs, thumbnailBlobPath, "image/png")
 
 fs.rmSync(thumbnailTmpDir, { recursive: true, force: true })
 fs.unlinkSync(lightSourcePath)
 
+const vercelBase = "https://ideas-inbox-mocha.vercel.app"
+const vercelLightUrl = `${vercelBase}/ideas/${ideaFolder}/exports/${deckBasename}-light.html`
+const vercelDarkUrl = `${vercelBase}/ideas/${ideaFolder}/exports/${deckBasename}.html`
+
 console.log(`\n[publish-deck] done for ${ideaFolder}`)
-console.log(`  HTML (light, default): ${lightHtmlUrl}`)
-console.log(`  HTML (dark):           ${darkHtmlUrl}`)
+console.log(`  HTML (light, default): ${vercelLightUrl}`)
+console.log(`  HTML (dark):           ${vercelDarkUrl}`)
 console.log(`  Thumbnail:             ${thumbUrl}`)
 console.log(`  PDF:                   ${pdfOutPath} (local)`)
+console.log(`\n  HTML files written to ${exportsDir} — commit + push for Vercel to serve them.`)

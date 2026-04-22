@@ -5,12 +5,12 @@
 **Epic Issue:** [#1](https://github.com/JuergenB/ideas-inbox/issues/1)
 
 <p>
-  <a href="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/artist-directory/deck-light.html">
+  <a href="https://ideas-inbox-mocha.vercel.app/ideas/001-artist-directory/exports/discussion-deck-light.html">
     <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/artist-directory-slide-1.png" width="480" alt="Artist Directory — click to open full-screen presentation">
   </a>
 </p>
 
-**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/artist-directory/deck-light.html) · [dark version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/artist-directory/deck.html)
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/001-artist-directory/exports/discussion-deck-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/001-artist-directory/exports/discussion-deck.html)
 **📄 Slide deck (PDF):** [exports/discussion-deck.pdf](exports/discussion-deck.pdf) — download for print or offline. Also available as [PPTX](exports/discussion-deck.pptx).
 
 ---

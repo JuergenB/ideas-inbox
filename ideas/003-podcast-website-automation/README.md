@@ -4,12 +4,12 @@
 **Context:** Response to Lindo.ai partnership inquiry from Emma — exploring whether to build a podcast website builder product, and if so, what it should look like.
 
 <p>
-  <a href="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation/deck-light.html">
+  <a href="https://ideas-inbox-mocha.vercel.app/ideas/003-podcast-website-automation/exports/podcast-website-builder-advisory-light.html">
     <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation-slide-1.png" width="480" alt="Podcast Website Automation — click to open full-screen presentation">
   </a>
 </p>
 
-**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation/deck-light.html) · [dark version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation/deck.html)
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/003-podcast-website-automation/exports/podcast-website-builder-advisory-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/003-podcast-website-automation/exports/podcast-website-builder-advisory.html)
 **📄 Slide deck (PDF):** [exports/podcast-website-builder-advisory.pdf](exports/podcast-website-builder-advisory.pdf) — download for print or offline.
 
 ---
