@@ -42,6 +42,8 @@ ideas/
 | 001 | [Artist Directory / Gallery Platform](ideas/001-artist-directory/) | Research & Discussion | Scott Power | 2026-04-10 |
 | 002 | [PolyWiz Demo & Vista Growth Pitch](ideas/002-polywiz-demo-vista-growth/) | Presentation Ready | Juergen Berkessel | 2026-04-11 |
 | 003 | [Podcast Website Automation](ideas/003-podcast-website-automation/) | Research & Discussion | Lindo.ai / Emma | 2026-04-13 |
+| 004 | [Multi-Tenant Curator Platform](ideas/004-multi-tenant-curator-platform/) | Research & Discussion | Juergen Berkessel | 2026-04-21 |
+| 005 | [AI Voice Surveys vs. Email Forms](ideas/005-ai-voice-surveys-vs-email-forms/) | Presentation Ready | Juergen Berkessel | 2026-04-22 |
 
 ## Current Issues
 
