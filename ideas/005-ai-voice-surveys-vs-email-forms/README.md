@@ -1,8 +1,20 @@
-# Idea 005: AI Voice Surveys vs. Email Forms
+# Idea 005: Voice Interviews vs. Email Forms
 
 **Origin:** Juergen Berkessel, 2026-04-22
 **Status:** Presentation ready — for office hours discussion
-**Context:** Generalized from the AI-interview research threads in [Idea 001 — Artist Directory](../001-artist-directory/) and [Idea 002 — PolyWiz / Vista Growth](../002-polywiz-demo-vista-growth/). Written up as a standalone piece so it can be reused whenever a team or collaborator is about to send a traditional email-driven survey.
+**Context:** Generalized from the interview-research threads in [Idea 001 — Artist Directory](../001-artist-directory/) and [Idea 002 — PolyWiz / Vista Growth](../002-polywiz-demo-vista-growth/). Written up as a standalone piece so it can be reused whenever a team or collaborator is about to send a traditional email-driven survey.
+
+**📄 Slide deck (PDF):** [exports/deck.pdf](exports/deck.pdf) — open directly from GitHub to read or share.
+
+---
+
+## TL;DR
+
+- When we say *"let's send a survey,"* we reach for a form in ActiveCampaign, Mailchimp, or HubSpot. Open rates are modest, click-through is smaller, completion is smaller still, and the answers are shallow.
+- Replacing the form link with a link to a **short voice interview** changes the outcome dramatically: ~95% completion vs. 10–30% for email forms, and answers that are 2.5×–8× longer because the conversation probes and clarifies.
+- Participants consistently report the voice experience as *better than the alternative* — including, counterintuitively, participants who are skeptical of the underlying technology (these interviews are AI-assisted; more on that below).
+- **Near term:** rent a platform (TheySaid, Retell.ai, Ribbon AI) and swap the link in the invitation email. Same CRM orchestration, different destination.
+- **Medium term:** build our own interview module (~30 engineering days) so we own the engine, the data, and the experience across every property and every client engagement.
 
 ---
 
@@ -10,15 +22,23 @@
 
 When someone says *"let's send a survey,"* the reflex is to build a form and route it through whatever email platform is already in place — ActiveCampaign, Mailchimp, HubSpot. The invitation goes out. A small fraction of recipients open it. A smaller fraction click through. A smaller fraction still actually complete it. And the answers that come back are short, shallow, and flat.
 
-There is a meaningfully better approach that requires changing only one thing: the destination of the link. Instead of a form, the link opens a short **AI voice conversation**. The CRM orchestration stays identical. The completion rate, the response depth, and the participant experience change dramatically.
+There is a meaningfully better approach that requires changing only one thing: the destination of the link. Instead of a form, the link opens a short **voice conversation**. The CRM orchestration stays identical. The completion rate, the response depth, and the participant experience change dramatically.
 
 Three numbers do most of the work here:
 
-- **95%** completion rate for AI voice conversations vs. **10–30%** for email-delivered forms
+- **95%** completion rate for voice interviews vs. **10–30%** for email-delivered forms
 - **2.5×–8×** longer answers, because the conversation probes, clarifies, and branches
-- **97.6%** satisfaction and **99%** would-recommend from Anthropic's own 1,250-interview study — disproportionately positive among participants who identify as AI-skeptical going in
+- **97.6%** satisfaction and **99%** would-recommend across a 1,250-interview study — disproportionately positive among participants who came in skeptical of the format
 
-The last number is the one that matters most for our context. The presentation framing is not *"AI is cool."* It is: *"The people who dislike AI most are the ones who come out of this saying the experience was better than the alternative."*
+The last number is the one that matters most for our context. The framing is not *"the technology is cool."* It is: *"The people who are most skeptical going in are the ones who come out saying the experience was better than the alternative."*
+
+---
+
+## The Quiet Part
+
+These voice interviews are AI-assisted. A language model conducts the conversation, probes for clarification, and produces a clean transcript plus a structured summary on the other side. That detail is worth naming directly — not leading with it.
+
+Why: the strongest argument for this approach isn't novelty. It's that it *works better for the participant* — faster to complete, easier to speak freely into than to type into a form field, and (per the published data) preferred by participants who do not identify as enthusiasts of the underlying technology. The AI engine is the enabler, not the headline.
 
 ---
 
