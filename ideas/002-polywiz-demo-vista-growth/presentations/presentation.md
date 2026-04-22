@@ -64,7 +64,7 @@ footer: ''
 <!-- _paginate: false -->
 
 <div style="position: absolute; top: 32px; left: 40px;">
-  <img src="./images/polymash-logo.png" style="width: 48px; border-radius: 8px; opacity: 0.7;" />
+  <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-demo-vista-growth/polymash-logo.png" style="width: 48px; border-radius: 8px; opacity: 0.7;" />
 </div>
 
 # A Marketing Agency in a Box

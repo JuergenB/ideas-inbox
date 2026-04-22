@@ -1,0 +1,23 @@
+{
+  "name": "ideas-inbox",
+  "version": "1.0.0",
+  "description": "Cross-project ideas inbox for **Arterial**, **Not Real Art**, **Artsville USA**, and **Polymash** initiatives. This repo captures, researches, and evaluates new ideas before they become their own projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuergenB/ideas-inbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuergenB/ideas-inbox/issues"
+  },
+  "homepage": "https://github.com/JuergenB/ideas-inbox#readme",
+  "devDependencies": {
+    "@vercel/blob": "^2.3.3"
+  }
+}

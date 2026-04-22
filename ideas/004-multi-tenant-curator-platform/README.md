@@ -4,7 +4,14 @@
 **Origin:** Juergen Berkessel
 **Status:** Research & Discussion
 
-**📄 Slide deck (PDF):** [exports/deck.pdf](exports/deck.pdf) — open directly from GitHub to read or share.
+<p>
+  <a href="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform/deck-light.html">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform-slide-1.png" width="480" alt="Multi-Tenant Curator Platform — click to open full-screen presentation">
+  </a>
+</p>
+
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform/deck-light.html) · [dark version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform/deck.html)
+**📄 Slide deck (PDF):** [exports/deck.pdf](exports/deck.pdf) — download for print or offline.
 
 ---
 

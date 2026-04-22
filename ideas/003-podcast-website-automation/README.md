@@ -3,7 +3,14 @@
 **Date:** April 13, 2026
 **Context:** Response to Lindo.ai partnership inquiry from Emma — exploring whether to build a podcast website builder product, and if so, what it should look like.
 
-**📄 Slide deck (PDF):** [exports/podcast-website-builder-advisory.pdf](exports/podcast-website-builder-advisory.pdf) — open directly from GitHub to read or share.
+<p>
+  <a href="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation/deck-light.html">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation-slide-1.png" width="480" alt="Podcast Website Automation — click to open full-screen presentation">
+  </a>
+</p>
+
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation/deck-light.html) · [dark version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation/deck.html)
+**📄 Slide deck (PDF):** [exports/podcast-website-builder-advisory.pdf](exports/podcast-website-builder-advisory.pdf) — download for print or offline.
 
 ---
 

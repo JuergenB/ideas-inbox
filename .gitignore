@@ -4,3 +4,4 @@
 problems/**/notes/
 problems/**/private/
 problems/**/*.pdf
+node_modules/

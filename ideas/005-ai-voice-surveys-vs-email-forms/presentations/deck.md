@@ -65,7 +65,7 @@ footer: ''
 <!-- _paginate: false -->
 
 <div style="position: absolute; top: 32px; left: 40px;">
-  <img src="./images/polymash-logo.png" style="width: 48px; border-radius: 8px; opacity: 1;" />
+  <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/ai-voice-surveys-vs-email-forms/polymash-logo.png" style="width: 48px; border-radius: 8px; opacity: 1;" />
 </div>
 
 # Before You Email That Survey Link

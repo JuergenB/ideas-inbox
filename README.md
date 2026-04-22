@@ -44,6 +44,7 @@ ideas/
 | 003 | [Podcast Website Automation](ideas/003-podcast-website-automation/) | Research & Discussion | Lindo.ai / Emma | 2026-04-13 |
 | 004 | [Multi-Tenant Curator Platform](ideas/004-multi-tenant-curator-platform/) | Research & Discussion | Juergen Berkessel | 2026-04-21 |
 | 005 | [Voice Interviews vs. Email Forms](ideas/005-ai-voice-surveys-vs-email-forms/) | Presentation Ready | Juergen Berkessel | 2026-04-22 |
+| 006 | [Presentation Viewer Site for Ideas Inbox](ideas/006-presentation-viewer-site/) | In Progress | Juergen Berkessel | 2026-04-22 |
 
 ## Current Issues
 

@@ -4,7 +4,14 @@
 **Status:** Presentation ready — for office hours discussion
 **Context:** Generalized from the interview-research threads in [Idea 001 — Artist Directory](../001-artist-directory/) and [Idea 002 — PolyWiz / Vista Growth](../002-polywiz-demo-vista-growth/). Written up as a standalone piece so it can be reused whenever a team or collaborator is about to send a traditional email-driven survey.
 
-**📄 Slide deck (PDF):** [exports/deck.pdf](exports/deck.pdf) — open directly from GitHub to read or share.
+<p>
+  <a href="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/ai-voice-surveys-vs-email-forms/deck-light.html">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/ai-voice-surveys-vs-email-forms-slide-1.png" width="480" alt="Voice Interviews vs. Email Forms — click to open full-screen presentation">
+  </a>
+</p>
+
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/ai-voice-surveys-vs-email-forms/deck-light.html) · [dark version →](https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/ai-voice-surveys-vs-email-forms/deck.html)
+**📄 Slide deck (PDF):** [exports/deck.pdf](exports/deck.pdf) — download for print or offline.
 
 ---
 

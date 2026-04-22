@@ -44,7 +44,7 @@ footer: ''
 <!-- _header: '' -->
 <!-- _paginate: false -->
 
-<img src="./polymash-logo.png" style="width:56px; border-radius:12px; position:absolute; top:48px; right:64px;" />
+<img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform/polymash-logo.png" style="width:56px; border-radius:12px; position:absolute; top:48px; right:64px;" />
 
 # From One Newsletter to a Curation Platform
 
@@ -508,7 +508,7 @@ Start with done-for-you. Learn what the rubric workshop needs. Graduate when you
 <!-- _class: bg-hero -->
 <!-- _paginate: false -->
 
-<img src="./polymash-logo.png" style="width:56px; border-radius:12px; position:absolute; top:48px; right:64px;" />
+<img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform/polymash-logo.png" style="width:56px; border-radius:12px; position:absolute; top:48px; right:64px;" />
 
 # The Engine Works.
 
