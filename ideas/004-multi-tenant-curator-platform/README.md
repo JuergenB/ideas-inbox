@@ -4,13 +4,33 @@
 **Origin:** Juergen Berkessel
 **Status:** Research & Discussion
 
-A discussion paper exploring whether the engine powering *The Intersect: Art in Tech — Tech in Art* — a single-tenant curation app Polymash runs today — is worth repurposing as a multi-tenant platform for other two-topic verticals.
+**📄 Slide deck (PDF):** [exports/deck.pdf](exports/deck.pdf) — open directly from GitHub to read or share.
+
+---
+
+## What We Already Built
+
+Polymash runs a full-stack newsletter and podcast publishing platform in production today, called the **Intersect Curator**. It powers our own weekly newsletter *The Intersect: Art in Tech — Tech in Art* and its companion podcast.
+
+End-to-end, the system:
+
+- **Ingests hundreds of RSS feeds** on a 3-hour cron, deduplicates, and stores everything (not just high-relevance items) so articles don't get re-scored.
+- **Scores each article with AI** against a two-topic rubric (for us: "art × technology"). A blend of a deterministic term-score, a Claude Haiku contextual judgment, and a vector-similarity check against what the editor has previously picked.
+- **Learns the editor's taste over time.** Every thumbs-up and thumbs-down updates a Pinecone vector profile that shifts future rankings toward what the curator actually publishes.
+- **Helps the editor assemble each issue** from a mobile-first UI — browse, rate, comment (by voice), pick, drag to reorder, and generate the entry copy in the newsletter's brand voice.
+- **Generates cover art** via Replicate from a prompt template.
+- **Produces a companion podcast episode** for each issue — AI-hosted conversation via WonderCraft, mastered in Auphonic, published to Captivate.
+- **Publishes the newsletter** through Curated.co as the delivery rail.
+
+This paper is about whether the *engine underneath that product* is worth repurposing as a multi-tenant platform that runs other two-topic verticals for other clients — without rewriting the hard parts.
 
 ---
 
 ## TL;DR
 
-The Intersect Curator is a working production system: RSS → dedup → embed → score → curate → newsletter → podcast → publish. It was purpose-built for one show, but almost none of what it does is actually about "art" or "technology." Swap five thin domain-specific layers (feeds, rubric, taste profile, brand voice, visuals) and the same pipeline runs a "residential real estate × interest-rate policy" newsletter, or "EV batteries × mining supply chain," or "biotech × FDA policy."
+The Intersect Curator is a working production system that takes a two-topic idea ("art × technology") and ships a weekly newsletter plus a companion podcast from it — with the curator doing their job from a phone and AI doing everything between article ingestion and final publishing.
+
+Almost none of what that engine does is actually *about* art or technology. Art and technology are just the two topics we currently feed it. Swap five thin, per-client layers — feed list, intersection rubric, taste profile, brand voice, visual identity — and the same engine runs a "residential real estate × interest-rate policy" newsletter + podcast, or "EV batteries × mining supply chain," or "biotech × FDA policy."
 
 **The engine is ~90% generic. The remaining ~10% is per-client configuration plus a tenant-isolation layer we haven't built yet.** That gap is real but tractable — measured in weeks, not a rewrite. The harder question is non-technical: what business model does Polymash want to be in, and who writes the rubric for each client?
 
@@ -326,7 +346,7 @@ This paper is a conversation opener, not a commitment. In rough order, if the co
 For the skeptical reader. None of this is speculative:
 
 - [The Intersect newsletter](https://www.theintersect.art/) is running weekly in production
-- The curator app at [app.theintersect.art](https://app.theintersect.art) (internal) does ingestion every 3h across 240+ feeds
+- The curator app at [app.theintersect.art](https://app.theintersect.art) (internal) runs ingestion every 3h against a feed library of ~246 sources (per the 2026-04-15 validation pass: ~180 are actively returning usable content, the rest are redirects/dead and queued for cleanup)
 - The podcast episodes are produced by the pipeline end-to-end (WonderCraft → Auphonic → Captivate)
 - The taste profile has ~500+ rated articles seeding the Pinecone index
 - The scoring blend (55% Haiku + 45% taste similarity + up to 25% term bonus) has been tuned against ~3 months of editorial feedback

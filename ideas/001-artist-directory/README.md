@@ -4,6 +4,8 @@
 **Status:** Research & Discussion
 **Epic Issue:** [#1](https://github.com/JuergenB/ideas-inbox/issues/1)
 
+**📄 Slide deck (PDF):** [exports/discussion-deck.pdf](exports/discussion-deck.pdf) — open directly from GitHub to read or share. Also available as [PPTX](exports/discussion-deck.pptx) and [HTML](exports/discussion-deck.html).
+
 ---
 
 ## The Proposal

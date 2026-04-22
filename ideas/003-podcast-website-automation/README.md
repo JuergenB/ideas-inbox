@@ -3,6 +3,8 @@
 **Date:** April 13, 2026
 **Context:** Response to Lindo.ai partnership inquiry from Emma — exploring whether to build a podcast website builder product, and if so, what it should look like.
 
+**📄 Slide deck (PDF):** [exports/podcast-website-builder-advisory.pdf](exports/podcast-website-builder-advisory.pdf) — open directly from GitHub to read or share.
+
 ---
 
 ## Executive Summary

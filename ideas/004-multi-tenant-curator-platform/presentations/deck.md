@@ -66,7 +66,7 @@ A discussion paper · Juergen Berkessel · Polymash · April 2026
   <div style="flex:1; background:var(--s); border:1px solid var(--b); border-radius:10px; padding:22px;">
     <div style="font-family:'Outfit'; font-weight:600; font-size:0.8em; color:var(--a); margin-bottom:10px;">WHAT EXISTS</div>
     <div style="font-size:0.78em; color:var(--body); line-height:1.7;">
-      A single-tenant Next.js app that ingests 240+ RSS feeds, scores with a Pinecone taste profile + Claude, assembles a newsletter, and produces a podcast end-to-end. In production weekly.
+      A single-tenant Next.js app that ingests 200+ RSS feeds, scores with a Pinecone taste profile + Claude, assembles a newsletter, and produces a podcast end-to-end. In production weekly.
     </div>
   </div>
   <div style="flex:1; background:var(--s); border:1px solid var(--b); border-radius:10px; padding:22px;">
@@ -127,7 +127,7 @@ The code doesn't know what domain it's in. That's the unlock.
 <div style="margin-top:16px; display:flex; align-items:center; gap:8px;">
   <div style="flex:1; background:var(--s); border:1px solid var(--b); border-radius:8px; padding:12px 14px; text-align:center;">
     <div style="font-family:'Outfit'; font-weight:600; font-size:0.65em; color:var(--a);">INGEST</div>
-    <div style="font-size:0.62em; color:var(--body); margin-top:4px; line-height:1.4;">240+ RSS feeds<br>every 3 hours</div>
+    <div style="font-size:0.62em; color:var(--body); margin-top:4px; line-height:1.4;">200+ RSS feeds<br>every 3 hours</div>
   </div>
   <div style="color:var(--m); font-size:1em;">→</div>
   <div style="flex:1; background:var(--s); border:1px solid var(--b); border-radius:8px; padding:12px 14px; text-align:center;">

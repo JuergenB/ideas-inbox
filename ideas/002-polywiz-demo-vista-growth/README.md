@@ -5,6 +5,10 @@
 **Meeting:** Steve Beshara & Jackie McGuinn, 2026-04-12
 **Context:** Demo of PolyWiz system + inspiration for Vista Growth's internal tool development
 
+**📄 Slide deck (PDF):** [exports/presentation.pdf](exports/presentation.pdf) — open directly from GitHub.
+**📄 Interview protocol:** [exports/interview-protocol.pdf](exports/interview-protocol.pdf)
+**📄 Supporting research (AI interview platforms):** [exports/research-ai-interview-platforms.pdf](exports/research-ai-interview-platforms.pdf)
+
 ---
 
 ## The Lead: A Marketing Agency in a Box
