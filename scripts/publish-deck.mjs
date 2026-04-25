@@ -148,6 +148,20 @@ function darkToLight(src) {
   out = out.replace(/color:\s*#aaa\b/g, "color: #555")
   out = out.replace(/color:\s*#555\b/g, "color: #888")
   out = out.replace(/color:\s*#151515\b/g, "color: #dddddd")
+  // Hardcoded dark greyscale backgrounds on inline-styled cards/panels. These
+  // don't flow through :root CSS variables so the top transforms don't catch
+  // them — without these rules a slide with inline `background: #111` stays
+  // dark on a light-mode page, giving dark-on-dark text. Order matters only
+  // in that more-specific (longer) hex values come before shorter ones; here
+  // each rule is on a distinct pattern.
+  out = out.replace(/background:\s*#0a0a0a\b/gi, "background: #ffffff")
+  out = out.replace(/background:\s*#0c0c0c\b/gi, "background: #ffffff")
+  out = out.replace(/background:\s*#111\b/gi, "background: #ffffff")
+  out = out.replace(/background:\s*#161616\b/gi, "background: #f5f5f5")
+  out = out.replace(/background:\s*#1a1a1a\b/gi, "background: #f0f0f0")
+  out = out.replace(/border:\s*1px solid #1a1a1a\b/gi, "border: 1px solid #e5e5e5")
+  out = out.replace(/border:\s*1px solid #222\b/gi, "border: 1px solid #e5e5e5")
+  out = out.replace(/border:\s*2px solid #0c0c0c\b/gi, "border: 2px solid #d4d4d4")
   return out
 }
 
