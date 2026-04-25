@@ -14,6 +14,7 @@
 
 **🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/007-polywiz-paid-ads-engine/exports/presentation-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/007-polywiz-paid-ads-engine/exports/presentation.html)
 **📄 Slide deck (PDF):** [exports/presentation.pdf](exports/presentation.pdf) — download for print or offline.
+**📄 Sources & references:** [research/sources.md](research/sources.md) — full URLs, verbatim quotes, retrieval dates, and per-claim defensibility notes for every statistic cited in the deck.
 **📄 Implementation sub-issues (research/):** Phase 0 prerequisites, Phase 1 Meta MVP build-out, Phase 2 LinkedIn Lead Gen + Pinterest, Phase 3 video pipeline. See [`research/`](research/).
 
 ---
