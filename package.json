@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/JuergenB/ideas-inbox#readme",
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
     "@vercel/blob": "^2.3.3"
   }
 }

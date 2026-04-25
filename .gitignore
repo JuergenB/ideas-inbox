@@ -6,3 +6,8 @@ problems/**/private/
 problems/**/*.pdf
 node_modules/
 .vercel
+
+# Generated build artifacts from scripts/publish-deck.mjs
+ideas/*/presentations/*.light.md
+ideas/*/exports/.audit/
+ideas/*/exports/.thumb-*

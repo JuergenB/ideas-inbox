@@ -1,27 +1,35 @@
 #!/usr/bin/env node
 /*
- * publish-deck.mjs — publish one MARP deck to Vercel Blob for web viewing.
+ * publish-deck.mjs — publish one MARP deck and verify it visually.
  *
- * For a given idea slug:
- *   1. Upload any `./polymash-logo.png` (or `./images/*.png`) image referenced
- *      in the deck source to Blob under `presentations/<idea-slug>/...`
- *   2. Rewrite the deck source so image refs point at absolute Blob URLs.
- *   3. Regenerate HTML + slide-1 PNG via marp-cli.
- *   4. Upload the HTML to Blob as `presentations/<idea-slug>/deck.html`.
- *   5. Upload the slide-1 PNG to Blob as `presentations/<idea-slug>-slide-1.png`.
+ * Pipeline:
+ *   1. Upload referenced local images to Vercel Blob (presentations/<slug>/...).
+ *   2. Rewrite the dark source so image refs are absolute Blob URLs.
+ *   3. Lint the dark source — warn on hardcoded `#fff`, dark-photo bgs,
+ *      SVG `fill="#fff"`, etc. Print, do not block (yet).
+ *   4. Generate a VISIBLE light variant at presentations/<deck>.light.md
+ *      (gitignored — see .gitignore). Includes a DO-NOT-EDIT header so
+ *      the Cursor MARP plugin can preview it directly.
+ *   5. Render dark HTML, light HTML, and PDF into ideas/<idea>/exports/.
+ *   6. Render slide-1 PNG from light variant; upload to Blob as the README
+ *      thumbnail.
+ *   7. Run a Playwright visual audit of BOTH HTML variants — screenshot
+ *      every slide, run a contrast heuristic, write a readability report.
+ *      Audit screenshots land in exports/.audit/<dark|light>/ (gitignored).
  *
  * Requires BLOB_READ_WRITE_TOKEN in the environment.
  *
  * Usage:
  *   node scripts/publish-deck.mjs <idea-folder-name> [<deck-basename>]
- * Example:
- *   node scripts/publish-deck.mjs 004-multi-tenant-curator-platform deck
  */
 
 import { put } from "@vercel/blob"
 import { execSync } from "node:child_process"
 import fs from "node:fs"
 import path from "node:path"
+import { darkToLight } from "./lib/dark-to-light.mjs"
+import { lintDeck, printLintReport } from "./lib/lint-deck.mjs"
+import { auditDeck, printAuditReport } from "./lib/audit-deck.mjs"
 
 const token = process.env.BLOB_READ_WRITE_TOKEN
 if (!token) {
@@ -50,7 +58,7 @@ const deckBasename =
   deckBasenameArg ||
   fs
     .readdirSync(presentationsDir)
-    .find((f) => f.endsWith(".md") && !f.startsWith("."))
+    .find((f) => f.endsWith(".md") && !f.startsWith(".") && !f.endsWith(".light.md"))
     ?.replace(/\.md$/, "")
 
 if (!deckBasename) {
@@ -81,6 +89,7 @@ async function uploadFile(localPath, blobPathname, contentType) {
 
 const source = fs.readFileSync(deckSourcePath, "utf8")
 
+// ── 1. Upload referenced local images ───────────────────────────────────
 const imageRefs = [
   ...source.matchAll(/src="(\.\/[^"]+\.(png|jpg|jpeg|gif|svg))"/g),
 ].map((m) => m[1])
@@ -126,48 +135,46 @@ if (rewrittenSourceChanged) {
 
 fs.mkdirSync(exportsDir, { recursive: true })
 
-/**
- * Transform a dark-theme MARP source to a light-theme variant by substituting
- * the :root palette tokens and a handful of hardcoded greyscale colors. Orange
- * / blue / green / gold / red accent colors are preserved. The transform is
- * token-level — it does not re-render gradients or borders that use very
- * dark-on-dark subtle hex values (those may look slightly off on light bg;
- * acceptable for MVP, can be tuned later).
- */
-function darkToLight(src) {
-  let out = src
-  out = out.replace(/--bg:\s*#[0-9a-fA-F]{3,8}/g, "--bg: #fafafa")
-  out = out.replace(/--s:\s*#[0-9a-fA-F]{3,8}/g, "--s: #ffffff")
-  out = out.replace(/--b:\s*#[0-9a-fA-F]{3,8}/g, "--b: #e5e5e5")
-  out = out.replace(/--t:\s*#[0-9a-fA-F]{3,8}/g, "--t: #0c0c0c")
-  out = out.replace(/--body:\s*#[0-9a-fA-F]{3,8}/g, "--body: #333333")
-  out = out.replace(/--m:\s*#[0-9a-fA-F]{3,8}/g, "--m: #666666")
-  out = out.replace(/--label:\s*#[0-9a-fA-F]{3,8}/g, "--label: #555555")
-  out = out.replace(/background-color:\s*#0c0c0c/g, "background-color: #fafafa")
-  out = out.replace(/rgba\(255,\s*255,\s*255,/g, "rgba(0,0,0,")
-  out = out.replace(/color:\s*#aaa\b/g, "color: #555")
-  out = out.replace(/color:\s*#555\b/g, "color: #888")
-  out = out.replace(/color:\s*#151515\b/g, "color: #dddddd")
-  // Hardcoded dark greyscale backgrounds on inline-styled cards/panels. These
-  // don't flow through :root CSS variables so the top transforms don't catch
-  // them — without these rules a slide with inline `background: #111` stays
-  // dark on a light-mode page, giving dark-on-dark text. Order matters only
-  // in that more-specific (longer) hex values come before shorter ones; here
-  // each rule is on a distinct pattern.
-  out = out.replace(/background:\s*#0a0a0a\b/gi, "background: #ffffff")
-  out = out.replace(/background:\s*#0c0c0c\b/gi, "background: #ffffff")
-  out = out.replace(/background:\s*#111\b/gi, "background: #ffffff")
-  out = out.replace(/background:\s*#161616\b/gi, "background: #f5f5f5")
-  out = out.replace(/background:\s*#1a1a1a\b/gi, "background: #f0f0f0")
-  out = out.replace(/border:\s*1px solid #1a1a1a\b/gi, "border: 1px solid #e5e5e5")
-  out = out.replace(/border:\s*1px solid #222\b/gi, "border: 1px solid #e5e5e5")
-  out = out.replace(/border:\s*2px solid #0c0c0c\b/gi, "border: 2px solid #d4d4d4")
-  return out
+// ── 2. Lint the dark source ──────────────────────────────────────────────
+console.log(`  running pre-publish lint...`)
+const warnings = lintDeck(rewritten)
+const { warn, info } = printLintReport(warnings)
+if (warn > 0) {
+  console.log(`  ↳ ${warn} warn-level finding(s) — proceeding (lint is warn-only for now).`)
 }
 
-const lightSourcePath = path.join(presentationsDir, `.${deckBasename}.light.md`)
-fs.writeFileSync(lightSourcePath, darkToLight(rewritten), "utf8")
+// ── 3. Emit visible light variant ────────────────────────────────────────
+//    MARP frontmatter must start at line 1 (no preceding comment), so the
+//    DO-NOT-EDIT marker is injected as a comment on the marp: line of the
+//    YAML block via a YAML inline comment, plus a Markdown comment AFTER
+//    the closing frontmatter `---`.
+const lightSourcePath = path.join(presentationsDir, `${deckBasename}.light.md`)
+const lightSrc = darkToLight(rewritten)
+// Insert a `<!-- GENERATED ... -->` comment right after the frontmatter close
+// (the second `---` line). This keeps MARP frontmatter intact.
+const fmCloseIdx = (() => {
+  const lines = lightSrc.split("\n")
+  if (lines[0]?.trim() !== "---") return -1
+  for (let i = 1; i < lines.length; i++) {
+    if (lines[i].trim() === "---") return i
+  }
+  return -1
+})()
+const lightHeader =
+  "<!-- GENERATED — do not edit; regenerated by scripts/publish-deck.mjs " +
+  `from ${deckBasename}.md. This file is gitignored. -->\n`
+let lightOut
+if (fmCloseIdx > 0) {
+  const lines = lightSrc.split("\n")
+  lines.splice(fmCloseIdx + 1, 0, "", lightHeader.trim())
+  lightOut = lines.join("\n")
+} else {
+  lightOut = lightHeader + lightSrc
+}
+fs.writeFileSync(lightSourcePath, lightOut, "utf8")
+console.log(`  ✎ wrote ${path.relative(repoRoot, lightSourcePath)} (visible, gitignored)`)
 
+// ── 4. Render HTML + PDF ─────────────────────────────────────────────────
 const darkHtmlOut = path.join(exportsDir, `${deckBasename}.html`)
 const lightHtmlOut = path.join(exportsDir, `${deckBasename}-light.html`)
 console.log(`  → regenerating ${deckBasename}.html (dark) and ${deckBasename}-light.html`)
@@ -187,6 +194,7 @@ execSync(
   { cwd: repoRoot, stdio: ["ignore", "ignore", "inherit"] },
 )
 
+// ── 5. Slide-1 PNG thumbnail (from light) ────────────────────────────────
 const thumbnailTmpDir = fs.mkdtempSync(path.join(exportsDir, ".thumb-"))
 const thumbnailStem = path.join(thumbnailTmpDir, `${deckBasename}-light`)
 console.log(`  → rendering slide PNGs from light variant to extract slide-1`)
@@ -204,8 +212,23 @@ const thumbnailBlobPath = `presentations/${ideaSlug}-slide-1.png`
 const thumbUrl = await uploadFile(slideOneAbs, thumbnailBlobPath, "image/png")
 
 fs.rmSync(thumbnailTmpDir, { recursive: true, force: true })
-fs.unlinkSync(lightSourcePath)
 
+// ── 6. Visual audit (Playwright) ─────────────────────────────────────────
+const auditRoot = path.join(exportsDir, ".audit")
+fs.rmSync(auditRoot, { recursive: true, force: true })
+console.log(`\n  running Playwright visual audit (light + dark)...`)
+let blockingTotal = 0
+try {
+  const lightReport = await auditDeck(lightHtmlOut, path.join(auditRoot, "light"))
+  blockingTotal += printAuditReport(lightReport, "light")
+  const darkReport = await auditDeck(darkHtmlOut, path.join(auditRoot, "dark"))
+  blockingTotal += printAuditReport(darkReport, "dark")
+} catch (err) {
+  console.warn(`  ⚠ audit failed to run: ${err.message}`)
+  console.warn(`    (publish continues — install Playwright with 'npx playwright install chromium' if missing)`)
+}
+
+// ── 7. Done ──────────────────────────────────────────────────────────────
 const vercelBase = "https://ideas-inbox-mocha.vercel.app"
 const vercelLightUrl = `${vercelBase}/ideas/${ideaFolder}/exports/${deckBasename}-light.html`
 const vercelDarkUrl = `${vercelBase}/ideas/${ideaFolder}/exports/${deckBasename}.html`
@@ -215,4 +238,10 @@ console.log(`  HTML (light, default): ${vercelLightUrl}`)
 console.log(`  HTML (dark):           ${vercelDarkUrl}`)
 console.log(`  Thumbnail:             ${thumbUrl}`)
 console.log(`  PDF:                   ${pdfOutPath} (local)`)
+console.log(`  Audit screenshots:     ${path.relative(repoRoot, auditRoot)}/{light,dark}/slide-NN.png`)
+if (blockingTotal > 0) {
+  console.log(`\n  ⚠ ${blockingTotal} readability finding(s) — review .audit screenshots before committing.`)
+} else {
+  console.log(`\n  ✓ visual audit clean.`)
+}
 console.log(`\n  HTML files written to ${exportsDir} — commit + push for Vercel to serve them.`)

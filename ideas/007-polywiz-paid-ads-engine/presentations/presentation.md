@@ -61,19 +61,17 @@ footer: ''
 <!-- _header: '' -->
 <!-- _paginate: false -->
 
-![bg brightness:0.12](https://images.unsplash.com/photo-1551434678-e076c223a692?w=1400)
+<div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--a); letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 28px;">Stakeholder briefing · April 2026</div>
 
 # PolyWiz Paid Ads
 
-<div style="font-family: 'Raleway'; font-weight: 300; font-size: 1em; color: #ffffffb0; margin-top: 8px;">A proposal to turn newsletter signups into an autopilot system</div>
+<div style="font-family: 'Raleway'; font-weight: 300; font-size: 1.1em; color: var(--body); margin-top: 12px; max-width: 760px;">A proposal to turn newsletter signups into an autopilot system</div>
 
-<div style="display: flex; gap: 8px; margin-top: 24px;">
-  <span style="background: #ff6b1a15; border: 1px solid #ff6b1a33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.55em; color: #ff6b1aaa; font-weight: 400;">$250–$500 / brand / month</span>
-  <span style="background: #ff6b1a15; border: 1px solid #ff6b1a33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.55em; color: #ff6b1aaa; font-weight: 400;">Meta MVP</span>
-  <span style="background: #ff6b1a15; border: 1px solid #ff6b1a33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.55em; color: #ff6b1aaa; font-weight: 400;">The Intersect Pilot</span>
+<div style="display: flex; gap: 10px; margin-top: 36px;">
+  <span style="background: #ff6b1a; color: #ffffff; border-radius: 20px; padding: 6px 16px; font-family: 'Outfit'; font-size: 0.6em; font-weight: 600; letter-spacing: 0.04em;">$250–$500 / brand / month</span>
+  <span style="background: transparent; border: 1.5px solid #ff6b1a; color: #ff6b1a; border-radius: 20px; padding: 5px 15px; font-family: 'Outfit'; font-size: 0.6em; font-weight: 600; letter-spacing: 0.04em;">Meta MVP</span>
+  <span style="background: transparent; border: 1.5px solid #ff6b1a; color: #ff6b1a; border-radius: 20px; padding: 5px 15px; font-family: 'Outfit'; font-size: 0.6em; font-weight: 600; letter-spacing: 0.04em;">The Intersect Pilot</span>
 </div>
-
-<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.7em; color: #ffffff80; margin-top: 30px;">Stakeholder briefing · April 2026</div>
 
 ---
 
@@ -295,8 +293,8 @@ footer: ''
     <svg width="180" height="180" viewBox="0 0 180 180">
       <circle cx="90" cy="90" r="74" fill="none" stroke="#111" stroke-width="8"/>
       <circle cx="90" cy="90" r="74" fill="none" stroke="var(--r)" stroke-width="8" stroke-dasharray="465" stroke-dashoffset="465" stroke-linecap="round" transform="rotate(-90 90 90)"/>
-      <text x="90" y="84" text-anchor="middle" fill="#fff" font-family="Outfit" font-size="36" font-weight="800">1</text>
-      <text x="90" y="106" text-anchor="middle" fill="#666" font-family="Outfit" font-size="11" font-weight="600" letter-spacing="1.5">ZERNIO ADD-ON</text>
+      <text x="90" y="84" text-anchor="middle" fill="#ff6b1a" font-family="Outfit" font-size="36" font-weight="800">1</text>
+      <text x="90" y="106" text-anchor="middle" fill="#888" font-family="Outfit" font-size="11" font-weight="600" letter-spacing="1.5">ZERNIO ADD-ON</text>
     </svg>
     <div style="font-size: 0.65em; color: var(--body); margin-top: 6px; max-width: 180px;">$50/mo upgrade. Without it, every API call returns "Ads add-on required."</div>
   </div>
@@ -304,8 +302,8 @@ footer: ''
     <svg width="180" height="180" viewBox="0 0 180 180">
       <circle cx="90" cy="90" r="74" fill="none" stroke="#111" stroke-width="8"/>
       <circle cx="90" cy="90" r="74" fill="none" stroke="var(--y)" stroke-width="8" stroke-dasharray="465" stroke-dashoffset="310" stroke-linecap="round" transform="rotate(-90 90 90)"/>
-      <text x="90" y="84" text-anchor="middle" fill="#fff" font-family="Outfit" font-size="36" font-weight="800">2</text>
-      <text x="90" y="106" text-anchor="middle" fill="#666" font-family="Outfit" font-size="11" font-weight="600" letter-spacing="1.5">PIXELS ON SITES</text>
+      <text x="90" y="84" text-anchor="middle" fill="#ff6b1a" font-family="Outfit" font-size="36" font-weight="800">2</text>
+      <text x="90" y="106" text-anchor="middle" fill="#888" font-family="Outfit" font-size="11" font-weight="600" letter-spacing="1.5">PIXELS ON SITES</text>
     </svg>
     <div style="font-size: 0.65em; color: var(--body); margin-top: 6px; max-width: 180px;">Artsville is missing Meta Pixel. Intersect is missing CAPI. Without them iOS users are invisible.</div>
   </div>
@@ -313,8 +311,8 @@ footer: ''
     <svg width="180" height="180" viewBox="0 0 180 180">
       <circle cx="90" cy="90" r="74" fill="none" stroke="#111" stroke-width="8"/>
       <circle cx="90" cy="90" r="74" fill="none" stroke="var(--y)" stroke-width="8" stroke-dasharray="465" stroke-dashoffset="370" stroke-linecap="round" transform="rotate(-90 90 90)"/>
-      <text x="90" y="84" text-anchor="middle" fill="#fff" font-family="Outfit" font-size="36" font-weight="800">3</text>
-      <text x="90" y="106" text-anchor="middle" fill="#666" font-family="Outfit" font-size="11" font-weight="600" letter-spacing="1.5">CURATED PLATFORM</text>
+      <text x="90" y="84" text-anchor="middle" fill="#ff6b1a" font-family="Outfit" font-size="36" font-weight="800">3</text>
+      <text x="90" y="106" text-anchor="middle" fill="#888" font-family="Outfit" font-size="11" font-weight="600" letter-spacing="1.5">CURATED PLATFORM</text>
     </svg>
     <div style="font-size: 0.65em; color: var(--body); margin-top: 6px; max-width: 180px;">The Intersect runs on Curated (sunset 2024). Constrains tracking. Migration plan needed.</div>
   </div>
@@ -508,10 +506,8 @@ footer: ''
 <!-- _header: '' -->
 <!-- _paginate: false -->
 
-![bg brightness:0.08](https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=1400)
-
-<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff6b1a" stroke-width="1.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff6b1a" stroke-width="1.4" style="margin-bottom: 18px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
 
 # Let's start Phase 0
 
-<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.9em; color: #ffffff99; margin-top: 8px;">Questions? Open the GitHub epic — issue #181</div>
+<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.95em; color: var(--body); margin-top: 12px;">Questions? Open the GitHub epic — issue #181</div>
