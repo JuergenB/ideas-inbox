@@ -889,3 +889,39 @@ footer: ''
     <div style="font-size: 0.78em; color: var(--t); font-weight: 300; line-height: 1.5;">What's the <strong>minimum viable test</strong>? Can we validate willingness to pay before writing a single line of code?</div>
   </div>
 </div>
+
+---
+
+### Sources & references
+
+# Sources & References
+
+<div style="font-family: 'Raleway'; font-weight: 400; font-size: 0.95em; color: var(--body); margin: 8px 0 28px;">
+All research lives in <a href="https://github.com/JuergenB/ideas-inbox/tree/main/ideas/001-artist-directory/research" style="color: var(--a); text-decoration: underline; font-weight: 600;">ideas/001-artist-directory/research/</a> — six Perplexity deep-research investigations (sub-1 to sub-6) plus an AI-interview follow-on, with <a href="https://github.com/JuergenB/ideas-inbox/blob/main/ideas/001-artist-directory/research/sources.md" style="color: var(--a); text-decoration: underline; font-weight: 600;">sources.md</a> capturing every URL, retrieval date, and defensibility note per claim.
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; row-gap: 10px; font-size: 0.7em; line-height: 1.5; color: var(--body);">
+
+  <div><strong style="color: var(--t); font-weight: 600;">Beowolff acquired Artnet ~$73.7M + Artsy stake (2025)</strong> — <a href="https://news.artnet.com/market/beowolff-capital-artnet-acquisition" style="color: inherit; text-decoration: underline;">Artnet News</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Artsy galleries $200–$3K+/mo; Saatchi 40% commission</strong> — <a href="https://partners.artsy.net/" style="color: inherit; text-decoration: underline;">Artsy Partner Report 2025</a> · <a href="https://support.saatchiart.com/hc/en-us/articles/360030395771" style="color: inherit; text-decoration: underline;">Saatchi support</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Artwork Archive $6–$139/mo across 5 tiers</strong> — <a href="https://www.artworkarchive.com/pricing" style="color: inherit; text-decoration: underline;">artworkarchive.com/pricing</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Mass-market wall art $12.96B → $103B by 2034</strong> — <a href="https://www.grandviewresearch.com/industry-analysis/wall-art-market-report" style="color: inherit; text-decoration: underline;">Grand View Research, 2024</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Global interior design services $128B (2024)</strong> — <a href="https://www.grandviewresearch.com/industry-analysis/interior-design-services-market" style="color: inherit; text-decoration: underline;">Grand View Research</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Art gallery software market $2.3B → $5.4B by 2033</strong> — <a href="https://market.us/report/art-gallery-software-market/" style="color: inherit; text-decoration: underline;">Market.us, 2024</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">75% early-submitter acceptance vs 60% late; 58→79% on repeats</strong> — <a href="https://sideartsmag.com/jurying-art-show-applications/" style="color: inherit; text-decoration: underline;">Side Arts / CaFE jurying analysis</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">B2B SaaS avg CPL $237; arts/culture est. $300–$500</strong> — <a href="https://firstpagesage.com/seo-blog/the-average-cost-per-lead-by-industry-fc/" style="color: inherit; text-decoration: underline;">First Page Sage 2024</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">NEA Grants for Arts Projects $10K–$100K</strong> — <a href="https://www.arts.gov/grants/grants-for-arts-projects" style="color: inherit; text-decoration: underline;">arts.gov</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">AI interviews ~$1–1.50 per 15-min call (Retell.ai)</strong> — <a href="https://www.retellai.com/pricing" style="color: inherit; text-decoration: underline;">retellai.com/pricing</a> · <a href="https://www.ribbon.ai/pricing" style="color: inherit; text-decoration: underline;">Ribbon AI $499/mo</a></div>
+
+</div>
+
+<div style="font-size: 0.62em; color: var(--m); margin-top: 22px;">Plus internal/first-party data — 1,000+ artists, 8,000+ AI-enriched artworks in the Arterial production database — and synthesized benchmarks (50–65% messaging-as-#1-driver, 70–90% AI-interview completion, smoke-test CTR thresholds) flagged with defensibility notes in <code>research/sources.md</code>.</div>

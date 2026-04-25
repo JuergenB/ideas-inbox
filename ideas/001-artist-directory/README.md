@@ -12,6 +12,7 @@
 
 **🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/001-artist-directory/exports/discussion-deck-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/001-artist-directory/exports/discussion-deck.html)
 **📄 Slide deck (PDF):** [exports/discussion-deck.pdf](exports/discussion-deck.pdf) — download for print or offline. Also available as [PPTX](exports/discussion-deck.pptx).
+**📄 Sources & references:** [research/sources.md](research/sources.md) — full URLs, retrieval dates, and per-claim defensibility notes for every statistic cited in the deck.
 
 ---
 
