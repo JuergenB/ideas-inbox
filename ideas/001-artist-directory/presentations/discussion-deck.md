@@ -54,7 +54,7 @@ footer: ''
 <div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.85em; color: #ffffff44; margin-top: 24px;">Juergen & Scott · April 2026</div>
 
 <div style="display: flex; gap: 8px; margin-top: 16px;">
-  <span style="background: #0199fe15; border: 1px solid #0199fe33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.5em; color: #0199feaa; font-weight: 400;">5 Research Investigations</span>
+  <span style="background: #0199fe15; border: 1px solid #0199fe33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.5em; color: #0199feaa; font-weight: 400;">6 Research Investigations</span>
   <span style="background: #0199fe15; border: 1px solid #0199fe33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.5em; color: #0199feaa; font-weight: 400;">200+ Citations</span>
   <span style="background: #0199fe15; border: 1px solid #0199fe33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.5em; color: #0199feaa; font-weight: 400;">Idea 001</span>
 </div>
@@ -891,6 +891,8 @@ footer: ''
 </div>
 
 ---
+
+<!-- _class: bg-dots -->
 
 ### Sources & references
 

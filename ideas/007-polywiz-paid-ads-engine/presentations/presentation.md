@@ -40,6 +40,18 @@ style: |
 
   section::after { font-family: 'Outfit'; font-size: 0.6em; color: #151515; }
 
+  /* Edge-glow background classes — dark-mode tuned. The publish pipeline's
+     darkToLight() transforms background colors and rgba(255,255,255,...)
+     overlays for the light variant; orange/blue/green/gold accent colors
+     are preserved. Apply via `<!-- _class: bg-glow-orange -->` etc. */
+  section.bg-glow { background-color: #0c0c0c; background-image: radial-gradient(ellipse at 50% 50%, transparent 25%, rgba(255,107,26,0.20) 100%), radial-gradient(ellipse at 0% 100%, rgba(34,197,94,0.14) 0%, transparent 50%); }
+  section.bg-glow-orange { background-color: #0c0c0c; background-image: radial-gradient(ellipse at 50% 50%, transparent 25%, rgba(255,107,26,0.22) 100%); }
+  section.bg-glow-green { background-color: #0c0c0c; background-image: radial-gradient(ellipse at 50% 50%, transparent 25%, rgba(34,197,94,0.18) 100%), radial-gradient(ellipse at 100% 0%, rgba(34,197,94,0.12) 0%, transparent 50%); }
+  section.bg-glow-gold { background-color: #0c0c0c; background-image: radial-gradient(ellipse at 50% 50%, transparent 25%, rgba(245,166,35,0.18) 100%); }
+  section.bg-dots { background-color: #0c0c0c; background-image: radial-gradient(ellipse at 50% 50%, transparent 25%, rgba(1,153,254,0.14) 100%), radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px); background-size: auto, 24px 24px; }
+  section.bg-grid { background-color: #0c0c0c; background-image: radial-gradient(ellipse at 50% 50%, transparent 25%, rgba(245,166,35,0.14) 100%), linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: auto, 48px 48px, 48px 48px; }
+  section.bg-hero { background-color: #0c0c0c; background-image: radial-gradient(ellipse at 50% 50%, transparent 20%, rgba(1,153,254,0.25) 100%); }
+
   header { text-align: right; padding: 0; margin: 0; }
   header img { margin: 0; }
 
@@ -57,9 +69,13 @@ header: ''
 footer: ''
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead bg-hero -->
 <!-- _header: '' -->
 <!-- _paginate: false -->
+
+<div style="position: absolute; top: 32px; left: 40px;">
+  <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-paid-ads-engine/polymash-logo.png" style="width: 48px; border-radius: 8px; opacity: 0.85;" />
+</div>
 
 <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--a); letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 28px;">Stakeholder briefing · April 2026</div>
 
@@ -74,6 +90,8 @@ footer: ''
 </div>
 
 ---
+
+<!-- _class: bg-glow-orange -->
 
 ### The opportunity
 
@@ -103,6 +121,8 @@ footer: ''
 <div style="margin-top: 24px; font-weight: 300; font-size: 0.85em; color: var(--label);">Translation for the brands: <strong>more newsletter subscribers, more Instagram followers, lower cost per acquisition, less hand-holding.</strong></div>
 
 ---
+
+<!-- _class: bg-glow -->
 
 ### What this actually is
 
@@ -144,6 +164,8 @@ footer: ''
 
 ---
 
+<!-- _class: bg-grid -->
+
 ### What we already have vs. what's new
 
 ## The build is mostly extension, not invention
@@ -183,6 +205,8 @@ footer: ''
 <div style="margin-top: 24px; font-weight: 300; font-size: 0.78em; color: var(--label); text-align: center;">The creative engine is the moat. The new pieces wire it into Meta's ad system.</div>
 
 ---
+
+<!-- _class: bg-dots -->
 
 ### Platform-by-platform fit
 
@@ -249,6 +273,8 @@ footer: ''
 
 ---
 
+<!-- _class: bg-glow-gold -->
+
 ### What CPA we should expect
 
 ## Realistic targets — not the hype
@@ -283,6 +309,8 @@ footer: ''
 <div style="margin-top: 24px; font-weight: 300; font-size: 0.78em; color: var(--label);">At $250/mo and a $2 CPA, expect <strong>~125 new newsletter subscribers per brand per month.</strong> The Intersect, NRA, and Artsville together: <strong>~375 net-new subscribers/month for $750 + $50 Zernio.</strong></div>
 
 ---
+
+<!-- _class: bg-glow-orange -->
 
 ### What's blocking us today
 
@@ -322,6 +350,8 @@ footer: ''
 
 ---
 
+<!-- _class: bg-grid -->
+
 ### Pixel status — verified 2026-04-24
 
 ## Where each brand stands today
@@ -356,6 +386,8 @@ footer: ''
 <div style="margin-top: 18px; font-weight: 300; font-size: 0.78em; color: var(--label);">Without server-side <abbr title="Conversions API — server-to-server tracking that bypasses iOS / Safari / ad blockers">CAPI</abbr>, browser tracking captures only 70–80% of conversions. With CAPI: 90–95%. Cost-per-result drops <strong>17.8%</strong> when CAPI is on.</div>
 
 ---
+
+<!-- _class: bg-glow-green -->
 
 ### Phase plan
 
@@ -401,6 +433,8 @@ footer: ''
 
 ---
 
+<!-- _class: bg-glow-orange -->
+
 ### Risks
 
 ## What could go wrong, and how we'll catch it
@@ -431,6 +465,8 @@ footer: ''
 </details>
 
 ---
+
+<!-- _class: bg-grid -->
 
 ### Decisions we need from you
 
@@ -473,6 +509,8 @@ footer: ''
 
 ---
 
+<!-- _class: bg-glow-green -->
+
 ### What we're asking for
 
 ## A green light to start Phase 0
@@ -502,7 +540,7 @@ footer: ''
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead bg-hero -->
 <!-- _header: '' -->
 <!-- _paginate: false -->
 
@@ -513,6 +551,8 @@ footer: ''
 <div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.95em; color: var(--body); margin-top: 12px;">Questions? Open the GitHub epic — <a href="https://github.com/JuergenB/polywiz-app/issues/181" style="color: var(--a); text-decoration: underline; font-weight: 500;">issue #181</a></div>
 
 ---
+
+<!-- _class: bg-dots -->
 
 ### Sources & references
 

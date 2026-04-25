@@ -583,6 +583,8 @@ footer: ''
 
 ---
 
+<!-- _class: bg-dots -->
+
 ### Sources & references
 
 # Sources & References

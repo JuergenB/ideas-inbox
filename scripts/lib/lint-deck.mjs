@@ -76,7 +76,58 @@ export function lintDeck(src) {
     }
   }
 
+  // Whole-source checks (not per-line). These catch deck-level conventions
+  // codified in the marp-slides skill — bg-pattern classes for visual depth
+  // in light mode, and a logo on the lead slide for brand consistency.
+  // Idea 007 was authored without these and looked visually thin compared to
+  // its siblings until the regression was caught manually. Lint catches it now.
+  const wholeSourceWarnings = lintWholeSource(src)
+  warnings.push(...wholeSourceWarnings)
+
   return warnings
+}
+
+function lintWholeSource(src) {
+  const out = []
+
+  // bg-pattern classes — the deck should have at least one section.bg-*
+  // rule defined in its style block. Without these, light mode renders
+  // as flat grey/white, losing the depth that makes the deck feel finished.
+  if (!/section\.bg-[a-z-]+\s*\{/i.test(src)) {
+    out.push({
+      rule: "no-bg-pattern-classes",
+      line: 1,
+      snippet: "<deck has no `section.bg-*` rules in its style block>",
+      description:
+        'Deck source defines no `section.bg-*` classes (bg-glow / bg-hero / bg-dots / bg-grid). Light mode will render as flat #fafafa with no depth. See the marp-slides skill for the canonical light-mode bg-pattern set; sibling decks (001, 005) follow it.',
+      severity: "warn",
+    })
+  }
+
+  // Logo on the lead slide — either as a `header:` frontmatter declaration
+  // with an image, or as an inline `<img>` near the top of the first slide.
+  // Decks that ship without either look bare on the README thumbnail.
+  const hasHeaderImage = /^header:\s*['"]?\s*!\[/m.test(src)
+  const firstLeadIndex = src.indexOf("<!-- _class: lead")
+  let firstLeadHasLogo = false
+  if (firstLeadIndex !== -1) {
+    const leadBlock = src.slice(firstLeadIndex, firstLeadIndex + 1500)
+    firstLeadHasLogo =
+      /<img[^>]+(logo|polymash|brand|polywiz)/i.test(leadBlock) ||
+      /<img[^>]+style="[^"]*position:\s*absolute/i.test(leadBlock)
+  }
+  if (!hasHeaderImage && !firstLeadHasLogo) {
+    out.push({
+      rule: "no-lead-logo",
+      line: 1,
+      snippet: "<no `header:` image declaration and no logo on the first lead slide>",
+      description:
+        "Deck has no logo on the cover/lead slide and no `header:` image declaration in frontmatter. Sibling decks place the brand logo top-left or top-right on the opening slide for consistency. If the bare aesthetic is intentional, ignore.",
+      severity: "info",
+    })
+  }
+
+  return out
 }
 
 function frontmatterEnd(lines) {
