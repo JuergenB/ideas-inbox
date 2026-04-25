@@ -502,57 +502,6 @@ footer: ''
 
 ---
 
-### Sources & references
-
-<h1 style="font-size: 1.8em; line-height: 1; margin: 0 0 4px;">Sources & References</h1>
-<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.85em; color: var(--body); margin-bottom: 4px;">Evidence behind the claims in this deck. Full URLs, verbatim quotes, retrieval dates, and per-claim defensibility notes: <a href="https://github.com/JuergenB/ideas-inbox/blob/main/ideas/007-polywiz-paid-ads-engine/research/sources.md" style="color: var(--a); text-decoration: underline; font-weight: 500;">research/sources.md</a>.</div>
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.62em; line-height: 1.5;">
-
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 10px 14px; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--a), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--m); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px;">Studies & Algorithm</div>
-    <div style="color: var(--body);">
-      <div style="margin-bottom: 8px;"><strong style="color: var(--a); font-weight: 600;">Andromeda rewards creative volume + diversity</strong> — <a href="https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/" style="color: inherit; text-decoration: underline;">Meta Engineering, Dec 2024</a></div>
-      <div style="margin-bottom: 8px;"><strong style="color: var(--a); font-weight: 600;">17.8% lower cost-per-result with CAPI</strong> — <a href="https://ppc.land/meta-upgrades-pixel-and-conversions-api-to-close-the-gap-for-small-advertisers/" style="color: inherit; text-decoration: underline;">Meta announcement, Apr 2026</a></div>
-      <div style="margin-bottom: 8px;"><strong style="color: var(--a); font-weight: 600;">Detailed interest targeting deprecated Jan 2026</strong> — <a href="https://social-media-management-help.brandwatch.com/en/articles/13215856-meta-changes-to-detailed-targeting-interests-in-advertise" style="color: inherit; text-decoration: underline;">Meta Help Center via Brandwatch</a></div>
-    </div>
-  </div>
-
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 10px 14px; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--blue), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--m); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px;">Industry Benchmarks</div>
-    <div style="color: var(--body);">
-      <div style="margin-bottom: 8px;"><strong style="color: var(--blue); font-weight: 600;">$27.66 Meta lead-gen median CPL (2026)</strong> — <a href="https://www.adamigo.ai/blog/meta-ads-cost-per-lead-benchmarks-industry-2026" style="color: inherit; text-decoration: underline;">AdAmigo Q1 2026 benchmarks</a></div>
-      <div style="margin-bottom: 8px;"><strong style="color: var(--blue); font-weight: 600;">Pinterest CPC $0.50–$1.50 vs Meta $1.06–$1.72</strong> — <a href="https://www.webfx.com/blog/social-media/pinterest-marketing-benchmarks/" style="color: inherit; text-decoration: underline;">WebFX 2026</a> · <a href="https://www.tailwindapp.com/blog/how-much-does-pinterest-advertising-cost" style="color: inherit; text-decoration: underline;">Tailwind 2025</a></div>
-      <div style="margin-bottom: 8px;"><strong style="color: var(--blue); font-weight: 600;">TikTok $20/day floor + 50 conv/week to exit learning</strong> — <a href="https://ads.tiktok.com/help/article/learning-phase" style="color: inherit; text-decoration: underline;">TikTok Ads Manager docs</a></div>
-    </div>
-  </div>
-
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 10px 14px; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--g), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--m); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px;">Vendor / API</div>
-    <div style="color: var(--body);">
-      <div style="margin-bottom: 8px;"><strong style="color: var(--g); font-weight: 600;">Zernio Ads API for 6 platforms (Apr 17 2026)</strong> — <a href="https://zernio.com/blog/social-media-ads-api" style="color: inherit; text-decoration: underline;">zernio.com launch post</a></div>
-      <div style="margin-bottom: 8px;"><strong style="color: var(--g); font-weight: 600;">Pinterest 619M MAU, +12% YoY (Q4 2025)</strong> — <a href="https://www.businesswire.com/news/home/20260212059914/en/Pinterest-Announces-Fourth-Quarter-and-Full-Year-2025-Results-Delivers-14-Revenue-Growth-and-Record-Users" style="color: inherit; text-decoration: underline;">Pinterest Q4 2025 earnings</a></div>
-      <div style="margin-bottom: 8px;"><strong style="color: var(--g); font-weight: 600;">Stape.io server-side GTM (~$20/mo CAPI install)</strong> — <a href="https://stape.io/" style="color: inherit; text-decoration: underline;">stape.io</a></div>
-    </div>
-  </div>
-
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 10px 14px; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--y), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--m); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px;">Internal / First-Party</div>
-    <div style="color: var(--body);">
-      <div style="margin-bottom: 8px;"><strong style="color: var(--y); font-weight: 600;">Zernio /v1/ads/* returns 403 on Dominate plan</strong> — Live probe, 2026-04-24</div>
-      <div style="margin-bottom: 8px;"><strong style="color: var(--y); font-weight: 600;">Per-brand pixel + CAPI verified status</strong> — Meta Pixel Helper + Events Manager probe, 2026-04-24</div>
-      <div style="margin-bottom: 8px;"><strong style="color: var(--y); font-weight: 600;">$0.80–$0.90 CPA on $70K/yr Meta budgets</strong> — Juergen Berkessel, historical Meta Ads Manager record (2018–2024, hot industries)</div>
-    </div>
-  </div>
-
-</div>
-
----
-
 <!-- _class: lead -->
 <!-- _header: '' -->
 <!-- _paginate: false -->
@@ -561,4 +510,36 @@ footer: ''
 
 # Let's start Phase 0
 
-<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.95em; color: var(--body); margin-top: 12px;">Questions? Open the GitHub epic — issue #181</div>
+<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.95em; color: var(--body); margin-top: 12px;">Questions? Open the GitHub epic — <a href="https://github.com/JuergenB/polywiz-app/issues/181" style="color: var(--a); text-decoration: underline; font-weight: 500;">issue #181</a></div>
+
+---
+
+### Sources & references
+
+# Sources & References
+
+<div style="font-family: 'Raleway'; font-weight: 400; font-size: 0.95em; color: var(--body); margin: 8px 0 28px;">
+All research lives in <a href="https://github.com/JuergenB/ideas-inbox/tree/main/ideas/007-polywiz-paid-ads-engine/research" style="color: var(--a); text-decoration: underline; font-weight: 600;">ideas/007-polywiz-paid-ads-engine/research/</a> — Phase 0–3 sub-issues, plus <a href="https://github.com/JuergenB/ideas-inbox/blob/main/ideas/007-polywiz-paid-ads-engine/research/sources.md" style="color: var(--a); text-decoration: underline; font-weight: 600;">sources.md</a> with every URL, verbatim quote, retrieval date, and defensibility note.
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; row-gap: 10px; font-size: 0.7em; line-height: 1.5; color: var(--body);">
+
+  <div><strong style="color: var(--t); font-weight: 600;">Andromeda rewards creative volume + diversity</strong> — <a href="https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/" style="color: inherit; text-decoration: underline;">Meta Engineering, Dec 2024</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">$27.66 Meta lead-gen median CPL (2026)</strong> — <a href="https://www.adamigo.ai/blog/meta-ads-cost-per-lead-benchmarks-industry-2026" style="color: inherit; text-decoration: underline;">AdAmigo Q1 2026 benchmarks</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">17.8% lower cost-per-result with CAPI</strong> — <a href="https://ppc.land/meta-upgrades-pixel-and-conversions-api-to-close-the-gap-for-small-advertisers/" style="color: inherit; text-decoration: underline;">Meta announcement, Apr 2026</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Pinterest CPC $0.50–$1.50 vs Meta $1.06–$1.72</strong> — <a href="https://www.webfx.com/blog/social-media/pinterest-marketing-benchmarks/" style="color: inherit; text-decoration: underline;">WebFX 2026</a> · <a href="https://www.tailwindapp.com/blog/how-much-does-pinterest-advertising-cost" style="color: inherit; text-decoration: underline;">Tailwind 2025</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Detailed interest targeting deprecated Jan 2026</strong> — <a href="https://social-media-management-help.brandwatch.com/en/articles/13215856-meta-changes-to-detailed-targeting-interests-in-advertise" style="color: inherit; text-decoration: underline;">Meta Help Center via Brandwatch</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">TikTok $20/day floor + 50 conv/week to exit learning</strong> — <a href="https://ads.tiktok.com/help/article/learning-phase" style="color: inherit; text-decoration: underline;">TikTok Ads Manager docs</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Zernio Ads API for 6 platforms (Apr 17 2026)</strong> — <a href="https://zernio.com/blog/social-media-ads-api" style="color: inherit; text-decoration: underline;">zernio.com launch post</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Pinterest 619M MAU, +12% YoY (Q4 2025)</strong> — <a href="https://www.businesswire.com/news/home/20260212059914/en/Pinterest-Announces-Fourth-Quarter-and-Full-Year-2025-Results-Delivers-14-Revenue-Growth-and-Record-Users" style="color: inherit; text-decoration: underline;">Pinterest Q4 2025 earnings</a></div>
+
+</div>
+
+<div style="font-size: 0.62em; color: var(--m); margin-top: 22px;">Plus internal/first-party data (Zernio 403 probe, brand pixel status, $0.80–$0.90 historical CPA on $70K/yr Meta budgets) — all logged in <code>research/sources.md</code>.</div>

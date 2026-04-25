@@ -93,6 +93,12 @@ When an idea's deck quotes statistics, cites studies, references survey results,
 
 **Why:** Skeptical readers push back on uncited statistics. Surfacing every claim's provenance — with clickable source links one click away — signals thoroughness. The deeper substantiation (URLs, full quotes, methodology) lives in the companion research file so anyone can click through and validate. Pure opinion, design, or narrative decks are exempt. **When in doubt, include it.**
 
+### Linkable references in decks (issues, PRs, commits, repos)
+
+Every mention of a GitHub issue, PR, repository, commit, or external resource in a deck MUST be a real `<a href>` link, not bare text. Same rule we follow in prose globally — "GitHub epic #181" is a mistake; `<a href="https://github.com/JuergenB/polywiz-app/issues/181">#181</a>` is correct. Marp renders these clickable in the HTML deck and PDF.
+
+This applies to closing slides ("Open the GitHub epic — issue #181"), inline references mid-deck, and any link to research files in the same repo. Bare `#NNN` in prose on a slide reads to a colleague as "I didn't bother to wire it up."
+
 ### Ask the user first — every deck, every time
 
 Before generating a new deck OR substantially revising an existing one (anything beyond typo / readability / styling fixes), the agent MUST ask the user one question:
@@ -108,13 +114,14 @@ Don't infer from context. Don't pick a default. The question is cheap; the wrong
 
 **1. Final slide in the deck — "Sources & References".**
 
-- A dedicated slide, placed as the last content slide BEFORE the rhetorical/closing slide. **The rhetorical close MUST NOT host citations** — it dilutes both jobs (the proof gets buried, the close gets cluttered). If the deck has no rhetorical close, the Sources slide is the final slide.
+- **The Sources slide is the LAST slide of the deck.** Always. Even when the deck has a rhetorical close (e.g. "Let's start Phase 0"), Sources comes after it — like an appendix or bibliography in a book. The rhetorical close still earns its space (no citations on it; that dilutes both jobs), but it's the second-to-last slide; Sources is the actual final slide.
 - Titled `# Sources & References` with optional h2 like `## Evidence behind the claims in this deck`
 - Lists every external statistic, study, quote, named claim, or third-party fact used anywhere in the deck
 - For each entry: **what was claimed** → **source/author** → **date or year** → **where it came from** (Perplexity session, vendor doc title, study/report name, publication)
 - **Use real `<a href>` links wherever each cited source maps to a single canonical URL.** The whole point of the references is *proof against pushback* — proof works better when it's one click away. Marp renders these clickable in the HTML deck and preserves them in PDF export. Style restrained: small (0.55–0.7em), `color: inherit; text-decoration: underline` so they read as references rather than CTAs. Reserve the companion `research/sources.md` (link to it from this slide) for the long-form provenance — verbatim quotes, methodology, retrieval dates, multi-source claims — that doesn't fit on a slide.
 - **Each entry MUST lead with the claim it backs**, not just the source name (`**95% audio completion** — NTRVSTA`, not `NTRVSTA — audio benchmarks`). Citation theater fails when a reader can't tell which source proves which number.
-- Use small font (0.65–0.75em) to fit 8–15 entries; split into "(1/2)" / "(2/2)" if longer; group by section (Statistics / Studies / Vendor Docs / Internal Data) when useful.
+- **Exactly one Sources slide. Never split into "(1/2)" / "(2/2)".** If you can't fit, prune to the 6–10 most load-bearing claims and let the rest live in `research/sources.md` (the slide is a doorway to the research, not the research itself). Use small font (0.65–0.75em). Skip decorative cards, gradient strips, and category boxes — utility-first; the slide is a reference, not a designed component.
+- **Link to the research folder prominently**, not just `research/sources.md`. Format: `All research lives in [ideas/<folder>/research/](github URL) — sub-issues and detailed notes, plus [sources.md](github URL) for every URL, quote, retrieval date.` The folder is where the long tail goes; sources.md is the quick-reference index.
 - **The link to the companion `research/sources.md` MUST be ≥0.65em and visible without squinting** at full-screen deck zoom — not buried as a 0.55em footnote. The audit trail is load-bearing when the deck is shared async; it must be findable.
 - **Generate slide options.** When adding or revising a Sources slide, produce 2–3 alternate layouts (per the "Generating slide options" convention) — at minimum a categorized-cards variant and a claims-as-tiles variant — and let the user pick before committing. The Sources slide is high-stakes for the deck's credibility; don't pick one quietly.
 
