@@ -7,7 +7,7 @@
 
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/002-polywiz-demo-vista-growth/exports/presentation-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-demo-vista-growth-slide-1.png" width="480" alt="PolyWiz Demo & Vista Growth Pitch — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-demo-vista-growth-slide-1.png" width="820" alt="PolyWiz Demo & Vista Growth Pitch — click to open full-screen presentation">
   </a>
 </p>
 

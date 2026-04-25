@@ -6,7 +6,7 @@
 
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/004-multi-tenant-curator-platform/exports/deck-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform-slide-1.png" width="480" alt="Multi-Tenant Curator Platform — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/multi-tenant-curator-platform-slide-1.png" width="820" alt="Multi-Tenant Curator Platform — click to open full-screen presentation">
   </a>
 </p>
 

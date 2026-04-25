@@ -6,7 +6,7 @@
 
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/005-ai-voice-surveys-vs-email-forms/exports/deck-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/ai-voice-surveys-vs-email-forms-slide-1.png" width="480" alt="Voice Interviews vs. Email Forms — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/ai-voice-surveys-vs-email-forms-slide-1.png" width="820" alt="Voice Interviews vs. Email Forms — click to open full-screen presentation">
   </a>
 </p>
 

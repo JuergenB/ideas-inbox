@@ -6,7 +6,7 @@
 
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/001-artist-directory/exports/discussion-deck-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/artist-directory-slide-1.png" width="480" alt="Artist Directory — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/artist-directory-slide-1.png" width="820" alt="Artist Directory — click to open full-screen presentation">
   </a>
 </p>
 

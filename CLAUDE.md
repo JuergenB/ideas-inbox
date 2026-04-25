@@ -63,7 +63,7 @@ Commit and push — the Vercel deployment picks up the new HTML files from the r
 ```markdown
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/<idea-folder>/exports/<deck-basename>-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/<idea-slug>-slide-1.png" width="480" alt="Deck title — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/<idea-slug>-slide-1.png" width="820" alt="Deck title — click to open full-screen presentation">
   </a>
 </p>
 
@@ -73,7 +73,7 @@ Commit and push — the Vercel deployment picks up the new HTML files from the r
 ```
 
 Rules:
-- **Thumbnail is mandatory**, not optional. A small link buried in prose is nearly invisible. The slide-1 image at ~480px wide anchors the README visually and pulls the eye to the deck.
+- **Thumbnail is mandatory**, not optional. A small link buried in prose is nearly invisible. The slide-1 image at **`width="820"`** anchors the README visually and pulls the eye to the deck. (Older decks used 480 — bump on next touch.)
 - **Thumbnail and primary link default to the LIGHT variant** (`<deck-basename>-light.html`). Dark is offered as a secondary link on the same line. Rationale: light renders better for embeds, snapshots, and default professional audiences; dark remains available for operators who prefer it.
 - **Thumbnail image is rendered from the light variant** so the preview matches the default experience.
 - **URL bases:**

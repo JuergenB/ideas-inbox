@@ -5,7 +5,7 @@
 
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/003-podcast-website-automation/exports/podcast-website-builder-advisory-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation-slide-1.png" width="480" alt="Podcast Website Automation — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/podcast-website-automation-slide-1.png" width="820" alt="Podcast Website Automation — click to open full-screen presentation">
   </a>
 </p>
 
