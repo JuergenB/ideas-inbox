@@ -12,6 +12,7 @@
 
 **🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/005-ai-voice-surveys-vs-email-forms/exports/deck-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/005-ai-voice-surveys-vs-email-forms/exports/deck.html)
 **📄 Slide deck (PDF):** [exports/deck.pdf](exports/deck.pdf) — download for print or offline.
+**📄 Sources & references:** [research/sources.md](research/sources.md) — full URLs, quotes, and retrieval dates for every statistic cited in the deck.
 
 ---
 

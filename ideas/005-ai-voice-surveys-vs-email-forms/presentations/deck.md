@@ -581,8 +581,34 @@ footer: ''
 
 <div style="font-family: 'Inter'; font-weight: 300; font-size: 0.85em; color: #777; margin-top: 20px; max-width: 640px;">The question is not whether to run a survey. It is what we want to learn — and whether the method we are about to use is capable of telling us.</div>
 
-<div style="font-family: 'Inter'; font-weight: 400; font-size: 0.6em; color: var(--label); margin-top: 40px; max-width: 760px; line-height: 1.7;">
-Sources: Anthropic Interviewer (1,250 interviews) · User Intuition (30,000+ AI-moderated interviews, candor research) · NTRVSTA audio-screening benchmarks · RivalTech &amp; Specific.app form-completion data · Retell.ai, Vapi.ai, TheySaid, Ribbon AI platform documentation
+---
+
+### Sources & references
+
+# Sources & References
+
+<div style="font-family: 'Inter'; font-weight: 400; font-size: 0.95em; color: var(--body); margin: 8px 0 28px;">
+All research lives in <a href="https://github.com/JuergenB/ideas-inbox/tree/main/ideas/005-ai-voice-surveys-vs-email-forms/research" style="color: var(--a); text-decoration: underline; font-weight: 600;">ideas/005-ai-voice-surveys-vs-email-forms/research/</a> — full provenance in <a href="https://github.com/JuergenB/ideas-inbox/blob/main/ideas/005-ai-voice-surveys-vs-email-forms/research/sources.md" style="color: var(--a); text-decoration: underline; font-weight: 600;">sources.md</a> with every URL, verbatim quote, retrieval date, and per-claim defensibility note. Originating research lineage: <a href="https://github.com/JuergenB/ideas-inbox/blob/main/ideas/002-polywiz-demo-vista-growth/research/research-ai-interview-platforms.md" style="color: var(--a); text-decoration: underline; font-weight: 600;">idea 002 research</a> (compiled 2026-04-12).
 </div>
 
-<div style="font-family: 'Inter'; font-weight: 400; font-size: 0.55em; color: var(--label); margin-top: 16px;">Full research: <span style="color: var(--a);">ideas/005-ai-voice-surveys-vs-email-forms/README.md</span></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; row-gap: 10px; font-size: 0.7em; line-height: 1.5; color: var(--body);">
+
+  <div><strong style="color: var(--t); font-weight: 600;">95% audio interview completion</strong> — <a href="https://learn.ntrvsta.com/ai-phone-screening/ai-phone-screening-vs-traditional-interviews-what-your-ta-team-needs-to-know" style="color: inherit; text-decoration: underline;">NTRVSTA audio-screening benchmarks</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">10–30% form completion baseline</strong> — <a href="https://www.rivaltech.com/blog/conversational-chat-surveys" style="color: inherit; text-decoration: underline;">RivalTech</a> · <a href="https://specific.app/" style="color: inherit; text-decoration: underline;">Specific.app</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">2.5× / 5× / 8× richer answers in conversational research</strong> — <a href="https://www.rivaltech.com/research-on-conversational-research" style="color: inherit; text-decoration: underline;">RivalTech / Reach3 study</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">1,250 interviews, 97.6% satisfaction, 99% recommend</strong> — <a href="https://www.anthropic.com/research/anthropic-interviewer" style="color: inherit; text-decoration: underline;">Anthropic Interviewer study</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Tens of thousands of AI-moderated interviews on candor</strong> — <a href="https://www.userintuition.ai/posts/can-you-trust-ai-moderated-interviews/" style="color: inherit; text-decoration: underline;">User Intuition research</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">40–60% video interview completion (vs 95% audio)</strong> — <a href="https://learn.ntrvsta.com/ai-phone-screening/ai-phone-screening-vs-traditional-interviews-what-your-ta-team-needs-to-know" style="color: inherit; text-decoration: underline;">NTRVSTA video benchmarks</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">$0.07/min base, ~$1.50–$4.50 all-in per 15-min interview</strong> — <a href="https://www.retellai.com/pricing" style="color: inherit; text-decoration: underline;">Retell.ai pricing</a></div>
+
+  <div><strong style="color: var(--t); font-weight: 600;">Rentable platforms — pricing tiers</strong> — <a href="https://www.theysaid.io/" style="color: inherit; text-decoration: underline;">TheySaid</a> · <a href="https://ribbon.ai/" style="color: inherit; text-decoration: underline;">Ribbon AI</a> · <a href="https://vapi.ai/" style="color: inherit; text-decoration: underline;">Vapi.ai</a></div>
+
+</div>
+
+<div style="font-size: 0.62em; color: var(--m); margin-top: 22px;">Email-survey funnel benchmarks (40% open / 10% click / 3–5% start / 1–3% finish) are illustrative-stack from Mailchimp + RivalTech industry data — not a single-source claim. Detail in <code>research/sources.md</code>.</div>
