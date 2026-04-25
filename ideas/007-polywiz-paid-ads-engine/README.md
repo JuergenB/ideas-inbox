@@ -8,7 +8,7 @@
 
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/007-polywiz-paid-ads-engine/exports/presentation-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-paid-ads-engine-slide-1.png" width="820" alt="PolyWiz Paid Ads Generation Engine — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-paid-ads-engine-slide-1.png?v=2" width="820" alt="PolyWiz Paid Ads Generation Engine — click to open full-screen presentation">
   </a>
 </p>
 
