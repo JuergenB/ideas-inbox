@@ -1,5 +1,6 @@
 # Claude Code Coding Quality Regression — Global Rules Audit, Karpathy Integration, Per-Repo Reconciliation
 
+**GitHub issue:** [#14](https://github.com/JuergenB/ideas-inbox/issues/14)
 **Status:** Open — research complete, implementation pending user approval
 **Filed:** 2026-04-27
 **Affected work:** All active repositories using Claude Code (polywiz-app, the-intersect-curator, artwork-archive, ideas-inbox, presentation-viewer-site, others)
