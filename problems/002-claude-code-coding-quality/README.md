@@ -155,3 +155,5 @@ Recommended order: polywiz-app → the-intersect-curator → artwork-archive →
 - **Internal CLAUDE.md audit:** [research/internal-audit-claude-md.md](research/internal-audit-claude-md.md)
 - **Karpathy integration mapping:** [research/karpathy-integration-mapping.md](research/karpathy-integration-mapping.md)
 - **Per-repo reconciliation template:** [research/per-repo-revisit-template.md](research/per-repo-revisit-template.md)
+- **Step-by-step implementation plan:** [research/implementation-plan.md](research/implementation-plan.md) — five-phase sequence, global vs per-repo scope, what to do if you only have 30 minutes
+- **Batch audit script:** [scripts/reconcile-rules.sh](scripts/reconcile-rules.sh) — one-shot per-repo audit launcher; reads-only, produces reports without editing
