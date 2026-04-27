@@ -15,7 +15,7 @@
 ```
 Read the global rule changes proposed in this GitHub issue and folder:
 
-- Issue: https://github.com/JuergenB/ideas-inbox/issues/<ISSUE_NUMBER>
+- Issue: https://github.com/JuergenB/ideas-inbox/issues/14
 - Folder: https://github.com/JuergenB/ideas-inbox/tree/main/problems/002-claude-code-coding-quality
 - Specifically read:
   - problems/002-claude-code-coding-quality/README.md (the brief)
