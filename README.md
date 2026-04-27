@@ -54,6 +54,7 @@ Technical issue write-ups for active client and project work — separate from i
 | # | Issue | Subject | Status | Date |
 |---|-------|---------|--------|------|
 | 001 | [Curated.co deliverability + cross-domain SPF/DKIM audit](problems/001-curated-deliverability-nra/) | Not Real Art / Crewest Studio domains | Open — awaiting vendor | 2026-04-19 |
+| 002 | [Claude Code coding quality regression — global rules audit, Karpathy integration, per-repo reconciliation](problems/002-claude-code-coding-quality/) | All active repos | Open — research complete, awaiting user decisions | 2026-04-27 |
 
 ## Idea Lifecycle
 
