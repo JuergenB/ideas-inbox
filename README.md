@@ -46,6 +46,7 @@ ideas/
 | 005 | [Voice Interviews vs. Email Forms](ideas/005-ai-voice-surveys-vs-email-forms/) | Presentation Ready | Juergen Berkessel | 2026-04-22 |
 | 006 | [Presentation Viewer Site for Ideas Inbox](ideas/006-presentation-viewer-site/) | In Progress | Juergen Berkessel | 2026-04-22 |
 | 007 | [PolyWiz Paid Ads Generation Engine](ideas/007-polywiz-paid-ads-engine/) | Research Complete — Awaiting Go/No-Go | Juergen Berkessel | 2026-04-25 |
+| 008 | [Paywall Viability for NotRealArt.com](ideas/008-paywall-viability-notrealart/) | Research & Discussion — Recommend No | Scott Power / Juergen Berkessel | 2026-06-01 |
 
 ## Current Issues
 
