@@ -58,10 +58,13 @@ For a low-volume, high-affinity arts community, these earn without walling reade
 
 The UserMaven retention chart is decisive on its own, but its repeat-visit reporting is limited. **Google Analytics 4** would sharpen the loyalty picture — Retention report, Cohort exploration, returning-user %, engaged sessions, and pages/session. If we export those (or set up a GA4 Data API service account for direct querying), the numbers can be folded into a revision.
 
+The single most load-bearing number to nail down: **how many NRA users visit multiple times each month** — that multi-visit cohort *is* the audience a paywall would monetize. A spun-off investigation will set up on-demand analytics tooling (UserMaven API and/or a GA4 Data API service account) to answer this and similar questions precisely. See the handover notes below.
+
 ## Status & Next Steps
 
 - [x] Research paywall viability benchmarks (volume, loyalty, conversion thresholds)
 - [x] Build the revenue-math model from UserMaven retention data
 - [x] Presentation deck for discussion with Scott
 - [ ] Optional: pull GA4 retention/cohort data to corroborate the ~1.1% figure
+- [ ] **Spin-off:** stand up on-demand analytics tooling to measure the multi-visit cohort precisely — see [docs/analytics-tooling-handover.md](docs/analytics-tooling-handover.md)
 - [ ] Decision: confirm no-paywall, scope a no-wall monetization pilot (membership or sponsorship)
