@@ -100,7 +100,7 @@ footer: ''
   </div>
 </div>
 
-<div style="margin-top: 18px; font-size: 0.74em; color: var(--m); line-height: 1.6;">This deck answers that test with industry benchmarks and our own UserMaven data — before we commit engineering time and risk the reader relationship.</div>
+<div style="margin-top: 18px; font-size: 0.74em; color: var(--m); line-height: 1.6;">This deck answers that test with industry benchmarks and our own UserMaven and GA4 data — before we commit engineering time and risk the reader relationship.</div>
 
 ---
 
@@ -294,6 +294,8 @@ footer: ''
 </div>
 
 <div style="margin-top: 14px; font-size: 0.72em; color: var(--a); line-height: 1.55;">Benchmark loyalty is 30–40% returning. Ours is ~1%. The audience a paywall taxes effectively does not exist here.</div>
+
+<div style="margin-top: 10px; font-size: 0.64em; color: var(--m); line-height: 1.5;"><strong style="color: var(--blue);">GA4 independently confirms it</strong> (May 2026): new-visitor retention is just <strong style="color: var(--blue);">0.9%</strong> at day 1, 0.2% at day 7, <strong style="color: var(--blue);">0.1%</strong> by day 30 — and returning visitors are only <strong style="color: var(--blue);">8.7%</strong> of all activity, against the 30–40% a paywall needs. Two independent analytics systems, same verdict.</div>
 
 ---
 
@@ -493,6 +495,8 @@ footer: ''
 <div style="break-inside: avoid; margin-bottom: 10px;"><strong style="color: var(--a);">Donation/membership fits small niche audiences better than a wall</strong> — <a href="https://www.elegantthemes.com/blog/wordpress/what-is-a-paywall-and-when-should-you-use-one">Elegant Themes</a>; <a href="https://donorbox.org/nonprofit-blog/journalism-fundraising">Donorbox</a>.</div>
 
 <div style="break-inside: avoid; margin-bottom: 10px;"><strong style="color: var(--blue);">NotRealArt.com: ~5,000 visits/mo; Period-1 retention ~1.1% (49,538 users, Nov 2025–May 2026)</strong> — UserMaven retention report, retrieved 2026-06-01.</div>
+
+<div style="break-inside: avoid; margin-bottom: 10px;"><strong style="color: var(--blue);">NotRealArt.com (GA4): returning visitors 8.7% of activity; new-visitor retention 0.9% (day 1), 0.1% (day 30)</strong> — Google Analytics 4 Retention report, May 5–Jun 1 2026, retrieved 2026-06-02.</div>
 
 </div>
 

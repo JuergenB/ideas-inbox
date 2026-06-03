@@ -86,6 +86,17 @@ Audit trail for every external statistic and internal data point cited in the de
 - **Caveat / next step:** UserMaven's repeat-visit reporting is limited. GA4 Retention / Cohort exploration (and returning-user %, engaged sessions, pages/session) would corroborate or refine the ~1.1% figure. See README "What Would Strengthen This Analysis."
 - **Used in deck:** "Loyalty: Almost No One Comes Back," "Do The Math," "We're Not That Kind Of Site."
 
+## GA4 corroboration — returning visitors 8.7% of activity; new-visitor retention 0.9% (day 1) → 0.1% (day 30)
+
+- **Source:** Google Analytics 4, property "Not Real Art - GA4" (account Crewest Studio) — Retention overview report, exported to CSV.
+- **Date range:** May 5 – Jun 1, 2026 (28 days); retention curve block spans Apr 21 – Jun 1, 2026 (42 days).
+- **Retrieved:** 2026-06-02 (manual GA4 CSV export by Juergen Berkessel).
+- **Raw data file:** [`research/data/ga4-retention-overview-2026-05.csv`](data/ga4-retention-overview-2026-05.csv); chart [`research/data/nra-new-vs-returning-2026-05.png`](data/nra-new-vs-returning-2026-05.png).
+- **Data:** New users (28-day sum) = 3,339 (~119/day); Returning users (28-day sum) = 317 (~11/day) = **8.7%** of active-user-days. New-user retention curve (normalized): Day 1 = **0.88%**, Day 2 = 0.25%, Day 7 = 0.17%, Day 30 = 0.11%.
+- **Method caveat:** the Retention-overview export gives *daily* new/returning counts; summing 28 days double-counts users who returned on multiple days, so 317 is an **upper bound** on unique monthly returning users (true unique count is somewhat lower, est. ~200–300). For an exact unique figure, use a GA4 "New/returning" exploration (dimension `newVsReturning` + metric `activeUsers`) or the GA4 Data API — see [`docs/reference/ga4-api.md`](../../../docs/reference/ga4-api.md).
+- **Interpretation:** GA4 corroborates UserMaven from two independent angles. (1) New-visitor cohort retention (~0.9% day-1) matches UserMaven's ~1.1% Period-1 — new visitors almost never come back. (2) The broader "returning share" (8.7% of activity) is a small, roughly-flat *stock* of pre-existing repeat visitors (~11/day), not a growing flow of newly-loyal readers — and still far below the 30–40% returning share paywall-viable sites have.
+- **Used in deck:** "Loyalty: Almost No One Comes Back" (GA4 corroboration line), "Sources & References."
+
 ---
 
 ## Comparison-table archetypes (deck slide "We're Not That Kind Of Site")
