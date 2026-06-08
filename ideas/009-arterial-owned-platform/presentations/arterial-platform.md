@@ -127,6 +127,7 @@ footer: ''
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Thinkific</span>
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">StoryChief</span>
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Convertbox</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Zealous</span>
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">n8n scripts</span>
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">one-off websites</span>
 </div>
@@ -202,38 +203,75 @@ footer: ''
 
 <!-- _class: bg-grid -->
 
-### Only Possible When We Own It
+### The Whole Lifecycle, Owned End-To-End
 
-# A Platform, Not A Feature
+# One Seamless Flow — Not Six Rented Tools
 
 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px;">
   <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--a); margin-bottom: 4px;">Configurable exhibitions</div>
-    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Dimensions on or off, sliders, highlight widgets, animated storytelling — per show.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--a); margin-bottom: 4px;">Baked-in submissions &amp; open calls</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Partners run their own branded calls; submissions land enriched. Replaces Paperform + Airtable.</div>
   </div>
   <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--a); margin-bottom: 4px;">Visual, vector-driven discovery</div>
-    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">The platform understands how works relate — by color, style, region, artist — to surface what's adjacent.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--a); margin-bottom: 4px;">Multi-curator judging</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Score submissions, shortlist, select artworks, and issue grants — together. Replaces Zealous.</div>
   </div>
   <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--blue); margin-bottom: 4px;">QR: wall to phone</div>
-    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Scan a physical label, get the full artist record, more works, and an inquiry path.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--blue); margin-bottom: 4px;">Configurable exhibitions</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Per-show design and parameters — dimensions, sliders, storytelling. Not one rigid format.</div>
   </div>
   <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--blue); margin-bottom: 4px;">Partner analytics</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--blue); margin-bottom: 4px;">Labels &amp; catalogs as a service</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Auto-generate wall labels, didactics, and print/digital catalogs from each record.</div>
+  </div>
+  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--g); margin-bottom: 4px;">QR: wall to phone</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Scan a physical label → full artist record, more works, and an inquiry path.</div>
+  </div>
+  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--g); margin-bottom: 4px;">Partner analytics</div>
     <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Engagement, dwell, geography — insight a small gallery has never had.</div>
-  </div>
-  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--g); margin-bottom: 4px;">Per-exhibition radio</div>
-    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">AI-produced audio &amp; podcasts about a show — on our own engine.</div>
-  </div>
-  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--g); margin-bottom: 4px;">AI curator</div>
-    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">"A show in greens, under 36 inches" — propose themed exhibitions from the archive.</div>
   </div>
 </div>
 
-<div style="margin-top: 14px; font-size: 0.72em; color: var(--m); line-height: 1.5;">One owned substrate — many expressions. None of these are possible while the art lives in someone else's rented software.</div>
+<div style="margin-top: 14px; font-size: 0.72em; color: var(--m); line-height: 1.5;">Open call to gallery wall to grant award — in one system we control, replacing Paperform, Airtable, Zealous, and the manual work in between.</div>
+
+---
+
+<!-- _class: bg-glow -->
+
+### Things We're Not Even Doing Yet
+
+# And Capabilities The Rented Stack Could Never Touch
+
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px;">
+  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--a); margin-bottom: 4px;">Visual, vector-driven discovery</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Surface works by color, style, region, or artist — the platform understands how art relates.</div>
+  </div>
+  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--a); margin-bottom: 4px;">AI curator</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">"A show in greens, under 36 inches" — propose themed exhibitions from the archive.</div>
+  </div>
+  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--blue); margin-bottom: 4px;">Relationship graph</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Artist ↔ artwork ↔ exhibition ↔ partner — powering "more like this" everywhere.</div>
+  </div>
+  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--blue); margin-bottom: 4px;">Per-exhibition radio &amp; podcasts</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">AI-produced audio about a show — on our own engine, per exhibition.</div>
+  </div>
+  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--g); margin-bottom: 4px;">Artist self-service profiles</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Portable portfolios that keep themselves current, with automated re-engagement.</div>
+  </div>
+  <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--g); margin-bottom: 4px;">Conversational, attribute search</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Designer-grade: "works for a blue hotel corridor, under 36 inches" — from our own data.</div>
+  </div>
+</div>
+
+<div style="margin-top: 14px; font-size: 0.72em; color: var(--m); line-height: 1.5;">This is the upside of owning the data <em>and</em> the AI — a whole class of things we've never even tried, impossible on rented gallery software.</div>
 
 ---
 
@@ -241,40 +279,49 @@ footer: ''
 
 ### Made Concrete
 
-# A Partner Gallery, Powered By Us
+# A Partner Gallery — Or A Grant — Powered By Us
 
-<div style="font-size: 0.76em; color: var(--body); margin-bottom: 16px; line-height: 1.6;">A small gallery with no online infrastructure runs an entire exhibition on our platform — white-labeled as theirs:</div>
+<div style="font-size: 0.74em; color: var(--body); margin-bottom: 14px; line-height: 1.55;">A small gallery, a partner program, or our own grant runs end-to-end on one platform — white-labeled as theirs:</div>
 
-<div style="background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 18px 22px;">
-  <div style="display: flex; align-items: stretch; gap: 8px;">
+<div style="background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 16px 18px;">
+  <div style="display: flex; align-items: stretch; gap: 5px;">
     <div style="flex: 1; text-align: center;">
-      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.92em; color: var(--a);">Open call</div>
-      <div style="font-size: 0.62em; color: var(--m); margin-top: 4px; line-height: 1.4;">Their branded submission form — no paper, no Airtable</div>
+      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.8em; color: var(--a);">Open call</div>
+      <div style="font-size: 0.56em; color: var(--m); margin-top: 4px; line-height: 1.35;">Branded form — no paper, no Airtable</div>
     </div>
-    <div style="color: var(--m); display: flex; align-items: center;">&rarr;</div>
+    <div style="color: var(--m); display: flex; align-items: center; font-size: 0.85em;">&rarr;</div>
     <div style="flex: 1; text-align: center;">
-      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.92em; color: var(--blue);">Their database</div>
-      <div style="font-size: 0.62em; color: var(--m); margin-top: 4px; line-height: 1.4;">Auto-enriched — classified, dimensioned, profiled</div>
+      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.8em; color: var(--blue);">Enriched database</div>
+      <div style="font-size: 0.56em; color: var(--m); margin-top: 4px; line-height: 1.35;">Auto-classified, dimensioned, profiled</div>
     </div>
-    <div style="color: var(--m); display: flex; align-items: center;">&rarr;</div>
+    <div style="color: var(--m); display: flex; align-items: center; font-size: 0.85em;">&rarr;</div>
     <div style="flex: 1; text-align: center;">
-      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.92em; color: var(--t);">Curate a subset</div>
-      <div style="font-size: 0.62em; color: var(--m); margin-top: 4px; line-height: 1.4;">Pick the few that hang on the physical wall</div>
+      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.8em; color: var(--a);">Judge &amp; shortlist</div>
+      <div style="font-size: 0.56em; color: var(--m); margin-top: 4px; line-height: 1.35;">Multiple curators score together</div>
     </div>
-    <div style="color: var(--m); display: flex; align-items: center;">&rarr;</div>
+    <div style="color: var(--m); display: flex; align-items: center; font-size: 0.85em;">&rarr;</div>
     <div style="flex: 1; text-align: center;">
-      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.92em; color: var(--g);">Wall + big screen</div>
-      <div style="font-size: 0.62em; color: var(--m); margin-top: 4px; line-height: 1.4;">QR labels, plus a TV loop showing everyone who submitted</div>
+      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.8em; color: var(--blue);">Select or award</div>
+      <div style="font-size: 0.56em; color: var(--m); margin-top: 4px; line-height: 1.35;">Pick the wall — or award the grant</div>
     </div>
-    <div style="color: var(--m); display: flex; align-items: center;">&rarr;</div>
+    <div style="color: var(--m); display: flex; align-items: center; font-size: 0.85em;">&rarr;</div>
     <div style="flex: 1; text-align: center;">
-      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.92em; color: var(--a);">Their analytics</div>
-      <div style="font-size: 0.62em; color: var(--m); margin-top: 4px; line-height: 1.4;">What drew attention — data they've never had</div>
+      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.8em; color: var(--g);">Wall + big screen</div>
+      <div style="font-size: 0.56em; color: var(--m); margin-top: 4px; line-height: 1.35;">QR labels + a TV loop of all who submitted</div>
+    </div>
+    <div style="color: var(--m); display: flex; align-items: center; font-size: 0.85em;">&rarr;</div>
+    <div style="flex: 1; text-align: center;">
+      <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.8em; color: var(--a);">Analytics</div>
+      <div style="font-size: 0.56em; color: var(--m); margin-top: 4px; line-height: 1.35;">What drew attention</div>
     </div>
   </div>
 </div>
 
-<div style="margin-top: 16px; font-size: 0.74em; color: var(--m); line-height: 1.55;">A 12-piece room <strong>feels like</strong> a 200-artist exhibition. The white-label service, the QR bridge, the analytics — the same platform, configured for them.</div>
+<div style="background: var(--s); border: 1px solid var(--b); border-left: 3px solid var(--a); border-radius: 10px; padding: 12px 18px; margin-top: 14px;">
+  <div style="font-size: 0.72em; color: var(--body); line-height: 1.55;"><strong>The same flow runs our grants and competitions.</strong> The multi-curator judging step replaces Zealous — judges score submissions and award grantees in one place, instead of paying for a separate tool we keep having to switch on and off.</div>
+</div>
+
+<div style="margin-top: 12px; font-size: 0.7em; color: var(--m); line-height: 1.5;">A 12-piece room <strong>feels like</strong> a 200-artist exhibition — submissions, judging, display, and analytics, all one platform configured for them.</div>
 
 ---
 

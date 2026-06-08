@@ -20,7 +20,7 @@
 
 Arterial has quietly built a real asset: a collection of **10,000+ artworks and thousands of artists**, accumulated through years of open calls, grants, and exhibitions across Not Real Art, the NRA Grant, the First Friday / exhibition series, Artsville USA, and partner shows. Almost everything Arterial makes draws on that collection.
 
-But the collection doesn't live on anything Arterial owns. It's assembled by our own enrichment pipeline and then displayed and managed through a stack of **rented, disconnected tools** — Artwork Archive for display, Airtable for staging, ActiveCampaign for the list, Paperform and paper forms for intake, n8n for automation, and one-off websites for partners. We control the art; we don't control the layer it lives on.
+But the collection doesn't live on anything Arterial owns. It's assembled by our own enrichment pipeline and then displayed and managed through a stack of **rented, disconnected tools** — Artwork Archive for display, Airtable for staging, ActiveCampaign for the list, Paperform for submissions, Zealous for grant judging, n8n for automation, plus WordPress, Ghost, Thinkific, and more — and one-off websites for partners. We control the art; we don't control the layer it lives on.
 
 **Idea 009 is to own that layer** — to build one platform, anchored on Arterial's artists and artworks, that powers exhibitions, submissions, discovery, and partnerships. This is explicitly *not* a consumer-subscription play (that was the weaker thesis of idea 001). It's infrastructure: the substrate every Arterial initiative already depends on, finally owned.
 
@@ -38,16 +38,27 @@ This deck is a **vision / discussion paper** for Scott — the goal is alignment
 
 ## What Owning It Unlocks (only possible with our own infrastructure)
 
+**The exhibition lifecycle, owned end-to-end** (replacing rented tools with one seamless flow):
+
+- **Baked-in submissions & open calls** — partners run their own branded calls; submissions land enriched. Replaces Paperform + Airtable.
+- **Multi-curator judging** — score submissions, shortlist, select artworks, and issue grants together. Replaces Zealous (the costly judging tool used for the last grant).
 - **Configurable exhibitions** — per-show design and parameters, not one rigid format.
-- **A relationship graph** — artist ↔ artwork ↔ exhibition ↔ partner — powering "more like this" everywhere.
+- **Labels & catalogs as a service** — auto-generate wall labels, didactics, and print/digital catalogs from each record.
 - **QR: wall to phone** — scan a physical label, get the full artist record and an inquiry path.
 - **Partner analytics** — engagement, dwell, and geography insight a small gallery has never had.
+
+**Capabilities the rented stack could never touch** (the things we're not even doing yet):
+
+- **Visual, vector-driven discovery** — surface works by color, style, region, or artist.
+- **AI curator** — "a show in greens, under 36 inches" — propose themed exhibitions from the archive.
+- **A relationship graph** — artist ↔ artwork ↔ exhibition ↔ partner — powering "more like this" everywhere.
 - **Per-exhibition radio & podcasts** — AI-produced audio about a show, on our own engine.
-- **AI curator & attribute discovery** — "a show in greens, under 36 inches" — propose themed exhibitions from the archive.
+- **Artist self-service profiles** — portable portfolios that keep themselves current, with automated re-engagement.
+- **Conversational, attribute search** — designer-grade: "works for a blue hotel corridor, under 36 inches," answered from our own data.
 
 ## A Partner Gallery, Powered By Us
 
-The white-label service, made concrete. A small gallery with no online infrastructure runs an entire exhibition on our platform, branded as theirs: their open call → their own auto-enriched database → curate a subset for the physical wall → QR-labeled wall plus a big-screen loop showing everyone who submitted → their own analytics. A 12-piece room *feels like* a 200-artist exhibition. Because the platform is multi-tenant by design, a partner instance is a configuration — not a rebuild — so partnerships (a CodaWorks collaboration, a public-art project, a regional gallery) become a switch Arterial controls, when it chooses.
+The white-label service, made concrete. A small gallery, a partner program, or our own grant runs end-to-end on one platform, branded as theirs: open call → auto-enriched database → **multiple curators judge and shortlist** → select the wall (or, run as a grant, award the grantees) → QR-labeled wall plus a big-screen loop showing everyone who submitted → their own analytics. **The same flow runs our grants and competitions — the judging step replaces Zealous.** A 12-piece room *feels like* a 200-artist exhibition. Because the platform is multi-tenant by design, a partner instance is a configuration — not a rebuild — so partnerships (a CodaWorks collaboration, a public-art project, a regional gallery) become a switch Arterial controls, when it chooses.
 
 ## From Discovery to Income — The Flywheel
 
