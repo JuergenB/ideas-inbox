@@ -38,6 +38,7 @@ style: |
 
   section.lead { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
   section.lead h1 { font-size: 2.6em; color: var(--t); }
+  section.ask h1 { font-size: 1.6em; line-height: 1.15; margin-bottom: 10px; }
 
   section::after { font-family: 'Outfit'; font-size: 0.6em; color: #151515; }
 
@@ -418,35 +419,35 @@ footer: ''
 
 ---
 
-<!-- _class: bg-glow-gold -->
+<!-- _class: bg-glow-gold ask -->
 
 ### What We're Asking
 
 # Agree On The Principle. Fund The First Step.
 
-<div style="background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 14px 22px; margin-bottom: 16px; border-left: 3px solid var(--a);">
-  <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--a); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 4px;">The Principle</div>
-  <div style="font-size: 0.8em; color: var(--body); line-height: 1.6;">An owned platform, built on the artists and artworks Arterial already has, is worth pursuing — and the first move is to replace rented Artwork Archive with our own production-ready system.</div>
+<div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 12px 20px; margin-bottom: 12px; border-left: 3px solid var(--a);">
+  <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.52em; color: var(--a); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 3px;">The Principle</div>
+  <div style="font-size: 0.76em; color: var(--body); line-height: 1.5;">An owned platform, built on the artists and artworks Arterial already has, is worth pursuing — and the first move is to replace rented Artwork Archive with our own production-ready system.</div>
 </div>
 
-<div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--blue); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;">The First Phase &mdash; A Funded Polymash Scoping &amp; Foundation Engagement</div>
+<div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.52em; color: var(--blue); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px;">The First Phase &mdash; A Funded Polymash Scoping &amp; Foundation Engagement</div>
 
-<div style="display: flex; gap: 14px; align-items: stretch;">
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px 20px; border-top: 3px solid var(--a);">
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.95em; color: var(--t); margin-bottom: 8px;">Migration plan &amp; roadmap</div>
-    <div style="font-size: 0.72em; color: var(--body); line-height: 1.6;">Design docs and a roadmap to replace Artwork Archive with an owned system — porting our submissions work into one consolidated database.</div>
+<div style="display: flex; gap: 12px; align-items: stretch;">
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px; border-top: 3px solid var(--a);">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.86em; color: var(--t); margin-bottom: 6px;">Migration plan &amp; roadmap</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">Design docs and a roadmap to replace Artwork Archive — porting our submissions into one owned, consolidated database.</div>
   </div>
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px 20px; border-top: 3px solid var(--blue);">
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.95em; color: var(--t); margin-bottom: 8px;">A working proof of concept</div>
-    <div style="font-size: 0.72em; color: var(--body); line-height: 1.6;">An embeddable gallery running on our own infrastructure (Next.js + Supabase) — the first real replacement piece, live on our data.</div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px; border-top: 3px solid var(--blue);">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.86em; color: var(--t); margin-bottom: 6px;">A working proof of concept</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">An embeddable gallery on our own infrastructure (Next.js + Supabase) — the first real replacement piece, live on our data.</div>
   </div>
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px 20px; border-top: 3px solid var(--g);">
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.95em; color: var(--t); margin-bottom: 8px;">A promotable site</div>
-    <div style="font-size: 0.72em; color: var(--body); line-height: 1.6;">A website explaining what the platform is, what it does, and who benefits — inviting inquiries, so Scott has something real to promote now.</div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px; border-top: 3px solid var(--g);">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.86em; color: var(--t); margin-bottom: 6px;">A promotable site</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">A site explaining what the platform is, what it does, and who benefits — inviting inquiries, so Scott has something to promote now.</div>
   </div>
 </div>
 
-<div style="margin-top: 14px; font-size: 0.7em; color: var(--m); line-height: 1.5;">Concrete, promotable deliverables — not a demo gimmick — before any larger build commitment.</div>
+<div style="margin-top: 12px; font-size: 0.68em; color: var(--m); line-height: 1.45;">Concrete, promotable deliverables — not a demo gimmick — before any larger build commitment.</div>
 
 ---
 
