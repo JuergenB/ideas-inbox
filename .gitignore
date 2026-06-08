@@ -7,6 +7,10 @@ problems/**/*.pdf
 node_modules/
 .vercel
 
+# Private author considerations / strategy notes — never publish to the archive
+ideas/**/_private/
+ideas/**/*.private.md
+
 # Generated build artifacts from scripts/publish-deck.mjs
 ideas/*/presentations/*.light.md
 ideas/*/exports/.audit/
