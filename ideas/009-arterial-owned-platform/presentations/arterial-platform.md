@@ -65,7 +65,7 @@ footer: ''
 <!-- _class: lead bg-hero -->
 <!-- _paginate: false -->
 
-<div style="position: absolute; top: 32px; left: 40px; font-family: 'Outfit'; font-weight: 700; font-size: 14px; letter-spacing: 0.2em; color: var(--a);">POLYMASH</div>
+<img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/arterial-owned-platform/polymash-logo.png" style="position: absolute; top: 34px; left: 44px; width: 52px; border-radius: 11px;" />
 
 # From Initiatives to Infrastructure
 
@@ -122,8 +122,7 @@ footer: ''
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Ghost + Elfsight</span>
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Airtable</span>
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">ActiveCampaign</span>
-  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Paperform</span>
-  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">paper forms</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Paperform submissions</span>
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">InstaPage</span>
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Thinkific</span>
   <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">StoryChief</span>
@@ -409,7 +408,7 @@ footer: ''
 
 <div style="font-family: 'Raleway'; font-weight: 300; font-size: 1.05em; color: var(--body); margin-top: 12px; max-width: 780px;">It's whether Arterial keeps renting its future — or finally owns the thing every one of its initiatives already depends on.</div>
 
-<div style="margin-top: 26px; font-family: 'Outfit'; font-weight: 700; font-size: 0.9em; letter-spacing: 0.2em; color: var(--a);">POLYMASH</div>
+<img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/arterial-owned-platform/polymash-logo.png" style="width: 56px; border-radius: 12px; margin-top: 28px;" />
 
 ---
 
