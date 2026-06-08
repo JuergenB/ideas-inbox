@@ -65,14 +65,14 @@ footer: ''
 <!-- _class: lead bg-hero -->
 <!-- _paginate: false -->
 
-<div style="position: absolute; top: 32px; left: 40px; font-family: 'Outfit'; font-weight: 700; font-size: 14px; letter-spacing: 0.2em; color: var(--a);">ARTERIAL</div>
+<div style="position: absolute; top: 32px; left: 40px; font-family: 'Outfit'; font-weight: 700; font-size: 14px; letter-spacing: 0.2em; color: var(--a);">POLYMASH</div>
 
 # From Initiatives to Infrastructure
 
-<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.95em; color: var(--body); margin-top: 14px; max-width: 760px;">What Arterial could build — and offer the art world — the day it owns the platform beneath everything it already does. A first look at <strong>GetArtNow</strong>.</div>
+<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.95em; color: var(--body); margin-top: 14px; max-width: 760px;">What Arterial could build — and offer the art world — the day it owns the platform beneath everything it already does.</div>
 
 <div style="display: flex; gap: 8px; margin-top: 26px;">
-  <span style="background: #ff6b1a18; border: 1px solid #ff6b1a33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.55em; color: var(--a); font-weight: 400;">Arterial · GetArtNow</span>
+  <span style="background: #ff6b1a18; border: 1px solid #ff6b1a33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.55em; color: var(--a); font-weight: 400;">A Polymash proposal</span>
   <span style="background: #ff6b1a18; border: 1px solid #ff6b1a33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.55em; color: var(--a); font-weight: 400;">For discussion with Scott</span>
   <span style="background: #ff6b1a18; border: 1px solid #ff6b1a33; border-radius: 20px; padding: 4px 14px; font-family: 'Outfit'; font-size: 0.55em; color: var(--a); font-weight: 400;">June 2026</span>
 </div>
@@ -114,25 +114,25 @@ footer: ''
 
 # We Rent And Stitch — We Don't Own
 
-<div style="font-size: 0.78em; color: var(--body); margin-bottom: 18px; line-height: 1.6;">Every capability on the last slide is out of reach for the same single reason: the pieces that hold Arterial together are <strong>rented and disconnected</strong>. We don't control the layer the art actually lives on.</div>
+<div style="font-size: 0.78em; color: var(--body); margin-bottom: 16px; line-height: 1.6;">Everything Arterial runs on today is <strong>rented and stitched together</strong> — a sprawl of tools that don't talk to each other. Some of it can stay (WordPress and the content tools aren't going anywhere). But none of it is an owned home for the thing that matters most:</div>
 
-<div style="background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 22px 26px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: center;">
-  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 16px; font-family: 'Outfit'; font-size: 0.7em; color: var(--m);">Artwork Archive</span>
-  <span style="color: var(--m);">+</span>
-  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 16px; font-family: 'Outfit'; font-size: 0.7em; color: var(--m);">Airtable</span>
-  <span style="color: var(--m);">+</span>
-  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 16px; font-family: 'Outfit'; font-size: 0.7em; color: var(--m);">ActiveCampaign</span>
-  <span style="color: var(--m);">+</span>
-  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 16px; font-family: 'Outfit'; font-size: 0.7em; color: var(--m);">Paperform</span>
-  <span style="color: var(--m);">+</span>
-  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 16px; font-family: 'Outfit'; font-size: 0.7em; color: var(--m);">n8n scripts</span>
-  <span style="color: var(--m);">+</span>
-  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 16px; font-family: 'Outfit'; font-size: 0.7em; color: var(--m);">paper forms</span>
-  <span style="color: var(--m);">+</span>
-  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 16px; font-family: 'Outfit'; font-size: 0.7em; color: var(--m);">one-off websites</span>
+<div style="background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 18px 22px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; justify-content: center;">
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Artwork Archive</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">WordPress + plugins</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Ghost + Elfsight</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Airtable</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">ActiveCampaign</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Paperform</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">paper forms</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">InstaPage</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Thinkific</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">StoryChief</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">Convertbox</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">n8n scripts</span>
+  <span style="background: var(--bg); border: 1px solid var(--b); border-radius: 20px; padding: 6px 14px; font-family: 'Outfit'; font-size: 0.64em; color: var(--m);">one-off websites</span>
 </div>
 
-<div style="margin-top: 18px; font-size: 0.82em; color: var(--a); line-height: 1.55;">This is the only thing between Arterial and everything that comes next. Own the layer underneath — and all of it is on the table.</div>
+<div style="margin-top: 16px; font-size: 0.82em; color: var(--a); line-height: 1.55;">Arterial's <strong>artists, artworks, and exhibitions</strong> have no platform of their own. Build that one layer — and everything on the last slide is on the table.</div>
 
 ---
 
@@ -193,52 +193,11 @@ footer: ''
     <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--blue), transparent);"></div>
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--blue); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px;">One Mature Institution</div>
     <div style="font-family: 'Outfit'; font-weight: 700; font-size: 1.25em; color: var(--t); margin-bottom: 10px;">The portfolio finally reads as a real organization</div>
-    <div style="font-size: 0.76em; color: var(--body); line-height: 1.65;">An owned platform is what turns a constellation of projects into a capable institution with its own infrastructure. <strong>GetArtNow</strong> becomes its public face.</div>
+    <div style="font-size: 0.76em; color: var(--body); line-height: 1.65;">An owned platform is what turns a constellation of projects into a capable institution with its own infrastructure — one place the whole portfolio finally connects.</div>
   </div>
 </div>
 
 <div style="margin-top: 16px; font-size: 0.66em; color: var(--m); line-height: 1.5;">The art world's own value is consolidating around exactly this — owned platforms plus proprietary data. In 2025, Beowolff Capital bought Artnet and merged it with Artsy into a single data-and-AI ecosystem. Platform + data <em>is</em> the asset.</div>
-
----
-
-<!-- _class: bg-dots -->
-
-### GetArtNow — The Public Face
-
-# Discover Art Like Nowhere Else
-
-<div style="display: flex; gap: 22px; align-items: stretch;">
-
-  <div style="flex: 1.5; background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 16px;">
-    <div style="display: flex; flex-wrap: wrap; gap: 5px;">
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#ff6b1a,#cc4a10);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#0199fe,#0166aa);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#22c55e,#15803d);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#f5a623,#b87a10);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#a855f7,#7322b8);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#ec4899,#a8205f);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#0199fe,#0166aa);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#14b8a6,#0c7167); outline: 2px solid var(--a); outline-offset: 1px;"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#ff6b1a,#cc4a10);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#64748b,#3b4654);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#22c55e,#15803d);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#f5a623,#b87a10);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#ec4899,#a8205f);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#a855f7,#7322b8);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#0199fe,#0166aa);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#ff8c4a,#cc5515);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#22c55e,#15803d);"></div>
-      <div style="flex: 0 0 17%; height: 44px; border-radius: 4px; background: linear-gradient(135deg,#64748b,#3b4654);"></div>
-    </div>
-    <div style="font-size: 0.6em; color: var(--m); margin-top: 10px; text-align: center;">A living salon wall — click any piece and it recomposes around it.</div>
-  </div>
-
-  <div style="flex: 1;">
-    <div style="font-size: 0.78em; color: var(--body); line-height: 1.7;">A dense, image-first wall of art from our archive. Navigate by <strong>color</strong>, style, region, or artist. Click any piece and the wall <strong>recomposes around it</strong> — surfacing what's visually and thematically adjacent. A walk through the whole collection.</div>
-    <div style="font-size: 0.7em; color: var(--m); line-height: 1.6; margin-top: 14px;">It revives the <em>salon hang</em> — the floor-to-ceiling style of the Paris Salon and the Hermitage — as something interactive. Powered by a vector engine that understands how artworks relate. <strong style="color: var(--blue);">Impossible on a rented gallery plugin.</strong></div>
-  </div>
-
-</div>
 
 ---
 
@@ -254,8 +213,8 @@ footer: ''
     <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Dimensions on or off, sliders, highlight widgets, animated storytelling — per show.</div>
   </div>
   <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--a); margin-bottom: 4px;">Relationship graph</div>
-    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Artist ↔ artwork ↔ exhibition ↔ partner — powering "more like this" everywhere.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--a); margin-bottom: 4px;">Visual, vector-driven discovery</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">The platform understands how works relate — by color, style, region, artist — to surface what's adjacent.</div>
   </div>
   <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--blue); margin-bottom: 4px;">QR: wall to phone</div>
@@ -270,7 +229,7 @@ footer: ''
     <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">AI-produced audio &amp; podcasts about a show — on our own engine.</div>
   </div>
   <div style="flex: 1 1 30%; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 14px 16px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--g); margin-bottom: 4px;">AI curator &amp; discovery</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--g); margin-bottom: 4px;">AI curator</div>
     <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">"A show in greens, under 36 inches" — propose themed exhibitions from the archive.</div>
   </div>
 </div>
@@ -401,7 +360,7 @@ footer: ''
 <div style="display: flex; gap: 20px; margin-top: 18px; align-items: stretch;">
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 22px 24px; border-top: 3px solid var(--g);">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--g); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px;">Not Starting From Zero</div>
-    <div style="font-size: 0.78em; color: var(--body); line-height: 1.7;">The enrichment pipeline, the 10,000-artwork dataset, and the vector engine that powers the art wall <strong>already run in production</strong>. This is assembling proven pieces — not a moonshot.</div>
+    <div style="font-size: 0.78em; color: var(--body); line-height: 1.7;">The enrichment pipeline, the 10,000-artwork dataset, and the vector engine that understands how artworks relate <strong>already run in production</strong>. This is assembling proven pieces — not a moonshot.</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 22px 24px; border-top: 3px solid var(--blue);">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--blue); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px;">Built To Be Owned, Not Babysat</div>
@@ -417,20 +376,29 @@ footer: ''
 
 # Agree On The Principle. Fund The First Step.
 
-<div style="display: flex; gap: 20px; margin-top: 18px; align-items: stretch;">
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 24px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--a); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px;">The Principle</div>
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 1.2em; color: var(--t); margin-bottom: 10px;">Arterial should own its platform — not rent its future</div>
-    <div style="font-size: 0.76em; color: var(--body); line-height: 1.65;">Align that an owned platform, built on the artists and artworks we already have, is worth pursuing as core infrastructure.</div>
+<div style="background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 14px 22px; margin-bottom: 16px; border-left: 3px solid var(--a);">
+  <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--a); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 4px;">The Principle</div>
+  <div style="font-size: 0.8em; color: var(--body); line-height: 1.6;">An owned platform, built on the artists and artworks Arterial already has, is worth pursuing — and the first move is to replace rented Artwork Archive with our own production-ready system.</div>
+</div>
+
+<div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--blue); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;">The First Phase &mdash; A Funded Polymash Scoping &amp; Foundation Engagement</div>
+
+<div style="display: flex; gap: 14px; align-items: stretch;">
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px 20px; border-top: 3px solid var(--a);">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.95em; color: var(--t); margin-bottom: 8px;">Migration plan &amp; roadmap</div>
+    <div style="font-size: 0.72em; color: var(--body); line-height: 1.6;">Design docs and a roadmap to replace Artwork Archive with an owned system — porting our submissions work into one consolidated database.</div>
   </div>
-  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 24px;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--blue); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px;">The First Step</div>
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 1.2em; color: var(--t); margin-bottom: 10px;">A scoped first phase that proves it on real data</div>
-    <div style="font-size: 0.76em; color: var(--body); line-height: 1.65;">Stand up a working slice — the GetArtNow wall on our own collection — so the vision is something we can <strong>click through</strong>, not just imagine.</div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px 20px; border-top: 3px solid var(--blue);">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.95em; color: var(--t); margin-bottom: 8px;">A working proof of concept</div>
+    <div style="font-size: 0.72em; color: var(--body); line-height: 1.6;">An embeddable gallery running on our own infrastructure (Next.js + Supabase) — the first real replacement piece, live on our data.</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px 20px; border-top: 3px solid var(--g);">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.95em; color: var(--t); margin-bottom: 8px;">A promotable site</div>
+    <div style="font-size: 0.72em; color: var(--body); line-height: 1.6;">A website explaining what the platform is, what it does, and who benefits — inviting inquiries, so Scott has something real to promote now.</div>
   </div>
 </div>
 
-<div style="margin-top: 16px; font-size: 0.72em; color: var(--m); line-height: 1.55;">Not a blank check and not "build it all" — one real step that turns belief into something tangible before any larger commitment.</div>
+<div style="margin-top: 14px; font-size: 0.7em; color: var(--m); line-height: 1.5;">Concrete, promotable deliverables — not a demo gimmick — before any larger build commitment.</div>
 
 ---
 
@@ -441,7 +409,7 @@ footer: ''
 
 <div style="font-family: 'Raleway'; font-weight: 300; font-size: 1.05em; color: var(--body); margin-top: 12px; max-width: 780px;">It's whether Arterial keeps renting its future — or finally owns the thing every one of its initiatives already depends on.</div>
 
-<div style="margin-top: 26px; font-family: 'Outfit'; font-weight: 700; font-size: 0.9em; letter-spacing: 0.18em; color: var(--a);">GETARTNOW</div>
+<div style="margin-top: 26px; font-family: 'Outfit'; font-weight: 700; font-size: 0.9em; letter-spacing: 0.2em; color: var(--a);">POLYMASH</div>
 
 ---
 
@@ -450,15 +418,13 @@ footer: ''
 # Sources & References
 ## A vision deck — these back the few external claims
 
-<div style="font-size: 0.72em; line-height: 1.6; columns: 2; column-gap: 36px;">
+<div style="font-size: 0.74em; line-height: 1.6; columns: 2; column-gap: 36px;">
 
-<div style="break-inside: avoid; margin-bottom: 11px;"><strong style="color: var(--a);">The "salon hang" — dense, floor-to-ceiling display</strong> originated at the Paris Salon (1667, the Louvre's Salon Carré); the "Petersburg hang" is named for the Hermitage. — <a href="https://www.gallery.ca/salon-hanging/">National Gallery of Canada</a>; <a href="https://insights.famsf.org/salon-style/">Fine Arts Museums of SF</a>.</div>
+<div style="break-inside: avoid; margin-bottom: 12px;"><strong style="color: var(--a);">Art-market value is consolidating around owned platforms + proprietary data.</strong> In 2025 Beowolff Capital acquired Artnet (~$73.7M) and merged it with Artsy into one data-and-AI ecosystem. — <a href="https://news.artnet.com/market/beowolff-capital-artnet-takeover-2649474">Artnet News</a>; <a href="https://www.artnews.com/art-news/news/artsy-artnet-merger-beowolff-art-market-1234781320/">ARTnews</a>.</div>
 
-<div style="break-inside: avoid; margin-bottom: 11px;"><strong style="color: var(--a);">Art-market value is consolidating around owned platforms + proprietary data.</strong> In 2025 Beowolff Capital acquired Artnet (~$73.7M) and merged it with Artsy into one data-and-AI ecosystem. — <a href="https://news.artnet.com/market/beowolff-capital-artnet-takeover-2649474">Artnet News</a>; <a href="https://www.artnews.com/art-news/news/artsy-artnet-merger-beowolff-art-market-1234781320/">ARTnews</a>.</div>
+<div style="break-inside: avoid; margin-bottom: 12px;"><strong style="color: var(--a);">The rented gallery layer offers one rigid exhibition format</strong> — the limitation this platform removes. — Artwork Archive public exhibition/feature documentation; Arterial team production use.</div>
 
-<div style="break-inside: avoid; margin-bottom: 11px;"><strong style="color: var(--a);">The rented gallery layer offers one rigid exhibition format</strong> — the limitation this platform removes. — Artwork Archive public exhibition/feature documentation.</div>
-
-<div style="break-inside: avoid; margin-bottom: 11px;"><strong style="color: var(--a);">Vector-embedding visual similarity</strong> is the established technique behind the art wall's "recompose around this piece" navigation — the same approach Polymash runs in production in the Intersect curator.</div>
+<div style="break-inside: avoid; margin-bottom: 12px;"><strong style="color: var(--a);">Vector-embedding visual similarity</strong> is the established technique behind the platform's "how artworks relate" discovery — the same approach Polymash already runs in production in the Intersect curator.</div>
 
 </div>
 

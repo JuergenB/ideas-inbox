@@ -6,17 +6,6 @@ Order matches the deck's Sources slide.
 
 ---
 
-## The "salon hang" — dense, floor-to-ceiling display has an art-historical pedigree
-
-- **Claim in deck:** GetArtNow's dense art wall revives the "salon hang," which originated at the Paris Salon (1667, the Louvre's Salon Carré); the "Petersburg hang" is named for the Hermitage.
-- **Sources:**
-  - National Gallery of Canada — "The Tradition of the Salon" — https://www.gallery.ca/salon-hanging/
-  - Fine Arts Museums of San Francisco — "Floor to Ceiling" (salon style) — https://insights.famsf.org/salon-style/
-  - M.S. Rau — "The Paris Salon: How It Shaped the Art World — and Your Gallery Wall" — https://rauantiques.com/blogs/canvases-carats-and-curiosities/the-paris-salon-how-it-shaped-the-art-world-and-your-gallery-wall
-- **Retrieved:** 2026-06-08 via web search.
-- **Quote (NGC / FAMSF synthesis):** "The crowded, floor-to-ceiling arrangement known as the 'salon-style hang'" took its name from the room where the Académie's annual exhibitions were held; the "Petersburger" style takes its name from the Hermitage in St. Petersburg.
-- **Used in deck:** slide 6 (GetArtNow art wall).
-
 ## Art-market value is consolidating around owned platforms + proprietary data
 
 - **Claim in deck:** The art world's own value is consolidating around owned platforms plus proprietary data. In 2025 Beowolff Capital acquired Artnet (~$73.7M) and merged it with Artsy into a single data-and-AI ecosystem.
@@ -34,14 +23,14 @@ Order matches the deck's Sources slide.
 - **Claim in deck:** Artwork Archive's exhibition display has a single rigid format with no adjustable parameters (dimensions on/off, sliders, animated storytelling) — the limitation the owned platform removes.
 - **Source:** Artwork Archive public product / exhibition feature documentation (artworkarchive.com). First-party experience from the Arterial team's production use via the `artwork-archive` Rolling Submissions repo.
 - **Status:** Partly an internal/operational observation (we use the product); the limitation is verifiable against AA's published exhibition feature set. Last verified against team usage: 2026-06.
-- **Used in deck:** slides 3, 6, 7.
+- **Used in deck:** the "rent and stitch" slide and the capabilities slide.
 
 ## Vector-embedding visual similarity is the technique behind the art wall
 
 - **Claim in deck:** The art wall's "recompose around this piece" navigation is powered by vector-embedding similarity — the same approach Polymash already runs in production in the Intersect curator.
 - **Source:** First-party — the Intersect curator uses OpenAI embeddings + Pinecone for taste/similarity in production (see `the-intersect-curator/lib/pinecone/`). Vector similarity search for images/text is an established, widely-documented technique.
 - **Status:** First-party + general industry technique; no single external citation required.
-- **Used in deck:** slides 6, 12.
+- **Used in deck:** the capabilities slide and "Proven Pieces, Built To Be Owned".
 
 ---
 

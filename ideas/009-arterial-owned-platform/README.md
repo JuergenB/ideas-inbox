@@ -1,12 +1,12 @@
-# Idea 009: Arterial's Owned Platform — GetArtNow
+# Idea 009: Arterial's Owned Platform
 
-**Origin:** Scott Power & Juergen Berkessel, 2026-06-08
+**Origin:** Juergen Berkessel (Polymash) — a Polymash proposal for Arterial, 2026-06-08
 **Status:** Research & Discussion
 **Predecessor:** Successor to [Idea 001 — Artist Directory / Gallery Platform](../001-artist-directory/); shares architecture thinking with [Idea 004 — Multi-Tenant Curator Platform](../004-multi-tenant-curator-platform/)
 
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/009-arterial-owned-platform/exports/arterial-platform-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/arterial-owned-platform-slide-1.png" width="820" alt="Arterial's Owned Platform / GetArtNow — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/arterial-owned-platform-slide-1.png" width="820" alt="Arterial's Owned Platform — click to open full-screen presentation">
   </a>
 </p>
 
@@ -22,9 +22,11 @@ Arterial has quietly built a real asset: a collection of **10,000+ artworks and 
 
 But the collection doesn't live on anything Arterial owns. It's assembled by our own enrichment pipeline and then displayed and managed through a stack of **rented, disconnected tools** — Artwork Archive for display, Airtable for staging, ActiveCampaign for the list, Paperform and paper forms for intake, n8n for automation, and one-off websites for partners. We control the art; we don't control the layer it lives on.
 
-**Idea 009 is to own that layer** — to build one platform, anchored on Arterial's artists and artworks, that powers exhibitions, submissions, discovery, and partnerships, with **GetArtNow** as its public face. This is explicitly *not* a consumer-subscription play (that was the weaker thesis of idea 001). It's infrastructure: the substrate every Arterial initiative already depends on, finally owned.
+**Idea 009 is to own that layer** — to build one platform, anchored on Arterial's artists and artworks, that powers exhibitions, submissions, discovery, and partnerships. This is explicitly *not* a consumer-subscription play (that was the weaker thesis of idea 001). It's infrastructure: the substrate every Arterial initiative already depends on, finally owned.
 
-This deck is a **vision / discussion paper** for Scott — the goal is alignment on the principle ("Arterial should own its platform, not rent its future") and agreement to fund a scoped first phase that proves it on real data.
+This is a **Polymash proposal** for Arterial's underlying platform. A public-facing marketing site (under whatever brand Scott eventually chooses) is a separate, later concern — not presumed here.
+
+This deck is a **vision / discussion paper** for Scott — the goal is alignment on the principle ("Arterial should own its platform, not rent its future") and agreement to fund a scoped first phase that begins replacing rented Artwork Archive with our own system.
 
 ## Why It Matters
 
@@ -32,7 +34,7 @@ This deck is a **vision / discussion paper** for Scott — the goal is alignment
 
 **2. One operating system → one mature institution.** Today Arterial is a portfolio of strong but siloed initiatives. An owned platform is the connective tissue that makes the constellation cohere — Art House pulls artists from it, Artsville shows exhibitions from it, the Grant feeds it, the next initiative launches *on* it. The art market's own value is consolidating around exactly this combination of owned platform + proprietary data (in 2025 Beowolff Capital bought Artnet and merged it with Artsy into a single data-and-AI ecosystem). Platform + data *is* the asset.
 
-**3. GetArtNow — discover art like nowhere else.** The showpiece: a dense, image-first "art wall" reviving the historical *salon hang* (the floor-to-ceiling style of the Paris Salon and the Hermitage) as something interactive. Navigate by color, style, region, or artist; click any piece and the wall recomposes around it — a vector-driven walk through the collection. Impossible on a rented gallery plugin; trivial once we own the corpus, the metadata, and a vector engine (the same approach already running in Polymash's Intersect curator).
+**3. Capabilities the rented stack structurally can't touch.** Because the platform owns the corpus, the enriched metadata, and a vector engine (the same approach already running in Polymash's Intersect curator), it can do things a rented gallery plugin can't: configurable exhibitions, visual/vector-driven discovery (surface works by color, style, region, or artist), a QR bridge from physical wall to phone, partner analytics, and AI-assisted curation. One owned substrate, many expressions.
 
 ## What Owning It Unlocks (only possible with our own infrastructure)
 
@@ -62,10 +64,15 @@ Arterial's cheapest growth isn't new reach — it's re-activating the artists al
 
 ## The Ask
 
-This is a request for **strategic buy-in**, not a resource commitment:
+This is a **Polymash proposal** asking for two things — strategic buy-in plus a funded first phase:
 
-1. **Agree on the principle** — that an owned platform, built on the artists and artworks Arterial already has, is worth pursuing as core infrastructure.
-2. **Fund a scoped first phase** — a working slice (the GetArtNow art wall on our own collection) that turns the vision into something you can click through, before any larger commitment.
+1. **Agree on the principle** — that an owned platform, built on the artists and artworks Arterial already has, is worth pursuing as core infrastructure, starting with replacing rented Artwork Archive with our own production-ready system.
+2. **Fund a first phase** — a scoping & foundation engagement with Polymash that delivers:
+   - **A migration plan & roadmap** — design docs to replace Artwork Archive, porting our submissions work into one consolidated database.
+   - **A working proof of concept** — an embeddable gallery on our own infrastructure (Next.js + Supabase), live on our data.
+   - **A promotable explainer site** — a website describing what the platform is, what it does, and who benefits — inviting inquiries, so Scott has something real to promote now.
+
+Concrete, promotable deliverables — not a demo — before any larger build commitment. (Engagement terms are handled separately.)
 
 ## Relationship to Other Ideas
 
