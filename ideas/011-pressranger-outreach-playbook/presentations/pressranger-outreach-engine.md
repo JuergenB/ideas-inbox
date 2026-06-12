@@ -414,6 +414,33 @@ Arts to Hearts
 
 ---
 
+<!-- _class: bg-glow-green -->
+
+### The Lever That Moves Numbers
+
+# Paid Social, Automated Through PolyWiz
+
+<div style="font-size: 0.8em; color: var(--body); margin-top: 6px; max-width: 880px; line-height: 1.55;">PR + listings + email harvest <em>existing</em> intent. Paid social <strong>manufactures new intent</strong> — and we already scoped the engine in <a href="https://github.com/JuergenB/ideas-inbox/tree/main/ideas/007-polywiz-paid-ads-engine">Idea 007</a>. Add one thin <strong>"Open Calls" category</strong> to it.</div>
+
+<div style="display: flex; gap: 14px; margin-top: 16px;">
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.78em; color:var(--a); margin-bottom:6px;">What it does</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">A new open-call record auto-generates 8–15 ad variants → <strong>Meta + Pinterest</strong> via Zernio, optimized for <strong>submissions</strong>, plus organic reminders trickled across the run (opened → 1 week left → 48h).</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.78em; color:var(--blue); margin-bottom:6px;">Why Pinterest</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;">Visual-discovery, art-aligned audience, native lead ads, <strong>CPC 30–50% under Meta</strong>. Open calls are the use case that justifies turning it on.</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.78em; color:var(--g); margin-bottom:6px;">Conservative budget</div>
+    <div style="font-size: 0.66em; color: var(--body); line-height: 1.55;"><strong>~$150–$300 per call</strong> (short flights, not always-on). First test: one brand, one call, ~$250 — to measure cost-per-submission for the <em>first time</em>.</div>
+  </div>
+</div>
+
+<div style="margin-top: 14px; font-size: 0.72em; color: var(--m); line-height: 1.5; text-align: center;">Compounds: submissions now + newsletter signups + a retargeting pool that makes the next call cheaper. Same engine repoints at donors in the fall.</div>
+
+---
+
 <!-- _class: bg-glow-gold -->
 
 ### Phasing

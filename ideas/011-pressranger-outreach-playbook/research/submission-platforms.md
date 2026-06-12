@@ -2,9 +2,26 @@
 
 The demand-generation layer of the engine: a US-wide map of **where to register an open call / exhibition** so more artists discover and submit, plus the **organizations and media** that amplify a call. This becomes the *Listing-Site & Partner Registry* table in our owned promotion repository (the extended Artwork Archive Airtable) — the meeting's "shared, structured list of submission venues."
 
-Compiled 2026-06-12 from web research + grounded Perplexity sessions (`sonar` / `sonar-reasoning-pro`); URLs in [sources.md](sources.md).
+Compiled 2026-06-12 from web research + grounded Perplexity sessions + **Firecrawl verification of the actual submit pages**; URLs in [sources.md](sources.md).
 
 > ⚠️ **Costs are approximate and must be confirmed.** Many fees below are model/analyst estimates and sources conflict (e.g. NYFA "free for affiliated orgs" vs. "paid Classifieds"). Treat every price as *(confirm on the site)*. Free-to-post status is the most valuable and the most likely to change — verify before relying on it.
+>
+> 📋 **For the exhaustive, verified, shareable version:** run [docs/perplexity-computer-prompt.md](../docs/perplexity-computer-prompt.md) in Perplexity Computer — it browses and verifies each live page and builds a sortable widget + CSV that imports into the Airtable registry. The tables below are the hand-verified seed.
+
+---
+
+## ★ Tier 0 — Verified free + self-service URL posting (start here)
+
+The lowest-effort wins: post a call by filling a web form yourself, no email, free or near-free. **Action URLs Firecrawl-verified 2026-06-12** (these replace the fabricated `/organizer/submit-opportunity`-style URLs that an automated research model guessed — those were not real).
+
+| Platform | Verified action URL | Cost | Self-service |
+|----------|--------------------|------|--------------|
+| **ArtCall.org** | `artcall.org/calls/add` | **Free** ("Advertise Your Art Call For Entry Free"; also auto-lists to ArtCallEntry.com) | Instant web form |
+| **ArtDeadline.com** | `artdeadline.com/adc-news/` ("Submit Your Announcement") | *(confirm — free event listings / paid tiers)* | Web form |
+| **ArtConnect** | `magazine.artconnect.com/organizations` | Free listing + paid boost | Account + form |
+| **EntryThingy** | `app.entrythingy.com/calls_list/` (submit your call to be listed) | Free listing tier | Account + form |
+| **Artwork Archive** | `artworkarchive.com/call-for-entry-management` (Free Submit account) | Free submit account | Account + form |
+| **Fractured Atlas** | Artist Opportunity Database — submit form via `fracturedatlas.org` | **Free** | Web form (added to Notion DB) |
 
 ---
 
