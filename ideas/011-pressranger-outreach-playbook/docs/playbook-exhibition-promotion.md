@@ -1,6 +1,6 @@
 # Exhibition & Open-Call Promotion Playbook (Draft v1)
 
-A repeatable SOP so every open call and every exhibition gets promoted the **same way, every time** — instead of depending on whoever has time. Built from the Thursday Open Call meeting. PressRanger + a curated Airtable + our existing automation are the tooling; this document is the *process*.
+A repeatable SOP so every open call and every exhibition gets promoted the **same way, every time** — instead of depending on whoever has time. Built from the Thursday Open Call meeting. The engine is **our own stack** — the Artwork Archive Airtable (extended) as the promotion repository, our own AI press-release generator, and n8n for cadence; **PressRanger is one plugged-in feed** (journalist data + pitch radar), not the spine. This document is the *process*.
 
 > **Design principle from the meeting:** *"Institutionalize the outreach process for each exhibition… we notify the right sources every time… because our own email can't be it. It's too weak or small."* And the evidence: the grants over-performed because we **ran Facebook campaigns to the landing pages** — not because of organic interest. Routine open calls deserve the same multi-channel treatment.
 
@@ -12,10 +12,10 @@ Set these up before the first campaign so each campaign is fill-in-the-blanks, n
 
 | Asset | Where | Owner | Notes |
 |-------|-------|-------|-------|
-| **Contact repository** | Airtable | Elise | Tables: *Journalists/Media*, *Open-Call Aggregator Sites*, *Partners*, *Artist List segments*. Seeded from PressRanger exports, then **hand-verified** for the arts beat. This is the system-of-record, not PressRanger. |
-| **Open-call listing board** | Airtable table | Elise | The sites where artists actually search for calls — full directory in [research/submission-platforms.md](../research/submission-platforms.md). Start with the **free** boards: EntryThingy, ArtCallEntry, Artwork Archive, ArtConnect; add CaFÉ for juried intake. Each row: site, submission URL, free/paid, lead time, audience, contact. |
-| **PressRanger workspace** | PressRanger | Elise | One "company/brand" per property (Not Real Art, Artsville, Arterial, partners). Juergen's account is **Tier 3** = 10 brands + 4,000 exports/mo — enough to start. See [tool-comparison.md](../research/tool-comparison.md). |
-| **Release + email templates** | Airtable / Docs | Elise | Reusable shells for the three release moments below + the artist email blast. |
+| **Promotion repository** | Airtable (extend Artwork Archive) | Juergen + Elise | **Extend the existing** campaigns/open-calls/submissions base with tables: *Press Releases*, *Announcement Playbook*, *Journalists/Media*, *Listing-Site & Partner Registry*, *Artist List segments*, *Campaign Assets*. Ours, portable — the system-of-record. |
+| **Press-release generator** | Our stack (AI, reuse the-intersect-curator / PolyWiz) | Juergen | Brand-aware generator: from an open-call record, drafts release + artist-email + social copy, pointed at the right landing page. PressRanger's generator is a fallback. |
+| **Listing-site & partner registry** | Airtable table | Elise | US-wide directory of where to register calls — full list in [research/submission-platforms.md](../research/submission-platforms.md). Start with the **free** boards: EntryThingy, ArtCallEntry, Artwork Archive, ArtConnect, Fractured Atlas; add CaFÉ for juried intake. Each row: site, URL, free/paid *(confirm)*, lead time, audience, contact. |
+| **PressRanger feed** | PressRanger | Elise | One "company/brand" per property (Not Real Art, Artsville, Arterial, partners). Juergen's account is **Tier 3** = 10 brands + 4,000 exports/mo. Used to find arts-beat contacts → repository, and for inbound pitch alerts. Swappable. See [tool-comparison.md](../research/tool-comparison.md). |
 | **Landing-page convention** | Existing system | Juergen | Every campaign points at one canonical registration/submission URL with UTM tags so we can measure. |
 | **Automation hooks** | n8n | Juergen | A new open call / exhibition record fires the checklist below so nothing is skipped. |
 

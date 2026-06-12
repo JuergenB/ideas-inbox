@@ -1,14 +1,25 @@
-# Idea 011: PressRanger as Our Outreach & PR Engine
+# Idea 011: An Owned Promotion & PR Engine (PressRanger as One Input)
 
 **Origin:** Juergen Berkessel (Polymash) — prompted by a June 2026 email thread with Scott Power about reactivating our PressRanger accounts, plus the Thursday Open Call meeting on exhibition promotion
 **Status:** Research & Discussion — recommend a scoped team pilot
 **Date:** 2026-06-12
-**Related:** [Idea 009 — Arterial's Owned Platform](../009-arterial-owned-platform/) (this is the outreach layer that sits on top of the collection)
+**Related:** [Idea 009 — Arterial's Owned Platform](../009-arterial-owned-platform/) — same "own the layer, don't rent it" thesis. 009 owns the *collection*; this owns the *promotion* around it.
+
+> **Note on framing (updated):** This started as "should we adopt PressRanger?" — but the stronger move is to **extend the promotion repository we already have** (the Artwork Archive Airtable: campaigns, upcoming open calls, submissions) into an owned **press-release + announcement-playbook engine**, and treat PressRanger as *one optional connected tool* (a journalist-database source), not the centerpiece. The PressRanger research below stands as a thorough **component evaluation**; the architecture section is the actual recommendation.
+
+<p>
+  <a href="https://ideas-inbox-mocha.vercel.app/ideas/011-pressranger-outreach-playbook/exports/pressranger-outreach-engine-light.html">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/pressranger-outreach-playbook-slide-1.png" width="820" alt="An Owned Promotion & PR Engine — click to open full-screen presentation">
+  </a>
+</p>
+
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/011-pressranger-outreach-playbook/exports/pressranger-outreach-engine-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/011-pressranger-outreach-playbook/exports/pressranger-outreach-engine.html)
+**📄 Slide deck (PDF):** [exports/pressranger-outreach-engine.pdf](exports/pressranger-outreach-engine.pdf) — download for print or offline.
 
 **📄 PressRanger feature deep-dive:** [research/pressranger-features.md](research/pressranger-features.md) — every feature from first-party sources + exactly how we'd use each one.
 **📄 Pricing deep-dive:** [research/pricing-analysis.md](research/pricing-analysis.md) — is the wire actually cheaper? (Short answer: no — the *software* is the bargain.)
 **📄 Tool comparison:** [research/tool-comparison.md](research/tool-comparison.md) — PressRanger vs. PR Newswire, eReleases, EIN Presswire, Cision, Prowly, Muck Rack, Meltwater.
-**📄 Where to list open calls:** [research/submission-platforms.md](research/submission-platforms.md) — submission boards + amplifier media (journalists, newsletters, podcasts).
+**📄 Where to register open calls (US-wide):** [research/submission-platforms.md](research/submission-platforms.md) — listing boards + national orgs/partners/councils + amplifier media. The demand layer that lifts submissions.
 **📄 Exhibition & open-call promotion playbook:** [docs/playbook-exhibition-promotion.md](docs/playbook-exhibition-promotion.md) — the repeatable SOP this idea is really about.
 **📄 Team proposal note:** [docs/proposal-to-team.md](docs/proposal-to-team.md) — short note to Scott & Elise proposing the pilot.
 **📄 Sources & references:** [research/sources.md](research/sources.md) — full URLs, retrieval dates, and quotes for every pricing and capability claim.
@@ -25,9 +36,27 @@ We schedule open calls and exhibitions across **Not Real Art**, **Artsville USA*
 
 Meanwhile both Scott and Juergen are sitting on **PressRanger** — a media-database + outreach tool we already bought as an AppSumo lifetime deal and then forgot about. Scott's reaction when reminded: *"Happy to start leveraging it… Given the low cost of it, it would be interesting to see if we can turn it into some kind of service or capability for artists or galleries. We just need to learn it and optimize it."* He also flagged the honest open question: *"I'm not sure how effective it is. We'll have to see."*
 
-This paper answers two things: **what PressRanger actually is and how it compares to the expensive incumbents**, and **how it should plug into a repeatable promotion playbook** — without overstating what the tool can do.
+This paper does two things: it **evaluates PressRanger thoroughly as a component** (what it is, how it compares, what it costs — sections below), and it lands on an **architecture** that doesn't make any single rented tool the spine.
 
-## What PressRanger Actually Is — Two Products in One Box
+## The Architecture — Own the Engine, Plug In the Tools
+
+We don't need to *adopt a PR platform*. We need a **promotion engine**, and we already own most of one. The Artwork Archive repository's Airtable already holds **campaigns, upcoming open calls, and submission handling**; our stack (the-intersect-curator, PolyWiz, Visibility Labs) already does **AI content generation, enrichment, and n8n automation**. The move is to **extend what we have** rather than build the playbook around a tool we'd be renting capability from.
+
+**The owned engine (our stack — the spine):**
+- **Promotion repository** — extend the existing Artwork Archive Airtable: add tables for *press releases*, an *announcement playbook / decision tree*, *outreach contacts*, *listing-site & partner registry*, and *campaign assets*, alongside the campaigns / open-calls / submissions we already track.
+- **Press-release generator** — build our own (we already run AI content generation in the-intersect-curator / PolyWiz). A brand-aware generator that drafts the release, the artist-email, and social copy from an open-call record, pointed at the right landing page. *(PressRanger has an AI generator too — fine as a fallback, but a generator is not a reason to rent.)*
+- **Cadence & assembly** — n8n fires the playbook on every new open call / exhibition record, generates the assets, and routes them.
+
+**The plug-in tools (swappable inputs, not the spine):**
+- **PressRanger** → a **journalist/media-database source + pitch radar** we already own (Tier 3). Pull arts-beat contacts from it into our repository; use its inbound pitch alerts. Its AI generator and pay-per-release wire are *optional extras*, not the reason it's in the stack.
+- **Distribution wires** (EIN Presswire / eReleases / PressRanger Gold) → shopped per release (see [pricing-analysis.md](research/pricing-analysis.md)).
+- **Listing boards & partners** → where we *register* calls to lift submissions ([submission-platforms.md](research/submission-platforms.md)).
+
+**Why this way:** it's the [Idea 009](../009-arterial-owned-platform/) principle applied to promotion — own the repository and the logic; rent only commodity inputs you can swap. PressRanger stops being a single point of dependency and becomes one (cheap, already-owned) data feed among several. If its data quality disappoints, we swap the feed without touching the engine.
+
+## Component Evaluation: What PressRanger Actually Is — Two Products in One Box
+
+*(Everything from here down evaluates PressRanger as a plug-in tool for the engine above — it's the due diligence, not a pitch to build the system around it.)*
 
 It's easy to think of PressRanger as "a cheaper press-release wire." It's really **two distinct products bundled together**, and the value to us is lopsided toward the first one:
 
@@ -83,19 +112,22 @@ Reviews and hands-on reports converge on real limitations — these shape the re
 
 These caveats point to the architecture below: **PressRanger for discovery, a curated Airtable as our system-of-record, and disciplined sending** — not "trust the raw list and hit send."
 
-## The Recommendation — A Three-Layer Outreach System
+## How It Runs — The Engine In Practice
 
-This is the same shape as our other systems: a discovery source, a curated source-of-truth, and an automation layer for cadence.
+This is the architecture above, made concrete — our owned stack is the spine; PressRanger is one feed into it.
 
-1. **PressRanger = discovery + drafting (+ wire only when it earns it).** Mine it for journalists, arts/culture publishers, podcasts, and open-call-adjacent media. Use its AI to draft first-pass releases and pitches, and its pitch-request radar for inbound arts queries. Use the wire *selectively* — and shop it per release (EIN Presswire for cheap syndication, eReleases/CauseWire for credible reach, PressRanger Gold when AI-chatbot indexing matters).
-2. **Airtable = the curated contact repository (the system-of-record).** Exactly what the Thursday meeting asked for. Seed it from PressRanger exports (we have 4,000 exports/mo on Tier 3), **hand-verify and enrich** the arts-beat contacts, and add a second table of **open-call listing sites** — the places artists actually search ([submission-platforms.md](research/submission-platforms.md)). This solves "no central repository" — and it's ours, portable, and feeds the system we've already built.
-3. **The existing automation layer (n8n) = cadence.** Trigger the playbook on every new open call / exhibition so outreach happens *every time*, not when someone remembers — the "institutionalize it" ask from the meeting.
+1. **Our owned promotion repository (Airtable, extending Artwork Archive) = the system-of-record.** The campaigns / open-calls / submissions we already track, extended with *press releases*, the *announcement playbook*, *outreach contacts*, the *listing-site & partner registry*, and *campaign assets*. This is the "central repository" the Thursday meeting asked for — ours, portable, already wired into our system.
+2. **Our own press-release generator (AI, reusing the-intersect-curator / PolyWiz capability) = drafting.** Generates the release, artist-email, and social copy from an open-call record, pointed at the right landing page. PressRanger's generator is a fallback, not the dependency.
+3. **PressRanger = a journalist/media feed + pitch radar.** Pull arts-beat journalists, outlets and podcasts into the repository (4,000 exports/mo on Tier 3); use its inbound pitch alerts. Swappable if its data disappoints.
+4. **n8n = cadence.** Fires the playbook on every new open call / exhibition so outreach happens *every time* — the "institutionalize it" ask. Distribution wire is shopped per release.
+
+On top of that sits the **playbook** ([docs/playbook-exhibition-promotion.md](docs/playbook-exhibition-promotion.md)): a multi-channel, multi-stage SOP (generate the release → register the call on the listing boards artists use → email the artist list → paid Facebook/Instagram → release on launch → recap when live), with landing-page alignment baked in. The meeting's own evidence backs the paid-traffic leg: the grants over-performed because we ran **Facebook campaigns to the landing pages** — open calls likely need the same. Much of the reach is **free** — most listing boards (EntryThingy, ArtCallEntry, Artwork Archive, ArtConnect) and amplifiers (Hyperallergic tips, Colossal's opportunities roundup) cost nothing; we simply aren't using them today. The full US-wide registry of where to register calls (sites, orgs, partners, media) lives in [submission-platforms.md](research/submission-platforms.md).
 
 On top of that sits the **playbook** ([docs/playbook-exhibition-promotion.md](docs/playbook-exhibition-promotion.md)): a multi-channel, multi-stage SOP (press release for the open call → list on the free aggregator boards artists use → email blast to artists → paid Facebook/Instagram → release on launch → release/recap when live), with landing-page alignment baked in. The meeting's own evidence backs the paid-traffic leg: the grants over-performed because we ran **Facebook campaigns to the landing pages** — exhibitions and open calls likely need the same. Much of the reach here is **free** — most open-call boards (EntryThingy, ArtCallEntry, Artwork Archive, ArtConnect) and amplifiers (Hyperallergic tips, Colossal's opportunities roundup) cost nothing; we're simply not using them today.
 
 ## Phasing
 
-- **Phase 1 — Open-call & exhibition promotion (now).** Stand up the Airtable repository, codify the playbook, and run it live on the next open call (*Art of Resistance* is the natural candidate). Owner: **Elise**, as the team member closest to artist outreach. Goal: get to Scott's *one-release-a-month* cadence and measurably lift submissions.
+- **Phase 1 — Open-call & exhibition promotion (now).** Extend the Artwork Archive Airtable into the promotion repository, stand up a first-pass press-release generator, codify the playbook, and run it live on the next open call (*Art of Resistance* is the natural candidate). Owner: **Elise** for outreach/evaluation; **Juergen** for the repository extension + generator + n8n. Goal: get to Scott's *one-release-a-month* cadence and measurably lift submissions.
 - **Phase 2 — Fundraising (fall).** Same engine, pointed at donors/grant press once the financial-house-in-order / impact-story / DAF-readiness groundwork lands. The 501(c)(3) "broad support from 500+ individuals" requirement makes disciplined, repeatable outreach a compliance asset, not just a marketing one. (Per the meeting, the Atlanta grant-matching contact is a *later* conversation, not now.)
 - **Phase 3 (optionality) — PR-as-a-service for our network.** PressRanger is **100% white-label / reseller-ready** (strip its branding, add ours, generate branded reports). That's the literal mechanism behind Scott's instinct — *"turn it into some kind of service or capability for artists or galleries."* Once we've run the playbook on ourselves and know it works, we could offer open-call/exhibition PR as a branded service to the artists and galleries in our network. Flagged now; not a Phase-1 commitment.
 
@@ -107,4 +139,4 @@ On top of that sits the **playbook** ([docs/playbook-exhibition-promotion.md](do
 
 ## Why It's Captured Here
 
-This started as a "did you ever sign up for PressRanger?" email, but the underlying move — **turning a forgotten lifetime tool into the missing outreach layer, wrapped in a repeatable playbook** — is exactly the kind of system thinking this inbox exists to develop. It's also a low-cost, high-leverage complement to [Idea 009](../009-arterial-owned-platform/): 009 owns the *collection*; this owns the *outreach* around it.
+This started as a "did you ever sign up for PressRanger?" email, but the underlying move — **extending the promotion repository we already own into a press-release + announcement engine, with PressRanger as one swappable feed** — is exactly the kind of system thinking this inbox exists to develop. It's a low-cost, high-leverage complement to [Idea 009](../009-arterial-owned-platform/) and the same principle: 009 owns the *collection*; this owns the *promotion* around it — and neither rents its spine from a tool that could change its pricing, quality, or terms tomorrow.
