@@ -329,8 +329,8 @@ footer: ''
   </div>
   <div style="display:flex; align-items:center; color:var(--m); font-size:1.3em;">→</div>
   <div style="flex: 1.4; background: var(--s); border: 1px solid var(--b); border-top: 2px solid var(--blue); border-radius: 10px; padding: 15px 16px; text-align: center;">
-    <div style="font-family:'Outfit'; font-weight:700; font-size:0.88em; color:var(--blue);">Airtable repository</div>
-    <div style="font-size: 0.62em; color: var(--m); margin-top:6px;">we own it — extended from Artwork Archive</div>
+    <div style="font-family:'Outfit'; font-weight:700; font-size:0.88em; color:var(--blue);">PolyWiz engine</div>
+    <div style="font-size: 0.62em; color: var(--m); margin-top:6px;">our content/ads engine — fed by the Artwork Archive Airtable</div>
     <div style="font-size: 0.64em; color: var(--body); line-height: 1.5; margin-top: 6px;">Releases · playbook · contacts · partner registry · assets</div>
   </div>
   <div style="display:flex; align-items:center; color:var(--m); font-size:1.3em;">→</div>

@@ -19,7 +19,7 @@
 **📄 PressRanger feature deep-dive:** [research/pressranger-features.md](research/pressranger-features.md) — every feature from first-party sources + exactly how we'd use each one.
 **📄 Pricing deep-dive:** [research/pricing-analysis.md](research/pricing-analysis.md) — is the wire actually cheaper? (Short answer: no — the *software* is the bargain.)
 **📄 Tool comparison:** [research/tool-comparison.md](research/tool-comparison.md) — PressRanger vs. PR Newswire, eReleases, EIN Presswire, Cision, Prowly, Muck Rack, Meltwater.
-**📄 Where to register open calls (US-wide):** [research/submission-platforms.md](research/submission-platforms.md) — listing boards + national orgs/partners/councils + amplifier media. The demand layer that lifts submissions.
+**📄 Where to register open calls + find funding (US-wide):** [research/submission-platforms.md](research/submission-platforms.md) + the **65-row verified master [arts-master-resource.csv](research/arts-master-resource.csv)** (built by Perplexity Computer, Airtable-import-ready) — listing boards, submission software, partners/councils, amplifier media, **25 fundraising/grant/donor channels**, and paid-ads (incl. **Google Ad Grants — free $10k/mo**).
 **📄 Channel mix & ad budget:** [research/channel-mix-and-budget.md](research/channel-mix-and-budget.md) — PR + free listings + **paid social via a PolyWiz "Open Calls" category** ([Idea 007](../007-polywiz-paid-ads-engine/)); conservative per-call budget + expected submissions.
 **📄 Perplexity Computer prompt:** [docs/perplexity-computer-prompt.md](docs/perplexity-computer-prompt.md) — paste into Perplexity Pro → Computer to build the exhaustive, verified, shareable submission/outreach/fundraising table + CSV.
 **📄 Exhibition & open-call promotion playbook:** [docs/playbook-exhibition-promotion.md](docs/playbook-exhibition-promotion.md) — the repeatable SOP this idea is really about.
@@ -42,19 +42,28 @@ This paper does two things: it **evaluates PressRanger thoroughly as a component
 
 ## The Architecture — Own the Engine, Plug In the Tools
 
-We don't need to *adopt a PR platform*. We need a **promotion engine**, and we already own most of one. The Artwork Archive repository's Airtable already holds **campaigns, upcoming open calls, and submission handling**; our stack (the-intersect-curator, PolyWiz, Visibility Labs) already does **AI content generation, enrichment, and n8n automation**. The move is to **extend what we have** rather than build the playbook around a tool we'd be renting capability from.
+We don't need to *adopt a PR platform*. We need a **promotion engine** — and we already own one: **PolyWiz**. This section is grounded in an actual review of the `polywiz-app` and `artwork-archive` repos (2026-06-12), not assumption.
 
-**The owned engine (our stack — the spine):**
-- **Promotion repository** — extend the existing Artwork Archive Airtable: add tables for *press releases*, an *announcement playbook / decision tree*, *outreach contacts*, *listing-site & partner registry*, and *campaign assets*, alongside the campaigns / open-calls / submissions we already track.
-- **Press-release generator** — build our own (we already run AI content generation in the-intersect-curator / PolyWiz). A brand-aware generator that drafts the release, the artist-email, and social copy from an open-call record, pointed at the right landing page. *(PressRanger has an AI generator too — fine as a fallback, but a generator is not a reason to rent.)*
-- **Cadence & assembly** — n8n fires the playbook on every new open call / exhibition record, generates the assets, and routes them.
+**PolyWiz is the engine (and already has the bones for this):**
+- It already does **URL → AI content → approval queue → tapering schedule → Zernio publish (14 platforms)**, multi-brand, with per-brand voice/keys.
+- **"Open Call" is already a scaffolded campaign type** — defined in the schema but disabled (`ENABLED_CAMPAIGN_TYPES` excludes it; UI says "Coming soon"). The Firecrawl scraper already extracts `submissionDeadline` / `submissionUrl` / `eligibility`, and the prompt composer already injects deadline context. **Enabling organic open-call promotion is ~1 hour** (flip the flag + add a few Airtable Generation Rules for submission CTAs).
+- **Press-release generation** is just a new *output format* for PolyWiz's existing AI content gen — not a new app.
+- **Paid ads** are the real build — already filed as the **[polywiz-app#181](https://github.com/JuergenB/polywiz-app/issues/181) epic** (~4–6 weeks; Phase 0 prerequisites blocking). Organic posting works today; ads/conversion/budget code does not yet exist. Pinterest is already wired for organic.
+
+**Artwork Archive is the submission system-of-record + conversion source (NOT the engine):**
+- It's an **n8n + Airtable intake → enrich → export** pipeline (its only UI is an export utility). It holds the **open-call records** (Campaigns table: deadline, landing-page URL, exhibition details) and the **submission conversion data** (status flow Imported → Enriched → Accepted).
+- It has **no** AI content gen, social/ads publishing, or promo UI — so building the promo engine here would mean a second app inside it, duplicating PolyWiz. **It feeds PolyWiz; it isn't the engine.** (An open-call record triggers a PolyWiz campaign; the submission status is the conversion signal ad optimization needs.)
+
+**Per-brand capabilities (so PolyWiz doesn't become "art-centric"):** PolyWiz already gates features per-brand with boolean flags on the Brands table (e.g. `lnkBioEnabled`). "Open Calls" becomes the same kind of **per-brand capability** — Artsville / Not Real Art on; **The Intersect off** (or pointed at *subscriber growth*, the same engine with a different objective — which is exactly what the #181 paid-ads pilot already targets). One engine, per-brand capabilities + conversion objective.
 
 **The plug-in tools (swappable inputs, not the spine):**
-- **PressRanger** → a **journalist/media-database source + pitch radar** we already own (Tier 3). Pull arts-beat contacts from it into our repository; use its inbound pitch alerts. Its AI generator and pay-per-release wire are *optional extras*, not the reason it's in the stack.
-- **Distribution wires** (EIN Presswire / eReleases / PressRanger Gold) → shopped per release (see [pricing-analysis.md](research/pricing-analysis.md)).
+- **PressRanger** → a **journalist/media-database source + pitch radar** we already own (Tier 3). Its AI generator and wire are *optional extras*, not the reason it's in the stack.
+- **Distribution wires** (EIN Presswire / eReleases / PressRanger Gold) → shopped per release ([pricing-analysis.md](research/pricing-analysis.md)).
 - **Listing boards & partners** → where we *register* calls to lift submissions ([submission-platforms.md](research/submission-platforms.md)).
 
-**Why this way:** it's the [Idea 009](../009-arterial-owned-platform/) principle applied to promotion — own the repository and the logic; rent only commodity inputs you can swap. PressRanger stops being a single point of dependency and becomes one (cheap, already-owned) data feed among several. If its data quality disappoints, we swap the feed without touching the engine.
+**Where it gets built:** the *concept and design* live here (idea 011); the *implementation* is a PolyWiz epic — extend [polywiz-app#181](https://github.com/JuergenB/polywiz-app/issues/181) (paid ads) and add the small "Open Calls" capability + per-brand flag. The Airtable *contact / listing-site / partner registry* tables can live in the Artwork Archive base (the art-data hub) and be read by PolyWiz.
+
+**Why this way:** it's the [Idea 009](../009-arterial-owned-platform/) principle applied to promotion — own the engine and the logic; rent only commodity inputs you can swap. PressRanger becomes one (cheap, already-owned) feed among several; if its data disappoints, swap the feed without touching the engine.
 
 ## Component Evaluation: What PressRanger Actually Is — Two Products in One Box
 
@@ -118,10 +127,10 @@ These caveats point to the architecture below: **PressRanger for discovery, a cu
 
 This is the architecture above, made concrete — our owned stack is the spine; PressRanger is one feed into it.
 
-1. **Our owned promotion repository (Airtable, extending Artwork Archive) = the system-of-record.** The campaigns / open-calls / submissions we already track, extended with *press releases*, the *announcement playbook*, *outreach contacts*, the *listing-site & partner registry*, and *campaign assets*. This is the "central repository" the Thursday meeting asked for — ours, portable, already wired into our system.
-2. **Our own press-release generator (AI, reusing the-intersect-curator / PolyWiz capability) = drafting.** Generates the release, artist-email, and social copy from an open-call record, pointed at the right landing page. PressRanger's generator is a fallback, not the dependency.
-3. **PressRanger = a journalist/media feed + pitch radar.** Pull arts-beat journalists, outlets and podcasts into the repository (4,000 exports/mo on Tier 3); use its inbound pitch alerts. Swappable if its data disappoints.
-4. **n8n = cadence.** Fires the playbook on every new open call / exhibition so outreach happens *every time* — the "institutionalize it" ask. Distribution wire is shopped per release.
+1. **PolyWiz = the engine.** An open-call record (with deadline + landing-page URL) becomes a PolyWiz campaign that generates the release, artist-email, and social copy, runs it through the approval queue, and publishes on a deadline-aware tapering schedule via Zernio. "Open Call" is a scaffolded campaign type already (~1hr to enable); press releases are a new output format of its existing AI gen. Paid ads = the [#181 epic](https://github.com/JuergenB/polywiz-app/issues/181).
+2. **Artwork Archive (Airtable) = the system-of-record + conversion source.** The open-call Campaign records and submission status flow already live here; add the *outreach contacts* and *listing-site & partner registry* tables here too (the art-data hub). PolyWiz reads these; the submission status is the conversion signal for ad optimization.
+3. **PressRanger = a journalist/media feed + pitch radar.** Pull arts-beat contacts into the registry (4,000 exports/mo on Tier 3); use its inbound pitch alerts. Swappable if its data disappoints.
+4. **Distribution + cadence.** PolyWiz schedules the organic cadence; the paid flight runs through the #181 ad engine; the press-release wire is shopped per release (EIN / eReleases / PressRanger).
 
 On top of that sits the **playbook** ([docs/playbook-exhibition-promotion.md](docs/playbook-exhibition-promotion.md)): a multi-channel, multi-stage SOP (generate the release → register the call on the listing boards artists use → email the artist list → paid Facebook/Instagram → release on launch → recap when live), with landing-page alignment baked in. The meeting's own evidence backs the paid-traffic leg: the grants over-performed because we ran **Facebook campaigns to the landing pages** — open calls likely need the same. Much of the reach is **free** — most listing boards (EntryThingy, ArtCallEntry, Artwork Archive, ArtConnect) and amplifiers (Hyperallergic tips, Colossal's opportunities roundup) cost nothing; we simply aren't using them today. The full US-wide registry of where to register calls (sites, orgs, partners, media) lives in [submission-platforms.md](research/submission-platforms.md).
 

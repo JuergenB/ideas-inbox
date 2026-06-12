@@ -46,6 +46,10 @@ Idea 007's standing envelope is **$250–$500 / brand / month + $50/mo Zernio Ad
 
 So a realistic Phase-1 test is **one brand, one call, ~$250** — small enough to be a rounding error, large enough to read a signal.
 
+### Free first: Google Ad Grants ($10,000/mo in-kind)
+
+The Perplexity Computer research surfaced a standout we should pursue before spending a dollar on social: **[Google Ad Grants](https://www.google.com/nonprofits/account/signup)** gives eligible 501(c)(3)s **$10,000/month of free Google Search ads**. For Arterial that's a free, always-on channel to bid on "call for artists", "art open call", "[theme] exhibition submission" searches — pure high-intent demand capture at zero cash cost. It has constraints (text-only search ads, a 2% CTR rule, $2 keyword bid cap, must maintain quality), but it's free money for the exact intent we want. **Action: apply for Arterial; run open-call landing pages through it as the first paid-ish channel.** Paid social (below) then manufactures *new* intent on top.
+
 ### What to expect (honest, unproven for submissions)
 
 Idea 007 benchmarks **newsletter-signup CPA at $1.50–$3.00 cold** ($0.80 warm/retargeting). **Submissions are higher-friction than signups, so cost-per-submission will be higher** — call it an unknown we're spending $250 to learn. Two framings:
@@ -68,8 +72,17 @@ Run it every call and the audience compounds — which is exactly the "disciplin
 
 ---
 
+## Grounded in the code (polywiz-app review, 2026-06-12)
+
+A review of the actual `polywiz-app` and `artwork-archive` repos sharpens this:
+
+- **"Open Call" is already a scaffolded campaign type** in PolyWiz (defined in the schema, currently disabled / "Coming soon"); the scraper already pulls `submissionDeadline` / `submissionUrl` / `eligibility` and the prompt composer already injects deadline context. **Organic open-call promotion ≈ 1 hour** to enable. Press releases are a new *output format* of existing AI gen.
+- **Paid ads are the real epic** — [polywiz-app#181](https://github.com/JuergenB/polywiz-app/issues/181), ~4–6 weeks, not started; Phase 0 (Zernio Ads add-on, pixels/CAPI) is blocking. Organic posting + Pinterest already work; ads/conversion/budget code does not exist yet.
+- **Per-brand capability model already exists** — Brands are gated by boolean flags (e.g. `lnkBioEnabled`). "Open Calls" becomes a per-brand flag (Artsville / NRA on; The Intersect off), so PolyWiz stays a general engine rather than an art-only tool.
+- **Artwork Archive is the submission source, not the engine** — its Campaigns table = open-call records, and its submission status flow = the conversion signal. It feeds PolyWiz; the promo engine does not get built inside its intake/export pipeline.
+
 ## How this changes Idea 007
 
-Idea 007 is *"Research Complete — Awaiting Go/No-Go"* with a Meta MVP pilot at $250/mo. This idea gives it a **concrete, high-value first use case**: every open call is already a campaign with a clear conversion goal and a landing page. Recommendation — when 007 gets its go, make **"Open Calls" the pilot content category** (not generic blog content), and **add Pinterest in the same phase** rather than waiting, because the art audience is where Pinterest pays off. The two ideas should ship together.
+Idea 007 is *"Research Complete — Awaiting Go/No-Go"* with a Meta MVP pilot at $250/mo. This idea gives it a **concrete, high-value first use case**: every open call is already a PolyWiz campaign with a clear conversion goal and a landing page. Recommendation — when 007 gets its go, make **"Open Calls" the pilot content category** (not generic blog content), **add Pinterest in the same phase** (the art audience is where it pays off), and serve **The Intersect off the same engine with a subscriber-growth objective**. The two ideas should ship together as one PolyWiz epic.
 
 > Cross-reference: ad-engine architecture, CPA benchmarks, platform-by-platform verdicts, and the Zernio Ads client all live in [Idea 007's research](../../007-polywiz-paid-ads-engine/research/) (epic [polywiz-app#181](https://github.com/JuergenB/polywiz-app/issues/181)). This file only covers the open-call-specific application.
