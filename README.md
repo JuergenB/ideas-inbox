@@ -48,6 +48,7 @@ ideas/
 | 007 | [PolyWiz Paid Ads Generation Engine](ideas/007-polywiz-paid-ads-engine/) | Research Complete — Awaiting Go/No-Go | Juergen Berkessel | 2026-04-25 |
 | 008 | [Paywall Viability for NotRealArt.com](ideas/008-paywall-viability-notrealart/) | Research & Discussion — Recommend No | Scott Power / Juergen Berkessel | 2026-06-01 |
 | 009 | [Arterial's Owned Platform](ideas/009-arterial-owned-platform/) | Research & Discussion | Juergen Berkessel (Polymash) | 2026-06-08 |
+| 010 | [Guideless Pricing & Tier Strategy](ideas/010-guideless-pricing-strategy/) | Ready to Send | Juergen Berkessel (Polymash) / Rokas @ Guideless | 2026-06-12 |
 
 ## Current Issues
 
