@@ -111,6 +111,51 @@ footer: ''
 
 ---
 
+<!-- _class: bg-dots -->
+
+### What We've Already Mapped
+
+# The Master Directory Already Exists
+
+<div style="font-size: 0.82em; color: var(--body); margin-top: 8px; max-width: 900px; line-height: 1.55;">Before building anything, we mapped the landscape. A live, interactive directory — built with Perplexity — of <strong>65 verified US channels</strong> to post open calls and promote shows, each driving submissions back to <em>our own</em> pages. This is the answer to gap #1: the central repository, already started.</div>
+
+<div style="display: flex; gap: 11px; margin-top: 16px;">
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 14px;">
+    <div style="font-family:'Outfit'; font-weight:700; font-size:1.35em; color:var(--a);">13</div>
+    <div style="font-size: 0.6em; color: var(--m); line-height:1.3; margin-top:3px;">Open-call listings</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 14px;">
+    <div style="font-family:'Outfit'; font-weight:700; font-size:1.35em; color:var(--blue);">12</div>
+    <div style="font-size: 0.6em; color: var(--m); line-height:1.3; margin-top:3px;">Media / PR amplifiers</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 14px;">
+    <div style="font-family:'Outfit'; font-weight:700; font-size:1.35em; color:var(--y);">6</div>
+    <div style="font-size: 0.6em; color: var(--m); line-height:1.3; margin-top:3px;">Partner orgs / councils</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 14px;">
+    <div style="font-family:'Outfit'; font-weight:700; font-size:1.35em; color:var(--g);">25</div>
+    <div style="font-size: 0.6em; color: var(--m); line-height:1.3; margin-top:3px;">Fundraising / grants / donor</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 14px;">
+    <div style="font-family:'Outfit'; font-weight:700; font-size:1.35em; color:var(--t);">6</div>
+    <div style="font-size: 0.6em; color: var(--m); line-height:1.3; margin-top:3px;">Submission software</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 14px;">
+    <div style="font-family:'Outfit'; font-weight:700; font-size:1.35em; color:var(--a2);">3</div>
+    <div style="font-size: 0.6em; color: var(--m); line-height:1.3; margin-top:3px;">Paid-ads channels</div>
+  </div>
+</div>
+
+<div style="display:flex; gap:14px; margin-top:14px; align-items:stretch;">
+  <div style="flex: 1.5; background: var(--s); border: 1px solid var(--b); border-radius: 8px; padding: 12px 16px; font-size: 0.68em; color: var(--body); line-height: 1.55;">Every row carries the <strong>action URL</strong> (verified June 12, 2026), cost, self-service level, effort, reach, geography and cadence — with a <strong>Quick-Start Shortlist</strong> of the free, instant options. It deliberately excludes pay-to-host platforms whose only value is parking your submissions on their infrastructure.</div>
+  <a href="https://arterial-art-exhibition-promotion-resources.pplx.app/" style="flex: 1; background: var(--s); border: 1px solid var(--a); border-radius: 8px; padding: 12px 16px; text-decoration: none; display:flex; flex-direction:column; justify-content:center;">
+    <div style="font-family:'Outfit'; font-weight:700; font-size:0.78em; color:var(--a); margin-bottom:4px;">Open the live directory →</div>
+    <div style="font-size: 0.6em; color: var(--m); line-height:1.4; word-break: break-all;">arterial-art-exhibition-promotion-resources.pplx.app</div>
+  </a>
+</div>
+
+---
+
 <!-- _class: bg-hero -->
 
 ### The Approach
@@ -520,6 +565,8 @@ Arts to Hearts
 **Data-quality caveat (~8 emails on a 100-contact export; keyword categorization)** — <a href="https://appsumo.com/products/press-ranger/reviews/">AppSumo reviews</a>; <a href="https://research.com/software/reviews/press-ranger-review">Research.com</a>.
 
 **US-wide listing boards, partners &amp; amplifiers (EntryThingy, ArtCallEntry, Artwork Archive, ArtConnect, Fractured Atlas, NYFA, Americans for the Arts, Artist Communities Alliance, Creative Capital, Hyperallergic, This Is Colossal, Booooooom)** — grounded Perplexity + WebSearch, 2026-06; URLs in the research file.
+
+**Master directory — 65 verified US channels across 6 workstreams, action URLs verified 2026-06-12** — live Perplexity-built resource: <a href="https://arterial-art-exhibition-promotion-resources.pplx.app/">arterial-art-exhibition-promotion-resources.pplx.app</a>; underlying data in <code>research/arts-master-resource.csv</code>.
 
 </div>
 

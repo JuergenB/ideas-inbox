@@ -91,6 +91,7 @@ Compiled from WebSearch + three grounded Perplexity passes (`sonar-reasoning-pro
 
 ## Master directory — arts-master-resource.csv (Perplexity Computer, 2026-06-12)
 
+- **Live hosted version:** https://arterial-art-exhibition-promotion-resources.pplx.app/ — the Perplexity-built interactive directory (filterable table + Quick-Start Shortlist), the shareable face of the CSV below. Cited on the deck's "Master Directory" slide and in the Sources slide. Retrieved 2026-06-18.
 - **65 verified rows** across 6 workstreams (Fundraising 25, Open-Call 13, Media 12, Partner 6, Submission Software 6, Paid-Ads 3), built by **Perplexity Pro → Computer** from [docs/perplexity-computer-prompt.md](../docs/perplexity-computer-prompt.md). Each row browsed + verified ("Action URL Live"), with per-row source URL + verified date in the CSV. This is the authoritative source; [submission-platforms.md](submission-platforms.md) is a readable cross-section. CSV committed at [research/arts-master-resource.csv](arts-master-resource.csv).
 - **Corrections it made to earlier hand-estimates:** CaFÉ = $225 onboarding + $250–475/call + $120/yr (not ~$150–250); EntryThingy = $3/submission; NYFA = $95–315/listing; ArtConnect = free + $99/listing or $9–20/mo; ArtCall = free basic / $79+ full.
 - **Notable new finds:** Google Ad Grants (free $10k/mo for nonprofits), Connectively (HARO successor), Qwoted, Zeffy/Every.org (0% giving platforms), PayPal Giving Fund, GrantWatch, Grants.gov/NEA, multiple state arts councils (CA, FL, South Arts, M-AAA).
