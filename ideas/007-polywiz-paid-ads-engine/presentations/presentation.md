@@ -174,34 +174,34 @@ footer: ''
 
 ## One engine, many conversion objectives
 
-<div style="font-size: 0.8em; color: var(--label); margin: -6px 0 14px; max-width: 900px;">Within a paid campaign, the <strong>objective</strong> is the conversion dimension. Each sets the platform goal, the conversion event, the creative angles, the platform mix, the pacing, and the KPI.</div>
+<div style="font-size: 0.8em; color: var(--label); margin: -2px 0 14px; max-width: 900px;">Within a paid campaign, the <strong>objective</strong> is the conversion dimension. Each sets the platform goal, the conversion event, the creative angles, the platform mix, the pacing, and the KPI.</div>
 
-<div style="font-size: 0.6em;">
-  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-bottom: 1px solid #0e0e0e;">
+<div style="font-size: 0.6em; line-height: 1.3;">
+  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 5px 8px; border-bottom: 1px solid #0e0e0e;">
     <div style="width: 165px; font-family:'Outfit'; font-weight:600; color: var(--a);">Open-call submissions <span style="color:var(--m);font-weight:400;font-size:0.85em;">· pilot</span></div>
     <div style="width: 130px; color: var(--label);">Submit / Lead</div>
     <div style="flex:1; color: var(--body);">deadline · prize · eligibility</div>
     <div style="width: 230px; color: var(--body); text-align:right;">Meta + Pinterest + Google Ad Grants · <span style="color:var(--m);">deadline flight</span></div>
   </div>
-  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-bottom: 1px solid #0e0e0e;">
+  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 5px 8px; border-bottom: 1px solid #0e0e0e;">
     <div style="width: 165px; font-family:'Outfit'; font-weight:600; color: var(--t);">Exhibition interest</div>
     <div style="width: 130px; color: var(--label);">View → Subscribe</div>
     <div style="flex:1; color: var(--body);">visual hero · artist spotlight</div>
     <div style="width: 230px; color: var(--body); text-align:right;">Pinterest + IG + Meta · <span style="color:var(--m);">run-of-show</span></div>
   </div>
-  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-bottom: 1px solid #0e0e0e;">
+  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 5px 8px; border-bottom: 1px solid #0e0e0e;">
     <div style="width: 165px; font-family:'Outfit'; font-weight:600; color: var(--t);">Newsletter growth</div>
     <div style="width: 130px; color: var(--label);">Subscribe</div>
     <div style="flex:1; color: var(--body);">value-of-issue · FOMO</div>
     <div style="width: 230px; color: var(--body); text-align:right;">Meta + newsletter ad networks · <span style="color:var(--m);">always-on</span></div>
   </div>
-  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-bottom: 1px solid #0e0e0e;">
+  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 5px 8px; border-bottom: 1px solid #0e0e0e;">
     <div style="width: 165px; font-family:'Outfit'; font-weight:600; color: var(--t);">Event / workshop <span style="color:var(--m);font-weight:400;font-size:0.85em;">· occasional</span></div>
     <div style="width: 130px; color: var(--label);">RSVP / Register</div>
     <div style="flex:1; color: var(--body);">date · lineup · local</div>
     <div style="width: 230px; color: var(--body); text-align:right;">Meta + Nextdoor (local) · <span style="color:var(--m);">date flight</span></div>
   </div>
-  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 7px 8px;">
+  <div class="row" style="display: flex; align-items: center; gap: 10px; padding: 5px 8px;">
     <div style="width: 165px; font-family:'Outfit'; font-weight:600; color: var(--g);">Fundraising / donations</div>
     <div style="width: 130px; color: var(--label);">Donate / Pledge</div>
     <div style="flex:1; color: var(--body);">impact · matching-gift · partnership</div>
@@ -209,7 +209,7 @@ footer: ''
   </div>
 </div>
 
-<div style="margin-top: 16px; background: rgba(34,197,94,0.06); border: 1px solid #14361f; border-radius: 10px; padding: 12px 18px; font-size: 0.72em; color: var(--body);">
+<div style="margin-top: 18px; background: rgba(34,197,94,0.06); border: 1px solid #14361f; border-radius: 10px; padding: 14px 18px; font-size: 0.72em; color: var(--body); line-height: 1.6;">
   <strong style="color:var(--g);">Fundraising is in the vision from day one — built last.</strong> It's the highest-interest objective and a 501(c)(3) governance asset (the "broad support from 500+ donors" public-support test). But donation conversion is the hardest to build, so we prove the engine on the easy, measurable objectives first.
 </div>
 
@@ -330,30 +330,32 @@ footer: ''
 
 <!-- _class: bg-glow -->
 
-### Zernio reality — re-verified 2026-06-18
+### No new vendor, no new logins
 
-## The ad API, checked against the live spec
+## It runs through the same tool the brands already use
 
-<div style="font-size: 0.78em; color: var(--label); margin: -6px 0 16px; max-width: 900px;">A live traversal of the OpenAPI spec (<code>v1.0.4</code>) corrected the build premises. The full reference lives in the PolyWiz repo (<a href="https://github.com/JuergenB/polywiz-app/pull/250" style="color: var(--a); text-decoration: underline;">PR #250</a>).</div>
+<div style="font-size: 0.82em; color: var(--label); margin: -2px 0 20px; max-width: 900px;">Paid ads go out through <strong>Zernio</strong> — the exact same service the brands already use to schedule their organic social posts. There's nothing new to learn, no extra account to sign into, and no second vendor to manage. The ads simply reach the major paid networks.</div>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.72em;">
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 16px;">
-    <strong style="color:var(--g);">Ad webhooks exist</strong> <span style="color:var(--body);">— <code>ad.status_changed</code>, <code>lead.received</code>, <code>account.ads.initial_sync_completed</code>. The engine is <strong>event-driven</strong>, not a polling cron.</span>
+<div style="background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 22px 26px; margin-bottom: 18px;">
+  <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--a); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 16px;">One tool · six paid networks</div>
+  <div style="display: flex; gap: 12px; flex-wrap: wrap; font-family: 'Outfit'; font-size: 0.72em; font-weight: 600;">
+    <span style="background:#0c0c0c;border:1px solid var(--b);border-radius:8px;padding:10px 16px;color:var(--t);">Meta <span style="color:var(--m);font-weight:400;">— Facebook + Instagram</span></span>
+    <span style="background:#0c0c0c;border:1px solid var(--b);border-radius:8px;padding:10px 16px;color:var(--t);">Pinterest</span>
+    <span style="background:#0c0c0c;border:1px solid var(--b);border-radius:8px;padding:10px 16px;color:var(--t);">Google</span>
+    <span style="background:#0c0c0c;border:1px solid var(--b);border-radius:8px;padding:10px 16px;color:var(--t);">LinkedIn</span>
+    <span style="background:#0c0c0c;border:1px solid var(--b);border-radius:8px;padding:10px 16px;color:var(--t);">TikTok</span>
+    <span style="background:#0c0c0c;border:1px solid var(--b);border-radius:8px;padding:10px 16px;color:var(--t);">X</span>
   </div>
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 16px;">
-    <strong style="color:var(--g);">SDK covers ads</strong> <span style="color:var(--body);">— <code>@getlatedev/node@0.2.101</code> ships <code>client.ads</code> / <code>adcampaigns</code> / <code>adaudiences</code>. No hand-rolled fetch.</span>
+</div>
+
+<div style="display: flex; gap: 14px;">
+  <div style="flex: 1; background: rgba(34,197,94,0.05); border: 1px solid #14361f; border-radius: 10px; padding: 16px 20px;">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.6em; color: var(--g); text-transform: uppercase; letter-spacing: 0.1em;">Same tool</div>
+    <div style="font-size: 0.74em; color: var(--body); margin-top: 6px; line-height: 1.6;">Already in use for organic posting. Paid ads are turned on inside it — no migration, no new system.</div>
   </div>
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 16px;">
-    <strong style="color:var(--a);">6 ad networks</strong> <span style="color:var(--body);">— Meta (FB+IG), Google, TikTok, LinkedIn, Pinterest, X. The "7 platforms" line double-counted Meta.</span>
-  </div>
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 16px;">
-    <strong style="color:var(--a);">Bundled gating</strong> <span style="color:var(--body);">— ads are included by default on usage-based plans; only legacy plans need the add-on. Likely a <strong>billing check, not a purchase</strong>.</span>
-  </div>
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 16px;">
-    <strong style="color:var(--blue);">Goal enum</strong> <span style="color:var(--body);">— <code>lead_generation</code>, <code>video_views</code>, <code>conversions</code>, <code>lead_conversion</code>… (underscores; per-platform availability).</span>
-  </div>
-  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 9px; padding: 13px 16px;">
-    <strong style="color:var(--blue);">Per-brand ad accounts</strong> <span style="color:var(--body);">— OAuth via <code>/v1/connect/{platform}/ads</code>; each brand's own <code>adAccountId</code>.</span>
+  <div style="flex: 1; background: rgba(34,197,94,0.05); border: 1px solid #14361f; border-radius: 10px; padding: 16px 20px;">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.6em; color: var(--g); text-transform: uppercase; letter-spacing: 0.1em;">Each brand stays separate</div>
+    <div style="font-size: 0.74em; color: var(--body); margin-top: 6px; line-height: 1.6;">Every brand connects its own ad account, so budgets and reporting never cross between brands.</div>
   </div>
 </div>
 
