@@ -2,7 +2,7 @@
 
 Parent epic: #181
 
-**Why this exists:** `@getlatedev/node@0.1.7` SDK has zero ads coverage (verified by grep — 0 matches for `ads`/`Ads`/`/v1/ads`). Must be built as raw `fetch` against `/v1/ads/*` with our existing per-brand key resolution.
+**Why this exists:** ~~`@getlatedev/node@0.1.7` SDK has zero ads coverage~~ **(updated 2026-06-18)** — the installed SDK is now `@getlatedev/node@0.2.101`, which **does** ship ads namespaces: `client.ads.*`, `client.adcampaigns.*`, `client.adaudiences.*`. Prefer the SDK for the endpoints it covers; fall back to raw `fetch` only for the ads endpoints still outside those namespaces (lead-forms, catalogs, `targeting/search`, `reach-estimate`, tracking-tags, conversion-destinations). Per-brand key resolution still applies. See [`polywiz-app/docs/reference/zernio-api.md`](https://github.com/JuergenB/polywiz-app/blob/main/docs/reference/zernio-api.md) (Ads API section, re-verified 2026-06-18 against OpenAPI v1.0.4).
 
 ### Architecture
 

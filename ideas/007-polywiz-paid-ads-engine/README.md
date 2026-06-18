@@ -1,164 +1,177 @@
-# Idea 007: PolyWiz Paid Ads Generation Engine
+# Idea 007: PolyWiz Paid Ads Engine — a New Campaign *Class*, Multi-Objective, Per-Brand
 
-**Origin:** Juergen Berkessel, 2026-04-25
-**Status:** Research Complete — Awaiting Go/No-Go
+**Origin:** Juergen Berkessel, 2026-04-25 · **Revised 2026-06-18** — reframed from a newsletter-signup pilot into a multi-objective **ad-campaign class** that sits *beside* PolyWiz's organic engine, not inside it.
+**Status:** Research Complete — Awaiting Go/No-Go (v2 reframe)
 **Linked implementation epic:** [JuergenB/polywiz-app#181](https://github.com/JuergenB/polywiz-app/issues/181) (sub-issues #182–#191)
-**Pilot brand:** The Intersect → Not Real Art → Artsville USA
-**Budget envelope:** $250–$500 per brand per month + $50/mo Zernio Ads add-on
+**Companion idea:** [011 — Owned Promotion & PR Engine](../011-pressranger-outreach-playbook/) — supplies the *first pilot objective* (open-call submissions). 007 and 011 ship together.
+**Pilot:** open-call submissions on Not Real Art / Artsville → expand per-brand
+**Budget envelope:** $250–$500 per brand per month (Zernio Ads now bundled on usage-based plans — no separate add-on line item)
+
+> **What changed in v2 (2026-06-18):** Two things. (1) A live re-verification of the Zernio Ads API ([polywiz-app#250](https://github.com/JuergenB/polywiz-app/pull/250)) corrected the build premises — ad webhooks and SDK ads-coverage both **exist** now, so the engine is event-driven, not poll-driven. (2) The bigger shift: ads are **not** "a new campaign type bolted onto the organic trickle generator." An ad campaign is a *different kind of object* with a different lifecycle and conversion goals. v2 models it as a separate **campaign class** that shares PolyWiz's intake/creative substrate and then diverges completely. The original newsletter-pilot framing is preserved at git tag `idea-007-v1-awaiting-gono`.
 
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/007-polywiz-paid-ads-engine/exports/presentation-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-paid-ads-engine-slide-1.png?v=3" width="820" alt="PolyWiz Paid Ads Generation Engine — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-paid-ads-engine-slide-1.png?v=3" width="820" alt="PolyWiz Paid Ads Engine — click to open full-screen presentation">
   </a>
 </p>
 
+> ⚠️ **Deck regeneration pending** — the linked deck still reflects v1 (newsletter pilot). It will be regenerated to match this v2 reframe before the next share.
+
 **🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/007-polywiz-paid-ads-engine/exports/presentation-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/007-polywiz-paid-ads-engine/exports/presentation.html)
 **📄 Slide deck (PDF):** [exports/presentation.pdf](exports/presentation.pdf) — download for print or offline.
-**📄 Sources & references:** [research/sources.md](research/sources.md) — full URLs, verbatim quotes, retrieval dates, and per-claim defensibility notes for every statistic cited in the deck.
-**📄 Implementation sub-issues (research/):** Phase 0 prerequisites, Phase 1 Meta MVP build-out, Phase 2 LinkedIn Lead Gen + Pinterest, Phase 3 video pipeline. See [`research/`](research/).
+**📄 Sources & references:** [research/sources.md](research/sources.md) — full URLs, verbatim quotes, retrieval dates, including the 2026-06-18 Zernio Ads API re-verification.
+**📄 Implementation sub-issues (research/):** Phase 0 prerequisites, Phase 1 build-out, Phase 2 platform + objective expansion, Phase 3 video + fundraising. See [`research/`](research/).
 
 ---
 
 ## TL;DR
 
-Three things just lined up that make a paid-ads engine inside PolyWiz a strong move right now:
+PolyWiz today is an **organic trickling engine** — it turns a URL into a six-month tapering *series of posts*. This idea adds a **second engine beside it: paid ads** — a different animal entirely. An ad campaign isn't a long content series; it's **one ad (or a few) with many variations**, run on a budget over a defined flight, optimized by the platform's algorithm toward a **conversion** — register, submit, subscribe, or express interest.
 
-1. **Zernio shipped a paid-ads API** in April 2026 covering Meta, Google, TikTok, LinkedIn, Pinterest, and X — the same key we already use for organic posts now reaches all those ad platforms.
-2. **PolyWiz already has the moat.** Meta's 2026 algorithm rewards creative *volume + diversity* over targeting tweaks. PolyWiz's existing organic engine already produces dozens of platform-specific variants per campaign — exactly the input Meta now wants.
-3. **Juergen has the playbook.** Previously managed $70K/year Meta budgets that hit $0.80–$0.90 CPA on newsletter signups manually. The thesis: rebuild that result on autopilot for art-editorial brands at $250–$500/mo.
+Three things make now the moment: (1) **Zernio shipped — and we've now re-verified (2026-06-18) — a paid-ads API** across 6 networks reachable with the key we already use, with ad webhooks and SDK coverage that make the build event-driven. (2) **PolyWiz already owns ~80% of the substrate** an ad engine needs — URL scrape, brand voice, image catalog, auto-crop, per-brand keys. (3) **Juergen has the playbook** — previously ran $70K/yr Meta budgets to $0.80–$0.90 CPA.
 
-The pilot is The Intersect at $250/mo. If CPA lands under $3 in 30 days, the same engine extends to Not Real Art and Artsville USA with no additional build cost — just per-brand ad budget. **Math at $250/mo × 3 brands × $2 CPA = ~375 net-new newsletter subscribers per month for $750.**
+The pilot is **open-call submissions** (the [011](../011-pressranger-outreach-playbook/) use case) — a deadline-driven objective with clean cost-per-submission math, a far cleaner first signal than diffuse newsletter CPL. Same engine then repoints, per brand, at event registration, exhibition interest, newsletter growth, and — last to build, but visible in the plan from day one — **fundraising**.
 
 ---
 
-## What this actually is
+## The core reframe: ads are a different campaign *class*, not a new *type*
 
-In plain language, the engine does this:
+PolyWiz's unit of work is a tapering post series. An ad campaign is a fundamentally different object. Modeling it as just another value in the existing campaign-type enum would force a conversion-oriented, budget-driven, algorithm-optimized thing into a generator built for cadence and reach. Instead, **two sibling classes**:
 
-1. **Brand picks a piece of content** — a blog post, exhibition page, or newsletter issue. Same input PolyWiz already takes for organic.
-2. **PolyWiz generates 8–15 ad variations** — different images, different headlines, different angles, built from the brand's existing visuals and voice.
-3. **You approve. Meta runs them.** A single click pushes the variants to Facebook + Instagram. Meta's algorithm picks the winners and spends the budget.
-4. **PolyWiz tracks CPA, kills losers, scales winners** — daily polling pulls spend + signup data; bottom 20% of variants get killed weekly; new variants generated to refill.
-
-The build is mostly extension, not invention. Roughly **80% of the pipeline already exists** in PolyWiz today (brand voice, multi-platform copy generation, image catalog from scraped URLs, auto-crop to platform aspect ratios, carousel + cover-slide rendering, Vercel Blob hosting, per-brand API key resolution, Zernio scheduling). The new ~20% is: ad-specific copy prompt with 10-intent angle slots, image variant generator (FLUX + Ideogram), Zernio Ads API client, polling cron, performance dashboard, variant rotation logic, Instant Form lead handling, conversion event mapping.
-
----
-
-## Platform-by-platform fit
-
-Honest verdict for art-editorial brands at $250–$500/mo, newsletter-signup objective:
-
-| Platform | Verdict | Why |
+| | **Organic campaign** (exists today) | **Paid ad campaign** (this idea) |
 |---|---|---|
-| **Meta (Facebook + Instagram)** | **Phase 1 / MVP** | Best fit. Lowest learning floor, mature `OUTCOME_LEADS` + Instant Forms, our existing creative pipeline maps cleanly. |
-| **LinkedIn Lead Gen Forms** | **Phase 2** | Killer for arts-professional audience component (curators, gallery directors, editors). Zernio doesn't ship Lead Gen Forms yet — needs direct LinkedIn Marketing API client. |
-| **Pinterest** | **Phase 2** | Visual-discovery fit for art brands. 619M MAU, art-aligned demographic, native Lead Ads, CPC 30–50% cheaper than Meta. Zernio coverage shipped (no developer approval). Two real gaps: 2:3 (1000×1500) creative format + 24h pixel population lag. |
-| **Google Search** | Phase 1.5 / optional | Cheap to add, no video required. Verify Zernio coverage with live probe. |
-| **TikTok** | Phase 3 | $20/day ad-group floor + 50-conversion learning phase = ~$1500+/mo to escape learning. Only worth it for brands with organic TikTok traction → Spark Ads. |
-| **YouTube Shorts** | Phase 3 | Static images don't run on YouTube placements. Build slideshow-video generator first. |
-| **Google PMax / YouTube In-Stream** | Skip | Sub-$3K/mo causes prolonged learning. Wrong tool for our spend. |
-| **X (Twitter)** | Skip | Brand-safety + degraded targeting + audience fragmentation post-2023. Most art/editorial audiences moved to Bluesky / Threads. |
+| **Unit of work** | ~6-month series of dozens of posts | 1–few ads × many *variations*, tested concurrently |
+| **Lifecycle** | tapering schedule → publish → done | flight (budget + dates) → learning → kill losers / scale winners |
+| **Primary goal** | reach, cadence, presence | **conversion** — register, submit, subscribe, express interest |
+| **Optimizer** | our distribution-bias schedule | the ad platform's algorithm |
+| **Net-new config** | platforms, cadence, distribution bias | **investment level, ad account, flight length, objective, audience, landing page** |
+| **Success metric** | posts shipped, reach | **cost per action** (submission / RSVP / signup / donation) |
+
+This is **Layer 1**: every campaign in PolyWiz is either *Organic* or *Paid*. They are different data models with different lifecycles — but they **share the front-end substrate**.
+
+### What's shared vs what diverges
+
+```
+            ┌─────────── SHARED INTAKE SUBSTRATE ───────────┐
+  URL  ──▶  Firecrawl scrape ──▶ brand voice ──▶ image catalog ──▶ auto-crop ──▶ creative gen
+            └───────────────────────┬───────────────────────┘
+                                    │  (diverges here)
+            ┌───────────────────────┴───────────────────────┐
+            ▼                                                ▼
+   ORGANIC: tapering post-series           PAID: ads × variations on a budgeted flight,
+   on a cadence schedule                   conversion objective, ad account, audience,
+                                           optimization loop (kill/scale variants)
+```
+
+Both classes start **identically** — paste a URL (blog post, exhibition page, open call), scrape it, pull brand voice and visuals. That overlap is real and worth reusing. After intake they **diverge completely**: the paid class captures things the organic class never needs — **investment level, platform selection, flight length, conversion objective, ad account, target audience** — and runs an optimization loop instead of a publishing schedule.
 
 ---
 
-## What CPA we should expect
+## Layer 2 — the objectives (conversion-oriented, per-brand)
 
-| Reference point | CPA |
-|---|---|
-| Juergen's 2024 benchmark (manual, hot industries) | $0.80 |
-| Retargeting (site visitors + IG engagers) | $0.80–$1.50 |
-| Cold prospecting (90-day, while algorithm learns) | $1.50–$3.00 |
-| 2026 Meta industry median (for context) | $27.66 |
+Within a Paid campaign, the **objective** is the conversion-oriented dimension. Each objective sets the Zernio `goal`, the conversion event, the creative angle profile, the platform mix, the pacing, and the KPI:
 
-The 2024 $0.80 number is reachable on retargeting only at this budget. Cold prospecting at $250–$500/mo will land higher while we build the algorithm's signal. **Honest 90-day target for the pilot: $1.50–$3 CPA cold, $0.80–$1.50 retargeting** — beating the 2026 industry median by ~10–30×.
+| Objective | PolyWiz subject type | Zernio `goal` | Conversion event | Distinct creative angles | Best platform mix | Pacing | KPI |
+|---|---|---|---|---|---|---|---|
+| **Open-call submissions** *(pilot)* | Open Call | `lead_generation` / `lead_conversion` | Submit / Lead | deadline, prize, eligibility | Meta + **Pinterest** + **Google Ad Grants** | **deadline flight** | cost / submission |
+| **Event registration** | Event | `traffic` / `conversions` | RSVP / Register | date, lineup, local | Meta + **Nextdoor** (local) | **date flight** | cost / RSVP |
+| **Exhibition interest** | Exhibition | `traffic` / `awareness` | ViewContent | visual hero, artist spotlight | **Pinterest** + IG + Meta | run-of-show | cost / visitor, CPM |
+| **Newsletter growth** | Newsletter | `lead_generation` | Subscribe | value-of-issue, FOMO | Meta + **newsletter ad networks** | always-on | cost / subscriber |
+| **Fundraising / donations** | *(new subject type)* | `conversions` (value) | Donate / Purchase | impact, matching-gift, urgency | Meta + **Google Ad Grants** + email | seasonal | ROAS / cost-per-donor |
+
+Note the **platform mix changes per objective** — platform choice isn't a global decision. Pinterest earns its place on *visual* objectives (exhibitions, image-led open calls), not as a newsletter-CPL channel. Nextdoor only matters for local events. Newsletter ad networks (beehiiv Boosts / SparkLoop) only for the subscribe objective. **Google Ad Grants ($10k/mo free for 501(c)(3)s** — already in [011's master resource](../011-pressranger-outreach-playbook/research/arts-master-resource.csv)) maps across open calls, fundraising, and exhibitions via search intent.
+
+### Fundraising: design-first-class, build-last
+
+Fundraising is **named in the architecture and shown in the deck from day one** — it's the highest-interest objective for the team (Scott/Elise) and a 501(c)(3) governance asset (the "broad support from 500+ donors" public-support test makes repeatable donor outreach a compliance lever, not just marketing). But its *implementation* is sequenced **last**: donation conversion is the hardest objective (value-based ROAS, donor-trust creative, compliance). We get our feet wet first on the easy, measurable objectives — submissions, registrations, interest, signups — then add fundraising once the engine is proven.
 
 ---
 
-## What's blocking us today
+## Layer 3 — per-brand configuration (which objectives, which accounts)
 
-Three prerequisites must be in place before Phase 1 can launch. All are solvable in days, not weeks.
+Not every objective applies to every brand. Fundraising is irrelevant to a for-profit brand; The Intersect may only ever run newsletter growth. So **which ad objectives are available is a per-brand setting** — the same gating pattern PolyWiz already uses for per-brand feature flags (`lnkBioEnabled`, the `ENABLED_CAMPAIGN_TYPES` allow-list). Each brand carries:
 
-### 1. Zernio Ads add-on purchase ($50/mo)
+1. **Enabled ad objectives** — the allow-list of Layer 2 objectives this brand can run.
+2. **Connected ad accounts** — per platform, per brand (`adAccountId`: Meta `act_…`, LinkedIn `urn:li:sponsoredAccount:…`), via Zernio's per-brand OAuth (`GET /v1/connect/{platform}/ads`).
+3. **Budget envelope + defaults** — per-brand monthly cap and per-objective default investment level.
 
-Live probing on 2026-04-24 confirmed every `/v1/ads/*` endpoint returns `403 Ads add-on required` on the current Dominate (AppSumo lifetime) plan. The add-on is a separate paid line item available only on Build/Accelerate/Unlimited plans. **Step 0 is a billing change, not a code change.** No integration code can be tested at runtime until this is purchased.
+Illustrative matrix (final values are a brand-config decision):
 
-### 2. Pixel + Conversions API install on 2 of 3 brand sites
+| Brand | Open-call submissions | Event registration | Exhibition interest | Newsletter growth | Fundraising |
+|---|---|---|---|---|---|
+| **Not Real Art** | ✓ | ✓ | ✓ | ✓ | ✓ *(last phase)* |
+| **Artsville USA** | ✓ | ✓ | ✓ | ✓ | ✓ *(last phase)* |
+| **The Intersect** | — | maybe | — | ✓ | — |
 
-Verified status (2026-04-24):
+This is the mechanism that keeps PolyWiz from becoming "art-centric" or "nonprofit-centric": every brand sees only the objectives it's configured for. One engine, per-brand capability surface.
 
-| Brand | Site | Platform | Meta Pixel | Meta CAPI |
-|---|---|---|---|---|
-| Not Real Art | notrealart.com | WordPress | ✓ (`672012889860920`) | ✓ (Openbridge plugin) |
-| Artsville USA | artsvilleusa.com | Ghost 6.33 | **MISSING** | **MISSING** |
-| The Intersect | theintersect.art | Curated (sunset 2024) | ✓ (`1877709392441022`) | **MISSING** (platform-constrained) |
+---
 
-Without server-side **Conversions API** (CAPI), browser-only Pixel captures only 70–80% of conversions; with CAPI it's 90–95%. iOS 14.5+ ATT, Safari ITP, and ad blockers continue to break browser-only tracking. Practitioner data shows **17.8% lower cost-per-result** with CAPI on. Cleanest 2026 install path: Stape.io GTM server-side (~$20/mo) — one container handles Meta + Pinterest + TikTok + LinkedIn CAPI tags.
+## The ad-campaign object (what the new config captures)
 
-### 3. The Intersect platform constraint
+Where an organic campaign captures *cadence + distribution bias*, a paid campaign captures:
 
-Curated was sunset by Mailchimp in 2024. It still operates but constrains pixel install (only via the Code Injection panel). Long-term, The Intersect should migrate to Ghost or Beehiiv for proper CAPI support and stronger pixel install flexibility. Migration target decision needed.
+- **Objective** (Layer 2) → sets Zernio `goal`, conversion event, creative profile
+- **Investment level** → total/daily budget; drives the flight and learning-phase viability
+- **Platform mix** → which of the 6 Zernio ad networks (objective-defaulted, brand-constrained)
+- **Flight length** → start/end dates (deadline-aware for open calls and events)
+- **Ad account** → the per-brand connected `adAccountId` for each platform
+- **Audience** → broad + lookalike (from engaged subscribers) + retargeting pool
+- **Landing page** → the conversion destination (open-call submission URL, RSVP page, donate page)
+- **Variations** → N creative variants per ad, generated from the shared substrate, rotated by the optimization loop (kill bottom performers weekly, refill)
+
+---
+
+## Zernio reality (re-verified 2026-06-18, OpenAPI v1.0.4)
+
+Full reference: [polywiz-app/docs/reference/zernio-api.md](https://github.com/JuergenB/polywiz-app/blob/main/docs/reference/zernio-api.md) ([PR #250](https://github.com/JuergenB/polywiz-app/pull/250)).
+
+- **6 ad networks** — Meta (FB+IG), Google, TikTok, LinkedIn, Pinterest, X. (The "7 platforms" marketing line double-counted Facebook + Instagram; there is no 7th.)
+- **`goal` enum (underscores):** `engagement`, `traffic`, `awareness`, `video_views`, `lead_generation`, `conversions`, `app_promotion`, plus `lead_conversion`, `catalog_sales` on create.
+- **Ad webhooks exist** — `ad.status_changed`, `lead.received`, `account.ads.initial_sync_completed`. The engine is **event-driven** (subscribe for lead capture + lifecycle), not a polling cron as v1 assumed.
+- **SDK covers ads** — `@getlatedev/node@0.2.101` ships `client.ads.*` / `client.adcampaigns.*` / `client.adaudiences.*`. Raw `fetch` only for the few uncovered endpoints (lead-forms, catalogs, `targeting/search`, `reach-estimate`, tracking-tags, conversion-destinations).
+- **Gating** — Ads are **bundled by default on usage-based Zernio plans**; only legacy plans need the separate add-on. (Supersedes the v1 "$50/mo add-on" assumption — confirm our plan's status with one live call.)
+- **Per-brand ad-account OAuth** — `GET /v1/connect/{platform}/ads`, `platform ∈ [facebook, instagram, linkedin, tiktok, twitter, pinterest, googleads]`.
 
 ---
 
 ## Phase plan
 
-> Time estimates are in **AI-paired-dev hours/days**, not engineering weeks.
+> Time estimates are AI-paired-dev days, not engineering weeks. Build order ≠ vision order: fundraising is in the vision from slide one but built last.
 
-| Phase | Duration | What |
+| Phase | What | Objectives in scope |
 |---|---|---|
-| **Phase 0 — Prerequisites** | ~1 day | Buy Zernio Ads add-on. Connect Meta ad accounts via OAuth. Install Meta Pixel + CAPI on Artsville. Add CAPI on Intersect via Stape.io. |
-| **Phase 1 — Meta MVP, Intersect pilot** | ~1–2 weeks | Airtable schema, Zernio Ads client, ad creative pipeline, polling cron, dashboard. Pilot at $250/mo for 30 days. Honest CPA target: $1.50–$3.00. |
-| **Phase 2 — LinkedIn Lead Gen + Pinterest** | ~1.5 weeks | Direct LinkedIn Marketing API (Zernio gap on Lead Gen Forms). Pinterest creative pipeline extension to 2:3 + Stape Pinterest CAPI. Both share the polling/dashboard infra. |
-| **Phase 3 — Video pipeline + TikTok + YouTube** | ~1.5 weeks | Slideshow video generator (Invideo + Runway). TikTok Photo Mode carousel ads. YouTube Shorts. Migrate Intersect off Curated. |
-| **Phase 4 — Optimization & scale** | ongoing | Per-variant landing pages. Lookalikes from engaged subscribers. Cross-brand reporting. Auto-pacing budgets based on CPA performance. |
+| **Phase 0 — Prerequisites** | Confirm Zernio plan covers ads; connect per-brand ad accounts via OAuth; install Pixel + Conversions API on the brand sites that lack them. | — |
+| **Phase 1 — Paid class + open-call pilot** | Build the Paid campaign class (object model, config surface, variation generator, ad account wiring, `lead.received` webhook capture). Run the open-call submission pilot at ~$250 on the next live call. | Open-call submissions |
+| **Phase 2 — Objective + platform expansion** | Add event registration and exhibition interest; turn on Pinterest (visual) and Nextdoor (local); newsletter growth + newsletter ad networks. Per-brand objective config UI. | + Event, Exhibition, Newsletter |
+| **Phase 3 — Video + fundraising** | Slideshow-video creative for TikTok/YouTube; **fundraising/donation objective** with value-based optimization + donor compliance; Google Ad Grants for nonprofit search. | + Fundraising |
+| **Phase 4 — Optimization & scale** | Per-variant landing pages, engaged-subscriber lookalikes, cross-brand reporting, auto-pacing on CPA. | all |
 
 ---
 
-## Critical 2026 gotchas (vs. 2024-era playbook)
+## Relationship to idea 011
 
-- **Detailed interest targeting is dying.** Meta has been removing interest categories quarterly through 2025–2026. Anything built on "Art collectors" or "Museum visitors" interests will degrade. Use Advantage+ broad + lookalikes.
-- **The 50-conversions/7-days learning rule loosened to ~25/week** (Q1 2026). Small budgets still hit "starved learning" cutoffs at 48–72h if zero events fire — feed CAPI pre-conversion events (form views, scrolls).
-- **Andromeda penalizes near-duplicate variants.** Five photos of the same artwork with different captions hurts; format diversity (static + carousel + video) wins.
-- **Advantage+ enhancements default ON** in Feb 2026 — Meta will auto-rewrite headlines, swap music, change aspect ratios. Brand-voice control requires per-brand toggles to disable specific enhancements.
-- **`OUTCOME_LEADS` + Instant Forms** beats landing-page traffic for cold audiences (no off-platform redirect bleed). Tradeoff: leads are 30–40% lower-intent — add a single qualifying question to filter.
-- **Lookalikes from raw email lists underperform** lookalikes seeded from "engaged subscribers" (opened ≥3 emails in 30 days).
-
----
-
-## Risks
-
-| Risk | Likelihood | Mitigation |
-|---|---|---|
-| AI-slop voice dilution across 10 headlines × 3 brands × dozens of campaigns | High | 10-intent angle slot architecture; forbidden-phrase list; brand-voice few-shots; per-brand QA review queue for first 30 days |
-| Cold prospecting at $250/mo never escapes Meta's learning phase | Medium | Pre-conversion events (form view, scroll) feed algorithm; honest 90-day expectation reset to $1.50–$3 CPA, not $0.80 |
-| Meta Advantage+ auto-rewrites copy in ways art brands reject | Medium | Per-brand toggle for each Advantage+ enhancement; brand-review queue before activation |
-| Zernio Ads API response shapes differ from docs at runtime | High | Live-probe each endpoint immediately after add-on purchase; treat docs as nominal |
-| iOS users unmeasurable without CAPI on Artsville + Intersect | High (until Phase 0 complete) | Phase 0 is hard-blocking before Phase 1 launch |
+[011](../011-pressranger-outreach-playbook/) is the promotion/PR engine; it supplies **007's first objective**. An open-call record (deadline + landing page, already in the Artwork Archive Airtable) triggers a Paid campaign optimized for *submissions*, while 011's organic + PR + free-listing channels harvest existing intent. 011's own evidence — the grant campaigns over-performed because we ran Facebook ads to the landing pages — is the thesis 007 operationalizes. **They ship together: open-call submissions is the joint pilot.**
 
 ---
 
 ## Open questions
 
-These need a product decision before Phase 1 begins.
-
-1. **Zernio plan upgrade timing** — confirm exact tier required for Ads add-on (Build $10/mo? Accelerate ~$50/mo? Unlimited?) before purchase.
-2. **Pixel install — who and when** — does the user's web person handle Artsville Meta Pixel install + Intersect Stape.io CAPI setup, or should PolyWiz dev do it directly via Ghost / Curated Code Injection?
-3. **The Intersect off Curated** — when, and to which target platform (Ghost or Beehiiv)?
-4. **Newsletter provider per brand** — confirm what's wired up. Required for LinkedIn Lead Gen Form webhook destinations.
-5. **Brand voice override controls** — will the art brands tolerate Meta auto-rewriting their copy, or should we default to disabling specific Advantage+ enhancements per brand?
-6. **Lookalike seeds** — exportable engagement data ("opened ≥3 emails in 30 days") or start with raw subscriber lists?
-7. **Qualifying question on Instant Form** — adds friction but filters bot/freebie-hunter signups. Yes/no for MVP?
-8. **Budget escalation rule** — if CPA < $3 after 30 days, auto-double to $500/mo, or wait for human review?
-9. **Pinterest Phase 1 vs Phase 2 timing** — research recommends Phase 2, but Pinterest Tag has 24h audience-population lag (vs. Meta near-instant), so Pinterest has its own ~3-week ramp regardless. Parallel-launch or sequential?
+1. **Our Zernio plan** — is `LATE_API_KEY` now on a usage-based plan (ads bundled) or still legacy (gated)? One live `GET /v1/usage-stats` + an `/v1/ads/*` call settles it.
+2. **Per-brand objective config** — UI surface in PolyWiz Settings (brand → enabled objectives), or Airtable-driven flags read at runtime?
+3. **Ad-account ownership** — who connects each brand's Meta/Pinterest ad account via Zernio OAuth, and who owns budget authority per brand?
+4. **Pixel/CAPI install** — which brand sites still need server-side Conversions API (Artsville, Intersect-on-Curated)?
+5. **Pilot call** — which open call is the first live test (011 suggests *Art of Resistance*), and at what budget?
+6. **Newsletter ad networks** — in scope for Phase 2, or hold until the social objectives are proven?
 
 ---
 
-## What we're asking for
+## The ask
 
-A green light to start Phase 0:
+A green light for **Phase 0 + the open-call pilot**:
 
-- **This week:** $50 — Zernio Ads add-on (unlocks the API for live probing)
-- **This month:** $300 ($250 Intersect pilot + $50 Zernio) — 30-day burn-in, then evaluate
-- **Success criterion:** CPA < $3 → ~85+ new Intersect subscribers in month 1 → scale to NRA + Artsville
+- **Confirm** the Zernio plan covers ads (likely already bundled — a billing check, not a purchase).
+- **Connect** Not Real Art / Artsville ad accounts via Zernio OAuth.
+- **Run** one open-call submission flight at ~$250 to capture our first-ever cost-per-submission.
 
-If the pilot hits its CPA target, the same engine extends to Not Real Art and Artsville USA with no additional build cost — just the per-brand ad budget. The math at $250/mo × 3 brands × $2 CPA = **~375 new newsletter subscribers per month for $750.**
+If the pilot reads a clean cost-per-submission, the same engine extends — per brand, per objective — across events, exhibitions, newsletter growth, and ultimately fundraising, with no additional build cost beyond per-brand ad budget.

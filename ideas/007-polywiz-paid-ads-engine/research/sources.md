@@ -27,6 +27,24 @@ Sub-research files capture the operational detail — endpoints, task lists, cos
 
 ---
 
+## 0. 2026-06-18 re-verification of the Zernio Ads API (supersedes claims #1, #2, and sub-4)
+
+The Zernio Ads API was re-traversed against the **live OpenAPI 3.1 spec** on 2026-06-18 and several v1 (April) claims were corrected. The authoritative reference now lives in the PolyWiz repo; this entry records the provenance.
+
+- **Source:** Zernio — OpenAPI 3.1 specification, `info.version: 1.0.4`
+- **URL:** https://docs.zernio.com/api/openapi (canonical machine-readable spec) + https://docs.zernio.com/changelog
+- **Retrieved:** 2026-06-18 (downloaded as YAML, read field-by-field) via sub-agent traversal
+- **Recorded in:** [polywiz-app/docs/reference/zernio-api.md](https://github.com/JuergenB/polywiz-app/blob/main/docs/reference/zernio-api.md), Ads API section ([PR #250](https://github.com/JuergenB/polywiz-app/pull/250)). The 2026-04-24 live-key probe is preserved there and marked superseded where contradicted.
+- **Corrections vs the April probe:**
+  - **`goal` enum uses underscores** — `video_views`, `lead_generation` (April doc had `videoviews` / `lead generation` — both wrong); adds `lead_conversion`, `catalog_sales` on `/v1/ads/create`. *(Supersedes the verbatim enum in sub-3.)*
+  - **Ad webhooks exist** — `ad.status_changed`, `lead.received`, `account.ads.initial_sync_completed`. *(Supersedes the "no webhooks → polling" reality in sub-4 and sub-6.)*
+  - **SDK covers ads** — `@getlatedev/node@0.2.101` ships `client.ads` / `client.adcampaigns` / `client.adaudiences`. *(Supersedes sub-4's "zero ads coverage / raw fetch" premise, which was for SDK 0.1.7.)*
+  - **6 ad networks, not 7** — the "7 platforms" line double-counts Facebook + Instagram (both Meta). *(Refines claim #1.)*
+  - **Add-on gating** — ads are bundled by default on usage-based plans; only legacy plans need the separate add-on. *(Supersedes claim #2's "$50/mo add-on" framing — pending a live plan check.)*
+- **Used in deck (v2):** reframe slides — the "Zernio reality" panel, the event-driven (not poll-driven) engine claim, and the 6-networks platform line.
+
+---
+
 ## 1. Zernio shipped a paid-ads API in April 2026 covering Meta, Google, TikTok, LinkedIn, Pinterest, X
 
 - **Source:** Zernio — "Zernio Ads API: one Social Media Ads API for Meta, LinkedIn, and beyond"
