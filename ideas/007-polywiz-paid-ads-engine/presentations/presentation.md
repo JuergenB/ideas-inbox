@@ -367,40 +367,40 @@ footer: ''
 
 ## Build order ≠ vision order — fundraising last
 
-<div style="margin-top: 14px; padding-left: 8px; border-left: 2px solid #1a1a1a;">
-  <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
-    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 4px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#ff6b1a" stroke-width="2"/></svg>
+<div style="margin-top: 16px; padding: 4px 0 4px 18px; border-left: 2px solid var(--b);">
+  <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
+    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#ff6b1a" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 1em; font-weight: 700; color: var(--a);">Phase 0 — Prerequisites <span style="color: var(--m); font-weight: 400; font-size: 0.7em;">~1 day</span></div>
-      <div style="font-size: 0.76em; color: var(--body);">Confirm the Zernio plan covers ads (likely bundled). Connect per-brand ad accounts via OAuth. Install Pixel + Conversions API on the brand sites that lack them.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--a); line-height: 1.2;">Phase 0 — Prerequisites <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">~1 day</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Confirm the Zernio plan covers ads (likely bundled). Connect per-brand ad accounts via OAuth. Install Pixel + Conversions API on the brand sites that lack them.</div>
     </div>
   </div>
-  <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
-    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 4px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#ff6b1a" stroke-width="2"/></svg>
+  <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
+    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#ff6b1a" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 1em; font-weight: 700; color: var(--a);">Phase 1 — Paid class + open-call pilot <span style="color: var(--m); font-weight: 400; font-size: 0.7em;">~1–2 weeks</span></div>
-      <div style="font-size: 0.76em; color: var(--body);">Build the paid campaign object, config surface, variation generator, ad-account wiring, <code>lead.received</code> capture. Run the open-call submission pilot at ~$250 on the next live call.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--a); line-height: 1.2;">Phase 1 — Paid class + open-call pilot <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">~1–2 weeks</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Build the paid campaign object, config surface, variation generator, ad-account wiring, <code>lead.received</code> capture. Run the open-call submission pilot at ~$250 on the next live call.</div>
     </div>
   </div>
-  <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
-    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 4px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#0199fe" stroke-width="2"/></svg>
+  <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
+    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#0199fe" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 1em; font-weight: 700; color: var(--blue);">Phase 2 — Objective + platform expansion <span style="color: var(--m); font-weight: 400; font-size: 0.7em;">~1.5 weeks</span></div>
-      <div style="font-size: 0.76em; color: var(--body);">Add exhibition interest (+ secondary capture) and newsletter growth; turn on Pinterest (visual) and newsletter ad networks. Per-brand objective config UI.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--blue); line-height: 1.2;">Phase 2 — Objective + platform expansion <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">~1.5 weeks</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Add exhibition interest (+ secondary capture) and newsletter growth; turn on Pinterest (visual) and newsletter ad networks. Per-brand objective config UI.</div>
     </div>
   </div>
-  <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
-    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 4px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#f5a623" stroke-width="2"/></svg>
+  <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
+    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#f5a623" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 1em; font-weight: 700; color: var(--y);">Phase 3 — Video + fundraising <span style="color: var(--m); font-weight: 400; font-size: 0.7em;">~1.5 weeks</span></div>
-      <div style="font-size: 0.76em; color: var(--body);">Slideshow-video creative for TikTok/YouTube. <strong>Fundraising / donation objective</strong> with value-based optimization + donor compliance. Google Ad Grants for nonprofit search.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--y); line-height: 1.2;">Phase 3 — Video + fundraising <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">~1.5 weeks</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Slideshow-video creative for TikTok/YouTube. <strong>Fundraising / donation objective</strong> with value-based optimization + donor compliance. Google Ad Grants for nonprofit search.</div>
     </div>
   </div>
   <div style="display: flex; align-items: flex-start; gap: 14px;">
-    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 4px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#22c55e" stroke-width="2"/></svg>
+    <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#22c55e" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 1em; font-weight: 700; color: var(--g);">Phase 4 — Optimization & scale <span style="color: var(--m); font-weight: 400; font-size: 0.7em;">ongoing</span></div>
-      <div style="font-size: 0.76em; color: var(--body);">Per-variant landing pages. Engaged-subscriber lookalikes. Cross-brand reporting. Auto-pacing on cost-per-action.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--g); line-height: 1.2;">Phase 4 — Optimization & scale <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">ongoing</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Per-variant landing pages. Engaged-subscriber lookalikes. Cross-brand reporting. Auto-pacing on cost-per-action.</div>
     </div>
   </div>
 </div>
