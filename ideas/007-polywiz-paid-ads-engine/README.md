@@ -5,7 +5,7 @@
 **Linked implementation epic:** [JuergenB/polywiz-app#181](https://github.com/JuergenB/polywiz-app/issues/181) (sub-issues #182–#191)
 **Companion idea:** [011 — Owned Promotion & PR Engine](../011-pressranger-outreach-playbook/) — supplies the *first pilot objective* (open-call submissions). 007 and 011 ship together.
 **Pilot:** open-call submissions on Not Real Art / Artsville → expand per-brand
-**Budget envelope:** $250–$500 per brand per month in ad spend **+ a flat $100/mo Zernio Ads add-on** (confirmed 2026-06-18 via the in-product paywall — our AppSumo plan requires it; it is *not* bundled). The $100/mo is a shared-engine cost across all brands/objectives, not per-brand.
+**Budget envelope:** $250–$500 per brand per month in ad spend **+ a flat $100/mo Zernio Ads add-on** (confirmed 2026-06-18 via the in-product paywall — our AppSumo plan requires it; it is *not* bundled). The $100/mo is a shared-engine cost across all brands/objectives, not per-brand. The **build itself is absorbed by the existing Polymash retainer** — no new line item.
 
 > **What changed in v2 (2026-06-18):** Two things. (1) A live re-verification of the Zernio Ads API ([polywiz-app#250](https://github.com/JuergenB/polywiz-app/pull/250)) corrected the build premises — ad webhooks and SDK ads-coverage both **exist** now, so the engine is event-driven, not poll-driven. (2) The bigger shift: ads are **not** "a new campaign type bolted onto the organic trickle generator." An ad campaign is a *different kind of object* with a different lifecycle and conversion goals. v2 models it as a separate **campaign class** that shares PolyWiz's intake/creative substrate and then diverges completely. The original newsletter-pilot framing is preserved at git tag `idea-007-v1-awaiting-gono`.
 
@@ -19,6 +19,26 @@
 **📄 Slide deck (PDF):** [exports/presentation.pdf](exports/presentation.pdf) — download for print or offline.
 **📄 Sources & references:** [research/sources.md](research/sources.md) — full URLs, verbatim quotes, retrieval dates, including the 2026-06-18 Zernio Ads API re-verification.
 **📄 Implementation sub-issues (research/):** Phase 0 prerequisites, Phase 1 build-out, Phase 2 platform + objective expansion, Phase 3 video + fundraising. See [`research/`](research/).
+
+---
+
+## Where this comes from
+
+It keeps coming up in our weekly staff calls: we put **hundreds of hours** into curating open calls and exhibitions — but we don't really *promote* them. The work is strong; it just doesn't reach far enough.
+
+**The focus this year** — get our exhibitions *seen* (especially the **partner shows**) and **lift open-call submission rates**. Promotion is what makes the curation pay off. Two connected ideas back this: **[011](../011-pressranger-outreach-playbook/)** (an owned promotion & PR engine) and **007** (this — a paid-ads engine that drives submissions and exhibition reach). Developed together, meant to ship together.
+
+## Where this goes — one engine, the whole content universe
+
+We're building an **engine**, not a one-off campaign.
+
+- **Start here** — this year's **exhibitions & open calls**: the team's hard work, arguably the best content we have right now, finally getting the promotion it deserves.
+- **Then** — the same engine reaches everything Arterial makes: the **Not Real Art** and **Artsville** podcasts, **Q+Art** (Morgan's interview series), **"Remote"** (the public-art video series), and more across our brands.
+- **In the fall** — on the road to **fundraising**: once it's proven across the content universe, the same engine powers the fall fundraising push too.
+
+**We don't launch all of this at once.** We build the engine once, then point it — one focused step at a time. First: this year's exhibitions.
+
+> **What it costs:** the build is baked into the existing Polymash retainer — **no new line item**. The only *new* money is the incremental platform ($100/mo Zernio add-on), tooling/API, and ad spend (~$250/flight).
 
 ---
 

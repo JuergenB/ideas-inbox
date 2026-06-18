@@ -94,6 +94,54 @@ footer: ''
 
 ---
 
+<!-- _class: bg-glow -->
+
+### Where this comes from
+
+## This year's exhibition initiative — and the one gap in it
+
+<div style="font-size: 0.86em; color: var(--label); margin: 4px 0 22px; max-width: 880px; line-height: 1.6;">It keeps coming up in our weekly staff calls: we put <strong>hundreds of hours</strong> into curating open calls and exhibitions — but we don't really <em>promote</em> them. The work is strong; it just doesn't reach far enough.</div>
+
+<div style="display: flex; gap: 14px;">
+  <div style="flex: 1.4; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px 22px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--a); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;">The focus this year</div>
+    <div style="font-size: 0.84em; color: var(--body); line-height: 1.6;">Get our exhibitions <strong>seen</strong> — especially the <strong>partner shows</strong> — and <strong>lift open-call submission rates</strong>. Promotion is what makes the curation pay off.</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px 22px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--blue); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;">Two ideas behind it</div>
+    <div style="font-size: 0.84em; color: var(--body); line-height: 1.6;"><strong style="color:var(--t);font-weight:600;">011</strong> — an owned promotion &amp; PR engine.<br><strong style="color:var(--t);font-weight:600;">007</strong> — a paid-ads engine that drives submissions and exhibition reach.<br><span style="color:var(--m);">Developed together, meant to ship together.</span></div>
+  </div>
+</div>
+
+---
+
+<!-- _class: bg-glow-green -->
+
+### Where this goes
+
+## One engine, the whole content universe
+
+<div style="font-size: 0.86em; color: var(--label); margin: 4px 0 20px; max-width: 880px;">We're building an <strong>engine</strong>, not a one-off campaign.</div>
+
+<div style="margin-bottom: 16px;">
+  <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 13px;">
+    <div style="font-family:'Outfit'; font-weight:800; color: var(--a); font-size: 0.8em; min-width: 96px; letter-spacing: 0.06em;">START HERE</div>
+    <div style="font-size: 0.8em; color: var(--body); line-height: 1.5;"><strong style="color:var(--t);font-weight:600;">This year's exhibitions &amp; open calls</strong> — the team's hard work, arguably the best content we have right now, finally getting the promotion it deserves.</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 13px;">
+    <div style="font-family:'Outfit'; font-weight:800; color: var(--blue); font-size: 0.8em; min-width: 96px; letter-spacing: 0.06em;">THEN</div>
+    <div style="font-size: 0.8em; color: var(--body); line-height: 1.5;"><strong style="color:var(--t);font-weight:600;">The same engine reaches everything Arterial makes</strong> — the Not Real Art and Artsville podcasts, Q+Art (Morgan's interview series), "Remote" (the public-art video series), and more across our brands.</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 16px;">
+    <div style="font-family:'Outfit'; font-weight:800; color: var(--g); font-size: 0.8em; min-width: 96px; letter-spacing: 0.06em;">IN THE FALL</div>
+    <div style="font-size: 0.8em; color: var(--body); line-height: 1.5;"><strong style="color:var(--t);font-weight:600;">On the road to fundraising</strong> — once it's proven across the content universe, the same engine powers the fall fundraising push too.</div>
+  </div>
+</div>
+
+<div style="background: rgba(255,107,26,0.06); border: 1px solid #3a2410; border-radius: 10px; padding: 13px 20px; font-size: 0.8em; color: var(--body); line-height: 1.55;"><strong style="color:var(--a);">We don't launch all of this at once.</strong> We build the engine once, then point it — one focused step at a time. First: this year's exhibitions.</div>
+
+---
+
 <!-- _class: bg-glow-orange -->
 
 ### The core idea
@@ -465,7 +513,9 @@ footer: ''
   </div>
 </div>
 
-<div style="margin-top: 30px; font-weight: 300; font-size: 0.92em; color: var(--body); text-align: center; line-height: 1.6;">At <strong>$100/mo flat</strong>, the engine only makes sense shared across brands and objectives — never for one newsletter alone. Prove it on a deadline-driven, measurable objective, then it extends, <strong>per brand, per objective</strong>, to exhibitions, newsletter growth, and ultimately fundraising — with no new build cost.</div>
+<div style="margin-top: 24px; font-weight: 300; font-size: 0.8em; color: var(--label); text-align: center; line-height: 1.6; max-width: 940px; margin-left: auto; margin-right: auto;"><strong style="color:var(--g);">What's already covered:</strong> the build is baked into the existing Polymash retainer — <strong style="color:var(--g);">no new line item</strong>. The only new money is the incremental platform + ad spend above.</div>
+
+<div style="margin-top: 14px; font-weight: 300; font-size: 0.9em; color: var(--body); text-align: center; line-height: 1.55;">This <strong>~$250 pilot is step one</strong> toward promoting the whole content universe, on the road to fundraising. The decision in front of us: <strong>a green light to run that first focused step.</strong></div>
 
 ---
 
