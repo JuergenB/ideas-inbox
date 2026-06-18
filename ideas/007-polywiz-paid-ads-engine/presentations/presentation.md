@@ -334,7 +334,7 @@ footer: ''
 
 ## It runs through the same tool the brands already use
 
-<div style="font-size: 0.82em; color: var(--label); margin: -2px 0 20px; max-width: 900px;">Paid ads go out through <strong>Zernio</strong> — the exact same service the brands already use to schedule their organic social posts. There's nothing new to learn, no extra account to sign into, and no second vendor to manage. The ads simply reach the major paid networks.</div>
+<div style="font-size: 0.82em; color: var(--label); margin: -2px 0 20px; max-width: 900px;">Paid ads go out through <strong>Zernio</strong> — the exact same service the brands already use to schedule their organic social posts. There's nothing new to learn, no extra account to sign into, and no second vendor to manage. Turning the ads capability on is a single flat <strong>$100/mo</strong> add-on to that existing subscription — one shared cost across every brand and objective.</div>
 
 <div style="background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 22px 26px; margin-bottom: 18px;">
   <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--a); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 16px;">One tool · six paid networks</div>
@@ -417,8 +417,8 @@ footer: ''
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 20px; position: relative; overflow: hidden;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--a), transparent);"></div>
     <div style="font-family: 'Outfit'; font-weight: 800; font-size: 1.6em; color: var(--a);">1</div>
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.8em; color: var(--t); margin: 4px 0 6px;">Confirm the Zernio plan</div>
-    <div style="font-size: 0.72em; color: var(--body); line-height: 1.6;">Ads are bundled on usage-based plans now. A <strong>billing check</strong>, not the $50/mo purchase v1 assumed — verify with one live call.</div>
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.8em; color: var(--t); margin: 4px 0 6px;">$100/mo ads add-on</div>
+    <div style="font-size: 0.72em; color: var(--body); line-height: 1.6;">A flat monthly subscription on the existing Zernio account. <strong>One shared cost</strong> across every brand and objective — not per brand, and separate from per-flight ad spend.</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 20px; position: relative; overflow: hidden;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--y), transparent);"></div>
@@ -447,9 +447,9 @@ footer: ''
 <div style="display: flex; gap: 14px; margin-top: 22px;">
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 22px; position: relative; overflow: hidden;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--a), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-bottom: 12px;">CONFIRM</div>
-    <div style="font-family: 'Outfit'; font-size: 1.5em; font-weight: 800; color: var(--a); line-height: 1.05;">Plan covers ads</div>
-    <div style="font-size: 0.7em; color: var(--body); margin-top: 8px;">Likely already bundled. A billing check, not a purchase — then connect the ad accounts.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-bottom: 12px;">MONTHLY COMMITMENT</div>
+    <div style="font-family: 'Outfit'; font-size: 1.5em; font-weight: 800; color: var(--a); line-height: 1.05;">$100/mo</div>
+    <div style="font-size: 0.7em; color: var(--body); margin-top: 8px;">The flat Zernio ads add-on Scott absorbs monthly — one shared engine across brands &amp; objectives, plus per-flight ad spend.</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 22px; position: relative; overflow: hidden;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--g), transparent);"></div>
@@ -465,7 +465,7 @@ footer: ''
   </div>
 </div>
 
-<div style="margin-top: 30px; font-weight: 300; font-size: 0.92em; color: var(--body); text-align: center; line-height: 1.6;">Prove the engine on a deadline-driven, measurable objective — then the same engine extends, <strong>per brand, per objective</strong>, to exhibitions, newsletter growth, and ultimately fundraising, with no new build cost.</div>
+<div style="margin-top: 30px; font-weight: 300; font-size: 0.92em; color: var(--body); text-align: center; line-height: 1.6;">At <strong>$100/mo flat</strong>, the engine only makes sense shared across brands and objectives — never for one newsletter alone. Prove it on a deadline-driven, measurable objective, then it extends, <strong>per brand, per objective</strong>, to exhibitions, newsletter growth, and ultimately fundraising — with no new build cost.</div>
 
 ---
 
@@ -492,6 +492,8 @@ All research lives in <a href="https://github.com/JuergenB/ideas-inbox/tree/main
 </div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; row-gap: 10px; font-size: 0.7em; line-height: 1.5; color: var(--body);">
+
+  <div><strong style="color: var(--t); font-weight: 600;">Zernio Ads add-on = $100/mo on our AppSumo account</strong> — Zernio in-product paywall, confirmed 2026-06-18 (not bundled for legacy/AppSumo plans; flat monthly fee, separate from ad spend)</div>
 
   <div><strong style="color: var(--t); font-weight: 600;">Zernio Ads API re-verified — 6 networks, ad webhooks, SDK 0.2.101 ads namespaces</strong> — <a href="https://docs.zernio.com/api/openapi" style="color: inherit; text-decoration: underline;">Zernio OpenAPI v1.0.4, retrieved 2026-06-18</a></div>
 

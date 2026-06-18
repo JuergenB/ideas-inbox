@@ -40,7 +40,7 @@ The Zernio Ads API was re-traversed against the **live OpenAPI 3.1 spec** on 202
   - **Ad webhooks exist** — `ad.status_changed`, `lead.received`, `account.ads.initial_sync_completed`. *(Supersedes the "no webhooks → polling" reality in sub-4 and sub-6.)*
   - **SDK covers ads** — `@getlatedev/node@0.2.101` ships `client.ads` / `client.adcampaigns` / `client.adaudiences`. *(Supersedes sub-4's "zero ads coverage / raw fetch" premise, which was for SDK 0.1.7.)*
   - **6 ad networks, not 7** — the "7 platforms" line double-counts Facebook + Instagram (both Meta). *(Refines claim #1.)*
-  - **Add-on gating** — ads are bundled by default on usage-based plans; only legacy plans need the separate add-on. *(Supersedes claim #2's "$50/mo add-on" framing — pending a live plan check.)*
+  - **Add-on gating — RESOLVED 2026-06-18 (in-product paywall):** the Ads add-on is a flat **$100/mo** subscription on our **AppSumo lifetime** account ("Add Ads ($100/mo)"). The OpenAPI spec says ads are bundled on *usage-based* plans, but our *legacy/AppSumo* plan is **not** bundled — it requires the paid add-on. This supersedes both claim #2's "$50/mo" figure and the interim "likely bundled / billing check" assumption. Source: Zernio billing screen, captured by Juergen 2026-06-18. The fee is a shared-engine cost across all brands/objectives, separate from per-flight ad spend.
 - **Used in deck (v2):** reframe slides — the "Zernio reality" panel, the event-driven (not poll-driven) engine claim, and the 6-networks platform line.
 
 ---

@@ -5,7 +5,7 @@
 **Linked implementation epic:** [JuergenB/polywiz-app#181](https://github.com/JuergenB/polywiz-app/issues/181) (sub-issues #182–#191)
 **Companion idea:** [011 — Owned Promotion & PR Engine](../011-pressranger-outreach-playbook/) — supplies the *first pilot objective* (open-call submissions). 007 and 011 ship together.
 **Pilot:** open-call submissions on Not Real Art / Artsville → expand per-brand
-**Budget envelope:** $250–$500 per brand per month (Zernio Ads now bundled on usage-based plans — no separate add-on line item)
+**Budget envelope:** $250–$500 per brand per month in ad spend **+ a flat $100/mo Zernio Ads add-on** (confirmed 2026-06-18 via the in-product paywall — our AppSumo plan requires it; it is *not* bundled). The $100/mo is a shared-engine cost across all brands/objectives, not per-brand.
 
 > **What changed in v2 (2026-06-18):** Two things. (1) A live re-verification of the Zernio Ads API ([polywiz-app#250](https://github.com/JuergenB/polywiz-app/pull/250)) corrected the build premises — ad webhooks and SDK ads-coverage both **exist** now, so the engine is event-driven, not poll-driven. (2) The bigger shift: ads are **not** "a new campaign type bolted onto the organic trickle generator." An ad campaign is a *different kind of object* with a different lifecycle and conversion goals. v2 models it as a separate **campaign class** that shares PolyWiz's intake/creative substrate and then diverges completely. The original newsletter-pilot framing is preserved at git tag `idea-007-v1-awaiting-gono`.
 
@@ -136,7 +136,7 @@ Full reference: [polywiz-app/docs/reference/zernio-api.md](https://github.com/Ju
 - **`goal` enum (underscores):** `engagement`, `traffic`, `awareness`, `video_views`, `lead_generation`, `conversions`, `app_promotion`, plus `lead_conversion`, `catalog_sales` on create.
 - **Ad webhooks exist** — `ad.status_changed`, `lead.received`, `account.ads.initial_sync_completed`. The engine is **event-driven** (subscribe for lead capture + lifecycle), not a polling cron as v1 assumed.
 - **SDK covers ads** — `@getlatedev/node@0.2.101` ships `client.ads.*` / `client.adcampaigns.*` / `client.adaudiences.*`. Raw `fetch` only for the few uncovered endpoints (lead-forms, catalogs, `targeting/search`, `reach-estimate`, tracking-tags, conversion-destinations).
-- **Gating** — Ads are **bundled by default on usage-based Zernio plans**; only legacy plans need the separate add-on. (Supersedes the v1 "$50/mo add-on" assumption — confirm our plan's status with one live call.)
+- **Gating** — the Ads add-on is **a flat $100/mo subscription on our AppSumo account** (confirmed 2026-06-18 via the in-product paywall: "Add Ads ($100/mo)"). The OpenAPI spec describes ads as bundled on *usage-based* plans, but our *legacy/AppSumo lifetime* plan is **not** bundled — it requires the paid add-on. (Supersedes both the v1 "$50/mo" and the interim "likely bundled / billing check" assumptions.) The fee is a shared-engine cost across all brands and objectives, separate from per-flight ad spend.
 - **Per-brand ad-account OAuth** — `GET /v1/connect/{platform}/ads`, `platform ∈ [facebook, instagram, linkedin, tiktok, twitter, pinterest, googleads]`.
 
 ---
@@ -163,7 +163,7 @@ Full reference: [polywiz-app/docs/reference/zernio-api.md](https://github.com/Ju
 
 ## Open questions
 
-1. **Our Zernio plan** — is `LATE_API_KEY` now on a usage-based plan (ads bundled) or still legacy (gated)? One live `GET /v1/usage-stats` + an `/v1/ads/*` call settles it.
+1. **Zernio Ads add-on ($100/mo)** — confirmed required on our AppSumo plan (in-product paywall, 2026-06-18). Decision: who owns this recurring line item (Scott, monthly) and is it approved? It's only worth it as the shared multi-brand/multi-objective engine — explicitly *not* for The Intersect alone.
 2. **Per-brand objective config** — UI surface in PolyWiz Settings (brand → enabled objectives), or Airtable-driven flags read at runtime?
 3. **Ad-account ownership** — who connects each brand's Meta/Pinterest ad account via Zernio OAuth, and who owns budget authority per brand?
 4. **Pixel/CAPI install** — which brand sites still need server-side Conversions API (Artsville, Intersect-on-Curated)?
@@ -176,7 +176,7 @@ Full reference: [polywiz-app/docs/reference/zernio-api.md](https://github.com/Ju
 
 A green light for **Phase 0 + the open-call pilot**:
 
-- **Confirm** the Zernio plan covers ads (likely already bundled — a billing check, not a purchase).
+- **Approve** the flat **$100/mo Zernio Ads add-on** — the shared-engine fee (confirmed required on our AppSumo plan), separate from ad spend.
 - **Connect** Not Real Art / Artsville ad accounts via Zernio OAuth.
 - **Run** one open-call submission flight at ~$250 to capture our first-ever cost-per-submission.
 
