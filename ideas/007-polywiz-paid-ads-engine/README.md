@@ -11,11 +11,9 @@
 
 <p>
   <a href="https://ideas-inbox-mocha.vercel.app/ideas/007-polywiz-paid-ads-engine/exports/presentation-light.html">
-    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-paid-ads-engine-slide-1.png?v=3" width="820" alt="PolyWiz Paid Ads Engine — click to open full-screen presentation">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-paid-ads-engine-slide-1.png?v=4" width="820" alt="PolyWiz Paid Ads Engine — click to open full-screen presentation">
   </a>
 </p>
-
-> ⚠️ **Deck regeneration pending** — the linked deck still reflects v1 (newsletter pilot). It will be regenerated to match this v2 reframe before the next share.
 
 **🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/ideas/007-polywiz-paid-ads-engine/exports/presentation-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/ideas/007-polywiz-paid-ads-engine/exports/presentation.html)
 **📄 Slide deck (PDF):** [exports/presentation.pdf](exports/presentation.pdf) — download for print or offline.
@@ -26,7 +24,7 @@
 
 ## TL;DR
 
-PolyWiz today is an **organic trickling engine** — it turns a URL into a six-month tapering *series of posts*. This idea adds a **second engine beside it: paid ads** — a different animal entirely. An ad campaign isn't a long content series; it's **one ad (or a few) with many variations**, run on a budget over a defined flight, optimized by the platform's algorithm toward a **conversion** — register, submit, subscribe, or express interest.
+PolyWiz today is an **organic trickling engine** — it turns a URL into a six-month tapering *series of posts*. This idea adds a **second engine beside it: paid ads** — a different animal entirely. An ad campaign isn't a long content series; it's **one ad (or a few) with many variations**, run on a budget over a defined flight, optimized by the platform's algorithm toward a **conversion** — submit, register, subscribe, follow, donate, or express interest (in an exhibition, a partnership, or a cause).
 
 Three things make now the moment: (1) **Zernio shipped — and we've now re-verified (2026-06-18) — a paid-ads API** across 6 networks reachable with the key we already use, with ad webhooks and SDK coverage that make the build event-driven. (2) **PolyWiz already owns ~80% of the substrate** an ad engine needs — URL scrape, brand voice, image catalog, auto-crop, per-brand keys. (3) **Juergen has the playbook** — previously ran $70K/yr Meta budgets to $0.80–$0.90 CPA.
 
@@ -42,7 +40,7 @@ PolyWiz's unit of work is a tapering post series. An ad campaign is a fundamenta
 |---|---|---|
 | **Unit of work** | ~6-month series of dozens of posts | 1–few ads × many *variations*, tested concurrently |
 | **Lifecycle** | tapering schedule → publish → done | flight (budget + dates) → learning → kill losers / scale winners |
-| **Primary goal** | reach, cadence, presence | **conversion** — register, submit, subscribe, express interest |
+| **Primary goal** | reach, cadence, presence | **conversion** — submit, register, subscribe, follow, donate, express interest |
 | **Optimizer** | our distribution-bias schedule | the ad platform's algorithm |
 | **Net-new config** | platforms, cadence, distribution bias | **investment level, ad account, flight length, objective, audience, landing page** |
 | **Success metric** | posts shipped, reach | **cost per action** (submission / RSVP / signup / donation) |
@@ -74,12 +72,20 @@ Within a Paid campaign, the **objective** is the conversion-oriented dimension. 
 | Objective | PolyWiz subject type | Zernio `goal` | Conversion event | Distinct creative angles | Best platform mix | Pacing | KPI |
 |---|---|---|---|---|---|---|---|
 | **Open-call submissions** *(pilot)* | Open Call | `lead_generation` / `lead_conversion` | Submit / Lead | deadline, prize, eligibility | Meta + **Pinterest** + **Google Ad Grants** | **deadline flight** | cost / submission |
-| **Event registration** | Event | `traffic` / `conversions` | RSVP / Register | date, lineup, local | Meta + **Nextdoor** (local) | **date flight** | cost / RSVP |
-| **Exhibition interest** | Exhibition | `traffic` / `awareness` | ViewContent | visual hero, artist spotlight | **Pinterest** + IG + Meta | run-of-show | cost / visitor, CPM |
+| **Exhibition interest** | Exhibition | `traffic` / `awareness` **+ secondary** `lead_generation` | ViewContent **→ Subscribe / Follow** | visual hero, artist spotlight | **Pinterest** + IG + Meta | run-of-show | cost / visitor **+ cost / captured lead** |
 | **Newsletter growth** | Newsletter | `lead_generation` | Subscribe | value-of-issue, FOMO | Meta + **newsletter ad networks** | always-on | cost / subscriber |
-| **Fundraising / donations** | *(new subject type)* | `conversions` (value) | Donate / Purchase | impact, matching-gift, urgency | Meta + **Google Ad Grants** + email | seasonal | ROAS / cost-per-donor |
+| **Event / workshop registration** *(occasional)* | Event | `traffic` / `conversions` | RSVP / Register | date, lineup, local | Meta + **Nextdoor** (local) | **date flight** | cost / RSVP |
+| **Fundraising / donations** | *(new subject type)* | `conversions` (value) | Donate / Purchase | impact, matching-gift, urgency, partnership | Meta + **Google Ad Grants** + email | seasonal | ROAS / cost-per-donor |
 
 Note the **platform mix changes per objective** — platform choice isn't a global decision. Pinterest earns its place on *visual* objectives (exhibitions, image-led open calls), not as a newsletter-CPL channel. Nextdoor only matters for local events. Newsletter ad networks (beehiiv Boosts / SparkLoop) only for the subscribe objective. **Google Ad Grants ($10k/mo free for 501(c)(3)s** — already in [011's master resource](../011-pressranger-outreach-playbook/research/arts-master-resource.csv)) maps across open calls, fundraising, and exhibitions via search intent.
+
+### Exhibition interest is a *dual* objective — and a newsletter feeder
+
+A bare `ViewContent` is a weak success signal — "they looked" isn't "they're interested." So an exhibition campaign optimizes for the **view** as the platform-side conversion *and* layers a **secondary capture** on the landing experience: prompt the engaged visitor to **subscribe to the newsletter, follow the exhibition, or follow the brand** via scroll-depth / time-on-page / exit-intent CTAs. That converts a top-of-funnel awareness play into a *measurable* lead and feeds it straight into the newsletter-growth objective — the **compounding loop** ([011](../011-pressranger-outreach-playbook/) names it): a paid exhibition flight produces views now, captured subscribers/followers from the interested minority, and a retargeting pool that makes the *next* campaign cheaper. The same secondary-capture pattern applies to open calls (non-submitters → newsletter) and, later, fundraising (interested non-donors → cultivation list).
+
+### A note on events
+
+Event registration is the **occasional** objective, not a core one — we don't run many. It skews to **Artsville USA** (events + workshops happen there more than on Not Real Art), and is essentially **N/A for The Intersect** (a newsletter, not a venue). It's in the architecture for completeness and per-brand enablement, but it isn't a Phase 1 or Phase 2 priority the way submissions, exhibition interest, and newsletter growth are.
 
 ### Fundraising: design-first-class, build-last
 
@@ -97,11 +103,11 @@ Not every objective applies to every brand. Fundraising is irrelevant to a for-p
 
 Illustrative matrix (final values are a brand-config decision):
 
-| Brand | Open-call submissions | Event registration | Exhibition interest | Newsletter growth | Fundraising |
+| Brand | Open-call submissions | Exhibition interest | Newsletter growth | Event / workshop | Fundraising |
 |---|---|---|---|---|---|
-| **Not Real Art** | ✓ | ✓ | ✓ | ✓ | ✓ *(last phase)* |
-| **Artsville USA** | ✓ | ✓ | ✓ | ✓ | ✓ *(last phase)* |
-| **The Intersect** | — | maybe | — | ✓ | — |
+| **Not Real Art** | ✓ | ✓ | ✓ | occasional | ✓ *(last phase)* |
+| **Artsville USA** | ✓ | ✓ | ✓ | ✓ *(events + workshops)* | ✓ *(last phase)* |
+| **The Intersect** | — | — | ✓ | — | — |
 
 This is the mechanism that keeps PolyWiz from becoming "art-centric" or "nonprofit-centric": every brand sees only the objectives it's configured for. One engine, per-brand capability surface.
 
