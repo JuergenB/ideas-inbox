@@ -15,3 +15,6 @@ ideas/**/*.private.md
 ideas/*/presentations/*.light.md
 ideas/*/exports/.audit/
 ideas/*/exports/.thumb-*
+about/*/presentations/*.light.md
+about/*/exports/.audit/
+about/*/exports/.thumb-*

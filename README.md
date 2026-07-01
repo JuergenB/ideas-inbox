@@ -2,6 +2,19 @@
 
 Cross-project ideas inbox for **Arterial**, **Not Real Art**, **Artsville USA**, and **Polymash** initiatives. This repo captures, researches, and evaluates new ideas before they become their own projects.
 
+## New here? What this actually is
+
+If this looks like a "presentation archive" with a clunky interface, this 5-minute deck reframes it — GitHub is the world's software-development platform, and our ideas live here so they're preserved, versioned, and ready to hand off to any developer the moment one graduates into real software.
+
+<p>
+  <a href="https://ideas-inbox-mocha.vercel.app/about/github-explained/exports/github-explained-light.html">
+    <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/github-explained-slide-1.png" width="820" alt="What GitHub Really Is — click to open full-screen presentation">
+  </a>
+</p>
+
+**🎬 Open presentation (full-screen, arrow keys):** [light version →](https://ideas-inbox-mocha.vercel.app/about/github-explained/exports/github-explained-light.html) · [dark version →](https://ideas-inbox-mocha.vercel.app/about/github-explained/exports/github-explained.html)
+**📄 Slide deck (PDF):** [about/github-explained/exports/github-explained.pdf](about/github-explained/exports/github-explained.pdf) — download for print or offline.
+
 ## How It Works
 
 1. **Capture** — New ideas arrive (from Scott, from team discussions, from market observations) and get an epic issue + a numbered folder
@@ -34,6 +47,8 @@ ideas/
 │   └── exports/               # PDF exports
 └── ...
 ```
+
+Meta content about the archive itself (not an idea) lives under [`about/`](about/) — e.g. the "What GitHub Really Is" orientation deck linked above.
 
 ## Current Ideas
 

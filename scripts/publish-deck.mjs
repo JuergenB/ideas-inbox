@@ -44,8 +44,13 @@ if (!ideaFolder) {
 }
 
 const repoRoot = path.resolve(import.meta.dirname, "..")
-const ideaSlug = ideaFolder.replace(/^\d+-/, "")
-const ideaDir = path.join(repoRoot, "ideas", ideaFolder)
+// ideaFolder is normally a bare idea name (→ ideas/<name>), but may also be a
+// repo-relative path with a slash (e.g. about/github-explained) for meta decks
+// that live outside ideas/. The slug used for Blob paths is the last segment.
+const isNested = ideaFolder.includes("/")
+const routePrefix = isNested ? ideaFolder : `ideas/${ideaFolder}`
+const ideaSlug = path.basename(ideaFolder).replace(/^\d+-/, "")
+const ideaDir = path.join(repoRoot, routePrefix)
 const presentationsDir = path.join(ideaDir, "presentations")
 const exportsDir = path.join(ideaDir, "exports")
 
@@ -230,8 +235,8 @@ try {
 
 // ── 7. Done ──────────────────────────────────────────────────────────────
 const vercelBase = "https://ideas-inbox-mocha.vercel.app"
-const vercelLightUrl = `${vercelBase}/ideas/${ideaFolder}/exports/${deckBasename}-light.html`
-const vercelDarkUrl = `${vercelBase}/ideas/${ideaFolder}/exports/${deckBasename}.html`
+const vercelLightUrl = `${vercelBase}/${routePrefix}/exports/${deckBasename}-light.html`
+const vercelDarkUrl = `${vercelBase}/${routePrefix}/exports/${deckBasename}.html`
 
 console.log(`\n[publish-deck] done for ${ideaFolder}`)
 console.log(`  HTML (light, default): ${vercelLightUrl}`)
