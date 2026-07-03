@@ -45,17 +45,24 @@ That's it. Live in one tool; the rest is handled — most of it just once, at th
 join, no account or download) → press record → review the automatic cleanup and drafted notes →
 press **Publish**. No downloading, no uploading, no "where did that file go."
 
-**Once, at the very beginning (the web person, or Juergen):** connect the show to Spotify and list
-it on Apple Podcasts. After that, every new episode flows automatically to Spotify, Apple, and
-YouTube. Episodes can also appear on **drlyndaklau.com** via a small Spotify player the web person
-embeds. See the [setup runbook](docs/setup-runbook.md).
+**Once, at the very beginning:** create the accounts and list the show on Apple Podcasts and
+Spotify. This is a genuine one-time step — and because steps involve your own email and two-factor
+codes, it's often easiest done yourself, though a VA or web person can help. After that, every new
+episode flows automatically to Spotify, Apple, and YouTube. Episodes can also appear on
+**drlyndaklau.com** via a small Spotify player added to the site. See the
+[setup runbook](docs/setup-runbook.md).
+
+The one tool to get familiar with is **Riverside** — that's where an episode is set up, the guest
+is added, and the record button lives. It's designed to be learned quickly, and there are current
+tutorials (see the deck) that walk through it.
 
 ## What it costs
 
-One modest subscription (**Riverside, ~$29/month** — the plan that includes hosting, the AI
-assistant, and longer recordings) plus **free** Spotify for Creators — versus the traditional
-route's several separate subscriptions (a host at $19–99/mo, editing software, a recording tool, a
-website). *Prices as listed July 2026 and can change; the point is the shape — one small
+One modest subscription (**Riverside, ~$29/month** — the plan that includes hosting, the AI tools,
+and longer recordings) plus **free** Spotify for Creators — versus the traditional route's several
+separate subscriptions (a host at $19–99/mo, editing software, a recording tool, a website). If
+Lynda wants help setting things up or adding the player to her site, that assistance would be an
+additional cost. *Prices as listed July 2026 and can change; the point is the shape — one small
 subscription instead of many.*
 
 ## A few honest, practical notes

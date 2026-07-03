@@ -1,14 +1,15 @@
-# One-Time Setup Runbook — for Lynda's web person
+# One-Time Setup Runbook — reference
 
-**Audience:** whoever helps Dr. Lynda Klau with her website (drlyndaklau.com). **Not** for Lynda
-to execute — this is the "done once, at the start" technical wiring the deck refers to. Budget:
-~30–45 minutes total, most of it waiting on Apple's review.
+**Audience:** whoever does the one-time setup — Lynda herself, a VA, or her web person. This is
+the "done once, at the start" account setup + directory listing the deck refers to. Budget:
+~30–45 minutes total, most of it waiting on Apple's review. Note that steps involving an email
+address and two-factor codes are often easiest done by the account owner (Lynda) directly.
 
 The goal: after this is done, Lynda **only ever records and presses "Publish" in Riverside**, and
 every new episode of *The Best is Yet to Come* appears on Spotify, Apple Podcasts, and (optionally)
 on her own website — with no further technical work.
 
-There are two clean ways to host/distribute. **Pick ONE** with Juergen before starting.
+There are two clean ways to host/distribute. **Pick ONE** before starting.
 
 ---
 

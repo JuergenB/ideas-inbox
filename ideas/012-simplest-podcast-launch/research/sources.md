@@ -102,12 +102,31 @@ or precise-date claims that should be re-checked when the deck is shared or upda
 - **Retrieved:** July 2026
 
 **Third-party beginner tutorials** (linked on the deck's "Learn it in an afternoon" slide) —
-titles/IDs surfaced via search; **⚠ open each URL to confirm it resolves and is current before
-sharing the deck:**
+re-researched July 2026 and **dated** so the freshest are preferred (Riverside's AI/hosting tools
+change fast; anything predating the 2026 feature set is excluded):
 
-- StartupWise — "How to Use Riverside.fm for Podcasting" — https://www.youtube.com/watch?v=IYdN4V8I-do
-- Primal Video — "How to Start a Podcast with Riverside FM" — https://www.youtube.com/watch?v=1Ozb5dFLeaA
-- "Riverside: Record, Edit, and Host Your Podcast" — https://www.youtube.com/watch?v=-yW3ZOvhW5Q
+- Emma's Productivity Lab — "Riverside FM: Complete Beginner Tutorial — Editing, Magic Clips & Hosting (2026)" — **May 30, 2026** — https://www.youtube.com/watch?v=-yW3ZOvhW5Q — record → edit → Magic Clips → publishing/hosting; current.
+- Collin Michael — "How To Edit A Video Podcast in 2026 (Riverside Beginners)" — **2026** (exact month unconfirmed) — https://www.youtube.com/watch?v=kA6QdnX2Q1s — AI / transcript-based editing.
+- Riverside University — the vendor's own continuously-updated lessons — https://riverside.com/university — recording, AI tools, hosting; always current (official, used as a fallback).
+
+**Excluded as too old (predate the current AI/hosting tools) — do NOT use:**
+
+- StartupWise — "How to Use Riverside.fm for Podcasting" (Aug 31, 2025) — https://www.youtube.com/watch?v=IYdN4V8I-do
+- Primal Video — "How to Start a Podcast with Riverside FM" (Aug 1, 2024) — https://www.youtube.com/watch?v=1Ozb5dFLeaA
+
+**⚠ Confirm each current URL still resolves before sharing the deck.** Retrieved July 2026.
+
+**Microphone recommendation — Sennheiser Profile USB (~$129)** — the deck's single gear pick:
+
+- USB-C cardioid condenser + table stand; **built-in 3.5mm headphone jack** for zero-latency
+  monitoring; mute button + gain/mix/volume dials; plug-and-play, no interface. Sennheiser
+  product #700065.
+- Sennheiser product page — https://www.sennheiser.com/en-us/catalog/products/microphones/profile-usb-microphone/profile-usb-microphone-700065
+- Amazon (ASIN B0BTPYCD86) — https://www.amazon.com/Sennheiser-Professional-Profile-Microphone-Built/dp/B0BTPYCD86
+- Reviews: The Podcast Host — https://www.thepodcasthost.com/equipment/sennheiser-profile-review/ ; Tom's Guide — https://www.tomsguide.com/reviews/sennheiser-profile-review
+- **Note:** the headphone jack is wired 3.5mm — plain *wired* earbuds/headphones plug in; AirPods
+  (wireless) cannot. Budget alternative if unavailable: Samson Q2U (~$60–70), also with a
+  headphone jack. **Retrieved:** July 2026.
 
 **Riverside one-click website + embeddable player** — supports "on your own website" framing:
 
