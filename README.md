@@ -65,6 +65,7 @@ Meta content about the archive itself (not an idea) lives under [`about/`](about
 | 009 | [Arterial's Owned Platform](ideas/009-arterial-owned-platform/) | Research & Discussion | Juergen Berkessel (Polymash) | 2026-06-08 |
 | 010 | [Guideless Pricing & Tier Strategy](ideas/010-guideless-pricing-strategy/) | Ready to Send | Juergen Berkessel (Polymash) / Rokas @ Guideless | 2026-06-12 |
 | 011 | [Owned Promotion & PR Engine (PressRanger as one input)](ideas/011-pressranger-outreach-playbook/) | Research & Discussion — Recommend Pilot | Juergen Berkessel (Polymash) / Scott Power | 2026-06-12 |
+| 012 | [Simplest Podcast Launch (Riverside + Spotify)](ideas/012-simplest-podcast-launch/) | Research & Discussion | Juergen Berkessel / Dr. Lynda Klau | 2026-07-02 |
 
 ## Current Issues
 
