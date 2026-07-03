@@ -146,8 +146,8 @@ footer: ''
 
 <div style="display: flex; gap: 20px; margin-top: 20px; align-items: stretch;">
   <div style="flex: 1.3; background: var(--s); border: 1px solid var(--b); border-left: 3px solid var(--a); border-radius: 12px; padding: 22px 24px;">
-    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 1.05em; color: var(--t); margin-bottom: 8px;">1 · Riverside</div>
-    <div style="font-size: 0.74em; color: var(--body); line-height: 1.6;">One website where you <strong>record</strong> with remote guests, let it <strong>clean up</strong> the audio, and <strong>publish</strong> — all in the same place. It even <strong>hosts</strong> the show for you, so there's no separate host and no files to move.</div>
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 1.05em; color: var(--t); margin-bottom: 8px;">1 · <a href="https://riverside.com" target="_blank" rel="noopener" style="color: var(--t); text-decoration: underline; text-decoration-color: var(--a); text-underline-offset: 3px;">Riverside.fm</a> <span style="font-family: 'Outfit'; font-weight: 400; font-size: 0.5em; color: var(--a); vertical-align: middle;">↗ riverside.com</span></div>
+    <div style="font-size: 0.74em; color: var(--body); line-height: 1.6;">One <strong>platform</strong> where you <strong>record</strong> with remote guests, let it <strong>clean up</strong> the audio, and <strong>publish</strong> — all in the same place. It even <strong>hosts</strong> the show for you, so there's no separate host and no files to move.</div>
     <div style="margin-top: 12px; font-family: 'Outfit'; font-size: 0.6em; letter-spacing: 0.06em; color: var(--a);">RECORD → EDIT → HOST → PUBLISH</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-left: 3px solid var(--blue); border-radius: 12px; padding: 22px 24px;">
