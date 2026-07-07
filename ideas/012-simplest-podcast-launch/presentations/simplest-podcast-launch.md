@@ -409,7 +409,7 @@ footer: ''
   </div>
   <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">How does it get on YouTube?</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">A one-time connection: link your show's feed to YouTube (or use Riverside's one-click publish if Riverside hosts). Then every new episode appears there on its own.</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">Riverside publishes it for you — the audio to Spotify &amp; Apple, and the <em>video</em> version to YouTube (a video is exactly what YouTube wants, and Riverside makes one). Connect your accounts once; after that, each new episode goes to all three.</div>
   </div>
   <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">What earbuds or headphones?</div>
