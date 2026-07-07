@@ -396,6 +396,82 @@ footer: ''
 
 ---
 
+<!-- _class: bg-grid -->
+
+### Follow-up Q&amp;A · 1 of 3
+
+# Gear &amp; getting online
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 13px; margin-top: 16px;">
+  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">Can I use the Blue mic I already own?</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">Yes — it's a real podcasting mic. A little less plug-and-play than the Sennheiser, but no reason to buy another. Learn its settings once and you're set.</div>
+  </div>
+  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">How does it get on YouTube?</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">A one-time connection: link your show's feed to YouTube (or use Riverside's one-click publish if Riverside hosts). Then every new episode appears there on its own.</div>
+  </div>
+  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">What earbuds or headphones?</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;"><a href="https://www.amazon.com/Apple-EarPods-Headphones-Built-Control/dp/B0DCH8VDXF" target="_blank" rel="noopener" style="color: var(--a); text-decoration: underline;">Apple wired EarPods (~$19)</a> are plenty to start; the <a href="https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E" target="_blank" rel="noopener" style="color: var(--a); text-decoration: underline;">Sony MDR-7506 (~$100)</a> are the quintessential podcaster headphones when you upgrade. Never monitor on speakers.</div>
+  </div>
+  <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">Should it live on my website?</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">Yes — treat each episode like a blog post (the show notes <em>are</em> the post) and embed the Spotify player. Your web person sets the pattern up once.</div>
+  </div>
+</div>
+
+---
+
+<!-- _class: bg-dots -->
+
+### Follow-up Q&amp;A · 2 of 3
+
+# Frequency, audience &amp; promotion
+
+<div style="display: flex; gap: 13px; margin-top: 16px;">
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">How often should I publish?</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">Monthly is sustainable and perfect if you're doing this for the joy. Real audience growth realistically needs weekly — some go daily. Choose the pace you'll enjoy and leave growth for much later.</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">How do I promote it?</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">With zero audience, the most reliable lever is guesting on other people's podcasts. A small Facebook-ad budget buys your first listeners; social posting helps at the margins.</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">Can I target two audiences?</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">Yes. You only need a narrow niche if growth and monetization are the goal. For a message-and-conversations show, two is fine — even if it slightly blurs "who's this for."</div>
+  </div>
+</div>
+
+<div style="margin-top: 16px; background: var(--s); border: 1px solid var(--b); border-left: 2px solid var(--a); border-radius: 8px; padding: 14px 20px; font-size: 0.76em; color: var(--body); line-height: 1.55; font-style: italic;">The question under all of these: are you doing this to build and monetize an audience, or because you feel compelled to? Your answer quietly settles most of them.</div>
+
+---
+
+<!-- _class: bg-glow-orange -->
+
+### Follow-up Q&amp;A · 3 of 3
+
+# The craft &amp; your blind spots
+
+<div style="display: flex; gap: 18px; margin-top: 16px;">
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 16px 20px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 6px;">Which great interviewers should I study?</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">It's subjective — study the podcasts <em>you</em> already love and ask why: the pacing, the questions, how they listen. One caution: shows that feel effortless (NPR, Hidden Brain) have teams, researchers, and heavy editing behind them, and many aren't even interviews. Don't measure a solo, monthly show against a machine.</div>
+  </div>
+  <div style="flex: 1.05; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 16px 20px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 8px;">What you're not asking — four things</div>
+    <div style="display: flex; flex-direction: column; gap: 7px;">
+      <div style="font-size: 0.65em; color: var(--body); line-height: 1.45;"><strong>The guests are the real work</strong> — booking, prepping questions, thanking them. The tech is the easy part.</div>
+      <div style="font-size: 0.65em; color: var(--body); line-height: 1.45;"><strong>Own your own logins</strong> — email + 2FA mean it's best set up by you, even with help.</div>
+      <div style="font-size: 0.65em; color: var(--body); line-height: 1.45;"><strong>Set a "good enough, publish it" bar</strong> — perfectionism quietly kills new shows.</div>
+      <div style="font-size: 0.65em; color: var(--body); line-height: 1.45;"><strong>Think in a small season</strong> — commit to six episodes, then reassess. Finite beats "forever."</div>
+    </div>
+  </div>
+</div>
+
+---
+
 <!-- _class: bg-glow-gold -->
 
 ### What this is really for

@@ -128,6 +128,15 @@ change fast; anything predating the 2026 feature set is excluded):
   (wireless) cannot. Budget alternative if unavailable: Samson Q2U (~$60–70), also with a
   headphone jack. **Retrieved:** July 2026.
 
+**Follow-up Q&A slides — additional sources (added July 2026):**
+
+- **Getting on YouTube** — simplest path is a one-time RSS connection (YouTube Studio → Create →
+  New podcast → Submit RSS feed → verify by emailed code), then automatic; or Riverside's
+  one-click publish-to-YouTube if Riverside hosts the show. YouTube "Two Paths to a YouTube
+  Podcast" — https://blog.youtube/creator-and-artist-stories/getting-started-your-two-paths-to-a-youtube-podcast/ ; YouTube RSS-to-podcast help — https://support.google.com/youtube/answer/13525207 ; Riverside for Podcasters (one-click publish to Spotify/Apple/YouTube) — https://riverside.com/solutions/podcasters
+- **Monitoring earbuds/headphones** — Apple EarPods (USB-C) ~$19, ASIN B0DCH8VDXF — https://www.amazon.com/Apple-EarPods-Headphones-Built-Control/dp/B0DCH8VDXF ; Sony MDR-7506 (~$100, still sold 2026, the standard closed-back podcaster headphone), ASIN B000AJIF4E — https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E . Standard advice: monitor on wired headphones/earbuds, never open speakers (voice bleeds back into the mic). Match the plug (3.5mm for a mic jack). **Retrieved:** July 2026.
+- **Blue mic** — a Blue USB podcasting mic (e.g., Yeti/Snowball) is a legitimate mic she already owns; usable, just less plug-and-play than the Sennheiser Profile. No new citation — general product knowledge.
+
 **Riverside one-click website + embeddable player** — supports "on your own website" framing:
 
 - Riverside — Podcast Hosting — https://riverside.com/podcast-hosting
