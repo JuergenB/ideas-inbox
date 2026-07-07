@@ -436,7 +436,7 @@ footer: ''
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">How do I promote it?</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">With zero audience, the most reliable lever is guesting on other people's podcasts. A small Facebook-ad budget buys your first listeners; social posting helps at the margins.</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">Start with the audience you already have — your list and followers (they'll still need to actively subscribe, so nudge them). For genuinely new listeners, guesting on other people's podcasts is the most reliable lever; a small Facebook-ad budget buys the first few.</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">Can I target two audiences?</div>
