@@ -70,9 +70,29 @@ or precise-date claims that should be re-checked when the deck is shared or upda
   annually)** — hosting + AI tools + longer monthly recording; Grow ~$39/mo; Webinar ~$99/mo;
   Business custom.
 - **⚠ verify before quoting — HIGH churn:** Some third-party listicles still show an older
-  "$15/$19" structure. Trust the live pricing page and re-check the day the deck is finalized or
-  shared. The deck uses "~$29/month" and an explicit "prices can change" caveat for this reason.
+  "$15/$19" or "Standard/Pro/Teams" structure. Trust the live pricing page and re-check the day
+  the deck is finalized or shared. The deck uses "~$29/month" and an explicit "prices can change"
+  caveat for this reason.
+- **Re-verified July 3, 2026 (fact-check pass):** live riverside.com/pricing shows **Pro = $29/mo
+  ($24/mo billed annually, $288/yr)**, including hosting + AI (transcription, show notes, Magic
+  Audio, Magic Clips) + **15 hrs/mo** separate-track recording. Free plan confirmed to **exclude
+  hosting**. The current tier lineup is Free / Pro / Grow / Webinar / Business. Deck's ~$29 holds.
 - **Used in deck:** slides 11, 13.
+
+## Fact-check pass (July 3, 2026) — operational claims verified vs Riverside support docs
+
+All of the following deck claims were confirmed against Riverside's own Help Center: guest joins
+via **browser link, no account/app/download** (Riverside supports **Chrome/Edge** — deck now says
+"Chrome or Edge work best"); **local per-device HD recording** protects quality on weak wifi;
+**up to 10 participants** (host + 9 guests); **reusable Studio** (same room every episode);
+**Magic Audio** cleanup; **AI show notes, title, chapters, transcript, Magic Clips** (AI show
+notes require recordings >5 min); **text-based editing**; **built-in hosting + RSS on paid
+plans** (not free); **distribution** — audio to Spotify/Apple via RSS (auto after each publish),
+video to YouTube on publish; **embeddable player / one-click website** (Riverside) and **Spotify
+embed player**; **portability** via RSS/301 redirect (general podcast standard). Sources:
+support.riverside.com Hosting/Recording/Magic-Audio/Show-Notes articles; creators.spotify.com;
+podcasters.apple.com. **No claim was found to be false**; the YouTube "automatic" phrasing was the
+one overstatement and has been corrected (see above).
 
 ## 6. Spotify for Creators = free hosting + distribution; one-time Apple Podcasts submission; embeddable player
 
@@ -130,10 +150,19 @@ change fast; anything predating the 2026 feature set is excluded):
 
 **Follow-up Q&A slides — additional sources (added July 2026):**
 
-- **Getting on YouTube** — simplest path is a one-time RSS connection (YouTube Studio → Create →
-  New podcast → Submit RSS feed → verify by emailed code), then automatic; or Riverside's
-  one-click publish-to-YouTube if Riverside hosts the show. YouTube "Two Paths to a YouTube
-  Podcast" — https://blog.youtube/creator-and-artist-stories/getting-started-your-two-paths-to-a-youtube-podcast/ ; YouTube RSS-to-podcast help — https://support.google.com/youtube/answer/13525207 ; Riverside for Podcasters (one-click publish to Spotify/Apple/YouTube) — https://riverside.com/solutions/podcasters
+- **Getting on YouTube (verified mechanics — corrected)** — Riverside connects to a YouTube
+  channel; when you **publish an episode** in Riverside's Hosting tab, that one Publish action
+  posts the **actual video** to YouTube (no separate file upload). It is a **deliberate
+  per-episode Publish step, NOT zero-click-automatic** — episodes do not auto-post the moment you
+  finish recording. Do not claim "automatic / nothing to do." Correct framing: "one Publish per
+  episode; Riverside posts the video to YouTube for you; no file to upload."
+  Riverside "Upload and publish new episode" — https://support.riverside.com/hc/en-us/articles/28884419060253-Hosting-Upload-and-publish-new-episode ;
+  "Connect your podcast to listening platforms" — https://support.riverside.com/hc/en-us/articles/28895287818653-Hosting-Connect-your-podcast-to-listening-platforms ;
+  "Publish video episodes" — https://support.riverside.com/hc/en-us/articles/33826248198941 .
+  Note: Spotify/Apple get **audio** via RSS automatically after each publish; **video does NOT
+  auto-appear on Spotify** (audio only unless added manually). YouTube's own RSS-to-podcast
+  feature (static-image video, fully automatic) is a *separate* thing and not what Riverside does.
+  **Retrieved:** July 2026.
 - **Monitoring earbuds/headphones** — Apple EarPods (USB-C) ~$19, ASIN B0DCH8VDXF — https://www.amazon.com/Apple-EarPods-Headphones-Built-Control/dp/B0DCH8VDXF ; Sony MDR-7506 (~$100, still sold 2026, the standard closed-back podcaster headphone), ASIN B000AJIF4E — https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E . Standard advice: monitor on wired headphones/earbuds, never open speakers (voice bleeds back into the mic). Match the plug (3.5mm for a mic jack). **Retrieved:** July 2026.
 - **Blue mic** — a Blue USB podcasting mic (e.g., Yeti/Snowball) is a legitimate mic she already owns; usable, just less plug-and-play than the Sennheiser Profile. No new citation — general product knowledge.
 

@@ -190,7 +190,7 @@ footer: ''
 <div style="display: flex; gap: 18px; margin-top: 22px;">
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 11px; padding: 20px 22px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.82em; color: var(--g); margin-bottom: 8px;">Nothing to install</div>
-    <div style="font-size: 0.74em; color: var(--body); line-height: 1.6;">Your guest opens the link in their normal web browser and they're in. No app, no account, no setup call beforehand.</div>
+    <div style="font-size: 0.74em; color: var(--body); line-height: 1.6;">Your guest opens the link in their browser (Chrome or Edge work best) and they're in. No app, no account, no setup call beforehand.</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 11px; padding: 20px 22px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.82em; color: var(--g); margin-bottom: 8px;">Everyone sounds good</div>
@@ -236,7 +236,7 @@ footer: ''
 <div style="display: flex; gap: 20px; margin-top: 22px;">
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 22px 24px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.9em; color: var(--t); margin-bottom: 10px;">The podcast apps</div>
-    <div style="font-size: 0.74em; color: var(--body); line-height: 1.65;">Once set up, each new episode flows automatically to <strong>Spotify</strong>, <strong>Apple Podcasts</strong>, and <strong>YouTube</strong>. The technical "feed" that carries them there is handled for you — you never see it.</div>
+    <div style="font-size: 0.74em; color: var(--body); line-height: 1.65;">When you publish an episode, one <strong>Publish</strong> sends it to <strong>Spotify</strong> and <strong>Apple</strong> as audio and to <strong>YouTube</strong> as video. The technical "feed" that carries the audio to the apps is handled for you — you never see it.</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 22px 24px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.9em; color: var(--t); margin-bottom: 10px;">Your own website</div>
@@ -267,7 +267,7 @@ footer: ''
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px 20px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.78em; color: var(--a); margin-bottom: 6px;">Then automatic</div>
-    <div style="font-size: 0.7em; color: var(--body); line-height: 1.55;">Once the show is listed on Apple &amp; Spotify, every future episode flows out on its own. You never repeat this step.</div>
+    <div style="font-size: 0.7em; color: var(--body); line-height: 1.55;">Once the show is listed on Apple &amp; Spotify, every episode you publish flows out to them automatically — you never repeat the listing step.</div>
   </div>
 </div>
 
@@ -409,7 +409,7 @@ footer: ''
   </div>
   <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">How does it get on YouTube?</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">Riverside publishes it for you — the audio to Spotify &amp; Apple, and the <em>video</em> version to YouTube (a video is exactly what YouTube wants, and Riverside makes one). Connect your accounts once; after that, each new episode goes to all three.</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.5;">When you publish an episode in Riverside, it sends the audio to Spotify &amp; Apple and the <em>video</em> to YouTube (a video is what YouTube wants, and Riverside makes one). Connect your accounts once — then it's one Publish per episode, with no files to upload.</div>
   </div>
   <div style="background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 15px 18px;">
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.75em; color: var(--a); margin-bottom: 5px;">What earbuds or headphones?</div>
