@@ -96,16 +96,16 @@ footer: ''
 
 ### Why we're even doing this
 
-# ArtsvilleUSA needs to email its press list
+# ArtsvilleUSA needs a real email-sending channel
 
 <div style="display: flex; gap: 16px; margin-top: 14px;">
   <div class="card" style="flex: 1;">
-    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--a); font-size: 0.8em; margin-bottom: 6px;">The need</div>
-    <div style="color: var(--body); font-size: 0.72em; line-height: 1.5;">Send press announcements &amp; releases to our <strong>confirmed press contact list</strong> — journalists, editors, arts writers. That's list email, not one-off personal notes.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--a); font-size: 0.8em; margin-bottom: 6px;">The need — all-purpose</div>
+    <div style="color: var(--body); font-size: 0.72em; line-height: 1.5;">One tool for <strong>fundraising, announcements, exhibition promos, open calls, and press releases</strong> — sent to our lists (press contacts, members, donors). All of it is <strong>list email</strong>, not one-off personal notes.</div>
   </div>
   <div class="card" style="flex: 1;">
     <div style="font-family: 'Outfit'; font-weight: 600; color: var(--r); font-size: 0.8em; margin-bottom: 6px;">Why not personal email</div>
-    <div style="color: var(--body); font-size: 0.72em; line-height: 1.5;">Blasting a press list from a personal or Crewest inbox risks a <strong>sender-reputation hit</strong> — and those inboxes aren't built for list sending, tracking, or unsubscribes.</div>
+    <div style="color: var(--body); font-size: 0.72em; line-height: 1.5;">Blasting a list from a personal or Crewest inbox risks a <strong>sender-reputation hit</strong> — and those inboxes aren't built for list sending, tracking, or unsubscribes.</div>
   </div>
 </div>
 
@@ -124,7 +124,7 @@ footer: ''
 
 <!-- _class: bg-dots -->
 
-### Two ways to get press email out
+### Two ways to get list email out
 
 # The options — and why we lean ActiveCampaign
 
@@ -144,7 +144,7 @@ footer: ''
 </div>
 
 <div style="margin-top: 16px; color: var(--m); font-size: 0.72em; line-height: 1.5;">
-<strong style="color:var(--t);">Our lean:</strong> ActiveCampaign for real press outreach. Option B (Ghost Email-only) is a fine <em>interim</em> — it can go out today with no setup while the AC subdomain warms up.
+<strong style="color:var(--t);">Our lean:</strong> ActiveCampaign as the all-purpose ArtsvilleUSA sender. Option B (Ghost Email-only) is a fine <em>interim</em> — it can go out today with no setup while the AC subdomain warms up.
 </div>
 
 ---
@@ -405,7 +405,7 @@ Set both in each campaign's email settings. The <strong>From name</strong> shoul
 
 ### The practical part people get wrong
 
-# How to warm up a cold press list on AC
+# How to warm up a cold list on AC
 
 <div style="margin-top:8px;">
 <div class="row" style="display:flex; gap:10px; align-items:flex-start; padding:5px 8px;"><span class="step" style="width:24px; height:24px; font-size:0.72em;">1</span><div style="color:var(--body); font-size:0.7em; line-height:1.4;"><strong>First 24–48h: don't send.</strong> Confirm DKIM/SPF/DMARC show green "Authenticated" first. A brand-new subdomain shouldn't send on day zero.</div></div>

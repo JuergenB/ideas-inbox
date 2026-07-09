@@ -1,4 +1,4 @@
-# Sending ArtsvilleUSA Press Email from ActiveCampaign
+# ArtsvilleUSA Email Sending via ActiveCampaign
 
 **Status:** Ready to implement — team decision + setup guide (for Thursday team meeting & office hours)
 **Filed:** 2026-07-08
@@ -20,7 +20,7 @@
 
 # Plain-English summary
 
-**TL;DR.** ArtsvilleUSA needs to send **press emails** (announcements, releases) to its press contact list. The right tool is ActiveCampaign — but it won't send until the sending domain is authenticated. We authenticate a `mail.artsvilleusa.com` subdomain (one-time setup in ActiveCampaign + GoDaddy), send *From* that subdomain with replies going to a monitored ArtsvilleUSA inbox, and warm the list up gradually. The Ghost(Pro) member newsletter is **not touched**. Two decisions need the team: **which ActiveCampaign account** to send from, and **who owns press replies**. Separately, a DNS check surfaced a real deliverability problem on **notrealart.com** that CloudFuze should fix before their engagement ends.
+**TL;DR.** ArtsvilleUSA needs an all-purpose email-sending channel — **fundraising, announcements, exhibition promos, open calls, and press releases** to its lists. The right tool is ActiveCampaign — but it won't send until the sending domain is authenticated. We authenticate a `mail.artsvilleusa.com` subdomain (a generic, all-purpose name — one-time setup in ActiveCampaign + GoDaddy), send *From* that subdomain with replies going to a monitored ArtsvilleUSA inbox, and warm the list up gradually. The Ghost(Pro) member newsletter is **not touched**. Two decisions need the team: **which ActiveCampaign account** to send from, and **who owns press replies**. Separately, a DNS check surfaced a real deliverability problem on **notrealart.com** that CloudFuze should fix before their engagement ends.
 
 **Why this is needed.** Modern email systems (Gmail, Outlook, Yahoo — tightened Feb 2024) send list mail to spam unless the *sending domain* is authenticated (SPF, DKIM, DMARC). Sending a press blast from a personal or Crewest inbox risks a sender-reputation hit and lacks list tooling. Ghost's authentication only covers mail sent *through Ghost*. ActiveCampaign is a separate mail stream and needs its **own** authenticated identity — on a domain we control at GoDaddy.
 
@@ -34,7 +34,7 @@
 
 # Why we're doing this
 
-- **The need:** send press announcements/releases to our confirmed press contact list — that's list email, not one-off personal notes.
+- **The need — all-purpose:** one tool for fundraising, announcements, exhibition promos, open calls, and press releases, sent to our lists (press contacts, members, donors) — list email, not one-off personal notes.
 - **Why not personal/Crewest email:** reputation hit + no list tooling. Scott's direction: don't use the Crewest AC account for AV.
 - **The account Scott set up:** a dedicated ActiveCampaign account for Arterial/ArtsvilleUSA (see the account decision below).
 - **The blocker this clears:** AC won't send until the sending domain is authenticated in DNS.
@@ -103,7 +103,7 @@ GoDaddy → **Domain Portfolio** → select `artsvilleusa.com` → **DNS** → *
 
 ---
 
-# Warming up a cold press list on ActiveCampaign
+# Warming up a cold list on ActiveCampaign
 
 A new subdomain (and a possibly-new cold AC account) earns its **own** reputation — it does not inherit Ghost's sending history (Ghost doesn't send via AC), and that isolation is the point. Practical ladder — **ourselves → friendlies → most-engaged press → full list:**
 
