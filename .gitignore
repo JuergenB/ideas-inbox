@@ -18,3 +18,6 @@ ideas/*/exports/.thumb-*
 about/*/presentations/*.light.md
 about/*/exports/.audit/
 about/*/exports/.thumb-*
+problems/*/presentations/*.light.md
+problems/*/exports/.audit/
+problems/*/exports/.thumb-*
