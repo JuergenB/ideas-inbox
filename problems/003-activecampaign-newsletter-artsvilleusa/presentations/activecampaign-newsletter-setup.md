@@ -128,23 +128,19 @@ footer: ''
 
 # The options — and why we lean ActiveCampaign
 
-<div style="display: flex; gap: 12px; margin-top: 14px;">
-  <div class="card" style="flex: 1; border-top: 2px solid var(--a);">
-    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--a); font-size: 0.8em;">A · ActiveCampaign <span style="font-size:0.72em; color:var(--g);">(recommended)</span></div>
-    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5; margin-top: 6px;">Purpose-built for press outreach: segments, automations, reply tracking, clean list management. <strong>Cost:</strong> a one-time domain-authentication + a short warm-up (this guide).</div>
+<div style="display: flex; gap: 16px; margin-top: 16px;">
+  <div class="card" style="flex: 1; border-top: 3px solid var(--a);">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--a); font-size: 0.9em;">A · ActiveCampaign</div>
+    <div style="color: var(--body); font-size: 0.72em; line-height: 1.55; margin-top: 8px;">Purpose-built for list sending: <strong>segments, automations, reply tracking, clean list management</strong>, and proper unsubscribe handling. The right long-term home for all AV email.<br><br><strong>Cost:</strong> a one-time domain authentication + a short warm-up — this guide.</div>
   </div>
-  <div class="card" style="flex: 1; border-top: 2px solid var(--blue);">
-    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--blue); font-size: 0.8em;">B · Ghost "Email only"</div>
-    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5; margin-top: 6px;">Lay the email out in Ghost and publish as <strong>Email only</strong> — it sends to members but <em>never appears on the site</em>. Ghost handles all authentication → <strong>zero DNS work</strong>. Trade-off: press contacts must become Ghost members, and you lose AC's outreach tooling.</div>
-  </div>
-  <div class="card" style="flex: 1; border-top: 2px solid var(--r);">
-    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--r); font-size: 0.8em;">C · Personal / Crewest <span style="font-size:0.72em;">(rejected)</span></div>
-    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5; margin-top: 6px;">Reputation risk, no list tooling, and Scott's direction is explicit: don't use the Crewest AC account for AV.</div>
+  <div class="card" style="flex: 1; border-top: 3px solid var(--blue);">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--blue); font-size: 0.9em;">B · Ghost "Email only"</div>
+    <div style="color: var(--body); font-size: 0.72em; line-height: 1.55; margin-top: 8px;">Lay the email out in Ghost and publish as <strong>Email only</strong> — it goes to members but <em>never appears on the site</em>. Ghost handles all authentication → <strong>zero DNS work</strong>.<br><br><strong>Trade-off:</strong> recipients must be Ghost members, and you lose AC's outreach tooling.</div>
   </div>
 </div>
 
-<div style="margin-top: 16px; color: var(--m); font-size: 0.72em; line-height: 1.5;">
-<strong style="color:var(--t);">Our lean:</strong> ActiveCampaign as the all-purpose ArtsvilleUSA sender. Option B (Ghost Email-only) is a fine <em>interim</em> — it can go out today with no setup while the AC subdomain warms up.
+<div style="margin-top: 18px; color: var(--m); font-size: 0.74em; line-height: 1.5;">
+<strong style="color:var(--t);">Our lean:</strong> ActiveCampaign as the all-purpose ArtsvilleUSA sender. Ghost "Email only" is a fine <em>interim</em> — it can go out today with no setup while the AC subdomain warms up. <em>(Which AC account — warmed Crewest vs. new Arterial — is the next slide.)</em>
 </div>
 
 ---
@@ -158,7 +154,7 @@ footer: ''
 <div style="display: flex; gap: 14px; margin-top: 12px;">
   <div class="card" style="flex: 1; border-left: 3px solid var(--g);">
     <div style="font-family: 'Outfit'; font-weight: 600; color: var(--g); font-size: 0.8em; margin-bottom: 4px;">Existing Crewest Studio AC <span style="font-size:0.8em; color:var(--m);">— warmed</span></div>
-    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5;">Already has our <strong>synced lists</strong> and an <strong>established account history</strong>. Less cold-start risk. Proposed home for <strong>ArtsvilleUSA</strong> press.</div>
+    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5;">Already has our <strong>synced lists</strong> and an <strong>established account history</strong>. Less cold-start risk. One candidate home for <strong>ArtsvilleUSA</strong> email.</div>
   </div>
   <div class="card" style="flex: 1; border-left: 3px solid var(--y);">
     <div style="font-family: 'Outfit'; font-weight: 600; color: var(--y); font-size: 0.8em; margin-bottom: 4px;">New Arterial / AV AC <span style="font-size:0.8em; color:var(--m);">— cold</span></div>
@@ -168,7 +164,7 @@ footer: ''
 
 <div class="card" style="margin-top: 14px; border-left: 3px solid var(--a);">
 <div style="color: var(--body); font-size: 0.72em; line-height: 1.55;">
-<strong>The proposal to debate:</strong> Arterial on the new account is fine; <strong>ArtsvilleUSA press is better sent from the existing (warmed) Crewest account</strong> where the lists already live — unless the nonprofit account is a hard requirement. <strong>If we go with the cold account, everyone agrees the full warm-up sequence is mandatory.</strong> Either way, the <em>sending domain</em> <code>mail.artsvilleusa.com</code> is new and must warm up — see next.
+<strong>To discuss tomorrow:</strong> Arterial's own mail on the new account is uncontroversial. For <strong>ArtsvilleUSA</strong>, the open question is warmed-Crewest (lists already there) vs. the new nonprofit account — one view is to lean Crewest unless the nonprofit account is a hard requirement. <strong>Whatever we choose, if it's the cold account we all commit to the full warm-up.</strong> Either way, the <em>sending domain</em> <code>mail.artsvilleusa.com</code> is new and must warm up — see next.
 </div>
 </div>
 

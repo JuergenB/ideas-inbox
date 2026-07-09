@@ -43,17 +43,16 @@
 
 | Option | What it is | Trade-off |
 |--------|-----------|-----------|
-| **A · ActiveCampaign** *(recommended)* | Purpose-built press outreach: segments, automations, reply tracking, list management | One-time domain auth + a short warm-up (this guide) |
-| **B · Ghost "Email only"** | Lay the email out in Ghost and publish as **Email only** — sends to members, **never appears on the site**. Ghost handles all authentication → **zero DNS work** | Press contacts must become Ghost members; you lose AC's outreach tooling. Good **interim** — can go out today while the AC subdomain warms up |
-| **C · Personal / Crewest email** *(rejected)* | — | Reputation risk, no list tooling; Scott: don't use Crewest AC for AV |
+| **A · ActiveCampaign** *(recommended)* | Purpose-built for list sending: segments, automations, reply tracking, list management, unsubscribe handling — the long-term home for all AV email | One-time domain auth + a short warm-up (this guide) |
+| **B · Ghost "Email only"** | Lay the email out in Ghost and publish as **Email only** — sends to members, **never appears on the site**. Ghost handles all authentication → **zero DNS work** | Recipients must be Ghost members; you lose AC's outreach tooling. Good **interim** — can go out today while the AC subdomain warms up |
 
-*Ghost "Email only" is a real, documented feature (publish → Email only) — a valid no-setup fallback.*
+*Two real options: ActiveCampaign vs. Ghost "Email only" (a documented publish → Email only feature). Which AC **account** — warmed Crewest vs. new Arterial — is the separate decision below.*
 
 # Open decision: which ActiveCampaign account?
 
-- **Existing Crewest Studio AC (warmed):** already has our synced lists and account history → less cold-start risk. **Proposed home for ArtsvilleUSA press.**
+- **Existing Crewest Studio AC (warmed):** already has our synced lists and account history → less cold-start risk. **One candidate home for ArtsvilleUSA email.**
 - **New Arterial/AV AC (cold):** clean ownership separation; likely a nonprofit account. But brand-new → starts cold. **Fine for Arterial's own mail.**
-- **Proposal to debate:** Arterial on the new account is fine; ArtsvilleUSA press is better sent from the **warmed Crewest account** where the lists already live — unless the nonprofit account is a hard requirement. **If we use the cold account, everyone agrees the full warm-up sequence is mandatory.** Either way, the *sending domain* `mail.artsvilleusa.com` is new and must warm up.
+- **To discuss tomorrow:** Arterial's own mail on the new account is uncontroversial. For ArtsvilleUSA, the open question is warmed-Crewest (lists already there) vs. the new nonprofit account — one view is to lean Crewest unless the nonprofit account is a hard requirement. **Whatever we choose, if it's the cold account we all commit to the full warm-up.** Either way, the *sending domain* `mail.artsvilleusa.com` is new and must warm up.
 
 ---
 
