@@ -92,9 +92,91 @@ footer: ''
 
 ---
 
+<!-- _class: bg-glow-gold -->
+
+### Why we're even doing this
+
+# ArtsvilleUSA needs to email its press list
+
+<div style="display: flex; gap: 16px; margin-top: 14px;">
+  <div class="card" style="flex: 1;">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--a); font-size: 0.8em; margin-bottom: 6px;">The need</div>
+    <div style="color: var(--body); font-size: 0.72em; line-height: 1.5;">Send press announcements &amp; releases to our <strong>confirmed press contact list</strong> — journalists, editors, arts writers. That's list email, not one-off personal notes.</div>
+  </div>
+  <div class="card" style="flex: 1;">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--r); font-size: 0.8em; margin-bottom: 6px;">Why not personal email</div>
+    <div style="color: var(--body); font-size: 0.72em; line-height: 1.5;">Blasting a press list from a personal or Crewest inbox risks a <strong>sender-reputation hit</strong> — and those inboxes aren't built for list sending, tracking, or unsubscribes.</div>
+  </div>
+</div>
+
+<div style="display: flex; gap: 16px; margin-top: 14px;">
+  <div class="card" style="flex: 1;">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--blue); font-size: 0.8em; margin-bottom: 6px;">The account to use</div>
+    <div style="color: var(--body); font-size: 0.72em; line-height: 1.5;">Scott set up a <strong>dedicated ActiveCampaign account for Arterial / ArtsvilleUSA</strong>. Use it for all AV — <em>not</em> the Crewest AC account.</div>
+  </div>
+  <div class="card" style="flex: 1;">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--y); font-size: 0.8em; margin-bottom: 6px;">The blocker this guide clears</div>
+    <div style="color: var(--body); font-size: 0.72em; line-height: 1.5;">ActiveCampaign won't let you send until the sending domain is <strong>authenticated</strong> in DNS. That's the one-time setup below.</div>
+  </div>
+</div>
+
+---
+
 <!-- _class: bg-dots -->
 
-### The situation — read this first
+### Two ways to get press email out
+
+# The options — and why we lean ActiveCampaign
+
+<div style="display: flex; gap: 12px; margin-top: 14px;">
+  <div class="card" style="flex: 1; border-top: 2px solid var(--a);">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--a); font-size: 0.8em;">A · ActiveCampaign <span style="font-size:0.72em; color:var(--g);">(recommended)</span></div>
+    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5; margin-top: 6px;">Purpose-built for press outreach: segments, automations, reply tracking, clean list management. <strong>Cost:</strong> a one-time domain-authentication + a short warm-up (this guide).</div>
+  </div>
+  <div class="card" style="flex: 1; border-top: 2px solid var(--blue);">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--blue); font-size: 0.8em;">B · Ghost "Email only"</div>
+    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5; margin-top: 6px;">Lay the email out in Ghost and publish as <strong>Email only</strong> — it sends to members but <em>never appears on the site</em>. Ghost handles all authentication → <strong>zero DNS work</strong>. Trade-off: press contacts must become Ghost members, and you lose AC's outreach tooling.</div>
+  </div>
+  <div class="card" style="flex: 1; border-top: 2px solid var(--r);">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--r); font-size: 0.8em;">C · Personal / Crewest <span style="font-size:0.72em;">(rejected)</span></div>
+    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5; margin-top: 6px;">Reputation risk, no list tooling, and Scott's direction is explicit: don't use the Crewest AC account for AV.</div>
+  </div>
+</div>
+
+<div style="margin-top: 16px; color: var(--m); font-size: 0.72em; line-height: 1.5;">
+<strong style="color:var(--t);">Our lean:</strong> ActiveCampaign for real press outreach. Option B (Ghost Email-only) is a fine <em>interim</em> — it can go out today with no setup while the AC subdomain warms up.
+</div>
+
+---
+
+<!-- _class: bg-glow-orange -->
+
+### An open decision for Thursday
+
+# Which ActiveCampaign account should send AV?
+
+<div style="display: flex; gap: 14px; margin-top: 12px;">
+  <div class="card" style="flex: 1; border-left: 3px solid var(--g);">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--g); font-size: 0.8em; margin-bottom: 4px;">Existing Crewest Studio AC <span style="font-size:0.8em; color:var(--m);">— warmed</span></div>
+    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5;">Already has our <strong>synced lists</strong> and an <strong>established account history</strong>. Less cold-start risk. Proposed home for <strong>ArtsvilleUSA</strong> press.</div>
+  </div>
+  <div class="card" style="flex: 1; border-left: 3px solid var(--y);">
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--y); font-size: 0.8em; margin-bottom: 4px;">New Arterial / AV AC <span style="font-size:0.8em; color:var(--m);">— cold</span></div>
+    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5;">Clean ownership separation; likely a <strong>nonprofit</strong> account. But it's <strong>brand new</strong> → account starts cold. Fine for <strong>Arterial's own</strong> mail.</div>
+  </div>
+</div>
+
+<div class="card" style="margin-top: 14px; border-left: 3px solid var(--a);">
+<div style="color: var(--body); font-size: 0.72em; line-height: 1.55;">
+<strong>The proposal to debate:</strong> Arterial on the new account is fine; <strong>ArtsvilleUSA press is better sent from the existing (warmed) Crewest account</strong> where the lists already live — unless the nonprofit account is a hard requirement. <strong>If we go with the cold account, everyone agrees the full warm-up sequence is mandatory.</strong> Either way, the <em>sending domain</em> <code>mail.artsvilleusa.com</code> is new and must warm up — see next.
+</div>
+</div>
+
+---
+
+<!-- _class: bg-dots -->
+
+### The situation — the technical picture
 
 # Two senders, one brand, zero conflict
 
@@ -176,22 +258,23 @@ Because <code>mail.artsvilleusa.com</code> and <code>artsvilleusa.com</code> sha
 
 ### Before you touch anything
 
-# Prerequisites — confirm these five first
+# Prerequisites — confirm before you start
 
 <div style="margin-top: 10px;">
 
 | # | What to confirm | Who / where |
 |---|-----------------|-------------|
-| 1 | **Admin access to ActiveCampaign** (Settings → Advanced is visible) | AC account owner |
-| 2 | **Login to GoDaddy** for artsvilleusa.com's DNS (Domain Portfolio → DNS) | GoDaddy account holder |
-| 3 | <code>editor@artsvilleusa.com</code> **exists and is monitored** — this becomes Reply-To | Confirm the inbox is real before using it |
-| 4 | **Decide the From address** — we use <code>newsletter@mail.artsvilleusa.com</code> | Team convention |
-| 5 | **Do not modify Ghost's DNS records** during this — leave anything Ghost/Mailgun untouched | Whole team |
+| 1 | **Which AC account** sends AV — warmed Crewest vs. new Arterial *(decide Thu)* | Team |
+| 2 | **Admin access** to the chosen ActiveCampaign account (Settings → Advanced) | AC owner |
+| 3 | **GoDaddy login** for artsvilleusa.com DNS (Domain Portfolio → DNS) | GoDaddy holder |
+| 4 | **From address** — e.g. <code>newsletter@mail.artsvilleusa.com</code> (or <code>press@</code>) | Team convention |
+| 5 | **Reply-To owner** validated in AC — press → likely **Elise**; <code>editor@</code> = Morgan | Confirm Thu |
+| 6 | **Do not modify Ghost's DNS records** — leave anything Ghost/Mailgun untouched | Whole team |
 
 </div>
 
 <div style="margin-top: 14px; color: var(--m); font-size: 0.72em;">
-⏱️ Budget ~20 minutes of work, then up to a few hours (occasionally 24–48h) for DNS to propagate before ActiveCampaign shows "Authenticated."
+⏱️ Budget ~20 minutes of work, then up to a few hours (occasionally 24–48h) for DNS to propagate before ActiveCampaign shows "Authenticated." Then a 2–4 week warm-up before high-volume sends.
 </div>
 
 ---
@@ -280,14 +363,59 @@ Because <code>mail.artsvilleusa.com</code> and <code>artsvilleusa.com</code> sha
   </div>
   <div class="card" style="flex: 1; border-top: 2px solid var(--g);">
     <div style="color: var(--m); font-size: 0.62em; letter-spacing:0.12em; text-transform:uppercase;">Reply-To address</div>
-    <div style="font-family:'Outfit'; font-weight:600; color: var(--g); font-size: 0.95em; margin-top:4px;">editor@artsvilleusa.com</div>
-    <div style="color: var(--body); font-size: 0.68em; margin-top:8px; line-height:1.5;">Where replies land. A real, monitored inbox on the main domain — so conversations reach a person, not a no-reply void.</div>
+    <div style="font-family:'Outfit'; font-weight:600; color: var(--g); font-size: 0.9em; margin-top:4px;">elisewilson@artsvilleusa.com <span style="font-size:0.6em; color:var(--y);">confirm Thu</span></div>
+    <div style="color: var(--body); font-size: 0.68em; margin-top:8px; line-height:1.5;">Where press replies land. Press responses likely need <strong>Elise</strong> (ED) — not the editorial inbox. <code>editor@</code> = Morgan for editorial. Whoever owns it, <strong>validate that address in AC</strong>.</div>
   </div>
 </div>
 
 <div style="margin-top: 18px; color: var(--body); font-size: 0.76em; line-height:1.55;">
 Set both in each campaign's email settings. The <strong>From name</strong> should read <em>ArtsvilleUSA</em> regardless of the technical address — that's what subscribers actually see.
 </div>
+
+---
+
+<!-- _class: bg-glow-gold -->
+
+### The question Juergen raised — answered
+
+# Does the subdomain need warming up?
+
+<div style="color: var(--body); font-size: 0.8em; line-height:1.55; margin-top:6px;">
+<strong>Short answer: yes — warm up <code>mail.artsvilleusa.com</code>. It earns its own reputation.</strong>
+</div>
+
+<div style="display:flex; gap:14px; margin-top:14px;">
+  <div class="card" style="flex:1;">
+    <div style="font-family:'Outfit'; font-weight:600; color:var(--t); font-size:0.76em; margin-bottom:4px;">What carries over</div>
+    <div style="color:var(--body); font-size:0.68em; line-height:1.5;">A new subdomain gets a <strong>partial trust signal</strong> from the established <code>artsvilleusa.com</code> root — so it starts friendlier than a cold, unrelated domain. ActiveCampaign: a subdomain is <em>"managed as a separate domain from the base domain, with its own reputation."</em></div>
+  </div>
+  <div class="card" style="flex:1;">
+    <div style="font-family:'Outfit'; font-weight:600; color:var(--t); font-size:0.76em; margin-bottom:4px;">What does NOT</div>
+    <div style="color:var(--body); font-size:0.68em; line-height:1.5;">It does <strong>not</strong> inherit the root's full sending history — and it shouldn't: reputation <strong>isolation is the whole point</strong>. If a press blast ever stumbles, it stays off the Ghost newsletter. (We don't "inherit credit from Ghost" — Ghost doesn't send via AC.)</div>
+  </div>
+</div>
+
+<div class="card" style="margin-top:14px; border-left:3px solid var(--a);">
+<div style="color:var(--body); font-size:0.7em; line-height:1.5;"><strong>The compounding risk:</strong> a <em>new subdomain</em> on a <em>possibly-new cold AC account</em> = two cold starts at once. On AC's shared IPs, AC manages IP reputation — your job is domain reputation + engagement. This is the strongest argument for sending AV from the <strong>warmed Crewest account</strong>. The practical how-to is next.</div>
+</div>
+
+---
+
+<!-- _class: bg-grid -->
+
+### The practical part people get wrong
+
+# How to warm up a cold press list on AC
+
+<div style="margin-top:8px;">
+<div class="row" style="display:flex; gap:10px; align-items:flex-start; padding:5px 8px;"><span class="step" style="width:24px; height:24px; font-size:0.72em;">1</span><div style="color:var(--body); font-size:0.7em; line-height:1.4;"><strong>First 24–48h: don't send.</strong> Confirm DKIM/SPF/DMARC show green "Authenticated" first. A brand-new subdomain shouldn't send on day zero.</div></div>
+<div class="row" style="display:flex; gap:10px; align-items:flex-start; padding:5px 8px;"><span class="step" style="width:24px; height:24px; font-size:0.72em;">2</span><div style="color:var(--body); font-size:0.7em; line-height:1.4;"><strong>Days 1–3 — seed to friendlies.</strong> Send the real template to <strong>yourselves + a "friendlies" list</strong> (team, board, partner orgs, a few warm journalists) — people who'll reliably <strong>open, click, and reply</strong>. Keep it under ~50–100. Ask a few to reply "hi" — replies are a strong trust signal.</div></div>
+<div class="row" style="display:flex; gap:10px; align-items:flex-start; padding:5px 8px;"><span class="step" style="width:24px; height:24px; font-size:0.72em;">3</span><div style="color:var(--body); font-size:0.7em; line-height:1.4;"><strong>Days 3–7 — smallest real batches first.</strong> Send to your <strong>most-likely-to-open</strong> press contacts (recent, known relationships) in batches of a few hundred. Delete hard bounces immediately.</div></div>
+<div class="row" style="display:flex; gap:10px; align-items:flex-start; padding:5px 8px;"><span class="step" style="width:24px; height:24px; font-size:0.72em;">4</span><div style="color:var(--body); font-size:0.7em; line-height:1.4;"><strong>Weeks 2–4 — ramp, never spike.</strong> Roughly double each successful send (AC: &lt;500 → &lt;1k → &lt;5k / day). A small press list clears this in a week or two.</div></div>
+<div class="row" style="display:flex; gap:10px; align-items:flex-start; padding:5px 8px;"><span class="step" style="width:24px; height:24px; font-size:0.72em;">5</span><div style="color:var(--body); font-size:0.7em; line-height:1.4;"><strong>Watch + stay on-brand.</strong> Monitor <strong>Google Postmaster</strong> (Red/Yellow/Green) and bounce/complaint rates (keep complaints &lt;0.3%). Consistent ArtsvilleUSA branding + template. If reputation dips — slow down.</div></div>
+</div>
+
+<div style="margin-top:8px; color:var(--m); font-size:0.64em;">Ladder: <strong>ourselves → friendlies → most-engaged press → full list.</strong> Source: ActiveCampaign, "How to warm up a new sending domain."</div>
 
 ---
 
@@ -314,25 +442,82 @@ Everything ActiveCampaign <em>authenticates</em> lives on the <strong>mail</stro
 
 ---
 
-<!-- _class: bg-dots -->
+<!-- _class: bg-grid -->
 
-### Keeping both senders tidy
+### While we're in the DNS — don't assume
 
-# Ghost and ActiveCampaign, in sync
+# Re-verify every sending domain for 2024 rules
 
-<div style="display: flex; gap: 16px; margin-top: 16px;">
-  <div class="card" style="flex: 1;">
-    <div style="font-family:'Outfit'; font-weight:600; color: var(--t); font-size:0.8em; margin-bottom:6px;">Keep the lists aligned</div>
-    <div style="color:var(--body); font-size:0.7em; line-height:1.55;">Sync Ghost members into ActiveCampaign (via Zapier or the API) so <strong>unsubscribes flow both ways</strong>. Someone who opts out of one should never keep getting the other.</div>
+<div style="color: var(--body); font-size: 0.74em; line-height:1.5; margin-bottom:8px;">Gmail &amp; Yahoo's bulk-sender requirements (Feb 2024) are recent. A quick public-DNS pass across all four brand domains:</div>
+
+| Domain | SPF | DMARC | Status |
+|--------|-----|-------|--------|
+| artsvilleusa.com | ✅ single, valid | ✅ p=none → editor@ | OK baseline |
+| arterial.org | ✅ single, valid | ✅ p=none (no reports) | OK — add reporting |
+| creweststudio.com | ✅ single, valid | ✅ p=none | OK baseline |
+| **notrealart.com** | ⚠️ **10/10 lookups** | ❌ **two DMARC records** | **Broken — see next** |
+
+<div style="margin-top: 12px; color: var(--m); font-size: 0.68em; line-height:1.5;">
+The bar: one valid SPF (&lt;10 lookups) · DKIM · a DMARC record (≥ p=none) · one-click unsubscribe · &lt;0.3% complaints. DKIM needs per-sender selectors (not shown here). Full audit lives in <a href="https://github.com/JuergenB/ideas-inbox/tree/main/problems/001-curated-deliverability-nra">problems/001</a>. Verify with DMARC Report · MXToolbox · Google Postmaster.
+</div>
+
+---
+
+<!-- _class: bg-glow-orange -->
+
+### Part 2 — for tomorrow's office hours
+
+# notrealart.com is not set up for good delivery
+
+<div style="display:flex; gap:14px; margin-top:10px;">
+  <div class="card" style="flex:1; border-left:3px solid var(--r);">
+    <div style="font-family:'Outfit'; font-weight:600; color:var(--r); font-size:0.74em;">Problem 1 — two DMARC records</div>
+    <div style="color:var(--body); font-size:0.66em; line-height:1.45; margin-top:4px;">Two <code>v=DMARC1</code> records are published at once. Per spec, receivers then apply <strong>no DMARC at all</strong> — the domain is effectively unprotected right now.</div>
   </div>
-  <div class="card" style="flex: 1;">
-    <div style="font-family:'Outfit'; font-weight:600; color: var(--t); font-size:0.8em; margin-bottom:6px;">Divide the jobs clearly</div>
-    <div style="color:var(--body); font-size:0.7em; line-height:1.55;">Decide what each tool is for — e.g. Ghost for the regular member newsletter, ActiveCampaign for announcements, automations, and segmented campaigns. Avoid double-sending the same content.</div>
+  <div class="card" style="flex:1; border-left:3px solid var(--y);">
+    <div style="font-family:'Outfit'; font-weight:600; color:var(--y); font-size:0.74em;">Problem 2 — SPF at the 10-lookup ceiling</div>
+    <div style="color:var(--body); font-size:0.66em; line-height:1.45; margin-top:4px;">SPF resolves to <strong>exactly 10 DNS lookups</strong> (the RFC max). One nested change at any provider → <strong>PermError</strong> and SPF fails. Bloated with senders no longer in use.</div>
   </div>
 </div>
 
-<div style="margin-top: 18px; color: var(--m); font-size: 0.74em; line-height:1.5;">
-Both streams carry the ArtsvilleUSA brand; the only difference subscribers might notice is the technical sending domain in the header — which is normal and expected.
+<div style="margin-top:12px;">
+
+| SPF term | Belongs to | Needed? |
+|----------|-----------|---------|
+| `include:_spf.google.com` | Google Workspace (MX = Google) | ✅ keep |
+| `include:emsd1.com` | ActiveCampaign (IP → acems1.com) | ✅ keep |
+| `include:spf.curated.co` | Curated.co (→ SparkPost) | ❌ dropped — now on AC |
+| `include:spf.protection.outlook.com` | Microsoft 365 | ❌ legacy — confirm/remove |
+| `+a` · `ip4:35.212.92.184` · `+mx` | GCP web server + Google MX | ❌ non-sending — remove |
+| `include:…dnssmarthost.net` | SpamExperts / Mail Assure filter | ❔ confirm — likely remove |
+
+</div>
+
+<div style="margin-top:8px; color:var(--m); font-size:0.66em;">This matters now: open calls, exhibitions, and fundraising emails are going out via <code>@notrealart.com</code>.</div>
+
+---
+
+<!-- _class: bg-glow-green -->
+
+### notrealart.com — the fix
+
+# Proposed consolidation + who resolves it
+
+<div style="display:flex; gap:14px; margin-top:10px;">
+  <div class="card" style="flex:1;">
+    <div style="color:var(--m); font-size:0.6em; letter-spacing:0.1em; text-transform:uppercase;">Target SPF — 2 lookups</div>
+    <div style="color:var(--g); font-family:'IBM Plex Mono',monospace; font-size:0.62em; margin-top:6px; line-height:1.5; word-break:break-all;">v=spf1 include:_spf.google.com include:emsd1.com ~all</div>
+    <div style="color:var(--body); font-size:0.62em; margin-top:8px; line-height:1.45;">Keep Google Workspace + ActiveCampaign. Drop Curated, M365, web-server, filter gateway (confirm each). Re-authenticate AC properly so alignment rides its Mailserver CNAME.</div>
+  </div>
+  <div class="card" style="flex:1;">
+    <div style="color:var(--m); font-size:0.6em; letter-spacing:0.1em; text-transform:uppercase;">Target DMARC — one record</div>
+    <div style="color:var(--g); font-family:'IBM Plex Mono',monospace; font-size:0.62em; margin-top:6px; line-height:1.5; word-break:break-all;">v=DMARC1; p=none; rua=mailto:…@dmarcinput.com; fo=1</div>
+    <div style="color:var(--body); font-size:0.62em; margin-top:8px; line-height:1.45;">Delete the duplicate (keep DMARC-Report monitoring). Confirm DKIM per retained sender. Then step <code>p=none → quarantine → reject</code> over 2–4 weeks of clean reports.</div>
+  </div>
+</div>
+
+<div class="card" style="margin-top:12px; border-left:3px solid var(--a);">
+<div style="color:var(--body); font-size:0.66em; line-height:1.5;"><strong>Who resolves it — CloudFuze</strong> (set up GoDaddy, ActiveCampaign, and email). Contract terminated with notice but <strong>obligated through Aug 16, 2026</strong> — this correction is squarely within remaining scope. Contact: <strong>Joy Prakash</strong>, Sr. Account Manager · joy.prakash@cloudfuze.com · +1 252 496 9316. <strong>Ready-to-send email:</strong> <a href="https://github.com/JuergenB/ideas-inbox/blob/main/problems/003-activecampaign-newsletter-artsvilleusa/docs/cloudfuze-notrealart-dns-remediation.md">docs/cloudfuze-notrealart-dns-remediation.md</a>.</div>
 </div>
 
 ---
@@ -407,17 +592,23 @@ Both streams carry the ArtsvilleUSA brand; the only difference subscribers might
 # Sources & References
 ## The documentation behind every step in this guide
 
-<div style="font-size: 0.7em; line-height: 1.55; margin-top: 8px;">
+<div style="font-size: 0.6em; line-height: 1.45; margin-top: 8px;">
 
-**ActiveCampaign sending-domain setup (Settings → Advanced; Configure vs. Manual; DKIM/SPF/DMARC records; GoDaddy supported; propagation 5–10 min, up to 24h)** — ActiveCampaign Help, "Set up your sending domain." <a href="https://help.activecampaign.com/hc/en-us/articles/360015584680-Set-up-your-sending-domain">help.activecampaign.com/…/360015584680</a>
+**AC sending-domain setup (Settings → Advanced; Configure vs. Manual; DKIM/SPF/DMARC; GoDaddy supported; 5–10 min propagation)** — ActiveCampaign, "Set up your sending domain." <a href="https://help.activecampaign.com/hc/en-us/articles/360015584680-Set-up-your-sending-domain">…/360015584680</a>
 
-**Domain alignment — From vs. Return-Path vs. DKIM; subdomain must share the root org-domain to align for DMARC; align DKIM or Return-Path to pass** — ActiveCampaign Help, "Domains and domain alignment." <a href="https://help.activecampaign.com/hc/en-us/articles/360014290939-Domains-and-domain-alignment">help.activecampaign.com/…/360014290939</a>
+**A subdomain must share the root org-domain to align DMARC; align DKIM or Return-Path** — ActiveCampaign, "Domains and domain alignment." <a href="https://help.activecampaign.com/hc/en-us/articles/360014290939-Domains-and-domain-alignment">…/360014290939</a>
 
-**Add a CNAME/TXT record at GoDaddy (Domain Portfolio → DNS → Add New Record; Name = prefix only, root auto-appended; TTL default; propagation up to 48h)** — GoDaddy Help, "Add a CNAME record." <a href="https://www.godaddy.com/help/add-a-cname-record-19236">godaddy.com/help/add-a-cname-record-19236</a>
+**A subdomain is managed as a separate domain with its own reputation; small cross-impact with the base** — ActiveCampaign, "Subdomains and deliverability." <a href="https://help.activecampaign.com/hc/en-us/articles/360017633519-Subdomains-and-deliverability">…/360017633519</a>
 
-**Email deliverability for publishers; using other providers alongside Ghost's native newsletters** — Ghost, "Email deliverability explained" &amp; Mailgun FAQ. <a href="https://ghost.org/resources/email-deliverability-for-publishers/">ghost.org/resources/email-deliverability-for-publishers</a>
+**Subdomains inherit only PARTIAL parent reputation and still need their own warm-up** — Suped, "Parent domain reputation &amp; subdomain deliverability." <a href="https://www.suped.com/knowledge/email-deliverability/sender-reputation/how-does-parent-domain-reputation-affect-subdomain-deliverability-and-sender-reputation">suped.com/…/subdomain-deliverability</a>
 
-**Gmail &amp; Yahoo 2024 bulk-sender authentication requirements (DKIM + DMARC + no freemail From)** — ActiveCampaign, "Google and Yahoo authentication changes in 2024." <a href="https://www.activecampaign.com/blog/a-guide-to-google-and-yahoo-authentication-changes-in-2024">activecampaign.com/blog/…google-and-yahoo…</a>
+**Add a CNAME/TXT at GoDaddy (DNS → Add New Record; Name = prefix only; up to 48h)** — GoDaddy, "Add a CNAME record." <a href="https://www.godaddy.com/help/add-a-cname-record-19236">godaddy.com/help/add-a-cname-record-19236</a>
+
+**Ghost "Email only" — send a post to members without publishing it to the website** — Ghost, "Send emails without publishing." <a href="https://ghost.org/changelog/email-without-publishing/">ghost.org/changelog/email-without-publishing</a>
+
+**Gmail &amp; Yahoo 2024 bulk-sender rules (SPF+DKIM, DMARC, one-click unsubscribe, &lt;0.3% complaints)** — ActiveCampaign, "Google &amp; Yahoo 2024." <a href="https://www.activecampaign.com/blog/a-guide-to-google-and-yahoo-authentication-changes-in-2024">activecampaign.com/blog/…google-and-yahoo</a>
+
+**Live SPF/DMARC lookup of all four domains; notrealart.com = duplicate DMARC + SPF at 10/10 lookups** — direct DNS query, 2026-07-08 (see research/sources.md).
 
 </div>
 

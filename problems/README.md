@@ -10,7 +10,7 @@ Mirrors the structure of [`ideas/`](../ideas/) — `README.md` at root, subfolde
 |---|-------|---------|--------|------|
 | 001 | [Curated.co deliverability + cross-domain SPF/DKIM audit](001-curated-deliverability-nra/) | Not Real Art / Crewest Studio domains | Open — awaiting vendor | 2026-04-19 |
 | 002 | [Claude Code coding quality regression — global rules audit](002-claude-code-coding-quality/) | All active repos | Open — awaiting user decisions | 2026-04-27 |
-| 003 | [Sending ArtsvilleUSA newsletters from ActiveCampaign](003-activecampaign-newsletter-artsvilleusa/) | artsvilleusa.com — ActiveCampaign + GoDaddy setup guide | Ready to implement | 2026-07-08 |
+| 003 | [ArtsvilleUSA press email via ActiveCampaign (+ notrealart.com DNS fix)](003-activecampaign-newsletter-artsvilleusa/) | artsvilleusa.com setup + cross-domain deliverability | Ready to implement | 2026-07-08 |
 
 ## Folder Structure
 

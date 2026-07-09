@@ -73,6 +73,59 @@ Audit trail for every technical claim in the deck and README. Each entry: the cl
 - **Quote (from AC alignment doc):** "Aligning either the DKIM or Mailserver Domain is required as of February 2024 following upcoming changes to Gmail and Yahoo regarding authentication requirements."
 - **Used in deck:** slides 2, 13 (do's & don'ts)
 
+## Subdomains have their own reputation; warm-up applies to the subdomain you send from
+
+- **Claim:** A subdomain is managed as a separate domain from the base domain, **with its own reputation**. Subdomain reputation has only a small cross-impact on the base domain. Subdomains are not a way to dodge a bad reputation — they differentiate mail streams while keeping a clear relationship to the root.
+- **Source:** ActiveCampaign Help — "Subdomains and deliverability"
+- **URL:** https://help.activecampaign.com/hc/en-us/articles/360017633519-Subdomains-and-deliverability
+- **Retrieved:** 2026-07-08 (Firecrawl)
+- **Quotes:**
+  - "The domain owner can assign a subdomain to a specific email type and manage this as a separate domain from their base domain (with its own reputation)."
+  - "Your subdomain reputation(s) can impact base domain reputation, but the impact between subdomains will be small."
+  - "Subdomains are not a way to avoid a bad domain reputation."
+- **Used in deck:** "Does the subdomain need warming up?" slide
+
+## Subdomains inherit only partial parent reputation and still require separate warm-up
+
+- **Claim:** A new subdomain gets a partial trust signal from a strong parent domain but is still treated by mailbox providers as an unknown sender; it must build its own history and needs its own warm-up. Skipping warm-up lands the first production-size send in spam regardless of parent reputation.
+- **Source:** Suped — "How does parent domain reputation affect subdomain deliverability and sender reputation?"
+- **URL:** https://www.suped.com/knowledge/email-deliverability/sender-reputation/how-does-parent-domain-reputation-affect-subdomain-deliverability-and-sender-reputation
+- **Retrieved:** 2026-07-08 (WebSearch)
+- **Used in deck:** warm-up slides
+
+## ActiveCampaign warm-up best practices (ramp schedule + engaged-first)
+
+- **Claim:** Warm up a new sending domain by starting low and ramping volume; send to the most engaged contacts first; avoid old/unengaged lists; set up DKIM before sending; wait ~30 days before high-volume campaigns; monitor Google Postmaster Tools. Small lists only need to worry about the first week.
+- **Source:** ActiveCampaign Help — "How to warm up a new sending domain"
+- **URL:** https://help.activecampaign.com/hc/en-us/articles/11874237112988-How-to-warm-up-a-new-sending-domain
+- **Retrieved:** 2026-07-08 (Firecrawl)
+- **Verbatim ramp example:** "Day 1: < 500 emails · Day 2: < 1,000 · Day 3-7: < 5,000 · Day 7-14: < 20,000 · Day 14-21: < 50,000 · Day 21-30: < 100,000. If you don't have a large list, you only need to worry about the first week or so."
+- **Quote:** "When you start warming up your domain, target your most engaged contacts… avoid sending to any lists that are older and less engaged."
+- **Used in deck:** "How to warm up a cold press list on AC" slide
+
+## Ghost "Email only" — send to members without publishing to the website
+
+- **Claim:** Ghost lets you publish a post as **Email only**, sending it to newsletter members without creating a public web page. Ghost handles authentication for anything sent through it, so this needs no DNS work.
+- **Source:** Ghost — "Send emails without publishing" (changelog) and Ghost Help — "Setting up email newsletters"
+- **URLs:**
+  - https://ghost.org/changelog/email-without-publishing/
+  - https://ghost.org/help/setup-email-newsletters/
+- **Retrieved:** 2026-07-08 (WebSearch)
+- **Used in deck:** "The options" slide (Option B), and as the interim/no-setup alternative
+
+## Live DNS audit of the four brand domains (2026-07-08)
+
+Direct public-DNS query (Node `dns` module) of SPF and DMARC for each domain. SPF lookup count computed by recursively resolving every `include`/`a`/`mx`/`exists` term per RFC 7208 §4.6.4.
+
+- **artsvilleusa.com** — SPF: `v=spf1 include:dc-aa8e722993._spfm.artsvilleusa.com ~all` (single, valid, managed/flattened). DMARC: `v=DMARC1; p=none; sp=none; rua=mailto:editor@artsvilleusa.com; ruf=mailto:editor@artsvilleusa.com; adkim=r; aspf=r; …` — present, `p=none`, reports to editor@ (Morgan). ✅ baseline OK.
+- **arterial.org** — SPF single/valid (`~all`, dnssmarthost + secureserver + mx). DMARC: `v=DMARC1;p=none;` — present but no reporting address. ✅ OK; add `rua` for visibility.
+- **creweststudio.com** — SPF single/valid (`-all`). DMARC: `v=DMARC1; p=none; rua=…@dmarcinput.com` — present. ✅ OK.
+- **notrealart.com** — ❌ **two problems:**
+  - **Duplicate DMARC** — two `v=DMARC1` records published (`…@dmarcinput.com` and `sourdough@notrealart.com`) → per RFC 7489, receivers apply no DMARC at all.
+  - **SPF at exactly 10/10 lookups** — recursive count: `+a`(1) `+mx`(1) `_spf.google.com`(1) `spf.curated.co`(1)→`_spf.sparkpostmail.com`(1)→`exists`(1) `spf.protection.outlook.com`(1) `emsd1.com`(1) `dnssmarthost.net`(1)→`_spf.mailspamprotection.com`(1) = **10**. One nested change → PermError.
+  - **Sender identification:** MX = `smtp.google.com` (Google Workspace); `+a`/`ip4:35.212.92.184` → Google Cloud web server (`googleusercontent.com`); `emsd1.com` IP rDNS → `server.acems1.com` (ActiveCampaign); `spf.curated.co` → SparkPost (Curated.co, now discontinued); `spf.protection.outlook.com` → Microsoft 365 (likely legacy — MX is Google); `dnssmarthost.net`→`mailspamprotection.com` → SpamExperts/Mail Assure filter.
+  - **Remediation:** see [docs/cloudfuze-notrealart-dns-remediation.md](../docs/cloudfuze-notrealart-dns-remediation.md). Owner: CloudFuze (contract terminated w/ notice, obligated through 2026-08-16). Cross-ref [problems/001](../../001-curated-deliverability-nra/README.md).
+
 ---
 
 ### Method note
