@@ -140,7 +140,7 @@ footer: ''
 </div>
 
 <div style="margin-top: 18px; color: var(--m); font-size: 0.74em; line-height: 1.5;">
-<strong style="color:var(--t);">Our lean:</strong> ActiveCampaign as the all-purpose ArtsvilleUSA sender. Ghost "Email only" is a fine <em>interim</em> — it can go out today with no setup while the AC subdomain warms up. <em>(Which AC account — warmed Crewest vs. new Arterial — is the next slide.)</em>
+<strong style="color:var(--t);">Our lean:</strong> ActiveCampaign as the all-purpose ArtsvilleUSA sender. Ghost "Email only" is a fine <em>interim</em> — it can go out today with no setup while the AC subdomain warms up. <em>(Which AC account — existing Crewest vs. new Arterial — is the next slide.)</em>
 </div>
 
 ---
@@ -153,19 +153,23 @@ footer: ''
 
 <div style="display: flex; gap: 14px; margin-top: 12px;">
   <div class="card" style="flex: 1; border-left: 3px solid var(--g);">
-    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--g); font-size: 0.8em; margin-bottom: 4px;">Existing Crewest Studio AC <span style="font-size:0.8em; color:var(--m);">— warmed</span></div>
-    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5;">Already has our <strong>synced lists</strong> and an <strong>established account history</strong>. Less cold-start risk. One candidate home for <strong>ArtsvilleUSA</strong> email.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--g); font-size: 0.8em; margin-bottom: 4px;">Existing Crewest Studio AC</div>
+    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5;">Real advantage: our <strong>lists — and their engagement history — already live here</strong>, so we can send-to-most-engaged-first and skip re-importing. Downside: entangles AV with the Crewest account being wound down.</div>
   </div>
   <div class="card" style="flex: 1; border-left: 3px solid var(--y);">
-    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--y); font-size: 0.8em; margin-bottom: 4px;">New Arterial / AV AC <span style="font-size:0.8em; color:var(--m);">— cold</span></div>
-    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5;">Clean ownership separation; likely a <strong>nonprofit</strong> account. But it's <strong>brand new</strong> → account starts cold. Fine for <strong>Arterial's own</strong> mail.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; color: var(--y); font-size: 0.8em; margin-bottom: 4px;">New Arterial / AV AC</div>
+    <div style="color: var(--body); font-size: 0.68em; line-height: 1.5;">Clean ownership; likely a <strong>nonprofit</strong> account; aligned with Scott's direction. Downside: <strong>re-import contacts</strong> — they arrive with no in-account engagement history to segment on.</div>
   </div>
 </div>
 
-<div class="card" style="margin-top: 14px; border-left: 3px solid var(--a);">
-<div style="color: var(--body); font-size: 0.72em; line-height: 1.55;">
-<strong>To discuss tomorrow:</strong> Arterial's own mail on the new account is uncontroversial. For <strong>ArtsvilleUSA</strong>, the open question is warmed-Crewest (lists already there) vs. the new nonprofit account — one view is to lean Crewest unless the nonprofit account is a hard requirement. <strong>Whatever we choose, if it's the cold account we all commit to the full warm-up.</strong> Either way, the <em>sending domain</em> <code>mail.artsvilleusa.com</code> is new and must warm up — see next.
+<div class="card" style="margin-top: 14px; border-left: 3px solid var(--r);">
+<div style="color: var(--body); font-size: 0.7em; line-height: 1.5;">
+<strong style="color:var(--r);">Myth-buster:</strong> a "warm" Crewest account does <strong>not</strong> make <code>mail.artsvilleusa.com</code> warm. Reputation attaches to the <strong>domain</strong> (and, on AC's shared IPs, to AC's pool) — and that subdomain is <strong>brand-new either way</strong>. Same DKIM/SPF setup, same warm-up in both accounts. <em>(One exception: if an account has a <strong>dedicated IP</strong>, that IP warmth is account-specific — worth checking.)</em>
 </div>
+</div>
+
+<div style="margin-top: 10px; color: var(--body); font-size: 0.72em; line-height: 1.5;">
+<strong>So the real trade to discuss:</strong> keep existing lists + engagement history (Crewest) vs. clean nonprofit ownership + re-imported lists (Arterial). If the lists migrate cleanly, the Crewest edge mostly evaporates.
 </div>
 
 ---
@@ -260,7 +264,7 @@ Because <code>mail.artsvilleusa.com</code> and <code>artsvilleusa.com</code> sha
 
 | # | What to confirm | Who / where |
 |---|-----------------|-------------|
-| 1 | **Which AC account** sends AV — warmed Crewest vs. new Arterial *(decide Thu)* | Team |
+| 1 | **Which AC account** sends AV — existing Crewest vs. new Arterial *(decide Thu)* | Team |
 | 2 | **Admin access** to the chosen ActiveCampaign account (Settings → Advanced) | AC owner |
 | 3 | **GoDaddy login** for artsvilleusa.com DNS (Domain Portfolio → DNS) | GoDaddy holder |
 | 4 | **From address** — e.g. <code>newsletter@mail.artsvilleusa.com</code> (or <code>press@</code>) | Team convention |
@@ -339,7 +343,7 @@ Because <code>mail.artsvilleusa.com</code> and <code>artsvilleusa.com</code> sha
   </div>
   <div class="card" style="flex: 0.9; display:flex; flex-direction:column; justify-content:center;">
     <div style="font-family:'Outfit'; font-weight:600; color: var(--g); font-size: 1.6em;">✓ Authenticated</div>
-    <div style="color: var(--body); font-size: 0.68em; margin-top:8px; line-height:1.5;">Once green, <code>mail.artsvilleusa.com</code> is a verified, warmed-ready sender. DKIM, SPF and DMARC all align to the ArtsvilleUSA root domain.</div>
+    <div style="color: var(--body); font-size: 0.68em; margin-top:8px; line-height:1.5;">Once green, <code>mail.artsvilleusa.com</code> is a verified, authenticated sender — DKIM, SPF and DMARC align to the ArtsvilleUSA root. (Now begin the warm-up.)</div>
   </div>
 </div>
 
@@ -392,7 +396,7 @@ Set both in each campaign's email settings. The <strong>From name</strong> shoul
 </div>
 
 <div class="card" style="margin-top:14px; border-left:3px solid var(--a);">
-<div style="color:var(--body); font-size:0.7em; line-height:1.5;"><strong>The compounding risk:</strong> a <em>new subdomain</em> on a <em>possibly-new cold AC account</em> = two cold starts at once. On AC's shared IPs, AC manages IP reputation — your job is domain reputation + engagement. This is the strongest argument for sending AV from the <strong>warmed Crewest account</strong>. The practical how-to is next.</div>
+<div style="color:var(--body); font-size:0.7em; line-height:1.5;"><strong>The key point:</strong> the new-domain cold start applies in <em>either</em> account — <code>mail.artsvilleusa.com</code> is new regardless. On AC's shared IPs, AC manages IP reputation; your job is domain reputation + engagement. What the existing Crewest account saves is the <strong>engaged lists to warm up <em>with</em></strong> — not a warm domain. The practical how-to is next.</div>
 </div>
 
 ---
@@ -512,8 +516,33 @@ The bar: one valid SPF (&lt;10 lookups) · DKIM · a DMARC record (≥ p=none) �
   </div>
 </div>
 
-<div class="card" style="margin-top:12px; border-left:3px solid var(--a);">
-<div style="color:var(--body); font-size:0.66em; line-height:1.5;"><strong>Who resolves it — CloudFuze</strong> (set up GoDaddy, ActiveCampaign, and email). Contract terminated with notice but <strong>obligated through Aug 16, 2026</strong> — this correction is squarely within remaining scope. Contact: <strong>Joy Prakash</strong>, Sr. Account Manager · joy.prakash@cloudfuze.com · +1 252 496 9316. <strong>Ready-to-send email:</strong> <a href="https://github.com/JuergenB/ideas-inbox/blob/main/problems/003-activecampaign-newsletter-artsvilleusa/docs/cloudfuze-notrealart-dns-remediation.md">docs/cloudfuze-notrealart-dns-remediation.md</a>.</div>
+<div style="margin-top:12px; color:var(--m); font-size:0.7em;">Who resolves it, the contact, and the ready-to-send email → next slide.</div>
+
+---
+
+<!-- _class: bg-glow-orange -->
+
+### Who should work on this
+
+# CloudFuze — and it's within their contract
+
+<div style="display:flex; gap:14px; margin-top:12px;">
+  <div class="card" style="flex:1; border-top:2px solid var(--a);">
+    <div style="font-family:'Outfit'; font-weight:600; color:var(--a); font-size:0.78em;">Why them</div>
+    <div style="color:var(--body); font-size:0.7em; line-height:1.5; margin-top:6px;">CloudFuze set up the <strong>GoDaddy DNS, ActiveCampaign, and email</strong> for these domains — they're the right party to correct the records they configured.</div>
+  </div>
+  <div class="card" style="flex:1; border-top:2px solid var(--g);">
+    <div style="font-family:'Outfit'; font-weight:600; color:var(--g); font-size:0.78em;">The leverage</div>
+    <div style="color:var(--body); font-size:0.7em; line-height:1.5; margin-top:6px;">Contract terminated with two months' notice — <strong>obligated through Aug 16, 2026</strong>. This is a correction of their own setup, <strong>within remaining scope</strong>, not new billable work.</div>
+  </div>
+  <div class="card" style="flex:1; border-top:2px solid var(--blue);">
+    <div style="font-family:'Outfit'; font-weight:600; color:var(--blue); font-size:0.78em;">Contact</div>
+    <div style="color:var(--body); font-size:0.7em; line-height:1.5; margin-top:6px;"><strong>Joy Prakash</strong><br>Sr. Account Manager<br>joy.prakash@cloudfuze.com<br>+1 252 496 9316</div>
+  </div>
+</div>
+
+<div class="card" style="margin-top:14px; border-left:3px solid var(--a);">
+<div style="color:var(--body); font-size:0.72em; line-height:1.5;"><strong>📧 Ready-to-send email (Scott → CloudFuze):</strong> <a href="https://github.com/JuergenB/ideas-inbox/blob/main/problems/003-activecampaign-newsletter-artsvilleusa/docs/cloudfuze-notrealart-dns-remediation.md">docs/cloudfuze-notrealart-dns-remediation.md</a> — full technical appendix (current vs. target records). The ask: <strong>remove the duplicate DMARC, consolidate SPF, confirm DKIM per sender</strong>, and a completion date.</div>
 </div>
 
 ---

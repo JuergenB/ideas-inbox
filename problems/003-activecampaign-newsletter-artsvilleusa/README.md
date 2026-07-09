@@ -50,9 +50,10 @@
 
 # Open decision: which ActiveCampaign account?
 
-- **Existing Crewest Studio AC (warmed):** already has our synced lists and account history → less cold-start risk. **One candidate home for ArtsvilleUSA email.**
-- **New Arterial/AV AC (cold):** clean ownership separation; likely a nonprofit account. But brand-new → starts cold. **Fine for Arterial's own mail.**
-- **To discuss tomorrow:** Arterial's own mail on the new account is uncontroversial. For ArtsvilleUSA, the open question is warmed-Crewest (lists already there) vs. the new nonprofit account — one view is to lean Crewest unless the nonprofit account is a hard requirement. **Whatever we choose, if it's the cold account we all commit to the full warm-up.** Either way, the *sending domain* `mail.artsvilleusa.com` is new and must warm up.
+- **Existing Crewest Studio AC:** the real advantage is that our **lists — and their in-account engagement history — already live here**, so we can send-to-most-engaged-first and skip re-importing. Downside: entangles AV with the Crewest account being wound down.
+- **New Arterial/AV AC:** clean ownership, likely a nonprofit account, aligned with Scott's direction. Downside: **re-import contacts** — they arrive with no in-account engagement history to segment on.
+- **Myth-buster (important):** a "warm" Crewest account does **not** make `mail.artsvilleusa.com` warm. Mailbox-provider reputation attaches to the **sending domain** (and, on AC's shared IPs, to AC's pool — not to your account), and that subdomain is **brand-new either way** → identical DKIM/SPF setup and identical warm-up in both accounts. *Exception:* if an account has a **dedicated IP**, that IP warmth is account-specific — worth checking.
+- **So the real trade to discuss tomorrow:** keep existing lists + engagement history (Crewest) vs. clean nonprofit ownership + re-imported lists (Arterial). **If the lists migrate cleanly, the Crewest edge mostly evaporates.** Whatever we pick, if it's the new account we all commit to the full warm-up; either way `mail.artsvilleusa.com` is new and must warm up.
 
 ---
 
