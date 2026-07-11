@@ -80,7 +80,7 @@ footer: ''
   <img src="https://itcls3wqp5koksgn.public.blob.vercel-storage.com/presentations/polywiz-paid-ads-engine/polymash-logo.png" style="width: 48px; border-radius: 8px; opacity: 0.85;" />
 </div>
 
-<div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--a); letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 28px;">Stakeholder briefing · revised June 2026</div>
+<div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--a); letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 28px;">Stakeholder briefing · revised July 2026 (v3 split)</div>
 
 # PolyWiz Paid Ads Engine
 
@@ -91,6 +91,33 @@ footer: ''
   <span style="background: transparent; border: 1.5px solid #ff6b1a; color: #ff6b1a; border-radius: 20px; padding: 5px 15px; font-family: 'Outfit'; font-size: 0.6em; font-weight: 600; letter-spacing: 0.04em;">Multi-objective</span>
   <span style="background: transparent; border: 1.5px solid #ff6b1a; color: #ff6b1a; border-radius: 20px; padding: 5px 15px; font-family: 'Outfit'; font-size: 0.6em; font-weight: 600; letter-spacing: 0.04em;">Per-brand config</span>
 </div>
+
+---
+
+<!-- _class: bg-glow-orange -->
+
+<h3 style="color: var(--a);">Update · July 2026</h3>
+
+## We're building the creative half first
+
+<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.95em; color: var(--body); margin: 8px 0 24px; max-width: 900px;">This plan now splits in two. The half that needs nothing from anyone — the creative engine — we build now. The half that needs new subscriptions and website changes, we hold.</div>
+
+<div style="display: flex; gap: 14px;">
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--g); border-radius: 10px; padding: 20px; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--g), transparent);"></div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--g); letter-spacing: 0.1em; margin-bottom: 10px;">BUILDING NOW · UNBLOCKED</div>
+    <div style="font-family: 'Outfit'; font-size: 1.35em; font-weight: 800; color: var(--t); line-height: 1.1;">Ad Creative Generator</div>
+    <div style="font-size: 0.72em; color: var(--body); margin-top: 10px;">Turns our own artworks, stories &amp; photos into ad-ready <strong>images, carousels, and short caption videos</strong>. We download them and place the ads in Facebook/Instagram ourselves — the way we already do. <strong>No new subscription, no website changes, no ad spend to build it.</strong></div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 20px; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--m), transparent);"></div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-bottom: 10px;">HELD FOR LATER · BLOCKED</div>
+    <div style="font-family: 'Outfit'; font-size: 1.35em; font-weight: 800; color: var(--m); line-height: 1.1;">Automated Ad Launch</div>
+    <div style="font-size: 0.72em; color: var(--body); margin-top: 10px;">One-click launch, automatic optimization &amp; reporting. Needs the <strong>$100/mo ad add-on</strong>, ad-account connections, and tracking pixels on 2 of 3 websites. Fully researched, parked until those are in place and it's worth it.</div>
+  </div>
+</div>
+
+<div style="margin-top: 22px; font-weight: 300; font-size: 0.8em; color: var(--label);">The rest of this deck describes the <em>full</em> engine (both halves). What ships first is the green card. <strong>Two honest caveats on the first release:</strong> we place the ads by hand (no one-click launch yet), and it gives us <em>more, better creatives</em> — not automatic winner-picking, which comes with the held half.</div>
 
 ---
 

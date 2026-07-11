@@ -1,12 +1,25 @@
 # Idea 007: PolyWiz Paid Ads Engine — a New Campaign *Class*, Multi-Objective, Per-Brand
 
 **Origin:** Juergen Berkessel, 2026-04-25 · **Revised 2026-06-18** — reframed from a newsletter-signup pilot into a multi-objective **ad-campaign class** that sits *beside* PolyWiz's organic engine, not inside it.
-**Status:** Research Complete — Awaiting Go/No-Go (v2 reframe)
-**Linked implementation epic:** [JuergenB/polywiz-app#181](https://github.com/JuergenB/polywiz-app/issues/181) (sub-issues #182–#191)
+**Status:** **v3 SPLIT (2026-07-10)** — the creative half is now a separate **active, unblocked build**; the ad-launch half is **deferred/blocked**. (v2 research below preserved.)
+**Linked implementation epics:** **ACTIVE → [polywiz-app#372 — Ad Creative Generator](https://github.com/JuergenB/polywiz-app/issues/372)** (sub-issues #373–#380) · **DEFERRED → [polywiz-app#181 — Paid Ads Launch Automation](https://github.com/JuergenB/polywiz-app/issues/181)** (sub-issues #182–#191, `blocked`)
 **Companion idea:** [011 — Owned Promotion & PR Engine](../011-pressranger-outreach-playbook/) — supplies the *first pilot objective* (open-call submissions). 007 and 011 ship together.
 **Pilot:** open-call submissions on Not Real Art / Artsville → expand per-brand
 **Budget envelope:** $250–$500 per brand per month in ad spend **+ a flat $100/mo Zernio Ads add-on** (confirmed 2026-06-18 via the in-product paywall — our AppSumo plan requires it; it is *not* bundled). The $100/mo is a shared-engine cost across all brands/objectives, not per-brand. The **build itself is absorbed by the existing Polymash retainer** — no new line item.
 
+> ## ⚠️ v3 SPLIT (2026-07-10) — read this first
+>
+> This idea is now **split into two epics**, because its two halves have opposite blocker profiles:
+>
+> - **ACTIVE — [Ad Creative Generator (polywiz-app#372)](https://github.com/JuergenB/polywiz-app/issues/372)**: turn a campaign's real assets + story into ad-ready **static, carousel, and "Ken Burns" caption-video** creatives, exported as a package that Juergen/Scott **stage manually** in Meta Ads Manager. Needs **no** Zernio ad API, **no** $100/mo add-on, **no** pixels — so it ships now. Video engine decided: **Remotion Lambda** (renders on AWS, works in production, not a dev-only tool). Real uploaded artwork stays first-class; AI-generated imagery is optional, never default.
+> - **DEFERRED / BLOCKED — [Paid Ads Launch Automation (polywiz-app#181)](https://github.com/JuergenB/polywiz-app/issues/181)**: everything that automates *launch* — Zernio `/v1/ads/*`, the $100/mo add-on, ad-account OAuth, Meta Pixel + CAPI installs, the optimization/reporting loop. Preserved intact, `blocked` until those prerequisites land and automated launch is judged worth it.
+>
+> **Why the split:** the creative work is the high-leverage, zero-blocker half. We already know how to stage ads manually; what we lacked was a fast way to *produce* strong ad creatives from our own assets. So we build that first and leave the API/pixel/optimization plumbing for later (if ever).
+>
+> **Two honest limitations of the active half, stated up front:** (1) export is **file → manual upload**, not one-click launch; (2) with no conversion loop yet, the variant output is **volume, not optimization** — which creative actually converts stays unknown until the deferred epic lands. Full rationale + issue-by-issue disposition: [`polywiz-app/docs/research/paid-ads/ad-creative-generator-epic.md`](https://github.com/JuergenB/polywiz-app/blob/main/docs/research/paid-ads/ad-creative-generator-epic.md).
+>
+> ---
+>
 > **What changed in v2 (2026-06-18):** Two things. (1) A live re-verification of the Zernio Ads API ([polywiz-app#250](https://github.com/JuergenB/polywiz-app/pull/250)) corrected the build premises — ad webhooks and SDK ads-coverage both **exist** now, so the engine is event-driven, not poll-driven. (2) The bigger shift: ads are **not** "a new campaign type bolted onto the organic trickle generator." An ad campaign is a *different kind of object* with a different lifecycle and conversion goals. v2 models it as a separate **campaign class** that shares PolyWiz's intake/creative substrate and then diverges completely. The original newsletter-pilot framing is preserved at git tag `idea-007-v1-awaiting-gono`.
 
 <p>
