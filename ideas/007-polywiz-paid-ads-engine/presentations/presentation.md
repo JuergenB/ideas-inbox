@@ -385,31 +385,31 @@ footer: ''
     <svg width="40" height="16" viewBox="0 0 40 16"><line x1="0" y1="8" x2="30" y2="8" stroke="#222" stroke-width="1"/><polygon points="30,4 40,8 30,12" fill="var(--a)"/></svg>
   </div>
   <div style="flex: 1;">
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--a); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 14px;">New for the paid class</div>
-    <div style="font-weight: 300; font-size: 0.78em; color: var(--body); line-height: 2.1;">
-      <span style="color: var(--a);">+ Paid campaign object</span> (objective, budget, flight)<br>
-      <span style="color: var(--a);">+ Ad-variation generator</span> (FLUX, Ideogram)<br>
-      <span style="color: var(--a);">+ Zernio Ads via SDK</span> <span style="color:var(--m);">(0.2.101 — no raw fetch)</span><br>
-      <span style="color: var(--a);">+ Per-brand ad-account wiring</span> (OAuth)<br>
-      <span style="color: var(--a);">+ Event-driven lead capture</span> <span style="color:var(--m);">(webhooks, not polling)</span><br>
-      <span style="color: var(--a);">+ Conversion-objective config</span> per brand<br>
-      <span style="color: var(--a);">+ Variant rotation</span> (kill / scale loop)<br>
-      <span style="color: var(--a);">+ Secondary-capture CTAs</span> on landing pages
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.55em; color: var(--a); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 14px;">New — creative now, launch later</div>
+    <div style="font-weight: 300; font-size: 0.78em; color: var(--body); line-height: 2.0;">
+      <span style="color: var(--g);">+ Ad Creative Generator</span> — copy + layout variants <span style="color:var(--m);">· now</span><br>
+      <span style="color: var(--g);">+ Static + carousel ad layouts</span> <span style="color:var(--m);">· now</span><br>
+      <span style="color: var(--g);">+ “Ken Burns” caption video</span> (Remotion) <span style="color:var(--m);">· now</span><br>
+      <span style="color: var(--g);">+ Export package</span> for manual FB/IG staging <span style="color:var(--m);">· now</span><br>
+      <span style="color: var(--m);">+ Zernio Ads launch via SDK · later</span><br>
+      <span style="color: var(--m);">+ Ad-account OAuth + pixels / CAPI · later</span><br>
+      <span style="color: var(--m);">+ Event-driven lead capture · later</span><br>
+      <span style="color: var(--m);">+ Variant rotation (kill / scale) · later</span>
     </div>
   </div>
 </div>
 
-<div style="margin-top: 22px; font-weight: 300; font-size: 0.78em; color: var(--label); text-align: center;">The creative engine is the moat. The new pieces are the ad object, its config, and the optimization loop.</div>
+<div style="margin-top: 22px; font-weight: 300; font-size: 0.78em; color: var(--label); text-align: center;">The creative engine is the moat — and the unblocked half we build first (real assets first; AI imagery optional). The launch object, its config, and the optimization loop come later.</div>
 
 ---
 
 <!-- _class: bg-glow -->
 
-### No new vendor, no new logins
+### The later half · automated launch
 
-## It runs through the same tool the brands already use
+## When we automate launch, it runs through the same tool
 
-<div style="font-size: 0.82em; color: var(--label); margin: -2px 0 20px; max-width: 900px;">Paid ads go out through <strong>Zernio</strong> — the exact same service the brands already use to schedule their organic social posts. There's nothing new to learn, no extra account to sign into, and no second vendor to manage. Turning the ads capability on is a single flat <strong>$100/mo</strong> add-on to that existing subscription — one shared cost across every brand and objective.</div>
+<div style="font-size: 0.82em; color: var(--label); margin: -2px 0 20px; max-width: 900px;"><strong style="color:var(--m);">This slide describes the deferred half.</strong> <em>Today we stage the generated creatives in Facebook/Instagram by hand.</em> When we later automate that, paid ads go out through <strong>Zernio</strong> — the exact same service the brands already use for organic posts: nothing new to learn, no second vendor. Turning it on is a single flat <strong>$100/mo</strong> add-on to that existing subscription — one shared cost across every brand and objective.</div>
 
 <div style="background: var(--s); border: 1px solid var(--b); border-radius: 12px; padding: 22px 26px; margin-bottom: 18px;">
   <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--a); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 16px;">One tool · six paid networks</div>
@@ -440,42 +440,42 @@ footer: ''
 
 ### Phase plan
 
-## Build order ≠ vision order — fundraising last
+## Build order — creative generator first, launch later, fundraising last
 
 <div style="margin-top: 16px; padding: 4px 0 4px 18px; border-left: 2px solid var(--b);">
   <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
     <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#ff6b1a" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--a); line-height: 1.2;">Phase 0 — Prerequisites <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">~1 day</span></div>
-      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Confirm the Zernio plan covers ads (likely bundled). Connect per-brand ad accounts via OAuth. Install Pixel + Conversions API on the brand sites that lack them.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--g); line-height: 1.2;">Now — Ad Creative Generator <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">in retainer · unblocked</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">A creative studio on the campaign page: objective + CTA, pick real assets, generate copy + static / carousel / “Ken Burns” video variants, export a package. Staged in FB/IG by hand. No add-on, no pixels, no ad spend to build it.</div>
     </div>
   </div>
   <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
     <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#ff6b1a" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--a); line-height: 1.2;">Phase 1 — Paid class + open-call pilot <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">~1–2 weeks</span></div>
-      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Build the paid campaign object, config surface, variation generator, ad-account wiring, <code>lead.received</code> capture. Run the open-call submission pilot at ~$250 on the next live call.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--g); line-height: 1.2;">Then — More objectives + video polish <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">still export-for-manual</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Extend the generator across objectives (open call, exhibition, newsletter) and refine the Ken Burns builder. Output is still a downloadable pack we place in the ad tools ourselves.</div>
     </div>
   </div>
   <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
     <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#0199fe" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--blue); line-height: 1.2;">Phase 2 — Objective + platform expansion <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">~1.5 weeks</span></div>
-      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Add exhibition interest (+ secondary capture) and newsletter growth; turn on Pinterest (visual) and newsletter ad networks. Per-brand objective config UI.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--blue); line-height: 1.2;">Later (deferred) — Launch prerequisites <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">blocked until funded</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">$100/mo Zernio ads add-on, per-brand ad-account OAuth, and Pixel + Conversions API on the brand sites that lack them. None of this is needed for the creative generator above.</div>
     </div>
   </div>
   <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
     <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#f5a623" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--y); line-height: 1.2;">Phase 3 — Video + fundraising <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">~1.5 weeks</span></div>
-      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Slideshow-video creative for TikTok/YouTube. <strong>Fundraising / donation objective</strong> with value-based optimization + donor compliance. Google Ad Grants for nonprofit search.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--y); line-height: 1.2;">Later — Automated launch + optimization <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">once prerequisites land</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">One-click launch through Zernio, event-driven lead capture (<code>lead.received</code>), variant rotation (kill / scale), and a cost-per-action reporting dashboard. The open-call pilot flight runs here.</div>
     </div>
   </div>
   <div style="display: flex; align-items: flex-start; gap: 14px;">
     <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#22c55e" stroke-width="2"/></svg>
     <div>
-      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--g); line-height: 1.2;">Phase 4 — Optimization & scale <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">ongoing</span></div>
-      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Per-variant landing pages. Engaged-subscriber lookalikes. Cross-brand reporting. Auto-pacing on cost-per-action.</div>
+      <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--g); line-height: 1.2;">Vision — Fundraising, last <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">built last, in view from day one</span></div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Donation objective with value-based optimization + donor compliance. Google Ad Grants for nonprofit search. Engaged-subscriber lookalikes, cross-brand reporting, auto-pacing on cost-per-action.</div>
     </div>
   </div>
 </div>
@@ -484,9 +484,11 @@ footer: ''
 
 <!-- _class: bg-glow-orange -->
 
-### What Phase 0 clears
+### What the launch half needs
 
-## Three prerequisites — days, not weeks
+## Three prerequisites — deferred, not on the critical path
+
+<div style="font-size: 0.78em; color: var(--label); margin: -4px 0 4px; max-width: 900px;"><strong style="color:var(--g);">The Ad Creative Generator needs none of these</strong> — it ships now. These clear only when we choose to automate launch.</div>
 
 <div style="display: flex; gap: 16px; margin-top: 18px;">
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 20px; position: relative; overflow: hidden;">
@@ -509,40 +511,40 @@ footer: ''
   </div>
 </div>
 
-<div style="margin-top: 24px; font-weight: 300; font-size: 0.78em; color: var(--label); text-align: center;">All three are <strong>solvable in days</strong> — but they precede the first ad flight.</div>
+<div style="margin-top: 24px; font-weight: 300; font-size: 0.78em; color: var(--label); text-align: center;">All three are <strong>solvable in days</strong> — but they precede <strong>automated launch</strong>, which is deferred. The pilot flight can also be staged by hand once the creatives exist.</div>
 
 ---
 
 <!-- _class: bg-glow-green -->
 
-### What we're asking for
+### The decision, split in two
 
-## A green light for Phase 0 + the open-call pilot
+## Now: build the creatives. Later: green-light the paid flight.
 
 <div style="display: flex; gap: 14px; margin-top: 22px;">
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 22px; position: relative; overflow: hidden;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--a), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-bottom: 12px;">MONTHLY COMMITMENT</div>
-    <div style="font-family: 'Outfit'; font-size: 1.5em; font-weight: 800; color: var(--a); line-height: 1.05;">$100/mo</div>
-    <div style="font-size: 0.7em; color: var(--body); margin-top: 8px;">The flat Zernio ads add-on Scott absorbs monthly — one shared engine across brands &amp; objectives, plus per-flight ad spend.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--g); letter-spacing: 0.1em; margin-bottom: 12px;">BUILDING NOW · $0 NEW</div>
+    <div style="font-family: 'Outfit'; font-size: 1.5em; font-weight: 800; color: var(--g); line-height: 1.05;">Ad Creative Generator</div>
+    <div style="font-size: 0.7em; color: var(--body); margin-top: 8px;">In the existing Polymash retainer — no new line item. Produces ad-ready creatives we stage in FB/IG by hand.</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 22px; position: relative; overflow: hidden;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--g), transparent);"></div>
-    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-bottom: 12px;">RUN ONE FLIGHT</div>
-    <div style="font-family: 'Outfit'; font-size: 1.5em; font-weight: 800; color: var(--g); line-height: 1.05;">~$250 open call</div>
-    <div style="font-size: 0.7em; color: var(--body); margin-top: 8px;">A deadline-timed flight on the next live open call — Not Real Art or Artsville.</div>
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-bottom: 12px;">LATER · TO GO PAID</div>
+    <div style="font-family: 'Outfit'; font-size: 1.5em; font-weight: 800; color: var(--a); line-height: 1.05;">$100/mo + ~$250</div>
+    <div style="font-size: 0.7em; color: var(--body); margin-top: 8px;">The Zernio ads add-on plus a deadline-timed open-call flight — when we choose to spend. Can be staged by hand before any launch automation.</div>
   </div>
   <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 22px; position: relative; overflow: hidden;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, var(--blue), transparent);"></div>
     <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-bottom: 12px;">SUCCESS LOOKS LIKE</div>
     <div style="font-family: 'Outfit'; font-size: 1.5em; font-weight: 800; color: var(--blue); line-height: 1.05;">Cost / submission</div>
-    <div style="font-size: 0.7em; color: var(--body); margin-top: 8px;">Our <strong>first-ever clean reading</strong> — we've never measured it. That number unlocks every other brand and objective.</div>
+    <div style="font-size: 0.7em; color: var(--body); margin-top: 8px;">Our <strong>first-ever clean reading</strong> — measured when we run the paid flight. That number unlocks every other brand and objective.</div>
   </div>
 </div>
 
-<div style="margin-top: 24px; font-weight: 300; font-size: 0.8em; color: var(--label); text-align: center; line-height: 1.6; max-width: 940px; margin-left: auto; margin-right: auto;"><strong style="color:var(--g);">What's already covered:</strong> the build is baked into the existing Polymash retainer — <strong style="color:var(--g);">no new line item</strong>. The only new money is the incremental platform + ad spend above.</div>
+<div style="margin-top: 24px; font-weight: 300; font-size: 0.8em; color: var(--label); text-align: center; line-height: 1.6; max-width: 940px; margin-left: auto; margin-right: auto;"><strong style="color:var(--g);">What's already covered:</strong> the build is baked into the existing Polymash retainer — <strong style="color:var(--g);">no new line item</strong>. The creative generator needs no new money at all; the only new spend is the add-on + ad flight, and only when we go paid.</div>
 
-<div style="margin-top: 14px; font-weight: 300; font-size: 0.9em; color: var(--body); text-align: center; line-height: 1.55;">This <strong>~$250 pilot is step one</strong> toward promoting the whole content universe, on the road to fundraising. The decision in front of us: <strong>a green light to run that first focused step.</strong></div>
+<div style="margin-top: 14px; font-weight: 300; font-size: 0.9em; color: var(--body); text-align: center; line-height: 1.55;">The <strong>creatives come first</strong> — unblocked, in retainer. The <strong>paid flight is the next green-light</strong>, on the road to promoting the whole content universe and, in time, fundraising.</div>
 
 ---
 
@@ -552,9 +554,9 @@ footer: ''
 
 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff6b1a" stroke-width="1.4" style="margin-bottom: 18px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
 
-# Let's run the first open call
+# First: build the ad creatives
 
-<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.95em; color: var(--body); margin-top: 12px;">007 + 011 ship together. The build lives in the GitHub epic — <a href="https://github.com/JuergenB/polywiz-app/issues/181" style="color: var(--a); text-decoration: underline; font-weight: 500;">issue #181</a></div>
+<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.95em; color: var(--body); margin-top: 12px;">The creative generator ships now — <a href="https://github.com/JuergenB/polywiz-app/issues/372" style="color: var(--a); text-decoration: underline; font-weight: 500;">epic #372</a>. Launch automation is fully scoped and deferred — <a href="https://github.com/JuergenB/polywiz-app/issues/181" style="color: var(--a); text-decoration: underline; font-weight: 500;">#181</a>. 007 + 011 still ship together.</div>
 
 ---
 
