@@ -123,6 +123,60 @@ footer: ''
 
 <!-- _class: bg-glow -->
 
+<h3 style="color: var(--a);">How it works · the storyboard</h3>
+
+## You see the story before we build a single asset
+
+<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.9em; color: var(--body); margin: 6px 0 22px; max-width: 900px;">From a campaign that already holds the artwork, photos and story, the generator writes a short <strong>storyboard</strong> — a handful of scenes you can edit. The <em>same</em> storyboard becomes a still ad, a carousel, or a short caption video.</div>
+
+<div style="display: flex; gap: 10px; margin-bottom: 18px;">
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-top: 3px solid var(--a); border-radius: 8px; padding: 14px;">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.62em; color: var(--a); letter-spacing: 0.08em; text-transform: uppercase;">Spark</div>
+    <div style="font-size: 0.72em; color: var(--body); margin-top: 6px;">the image that stops the scroll</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-top: 3px solid var(--a); border-radius: 8px; padding: 14px;">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.62em; color: var(--a); letter-spacing: 0.08em; text-transform: uppercase;">Story</div>
+    <div style="font-size: 0.72em; color: var(--body); margin-top: 6px;">the work, the artist, the idea</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-top: 3px solid var(--a); border-radius: 8px; padding: 14px;">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.62em; color: var(--a); letter-spacing: 0.08em; text-transform: uppercase;">Resonance</div>
+    <div style="font-size: 0.72em; color: var(--body); margin-top: 6px;">why it matters, who it's for</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--g); border-top: 3px solid var(--g); border-radius: 8px; padding: 14px;">
+    <div style="font-family: 'Outfit'; font-weight: 700; font-size: 0.62em; color: var(--g); letter-spacing: 0.08em; text-transform: uppercase;">Invitation</div>
+    <div style="font-size: 0.72em; color: var(--body); margin-top: 6px;">a warm ask to join</div>
+  </div>
+</div>
+
+<div style="font-size: 0.76em; color: var(--label); line-height: 1.5;">Each scene is just <strong>one image + one line + a motion</strong> (a slow zoom or pan). Swap the image, reword the line, re-time it — and <strong>preview it playing right in the browser</strong> before we render the final file. Short by design: about <strong>4–6 scenes, ~30 seconds</strong>, and it still works when a post only has one or two photos.</div>
+
+---
+
+<!-- _class: bg-glow-green -->
+
+<h3 style="color: var(--g);">The guardrail · brand values</h3>
+
+## Inspirational — never "buy now"
+
+<div style="font-family: 'Raleway'; font-weight: 300; font-size: 0.9em; color: var(--body); margin: 6px 0 22px; max-width: 900px;">Every line the engine writes celebrates the art and invites people in. The pushy, scarcity-driven tricks of typical ad copy are switched off at the engine level — layered on top of each brand's own voice.</div>
+
+<div style="display: flex; gap: 14px;">
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--g); border-radius: 10px; padding: 18px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--g); letter-spacing: 0.1em; margin-bottom: 10px;">WE LEAN INTO</div>
+    <div style="font-size: 0.78em; color: var(--body); line-height: 1.7;">Wonder · discovery · the story behind the work · belonging &amp; community · celebration · craft · a warm invitation to join</div>
+  </div>
+  <div style="flex: 1; background: var(--s); border: 1px solid var(--b); border-radius: 10px; padding: 18px;">
+    <div style="font-family: 'Outfit'; font-weight: 600; font-size: 0.5em; color: var(--m); letter-spacing: 0.1em; margin-bottom: 10px;">WE NEVER USE</div>
+    <div style="font-size: 0.78em; color: var(--m); line-height: 1.7;">Scarcity · urgency · "last chance" · "don't miss out" · FOMO · manufactured pressure of any kind</div>
+  </div>
+</div>
+
+<div style="margin-top: 14px; font-weight: 300; font-size: 0.76em; color: var(--label);">It's a setting we can tune — not hard-wired — and it sits <em>above</em> each brand's voice, so The Intersect still sounds like The Intersect.</div>
+
+---
+
+<!-- _class: bg-glow -->
+
 ### Where this comes from
 
 ## This year's exhibition initiative — and the one gap in it

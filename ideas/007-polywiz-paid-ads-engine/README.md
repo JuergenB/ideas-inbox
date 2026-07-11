@@ -2,7 +2,7 @@
 
 **Origin:** Juergen Berkessel, 2026-04-25 · **Revised 2026-06-18** — reframed from a newsletter-signup pilot into a multi-objective **ad-campaign class** that sits *beside* PolyWiz's organic engine, not inside it.
 **Status:** **v3 SPLIT (2026-07-10)** — the creative half is now a separate **active, unblocked build**; the ad-launch half is **deferred/blocked**. (v2 research below preserved.)
-**Linked implementation epics:** **ACTIVE → [polywiz-app#372 — Ad Creative Generator](https://github.com/JuergenB/polywiz-app/issues/372)** (sub-issues #373–#380) · **DEFERRED → [polywiz-app#181 — Paid Ads Launch Automation](https://github.com/JuergenB/polywiz-app/issues/181)** (sub-issues #182–#191, `blocked`)
+**Linked implementation epics:** **ACTIVE → [polywiz-app#372 — Ad Creative Generator](https://github.com/JuergenB/polywiz-app/issues/372)** (sub-issues #373–#384; +#385 upload hardening) · **DEFERRED → [polywiz-app#181 — Paid Ads Launch Automation](https://github.com/JuergenB/polywiz-app/issues/181)** (sub-issues #182–#191, `blocked`)
 **Companion idea:** [011 — Owned Promotion & PR Engine](../011-pressranger-outreach-playbook/) — supplies the *first pilot objective* (open-call submissions). 007 and 011 ship together.
 **Pilot:** open-call submissions on Not Real Art / Artsville → expand per-brand
 **Budget envelope:** $250–$500 per brand per month in ad spend **+ a flat $100/mo Zernio Ads add-on** (confirmed 2026-06-18 via the in-product paywall — our AppSumo plan requires it; it is *not* bundled). The $100/mo is a shared-engine cost across all brands/objectives, not per-brand. The **build itself is absorbed by the existing Polymash retainer** — no new line item.
@@ -32,6 +32,22 @@
 **📄 Slide deck (PDF):** [exports/presentation.pdf](exports/presentation.pdf) — download for print or offline.
 **📄 Sources & references:** [research/sources.md](research/sources.md) — full URLs, verbatim quotes, retrieval dates, including the 2026-06-18 Zernio Ads API re-verification.
 **📄 Implementation sub-issues (research/):** Phase 0 prerequisites, Phase 1 build-out, Phase 2 platform + objective expansion, Phase 3 video + fundraising. See [`research/`](research/).
+
+---
+
+## The active build — how the Ad Creative Generator works (storyboard model, 2026-07-11)
+
+The creative generator is organized around a **storyboard** — the shared spine for all three output formats. Refined with Juergen on 2026-07-11; full spec in [polywiz-app#372](https://github.com/JuergenB/polywiz-app/issues/372).
+
+- **One storyboard, three renderers.** A storyboard is an ordered set of **scenes**; a *static ad* is one scene rendered still, a *carousel* is the scenes as still cards, a *video* is the scenes animated + stitched. Author once, render three ways.
+- **Narrative Director** ([#382](https://github.com/JuergenB/polywiz-app/issues/382)) is the generative core — it *sequences* a campaign into beats (an inspirational **Spark → Story → Resonance → Invitation** arc), each with a hero line + suggested image + suggested motion. Sequencing, not captioning.
+- **Beat-anchored editing.** Beats are fixed slots; images are cast into them. Regenerate the line, swap the image, or regenerate the whole storyboard — independently. One image can serve several beats (re-framed, tinted, or evolving).
+- **Inspirational ethos, never scarcity.** Copy celebrates the art and invites belonging; scarcity/urgency/FOMO framings are switched off at an engine-level charter that sits *above* each brand's voice ([#375](https://github.com/JuergenB/polywiz-app/issues/375)).
+- **Short by design.** Hard cap **8 scenes** (default 4–6); runtime budget ~15–30s; per-scene duration is reading-time-derived. Fewer images than beats is fine — a fallback ladder fills the gap (re-framed crop → tinted variant → solid brand-color card).
+- **Preview ≠ render.** Editing and preview play in the browser in real time (Remotion `<Player>`, free); only the final export encodes on Remotion Lambda.
+- **Output mode:** per-scene clips first (Story-style), one stitched video later (TikTok-style, crossfades).
+
+New sub-issues from this refinement: [#382](https://github.com/JuergenB/polywiz-app/issues/382) Narrative Director · [#383](https://github.com/JuergenB/polywiz-app/issues/383) storyboard overview · [#384](https://github.com/JuergenB/polywiz-app/issues/384) scene editor · plus general upload hardening [#385](https://github.com/JuergenB/polywiz-app/issues/385).
 
 ---
 
