@@ -66,6 +66,8 @@ Meta content about the archive itself (not an idea) lives under [`about/`](about
 | 010 | [Guideless Pricing & Tier Strategy](ideas/010-guideless-pricing-strategy/) | Ready to Send | Juergen Berkessel (Polymash) / Rokas @ Guideless | 2026-06-12 |
 | 011 | [Owned Promotion & PR Engine (PressRanger as one input)](ideas/011-pressranger-outreach-playbook/) | Research & Discussion — Recommend Pilot | Juergen Berkessel (Polymash) / Scott Power | 2026-06-12 |
 | 012 | [Simplest Podcast Launch (Riverside + Spotify)](ideas/012-simplest-podcast-launch/) | Research & Discussion | Juergen Berkessel / Dr. Lynda Klau | 2026-07-02 |
+| 013 | [Arterial Impact Report (interview-driven, recurring)](ideas/013-arterial-impact-report/) | Scaffolding — design in discussion | Juergen Berkessel (Polymash) | 2026-07-03 |
+| 014 | [Dollar for the Arts (fundraising PWA + $1 donation onboarding)](ideas/014-dollar-for-the-arts/) | Research & Discussion | Juergen Berkessel (Polymash) / Scott Power | 2026-07-11 |
 
 ## Current Issues
 
