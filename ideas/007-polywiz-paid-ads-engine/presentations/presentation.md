@@ -117,7 +117,7 @@ footer: ''
   </div>
 </div>
 
-<div style="margin-top: 22px; font-weight: 300; font-size: 0.8em; color: var(--label);">The rest of this deck describes the <em>full</em> engine (both halves). What ships first is the green card. <strong>Two honest caveats on the first release:</strong> we place the ads by hand (no one-click launch yet), and it gives us <em>more, better creatives</em> — not automatic winner-picking, which comes with the held half.</div>
+<div style="margin-top: 14px; font-weight: 300; font-size: 0.76em; color: var(--label);">The rest of the deck is the <em>full</em> engine; the green card ships first. <strong>Two caveats:</strong> we stage ads by hand (no one-click launch yet), and it means <em>more, better creatives</em> — not automatic winner-picking.</div>
 
 ---
 
@@ -447,14 +447,14 @@ footer: ''
     <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#ff6b1a" stroke-width="2"/></svg>
     <div>
       <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--g); line-height: 1.2;">Now — Ad Creative Generator <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">in retainer · unblocked</span></div>
-      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">A creative studio on the campaign page: objective + CTA, pick real assets, generate copy + static / carousel / “Ken Burns” video variants, export a package. Staged in FB/IG by hand. No add-on, no pixels, no ad spend to build it.</div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Studio on the campaign page: pick real assets, generate copy + static / carousel / “Ken Burns” video variants, export a package. Staged in FB/IG by hand — no add-on, no pixels, no spend.</div>
     </div>
   </div>
   <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
     <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#ff6b1a" stroke-width="2"/></svg>
     <div>
       <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--g); line-height: 1.2;">Then — More objectives + video polish <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">still export-for-manual</span></div>
-      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Extend the generator across objectives (open call, exhibition, newsletter) and refine the Ken Burns builder. Output is still a downloadable pack we place in the ad tools ourselves.</div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Extend the generator across objectives (open call, exhibition, newsletter) and refine the Ken Burns builder. Output is still a downloadable pack we place ourselves.</div>
     </div>
   </div>
   <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;">
@@ -468,14 +468,14 @@ footer: ''
     <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#f5a623" stroke-width="2"/></svg>
     <div>
       <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--y); line-height: 1.2;">Later — Automated launch + optimization <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">once prerequisites land</span></div>
-      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">One-click launch through Zernio, event-driven lead capture (<code>lead.received</code>), variant rotation (kill / scale), and a cost-per-action reporting dashboard. The open-call pilot flight runs here.</div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">One-click launch through Zernio, event-driven lead capture, variant rotation (kill / scale), and a cost-per-action dashboard. The open-call pilot flight runs here.</div>
     </div>
   </div>
   <div style="display: flex; align-items: flex-start; gap: 14px;">
     <svg width="14" height="14" viewBox="0 0 14 14" style="margin-top: 3px; flex-shrink: 0;"><circle cx="7" cy="7" r="6" fill="#0c0c0c" stroke="#22c55e" stroke-width="2"/></svg>
     <div>
       <div style="font-family: 'Outfit'; font-size: 0.92em; font-weight: 700; color: var(--g); line-height: 1.2;">Vision — Fundraising, last <span style="color: var(--m); font-weight: 400; font-size: 0.72em;">built last, in view from day one</span></div>
-      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Donation objective with value-based optimization + donor compliance. Google Ad Grants for nonprofit search. Engaged-subscriber lookalikes, cross-brand reporting, auto-pacing on cost-per-action.</div>
+      <div style="font-size: 0.74em; color: var(--body); line-height: 1.45; margin-top: 2px;">Donation objective with value-based optimization + donor compliance; Google Ad Grants for nonprofit search. Plus lookalikes, cross-brand reporting, auto-pacing.</div>
     </div>
   </div>
 </div>
