@@ -35,16 +35,15 @@ An honest inventory of the assets that could feed this (confirm the full set wit
 
 | Asset | What it is | Usefulness as a fundraising magnet |
 |---|---|---|
-| **NRA ebooks / freebies** — [Bomb The Art World](https://notrealart.com/bomb-the-art-world/), 100 Top Street Artists, the Freebies library | Proven email-capture magnets already live, with Artist/Art-Lover segmentation and a thank-you page | **Strongest, ready today** — working funnels we can layer a $1 ask onto immediately |
-| **Not Real Art podcast library** | Existing, free, podcast-hosted (Captivate) | High value, but already free — so the magnet becomes *curation / an app / membership*, not the audio itself |
-| **Arterial Radio** | Today: a **collection of sequenced podcast episodes** — no dedicated listening app; only subscribe or play on a website | Weak *as-is* (website-only, not truly mobile); becomes strong **if given a portable app** — see the honest take below |
-| **NRA Grant / NRA Conference** | Audience-building programs | Can anchor their own campaigns and audiences |
+| **100 Top Street Artists** (ebook) | Proven email-capture magnet aimed at **art lovers** — the broader audience | **Strongest, ready today** — lead the fall campaign with it |
+| **Bomb The Art World** (ebook) | [Scott's book](https://notrealart.com/bomb-the-art-world/) for **artists** — "10 Business Strategies + Tactics" | Proven magnet, but a narrower (artist) audience |
+| **Content & audio** | Not Real Art podcast library · Artsville content · Not Real Art content · Arterial Radio | Mostly free already — so the magnet is *curation / an app*, not the audio itself |
+| **Arterial Radio** | Today: **sequenced podcast episodes** — no listening app; only subscribe or play on a website | Weak *as-is* (not truly mobile); strong **if given a portable app** — see the honest take below |
+| **Donately** | Owned donation rails — embeddable one-time / recurring widgets, and **a separate campaign per magnet** | **The rails.** Default the ask to $1; embed at the gate — near-zero payment build |
+| **Instapage (Optimize)** | Owned page builder — A/B + dynamic text + ad→page mapping; native Meta pixel; custom subdomain | **The page platform** (decided) — free-to-us, best-shaped; no upgrade needed |
+| **Facebook ad audience / pixel** | Scott's **live FB ads** should be accruing lookalike + retargeting audiences *(verify)* | **Warm traffic** — better cost-per-donation than cold, more defensible spend |
+| **ActiveCampaign** | Owned email automation | **Follow-up + nudge sequences** for sign-ups who didn't give — one series per magnet |
 | **[Idea 013](../013-arterial-impact-report/) impact report** | Credibility artifact (in design) | A trust magnet that strengthens the donation ask |
-| **Curated.co newsletter** | Existing NRA email audience | Distribution + re-engagement for people who skip the ask |
-| **Donately** | Owned donation platform — ugly landing pages, but **excellent embeddable one-time / recurring donation widgets**; campaigns embeddable anywhere | **The donation rails.** Drop the $1 widget onto existing download/thank-you pages — little-to-no custom payment build needed |
-| **Facebook ad audience / pixel** | Scott is **already running FB ads**; the NotRealArt pixel should be accruing lookalike + retargeting audiences *(verify)* | **Warm traffic.** Retargeting a built audience beats cold — materially better cost-per-donation, more defensible spend |
-| **Instapage (Optimize tier)** | Owned premium landing-page builder — **Optimize** includes A/B testing + dynamic text replacement; native Meta pixel; custom subdomain | **The page platform** (decided) — free-to-us, best-shaped for the ads-first funnel; no upgrade needed |
-| **Thrive Themes** | WordPress page builder connected to notrealart.com; can also serve arterial.org | The manual-build alternative — proven, cheaper, but slower to rotate/personalize than Instapage |
 
 ### Arterial Radio — an honest take
 
@@ -52,7 +51,9 @@ Scott loves Arterial Radio, and there's a big-swing dream of **selling it to Sir
 
 Be clear about what it actually is **today: a collection of sequenced podcast episodes** — with **no real delivery mechanism or listening app.** People can subscribe, or play it on a website, but that's **not truly mobile**: there's no good way to listen in the gym, in the car, or on the go. And "online radio stations" broadly get little listening now — consumption has moved to **on-demand podcasts**, which Arterial already has, already free.
 
-So the gap isn't the *content* — it's the **delivery**. That's what makes the app idea real rather than redundant: an **installable app gives Arterial Radio the portable, gym/car/anywhere listening experience it doesn't have today.** Framed that way, *"donate a dollar for the arts, install the Arterial app, take it with you"* makes the **app itself the lead magnet** — a genuine value-add, not just a wrapper around free files. That's a real strategic option (see Open Questions).
+So the gap isn't the *content* — it's the **delivery**. That's what makes the app idea real rather than redundant: an **installable app gives Arterial Radio the portable, gym/car/anywhere listening experience it doesn't have today.** Framed that way, *"donate a dollar for the arts, install the Arterial app, take it with you"* makes the **app itself the lead magnet** — a genuine value-add, not just a wrapper around free files.
+
+**Open question for us:** do we undertake launching **Arterial Radio as its own iOS app**? That's a distinct decision (effort, exposure, whether the listening product justifies it) — see the delivery-model section and Open Questions.
 
 ## The concept — a flexible landing system, not a one-off page
 
@@ -72,9 +73,9 @@ One donation funnel, many magnets:
   - **→ Flag for nonprofit counsel / CPA.** How hard the gate can be *while keeping the dollar a deductible gift* is a legal question, not a design preference. The paper's default is **skippable-but-strong**; the final line is counsel's call.
 - **Swappable layer:** the **lead magnet behind the ask is pluggable**. Any owned asset can be the offer for a given campaign or audience — one of the existing Not Real Art ebooks, Arterial Radio, a podcast series, the impact report, a newsletter signup.
 - **The key insight — we already run this pattern, minus the ask.** Not Real Art's current magnets (e.g. **[Bomb The Art World](https://notrealart.com/bomb-the-art-world/)** and **100 Top Street Artists**) already do email capture: pick your audience (Artist / Art Lover) → get a free download → join the list. "Dollar for the Arts" **layers a skippable $1 donation onto that same proven opt-in flow** — turning an email-capture funnel into an email-capture *and* small-dollar-donation funnel, without changing what already works.
-- **Where the ask goes — the thank-you page we already have.** Today the post-opt-in confirmation screen is dead space: just a *"check your email"* line, a download link, and share buttons — **no ask, no follow-up** ([live example](https://notrealart.com/100-top-street-artists-of-2020-thank-you-b8767b24-5419-11ea-8d77-2e728ce88125/)). That moment — email already given, content already delivered, goodwill at its peak — is the natural, non-gating place to put the **"$1 for the arts"** ask.
-- **The rails already exist — Donately.** We don't build a payment flow. **Embed a Donately one-time/recurring donation widget at the top of the download + thank-you pages** — framed as *"$1 for the arts to download this great book."* Donately's landing pages are ugly, but its widgets are strong and embeddable anywhere, so we use *our* pages and *their* rails. (Donately can also do harder "unlock gated content" embeds — relevant to the gate-hardness fork above.)
-- **Skippers become a campaign, not a loss.** Anyone who downloads but doesn't give enters a **follow-up email sequence** — *"if you enjoyed this book, help us stay in business / donate to the arts"* — a gentle recurring drip until they convert. **Recurring gifts are especially valuable:** they compound the *breadth* of small donors the 501(c)(3) test rewards (see below), and Donately supports them natively.
+- **Where the ask goes — right before the download.** The flow is **sign up → $1 gate → download.** After the visitor gives their email, the **"$1 for the arts" gate appears before the download button unlocks** — they must **actively dismiss it** to proceed (it's skippable, but not invisible). Today that step is dead space: sign-up leads straight to a bare *"check your email"* page with just a download link and share buttons ([live example](https://notrealart.com/100-top-street-artists-of-2020-thank-you-b8767b24-5419-11ea-8d77-2e728ce88125/)) — no ask, no follow-up.
+- **The rails already exist — Donately.** We don't build a payment flow. Set up **a separate Donately campaign per lead magnet** and embed its one-time/recurring widget at the gate — **defaulting the ask to $1**, with one-tap options to give more or give **monthly**. Donately's own pages are ugly, but its widgets are strong and embeddable anywhere, so we use *our* pages and *their* rails.
+- **Non-donors become a campaign, not a loss.** Anyone who signs up but dismisses the gift enters an **ActiveCampaign follow-up sequence** — *"if you enjoyed 100 Top Street Artists, chip in a dollar for the arts"* — a series of reminders and nudges until they convert, **one series per magnet**. **Recurring gifts are especially valuable:** they compound the *breadth* of small donors the 501(c)(3) test rewards (see below), and Donately supports them natively.
 - **Why swappable matters:**
   - **Reuse what we already own** — no new content required to launch.
   - **A/B which magnet converts** — swap the offer per campaign and measure cost-per-donation by magnet, without rebuilding the donation flow.
@@ -126,7 +127,7 @@ These are the forks to settle together — the paper deliberately leaves them op
 3. **Is the app the magnet, or the delivery?** "Donate $1, install the Arterial app" (app *is* the reward) vs. app as just a nicer wrapper around existing free content.
 4. **Which magnet leads the fall campaign?** One of the proven ebooks (fast) vs. a new "install the app" offer (bigger, slower).
 5. **Delivery for v1** — web PWA (fast, cross-platform) vs. native iOS (heavier; better for retention later).
-6. **Reuse vs. rebuild** — aggregate/link existing podcasts + freebies, or rebuild them inside a new experience.
+6. **Reuse vs. rebuild** — aggregate/link existing ebooks + podcasts + content, or rebuild them inside a new experience.
 7. **What defines success?** Target cost-per-donation from FB/IG ads; is the fall goal donor *breadth* (many $1 gifts) or dollars raised? (The 501c3 logic says breadth.)
 8. **Payment rails & nonprofit approval** — we already have **Donately** (one-time + recurring, embeddable); do we just use it, or add Apple Pay for nonprofits / Stripe / PayPal Giving Fund for a smoother native flow? Confirm Arterial's approval status on each. *(Needs verification.)*
 9. **Is the warm audience actually being built?** Confirm the **Facebook pixel** is live on NotRealArt and that lookalike/retargeting audiences are accruing from Scott's current ads — this materially changes ad economics.
@@ -137,9 +138,13 @@ These are the forks to settle together — the paper deliberately leaves them op
 
 One way to sequence it so the fall campaign ships without betting on a big build:
 
-- **Phase 0 — fall campaign, ships now (web only).** **Refactor the existing ebook-magnet landing pages to be fundraising-first and campaign-associated**, embed a **Donately $1 widget** (one-time + recurring) at the download/thank-you step as a **skippable-but-strong gate**, and add a **follow-up email drip** for skippers. Drive it with **FB/IG ads, retargeting the warm audience** Scott's ads are building. Reuses what's already live (magnets, Donately rails, ad audience); fastest, cheapest, testable this season.
-- **Phase 1 — if Phase 0 converts.** A small aggregated **installable PWA** that bundles podcasts + freebies + radio behind one "Arterial app" install, so the **app itself becomes the magnet** ("donate a dollar, install the app").
+- **Phase 0 — fall campaign, ships now (web only).** **Refactor the ebook-magnet landing pages to be fundraising-first and campaign-associated**, embed a **Donately $1 widget** (default $1, one-time + recurring) as a **skippable-but-strong gate that appears before the download button**, and wire an **ActiveCampaign follow-up sequence** for non-donors. Drive it with **FB/IG ads, retargeting the warm audience** Scott's ads are building. Reuses what's already live (magnets, Donately rails, ActiveCampaign, ad audience); fastest, cheapest, testable this season.
+- **Phase 1 — if Phase 0 converts.** A small aggregated **installable PWA** that bundles podcasts + ebooks + Arterial Radio behind one "Arterial app" install, so the **app itself becomes the magnet** ("donate a dollar, install the app") — giving Arterial Radio the portable listening experience it lacks.
 - **Phase 2 — retention, later.** A **native iOS app** *if* the listening product proves out — background audio, push re-engagement, home-screen habit. Decide against real Phase-1 numbers, not up front.
+
+## Future content — exhibitions as a lead-magnet library
+
+We likely don't *need* new content to launch — but a cheap, mostly-automated path exists to keep the funnel stocked. What if every **First Friday exhibition** (and campaigns like the **250 Public Art Campaign**) became a **downloadable book** — an auto-generated PDF? Each exhibition would become a fresh magnet, building a growing **lead-magnet library** with little manual effort. More magnets → more $1 asks → more donor breadth. Exploratory (not required for Phase 0), but it's a reason the system **compounds** over time. *A thought to discuss.*
 
 ## Next steps
 

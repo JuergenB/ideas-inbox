@@ -132,14 +132,18 @@ footer: ''
 <div style="display: flex; gap: 14px; margin-top: 12px; flex-wrap: wrap;">
   <div class="card" style="flex: 1 1 30%;">
     <div style="font-family:'Outfit'; font-weight:600; font-size:0.8em; color: var(--a); margin-bottom:4px;">Proven lead magnets</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">NRA ebooks — <em>Bomb The Art World</em>, <em>100 Top Street Artists</em> — plus the Freebies library, the Grant, the Conference. Already do email capture.</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;"><strong>100 Top Street Artists</strong> — for <em>art lovers</em>, the broader audience — and <strong>Bomb The Art World</strong>, Scott's book for artists. Both already do email capture.</div>
+  </div>
+  <div class="card" style="flex: 1 1 30%;">
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.8em; color: var(--a); margin-bottom:4px;">Content &amp; audio</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">Not Real Art podcast library · Artsville content · Not Real Art content · Arterial Radio · the <a class="ref" href="https://github.com/JuergenB/ideas-inbox/tree/main/ideas/013-arterial-impact-report">#013 impact report</a>.</div>
   </div>
   <div class="card" style="flex: 1 1 30%;">
     <div style="font-family:'Outfit'; font-weight:600; font-size:0.8em; color: var(--a); margin-bottom:4px;">Donately</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">Owned donation rails — embeddable <strong>one-time + recurring</strong> widgets. Ugly pages, strong widgets.</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">Donation rails — embeddable one-time + recurring widgets, and <strong>a separate campaign per lead magnet</strong>.</div>
   </div>
   <div class="card" style="flex: 1 1 30%;">
-    <div style="font-family:'Outfit'; font-weight:600; font-size:0.8em; color: var(--a); margin-bottom:4px;">Instapage (Optimize)</div>
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.8em; color: var(--blue); margin-bottom:4px;">Instapage (Optimize)</div>
     <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">Ads-first page builder — A/B, dynamic text, ad→page mapping, custom subdomain. <strong>Free to us at our tier.</strong></div>
   </div>
   <div class="card" style="flex: 1 1 30%;">
@@ -147,12 +151,8 @@ footer: ''
     <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">Scott's live ads should be building lookalike + retargeting audiences on the NRA pixel. <em>Warm traffic. (verify)</em></div>
   </div>
   <div class="card" style="flex: 1 1 30%;">
-    <div style="font-family:'Outfit'; font-weight:600; font-size:0.8em; color: var(--blue); margin-bottom:4px;">Content + audio</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">Not Real Art podcast library, Artsville programming, Arterial Radio, the <a class="ref" href="https://github.com/JuergenB/ideas-inbox/tree/main/ideas/013-arterial-impact-report">#013 impact report</a>.</div>
-  </div>
-  <div class="card" style="flex: 1 1 30%;">
-    <div style="font-family:'Outfit'; font-weight:600; font-size:0.8em; color: var(--blue); margin-bottom:4px;">Email channel</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">Curated.co — the existing NRA newsletter audience for follow-up + re-engagement.</div>
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.8em; color: var(--blue); margin-bottom:4px;">ActiveCampaign</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.55;">Automated <strong>follow-up + nudge sequences</strong> — remind sign-ups who didn't give to donate, per magnet.</div>
   </div>
 </div>
 
@@ -172,6 +172,7 @@ footer: ''
   <div class="card" style="flex: 1;">
     <div class="kicker" style="color: var(--g);">Where it gets interesting</div>
     <div style="font-size: 0.78em; color: var(--body); line-height: 1.7;">The gap isn't the <em>content</em> — it's <strong>delivery</strong>. An installable app gives the audio a portable, anywhere listening experience it doesn't have. <em>"Donate a dollar, install the Arterial app, take it with you"</em> makes the <strong>app itself the magnet</strong>.</div>
+    <div style="margin-top: 10px; font-size: 0.72em; color: var(--y);">⚑ Open question for us: do we launch <strong>Arterial Radio as its own iOS app?</strong></div>
   </div>
 </div>
 
@@ -186,18 +187,18 @@ footer: ''
 # An ads-first landing system
 
 <div style="display: flex; gap: 8px; margin-top: 14px; align-items: stretch;">
-  <div class="card" style="flex: 1; text-align: center;"><div style="font-family:'Outfit'; font-weight:600; font-size:0.62em; color: var(--blue);">FB / IG AD</div><div style="font-size:0.62em; color: var(--body); margin-top:6px;">Retarget the warm audience</div></div>
+  <div class="card" style="flex: 1; text-align: center;"><div style="font-family:'Outfit'; font-weight:600; font-size:0.6em; color: var(--blue);">FB / IG AD</div><div style="font-size:0.6em; color: var(--body); margin-top:6px;">Retarget the warm audience</div></div>
   <div style="display:flex; align-items:center; color: var(--a); font-weight:700;">→</div>
-  <div class="card" style="flex: 1.1; text-align: center;"><div style="font-family:'Outfit'; font-weight:600; font-size:0.62em; color: var(--a);">LANDING PAGE</div><div style="font-size:0.62em; color: var(--body); margin-top:6px;"><strong>Swappable magnet</strong> — any owned ebook / offer</div></div>
+  <div class="card" style="flex: 1.1; text-align: center;"><div style="font-family:'Outfit'; font-weight:600; font-size:0.6em; color: var(--a);">SIGN UP</div><div style="font-size:0.6em; color: var(--body); margin-top:6px;">Email for the <strong>swappable magnet</strong></div></div>
+  <div style="display:flex; align-items:center; color: var(--g); font-weight:700;">→</div>
+  <div class="card" style="flex: 1.2; text-align: center; border-color: var(--g);"><div style="font-family:'Outfit'; font-weight:600; font-size:0.6em; color: var(--g);">$1 GATE</div><div style="font-size:0.6em; color: var(--body); margin-top:6px;">Skippable — but you <strong>actively dismiss</strong> it to reach the button</div></div>
   <div style="display:flex; align-items:center; color: var(--a); font-weight:700;">→</div>
-  <div class="card" style="flex: 1; text-align: center;"><div style="font-family:'Outfit'; font-weight:600; font-size:0.62em; color: var(--a);">FREE DOWNLOAD</div><div style="font-size:0.62em; color: var(--body); margin-top:6px;">Deliver value first</div></div>
-  <div style="display:flex; align-items:center; color: var(--a); font-weight:700;">→</div>
-  <div class="card" style="flex: 1.1; text-align: center; border-color: var(--g);"><div style="font-family:'Outfit'; font-weight:600; font-size:0.62em; color: var(--g);">$1 GATE</div><div style="font-size:0.62em; color: var(--body); margin-top:6px;">Skippable ask on the thank-you page</div></div>
+  <div class="card" style="flex: 1; text-align: center;"><div style="font-family:'Outfit'; font-weight:600; font-size:0.6em; color: var(--a);">FREE DOWNLOAD</div><div style="font-size:0.6em; color: var(--body); margin-top:6px;">Value delivered either way</div></div>
 </div>
 
 <div style="display:flex; gap:20px; margin-top:18px;">
-  <div style="flex:1; font-size: 0.74em; color: var(--body); line-height: 1.6;"><strong>One funnel, many magnets.</strong> The "$1 for the arts" onboarding stays constant; the magnet behind it swaps per campaign — so we A/B which offer converts and reuse the same donation flow everywhere.</div>
-  <div style="flex:1; font-size: 0.74em; color: var(--body); line-height: 1.6;"><strong>We already run this pattern — minus the ask.</strong> The magnets already capture email; today's thank-you page is dead space. Skippers roll into a <strong>follow-up email drip</strong> until they give.</div>
+  <div style="flex:1; font-size: 0.74em; color: var(--body); line-height: 1.6;"><strong>One funnel, many magnets.</strong> The "$1 for the arts" gate stays constant; the magnet behind it swaps per campaign — so we A/B which offer converts and reuse the same donation flow everywhere.</div>
+  <div style="flex:1; font-size: 0.74em; color: var(--body); line-height: 1.6;"><strong>Non-donors become a campaign.</strong> Sign up but dismiss the gift? An <strong>ActiveCampaign</strong> nudge series follows up — <em>"if you enjoyed 100 Top Street Artists, chip in a dollar"</em> — for every magnet, until they give.</div>
 </div>
 
 ---
@@ -229,23 +230,24 @@ footer: ''
 
 # Many $1 gifts beat a few big ones
 
-<div style="display: flex; gap: 22px; margin-top: 14px; align-items: stretch;">
+<div style="display: flex; gap: 22px; margin-top: 34px; align-items: stretch;">
   <div style="flex: 1.1;">
-    <div style="display:flex; align-items:flex-end; gap: 20px; height: 190px; padding: 0 8px;">
+    <div style="display:flex; align-items:flex-end; gap: 20px; height: 150px; padding: 0 8px;">
       <div style="flex:1; text-align:center;">
-        <div style="background: linear-gradient(180deg, var(--g), #16803f); height: 165px; border-radius: 8px 8px 0 0; display:flex; align-items:flex-start; justify-content:center; padding-top:8px; font-family:'Outfit'; font-weight:700; font-size:0.7em; color: var(--bg);">50%</div>
+        <div style="background: linear-gradient(180deg, var(--g), #16803f); height: 130px; border-radius: 8px 8px 0 0; display:flex; align-items:flex-start; justify-content:center; padding-top:8px; font-family:'Outfit'; font-weight:700; font-size:0.7em; color: var(--bg);">50%</div>
         <div style="font-size:0.6em; color: var(--body); margin-top:8px;"><strong>500 donors × $1</strong><br>passes ✓</div>
       </div>
       <div style="flex:1; text-align:center;">
-        <div style="background: linear-gradient(180deg, var(--r), #7f1d1d); height: 20px; border-radius: 6px 6px 0 0; display:flex; align-items:flex-start; justify-content:center; padding-top:3px; font-family:'Outfit'; font-weight:700; font-size:0.55em; color: var(--t);">6%</div>
+        <div style="background: linear-gradient(180deg, var(--r), #7f1d1d); height: 17px; border-radius: 6px 6px 0 0; display:flex; align-items:flex-start; justify-content:center; padding-top:2px; font-family:'Outfit'; font-weight:700; font-size:0.5em; color: var(--t);">6%</div>
         <div style="font-size:0.6em; color: var(--body); margin-top:8px;"><strong>3 large donors</strong><br>fails ✗</div>
       </div>
     </div>
-    <div style="font-size:0.55em; color: var(--m); text-align:center; margin-top:6px;">Public-support ratio on the same $1M raised. Dashed line = 33⅓% pass threshold.</div>
+    <div style="font-size:0.55em; color: var(--m); text-align:center; margin-top:10px;">Public-support ratio on the same $1M raised — vs the 33⅓% pass threshold.</div>
   </div>
   <div class="card" style="flex: 1;">
-    <div style="font-size: 0.76em; color: var(--body); line-height: 1.7;">The IRS caps any single private donor at <strong>2% of total support</strong> — so <strong>breadth, not dollars, protects public-charity status</strong>. Founder self-funding actually <em>hurts</em> the ratio. A low-friction $1 ask is the most efficient breadth engine there is — and a <strong>voluntary gift</strong> avoids the quid-pro-quo of paid access.</div>
-    <div style="font-size: 0.56em; color: var(--m); margin-top: 12px;">Source: Arterial 501(c)(3) public-support research — <a class="ref" href="https://github.com/JuergenB/ideas-inbox/blob/main/ideas/013-arterial-impact-report/research/501c3-public-support-fundraising.md">research file →</a></div>
+    <div style="font-size: 0.74em; color: var(--body); line-height: 1.65;">The IRS caps any single private donor at <strong>2% of total support</strong> — so <strong>breadth, not dollars, protects public-charity status</strong>. Founder self-funding actually <em>hurts</em> the ratio. A low-friction $1 ask is the most efficient breadth engine there is — and a <strong>voluntary gift</strong> avoids the quid-pro-quo of paid access.</div>
+    <div style="font-size: 0.66em; color: var(--body); margin-top: 12px;">Donately defaults the ask to <strong>$1</strong> — with one-tap options to give more, or give <strong>monthly</strong>.</div>
+    <div style="font-size: 0.54em; color: var(--m); margin-top: 10px;">Source: Arterial 501(c)(3) public-support research — <a class="ref" href="https://github.com/JuergenB/ideas-inbox/blob/main/ideas/013-arterial-impact-report/research/501c3-public-support-fundraising.md">research file →</a></div>
   </div>
 </div>
 
@@ -257,18 +259,22 @@ footer: ''
 
 # The stack we already own
 
-<div style="display: flex; gap: 14px; margin-top: 14px;">
-  <div class="card" style="flex: 1;">
-    <div style="font-family:'Outfit'; font-weight:600; font-size:0.78em; color: var(--a); margin-bottom:6px;">Instapage (Optimize)</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.6;">Refactor magnet pages to be <strong>fundraising-first + campaign-matched</strong>. A/B + dynamic text + ad→page mapping included. Publish to <strong>give.arterial.org</strong> (subdomain, auto-SSL). <em>Don't upgrade to Convert.</em></div>
+<div style="display: flex; gap: 12px; margin-top: 14px;">
+  <div class="card" style="flex: 1; padding: 16px 18px;">
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.72em; color: var(--a); margin-bottom:6px;">Instapage (Optimize)</div>
+    <div style="font-size: 0.62em; color: var(--body); line-height: 1.55;">Refactor magnet pages to be <strong>fundraising-first + campaign-matched</strong>. A/B + dynamic text + ad→page mapping. Publish to <strong>give.arterial.org</strong>. <em>Don't upgrade to Convert.</em></div>
   </div>
-  <div class="card" style="flex: 1;">
-    <div style="font-family:'Outfit'; font-weight:600; font-size:0.78em; color: var(--a); margin-bottom:6px;">Donately widget</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.6;">Embed the one-time / <strong>recurring</strong> $1 widget on the thank-you page. Track the gift via the <strong>Meta pixel + redirect</strong> (embeds don't hit Instapage's native goals).</div>
+  <div class="card" style="flex: 1; padding: 16px 18px;">
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.72em; color: var(--a); margin-bottom:6px;">Donately</div>
+    <div style="font-size: 0.62em; color: var(--body); line-height: 1.55;">A <strong>campaign per magnet</strong>; embed the one-time / <strong>recurring</strong> $1 widget at the gate. Track gifts via the <strong>Meta pixel + redirect</strong>.</div>
   </div>
-  <div class="card" style="flex: 1;">
-    <div style="font-family:'Outfit'; font-weight:600; font-size:0.78em; color: var(--blue); margin-bottom:6px;">Ads + hosting</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.6;"><strong>Retarget the warm FB audience</strong> for a better cost-per-donation. Everything lives on <strong>arterial.org</strong> — the registered 501(c)(3) — for donor trust and receipt clarity.</div>
+  <div class="card" style="flex: 1; padding: 16px 18px;">
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.72em; color: var(--blue); margin-bottom:6px;">ActiveCampaign</div>
+    <div style="font-size: 0.62em; color: var(--body); line-height: 1.55;">Automated <strong>follow-up sequences</strong> nudge sign-ups who didn't give to donate — one series per lead magnet.</div>
+  </div>
+  <div class="card" style="flex: 1; padding: 16px 18px;">
+    <div style="font-family:'Outfit'; font-weight:600; font-size:0.72em; color: var(--blue); margin-bottom:6px;">Ads + hosting</div>
+    <div style="font-size: 0.62em; color: var(--body); line-height: 1.55;"><strong>Retarget the warm FB audience</strong> for better cost-per-donation. Everything lives on <strong>arterial.org</strong> — the registered 501(c)(3).</div>
   </div>
 </div>
 
@@ -311,13 +317,32 @@ footer: ''
   </div>
   <div class="card" style="flex: 1;">
     <div style="font-family:'Outfit'; font-weight:700; font-size:0.62em; color: var(--a); letter-spacing:0.1em;">PHASE 1 · IF IT CONVERTS</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.6; margin-top:8px;">An installable <strong>PWA</strong> bundling podcasts + freebies + radio — the <strong>app itself becomes the magnet</strong>: portable, anywhere listening.</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.6; margin-top:8px;">An installable <strong>PWA</strong> bundling podcasts + ebooks + Arterial Radio — the <strong>app itself becomes the magnet</strong>: portable, anywhere listening.</div>
   </div>
   <div class="card" style="flex: 1;">
     <div style="font-family:'Outfit'; font-weight:700; font-size:0.62em; color: var(--blue); letter-spacing:0.1em;">PHASE 2 · LATER</div>
     <div style="font-size: 0.68em; color: var(--body); line-height: 1.6; margin-top:8px;">A <strong>native iOS app</strong> if the listening product proves out — decided against real Phase-1 numbers, not up front.</div>
   </div>
 </div>
+
+---
+
+<!-- _class: bg-glow-gold -->
+
+### A thought to discuss — new content, mostly automated
+
+# Turn exhibitions into lead magnets
+
+<div style="display:flex; gap:20px; margin-top:16px;">
+  <div class="card" style="flex:1;">
+    <div style="font-size: 0.8em; color: var(--body); line-height: 1.7;">We likely don't <em>need</em> new content — but we could make it cheaply. What if every <strong>First Friday exhibition</strong> (and campaigns like the <strong>250 Public Art Campaign</strong>) became a <strong>downloadable book</strong> — an auto-generated PDF?</div>
+  </div>
+  <div class="card" style="flex:1;">
+    <div style="font-size: 0.8em; color: var(--body); line-height: 1.7;">Each exhibition becomes a fresh magnet — a growing <strong>lead-magnet library</strong> that keeps the ads-first funnel stocked with new offers, with little manual effort. More magnets → more $1 asks → more donor breadth.</div>
+  </div>
+</div>
+
+<div style="margin-top: 18px; font-size: 0.66em; color: var(--m);">Exploratory — not required for Phase 0, but a reason the system <strong>compounds</strong> over time.</div>
 
 ---
 
