@@ -203,6 +203,29 @@ footer: ''
 
 ---
 
+<!-- _class: bg-dots -->
+
+### A second surface — to discuss
+
+# Donation-gated content on Not Real Art
+
+<div style="display: flex; gap: 8px; margin-top: 14px; align-items: stretch;">
+  <div class="card" style="flex: 1; text-align: center;"><div style="font-family:'Outfit'; font-weight:600; font-size:0.6em; color: var(--blue);">READER</div><div style="font-size:0.6em; color: var(--body); margin-top:6px;">Opens an NRA article</div></div>
+  <div style="display:flex; align-items:center; color: var(--a); font-weight:700;">→</div>
+  <div class="card" style="flex: 1.15; text-align: center;"><div style="font-family:'Outfit'; font-weight:600; font-size:0.6em; color: var(--a);">⅓ IN</div><div style="font-size:0.6em; color: var(--body); margin-top:6px;">A <strong>dismissible interrupt</strong> stops the scroll (WordPress plugin)</div></div>
+  <div style="display:flex; align-items:center; color: var(--g); font-weight:700;">→</div>
+  <div class="card" style="flex: 1.25; text-align: center; border-color: var(--g);"><div style="font-family:'Outfit'; font-weight:600; font-size:0.6em; color: var(--g);">THE ASK</div><div style="font-size:0.6em; color: var(--body); margin-top:6px;">"Support the arts — give <strong>$1</strong>. Not now? <strong>At least sign up by email.</strong>"</div></div>
+  <div style="display:flex; align-items:center; color: var(--a); font-weight:700;">→</div>
+  <div class="card" style="flex: 1; text-align: center;"><div style="font-family:'Outfit'; font-weight:600; font-size:0.6em; color: var(--a);">KEEP READING</div><div style="font-size:0.6em; color: var(--body); margin-top:6px;">Dismiss and finish — content stays free</div></div>
+</div>
+
+<div style="display:flex; gap:20px; margin-top:18px;">
+  <div style="flex:1; font-size: 0.72em; color: var(--body); line-height: 1.6;"><strong>Not a paywall — dismissible by design.</strong> We set <a class="ref" href="https://github.com/JuergenB/ideas-inbox/tree/main/ideas/008-paywall-viability-notrealart">#008</a> aside because it was framed as <em>requiring payment to continue</em>. Reframed as a dismissible plea, the article stays free — and the ask <strong>ladders down: a dollar, or at minimum an email signup.</strong></div>
+  <div style="flex:1; font-size: 0.72em; color: var(--body); line-height: 1.6;"><strong>Campaign-only.</strong> The plugin runs <strong>only during the fundraising campaign</strong>, then switches off — no permanent friction on the reading experience. <span style="color: var(--y);">⚑ Open question: does interrupting readers cost more goodwill than it raises?</span></div>
+</div>
+
+---
+
 <!-- _class: bg-glow-gold -->
 
 ### The load-bearing design fork

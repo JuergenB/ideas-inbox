@@ -84,6 +84,16 @@ One donation funnel, many magnets:
 
 *(The definitive lead-magnet inventory is Scott/Juergen's call — this paper lists candidates, it does not fix the set.)*
 
+## A second surface — donation-gated content on Not Real Art (exploratory)
+
+The ads-first landing funnel isn't the only place the "$1 for the arts" ask could live. A second surface — **for discussion, not a recommendation** — is a **dismissible donation interrupt on Not Real Art articles**, via a WordPress plugin:
+
+- A reader opens an NRA article; **about a third of the way in, a dismissible interrupt stops the scroll** with the fundraising plea. They **dismiss it to keep reading** — the content stays free.
+- **This is not the paywall we set aside in [Idea 008](../008-paywall-viability-notrealart/).** That idea was dismissed because it was framed as *requiring payment/subscription to continue*. Reframed as a **dismissible plea, not a wall**, it keeps the reading experience open.
+- **The ask ladders down:** support the arts → give **$1** → *if not even a dollar, at least sign up by email* (an email/subscription widget as the minimum ask).
+- **Campaign-only — important.** The plugin runs **only during the fundraising campaign**, then switches off. No permanent friction on the reading experience.
+- **Honest caution:** interrupting readers carries a goodwill cost — the exact concern [Idea 008](../008-paywall-viability-notrealart/) raised. Whether the donations outweigh the disruption is the open question, which is why this stays *a thought to discuss*, not a recommendation.
+
 ## Why it's defensible — the 501(c)(3) breadth argument
 
 This is the load-bearing part, and it comes straight from Arterial's own tax research ([501c3-public-support-fundraising.md](../013-arterial-impact-report/research/501c3-public-support-fundraising.md)):
