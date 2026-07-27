@@ -2,6 +2,8 @@
 
 Cross-project ideas inbox for **Arterial**, **Not Real Art**, **Artsville USA**, and **Polymash** initiatives. This repo captures, researches, and evaluates new ideas before they become their own projects.
 
+**This is the public archive.** There is also a private counterpart where work still in development lives, and where new ideas now start by default. The reason is simple: publishing is one-way. Once something is pushed to a public repo it's in the history, in any clone, and in caches — you can delete it from the tree, but you can't un-publish it. So the safe default at creation time is private, and moving an idea out here is a deliberate decision made once the work is ready to be read by anyone. Everything already in this repo stays exactly where it is; every link ever shared keeps working.
+
 ## New here? What this actually is
 
 If this looks like a "presentation archive" with a clunky interface, this 5-minute deck reframes it — GitHub is the world's software-development platform, and our ideas live here so they're preserved, versioned, and ready to hand off to any developer the moment one graduates into real software.

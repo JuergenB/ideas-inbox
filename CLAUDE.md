@@ -13,6 +13,22 @@ The global rule ("never commit/push without explicit ask") is overridden here. *
 - If the change is risky (history rewrite, force-push, branch deletion, dropping `origin/main` work), DO NOT auto-push. Ask first. Reversibility check still applies.
 - Trigger a fresh Vercel deploy after pushing deck HTML changes — `vercel --prod --yes` from the repo root. The GitHub→Vercel auto-deploy is unreliable here (last-known: doesn't fire on push).
 
+## Two Archives — Which Goes Where
+
+There are two idea archives. **New ideas start in [`ideas-studio`](https://github.com/JuergenB/ideas-studio) (private).** This repo (`ideas-inbox`, public) is the **publication surface** — it holds ideas that were deliberately promoted to public. It is not the place to draft something new.
+
+**Why the default is private:** public → private is not a real operation. Once a folder is pushed here it is in the history, in every clone, in GitHub's caches, and possibly in a search index — deleting it later removes it from the tree, not from the world. Private → public is trivial (copy the folder, commit). The asymmetry is one-directional, so the decision has to be made *at creation time*, and the only safe default is private. Promotion outward is a deliberate, one-way act.
+
+**How to apply:**
+- **Creating a new idea?** It belongs in `ideas-studio`. Don't scaffold it here "and we'll decide later" — there is no later.
+- **Promoting an idea to public:** copy the folder from `ideas-studio` into `ideas/` here, commit, add the row to the **Current Ideas** table in the root README, republish the deck so the hosted URLs resolve from this repo. Then treat it as irreversible — assume anything published here has been read.
+- **The 14 existing ideas stay.** Do NOT migrate them to `ideas-studio`. Every link already shared points at `github.com/JuergenB/ideas-inbox/tree/main/ideas/...`; flipping them breaks all of it for no gain. They were already public before the split.
+- **Anything with a named third party's commercial position, an unreleased client decision, or a compensation question** starts private and mostly stays private.
+
+**`_private/` is gitignored HERE and that is correct.** `.gitignore` carries `ideas/**/_private/` and `ideas/**/*.private.md` — in a public repo those must never be tracked. **In `ideas-studio` the same folders are deliberately TRACKED** (that is the point of a private repo: private *and versioned and backed up*). The two rules look contradictory side by side and they are not — don't "fix" either one to match the other. `_private/` is never rendered or published in either repo.
+
+Rationale of record, with the full decision table and constraints: **[JuergenB/ideas-studio#1](https://github.com/JuergenB/ideas-studio/issues/1)**. Read it before changing anything about how the two repos relate.
+
 ## Idea Folder Structure
 
 Each idea folder MUST keep its root clean so the README.md is immediately visible on GitHub. Only README.md should be a file at the root — everything else goes into organized subfolders.
@@ -98,6 +114,8 @@ When an idea's deck quotes statistics, cites studies, references survey results,
 Every mention of a GitHub issue, PR, repository, commit, or external resource in a deck MUST be a real `<a href>` link, not bare text. Same rule we follow in prose globally — "GitHub epic #181" is a mistake; `<a href="https://github.com/JuergenB/polywiz-app/issues/181">#181</a>` is correct. Marp renders these clickable in the HTML deck and PDF.
 
 This applies to closing slides ("Open the GitHub epic — issue #181"), inline references mid-deck, and any link to research files in the same repo. Bare `#NNN` in prose on a slide reads to a colleague as "I didn't bother to wire it up."
+
+> ⚠️ **CAVEAT — this rule holds for decks published from THIS repo only.** `ideas-inbox` is public, so a `github.com/JuergenB/ideas-inbox/...` link resolves for any recipient and the anchor is worth wiring up. **A deck published from the private [`ideas-studio`](https://github.com/JuergenB/ideas-studio) must never link to `github.com/JuergenB/ideas-studio`** — every such link 404s for the reader, and a dead link on a "here's the proof" slide is worse than no link at all. Those decks link to the **hosted rendered research on the Vercel domain** instead (deck, PDF, and rendered research documents served from that repo's own Vercel project). Same applies to the Sources slide's "All research lives in `research/`" line below: from `ideas-studio` it points at the hosted research index, not at GitHub. External links (studies, vendor docs, publications) are unaffected — they stay real anchors everywhere.
 
 ### Ask the user first — every deck, every time
 
