@@ -28,12 +28,6 @@ Audit trail for every external claim, statistic, or named capability used in the
 - **Source:** General nonprofit-law principle; consistent with [Idea 008](../../008-paywall-viability-notrealart/) analysis. **Flagged in deck as requiring nonprofit counsel / CPA review** — not asserted as settled.
 - **Used in deck:** the gate-hardness fork slide + trust/compliance note.
 
-## Apple Pay is 0% for approved nonprofits; charitable donations may not use In-App Purchase
-
-- **Claim:** Native-app donations must route through Apple Pay (or approved third party), not IAP; Apple takes 0% on approved-nonprofit donations — neutralizing the "Apple takes 30%" objection.
-- **Status:** **UNVERIFIED — current understanding, to confirm** against Apple's App Review Guidelines (§3.2.1) and Apple Pay nonprofit onboarding before finalizing the delivery-model decision.
-- **Used in deck:** delivery-model (PWA vs native) slide, marked needs-verification.
-
 ## Instapage Optimize includes A/B testing + dynamic text replacement; AdMap maps ads→pages; custom subdomain via CNAME
 
 - **Claim:** Optimize tier includes A/B + DTR; AdMap gives visual ad-to-page mapping; pages publish to a custom subdomain (e.g. `give.arterial.org`) via CNAME → `secure.pageserve.co` with auto-SSL; native Meta pixel supported.

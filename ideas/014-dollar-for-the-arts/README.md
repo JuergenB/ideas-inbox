@@ -37,8 +37,8 @@ An honest inventory of the assets that could feed this (confirm the full set wit
 |---|---|---|
 | **100 Top Street Artists** (ebook) | Proven email-capture magnet aimed at **art lovers** — the broader audience | **Strongest, ready today** — lead the fall campaign with it |
 | **Bomb The Art World** (ebook) | [Scott's book](https://notrealart.com/bomb-the-art-world/) for **artists** — "10 Business Strategies + Tactics" | Proven magnet, but a narrower (artist) audience |
-| **Content & audio** | Not Real Art podcast library · Artsville content · Not Real Art content · Arterial Radio | Mostly free already — so the magnet is *curation / an app*, not the audio itself |
-| **Arterial Radio** | Today: **sequenced podcast episodes** — no listening app; only subscribe or play on a website | Weak *as-is* (not truly mobile); strong **if given a portable app** — see the honest take below |
+| **Content & audio** | Not Real Art podcast library · Artsville content · Not Real Art content · Arterial Radio | Mostly free already — so the magnet is *curation*, not the audio itself |
+| **Arterial Radio** | Today: **sequenced podcast episodes** — no listening app; only subscribe or play on a website | **Weak as a magnet** — free audio, no scarcity, not truly mobile — see the honest take below |
 | **Donately** | Owned donation rails — embeddable one-time / recurring widgets, and **a separate campaign per magnet** | **The rails.** Default the ask to $1; embed at the gate — near-zero payment build |
 | **Instapage (Optimize)** | Owned page builder — A/B + dynamic text + ad→page mapping; native Meta pixel; custom subdomain | **The page platform** (decided) — free-to-us, best-shaped; no upgrade needed |
 | **Facebook ad audience / pixel** | Scott's **live FB ads** should be accruing lookalike + retargeting audiences *(verify)* | **Warm traffic** — better cost-per-donation than cold, more defensible spend |
@@ -51,9 +51,7 @@ Scott loves Arterial Radio, and there's a big-swing dream of **selling it to Sir
 
 Be clear about what it actually is **today: a collection of sequenced podcast episodes** — with **no real delivery mechanism or listening app.** People can subscribe, or play it on a website, but that's **not truly mobile**: there's no good way to listen in the gym, in the car, or on the go. And "online radio stations" broadly get little listening now — consumption has moved to **on-demand podcasts**, which Arterial already has, already free.
 
-So the gap isn't the *content* — it's the **delivery**. That's what makes the app idea real rather than redundant: an **installable app gives Arterial Radio the portable, gym/car/anywhere listening experience it doesn't have today.** Framed that way, *"donate a dollar for the arts, install the Arterial app, take it with you"* makes the **app itself the lead magnet** — a genuine value-add, not just a wrapper around free files.
-
-**Open question for us:** do we undertake launching **Arterial Radio as its own iOS app**? That's a distinct decision (effort, exposure, whether the listening product justifies it) — see the delivery-model section and Open Questions.
+**What that means for this campaign:** as a fundraising magnet, Arterial Radio is the **weakest asset we own** — free audio, no scarcity, no delivery advantage over the podcasts that sit next to it. The **proven ebooks lead the fall campaign.** Arterial Radio stays a free content asset behind the funnel, not its front door.
 
 ## The concept — a flexible landing system, not a one-off page
 
@@ -106,22 +104,6 @@ So "500 people at $1" isn't a cute hook — it is the **cheapest, most scalable 
 
 > **Legal note:** the donation-receipt language, "no goods or services provided" acknowledgments, and quid-pro-quo boundaries all **require review by nonprofit counsel / a CPA** before launch. This paper flags them; it does not settle them.
 
-## Delivery model — web PWA vs. native iOS (open decision)
-
-The donation research also puts a **native iOS app back on the table**. Apple **prohibits charitable donations via In-App Purchase** and instead routes them through **Apple Pay, which is 0% for approved nonprofits** — so the "Apple takes 30%" objection does *not* apply here. That neutralizes payment economics as a deciding factor. The decision turns on what actually differs:
-
-| Factor | Web PWA | Native iOS |
-|---|---|---|
-| **Payment cut** | 0% via Apple Pay | 0% via Apple Pay (not IAP) — **a wash** |
-| **Ad-funnel friction** | Ad → one tap into onboarding ✅ | Ad → App Store → install → open → onboard ❌ |
-| **Build & maintenance** | One codebase, no review, ships in weeks; iOS + Android + desktop ✅ | Swift/React-Native, dev account, review cycles, iOS-only unless Android also built ❌ |
-| **Exposure** | No review gate | App Store scrutiny of "free app that immediately asks for money" ⚠️ — but adds legitimacy, native audio, push ✅ |
-| **Time-to-launch (fall)** | Weeks ✅ | + review + platform time ❌ |
-
-**Recommended framing (proposal, not decision):** **PWA as the fall-campaign acquisition front-end** — speed, funnel, and cross-platform reach win, and payment economics are equal. **Native iOS as a phase-2 option** *if* the goal shifts from "donations captured this fall" to "a retained daily listening product" (background audio, push re-engagement, home-screen habit) — the same acquisition-vs-retention split that separates this idea from [Idea 013](../013-arterial-impact-report/).
-
-> **Verify before finalizing:** the Apple Pay / no-IAP / App-Store-review claims above are current understanding, to be confirmed against Apple's App Review Guidelines (§3.2.1) and Apple Pay nonprofit onboarding.
-
 ## How it fits the other ideas
 
 - **[Idea 013 — Impact Report]** retains donors with an annual story; **014 acquires them**. Together they are the two halves of the donor-breadth loop the 501(c)(3) test rewards.
@@ -132,25 +114,22 @@ The donation research also puts a **native iOS app back on the table**. Apple **
 
 These are the forks to settle together — the paper deliberately leaves them open:
 
-1. **Landing-page-only, or phased?** Is the fall goal "capture donations now using magnets we already have," or "launch an app product"? (A phased path is sketched below.)
-2. **How hard is the gate?** Skippable-but-strong voluntary ask (keeps the dollar a clean gift) vs. hard "donate to download" (a purchase — quid-pro-quo). *Counsel's call, not ours.*
-3. **Is the app the magnet, or the delivery?** "Donate $1, install the Arterial app" (app *is* the reward) vs. app as just a nicer wrapper around existing free content.
-4. **Which magnet leads the fall campaign?** One of the proven ebooks (fast) vs. a new "install the app" offer (bigger, slower).
-5. **Delivery for v1** — web PWA (fast, cross-platform) vs. native iOS (heavier; better for retention later).
-6. **Reuse vs. rebuild** — aggregate/link existing ebooks + podcasts + content, or rebuild them inside a new experience.
-7. **What defines success?** Target cost-per-donation from FB/IG ads; is the fall goal donor *breadth* (many $1 gifts) or dollars raised? (The 501c3 logic says breadth.)
-8. **Payment rails & nonprofit approval** — we already have **Donately** (one-time + recurring, embeddable); do we just use it, or add Apple Pay for nonprofits / Stripe / PayPal Giving Fund for a smoother native flow? Confirm Arterial's approval status on each. *(Needs verification.)*
-9. **Is the warm audience actually being built?** Confirm the **Facebook pixel** is live on NotRealArt and that lookalike/retargeting audiences are accruing from Scott's current ads — this materially changes ad economics.
-10. **Which page platform? — RESOLVED: Instapage (Optimize).** We have **Instapage Optimize**, which includes **A/B testing + dynamic text replacement** — the exact threshold the [research](research/instapage-fundraising-research.md) set for "use the Instapage you already own." It's free-to-us and best-shaped for an ads-first, message-matched funnel; no upgrade needed, Thrive/Leadpages fall away. *Note:* Optimize covers DTR (headline/CTA message-match) and A/B; **AdMap-driven deep audience personalization and global blocks are Convert-only** — not needed for a $1 funnel, so **do not upgrade to Convert.**
-11. **Where do the campaigns live — arterial.org (the 501c3).** Donations should be associated with the **registered 501(c)(3), Arterial.org**, not notrealart.com — for donor trust, tax-receipt clarity, and public-support attribution. Concretely: publish to a **subdomain like `give.arterial.org`** (CNAME → `secure.pageserve.co`, auto-SSL, works on any Instapage tier) and put the pixel there. Note: **Donately's embedded widget works but its completions won't register in Instapage's native conversion tracking** — track donations via the Meta pixel + thank-you redirect (or Donately's own reporting).
+1. **How hard is the gate?** Skippable-but-strong voluntary ask (keeps the dollar a clean gift) vs. hard "donate to download" (a purchase — quid-pro-quo). *Counsel's call, not ours.*
+2. **Which magnet leads the fall campaign?** 100 Top Street Artists (art lovers, the broader audience) vs. Bomb The Art World (artists, narrower).
+3. **Reuse vs. rebuild** — aggregate/link existing ebooks + podcasts + content, or rebuild them inside a new experience.
+4. **What defines success?** Target cost-per-donation from FB/IG ads; is the fall goal donor *breadth* (many $1 gifts) or dollars raised? (The 501c3 logic says breadth.)
+5. **Payment rails & nonprofit approval** — we already have **Donately** (one-time + recurring, embeddable); do we just use it, or add Apple Pay for nonprofits / Stripe / PayPal Giving Fund for a smoother mobile checkout? Confirm Arterial's approval status on each. *(Needs verification.)*
+6. **Is the warm audience actually being built?** Confirm the **Facebook pixel** is live on NotRealArt and that lookalike/retargeting audiences are accruing from Scott's current ads — this materially changes ad economics.
+7. **Which page platform? — RESOLVED: Instapage (Optimize).** We have **Instapage Optimize**, which includes **A/B testing + dynamic text replacement** — the exact threshold the [research](research/instapage-fundraising-research.md) set for "use the Instapage you already own." It's free-to-us and best-shaped for an ads-first, message-matched funnel; no upgrade needed, Thrive/Leadpages fall away. *Note:* Optimize covers DTR (headline/CTA message-match) and A/B; **AdMap-driven deep audience personalization and global blocks are Convert-only** — not needed for a $1 funnel, so **do not upgrade to Convert.**
+8. **Where do the campaigns live — arterial.org (the 501c3).** Donations should be associated with the **registered 501(c)(3), Arterial.org**, not notrealart.com — for donor trust, tax-receipt clarity, and public-support attribution. Concretely: publish to a **subdomain like `give.arterial.org`** (CNAME → `secure.pageserve.co`, auto-SSL, works on any Instapage tier) and put the pixel there. Note: **Donately's embedded widget works but its completions won't register in Instapage's native conversion tracking** — track donations via the Meta pixel + thank-you redirect (or Donately's own reporting).
 
 ## A possible phased approach
 
 One way to sequence it so the fall campaign ships without betting on a big build:
 
 - **Phase 0 — fall campaign, ships now (web only).** **Refactor the ebook-magnet landing pages to be fundraising-first and campaign-associated**, embed a **Donately $1 widget** (default $1, one-time + recurring) as a **skippable-but-strong gate that appears before the download button**, and wire an **ActiveCampaign follow-up sequence** for non-donors. Drive it with **FB/IG ads, retargeting the warm audience** Scott's ads are building. Reuses what's already live (magnets, Donately rails, ActiveCampaign, ad audience); fastest, cheapest, testable this season.
-- **Phase 1 — if Phase 0 converts.** A small aggregated **installable PWA** that bundles podcasts + ebooks + Arterial Radio behind one "Arterial app" install, so the **app itself becomes the magnet** ("donate a dollar, install the app") — giving Arterial Radio the portable listening experience it lacks.
-- **Phase 2 — retention, later.** A **native iOS app** *if* the listening product proves out — background audio, push re-engagement, home-screen habit. Decide against real Phase-1 numbers, not up front.
+- **Phase 1 — if Phase 0 converts.** **Widen the funnel, not the build.** More magnets — including the auto-generated exhibition books sketched below — each with its own Donately campaign and its own ad audience, so the same proven flow runs across many offers.
+- **Phase 2 — retention, later.** Turn **one-time $1 givers into recurring donors** (Donately supports recurring natively). Recurring gifts compound exactly the donor *breadth* the public-support test rewards, and pair with the [Idea 013](../013-arterial-impact-report/) impact report as the retention half of the loop.
 
 ## Future content — exhibitions as a lead-magnet library
 
@@ -158,10 +137,10 @@ We likely don't *need* new content to launch — but a cheap, mostly-automated p
 
 ## Next steps
 
-- [ ] Align on the **concept and the open questions above** — especially the gate-hardness fork and phased-vs-not.
+- [ ] Align on the **concept and the open questions above** — especially the gate-hardness fork.
 - [ ] Confirm the **lead-magnet inventory** and which magnet leads the fall campaign.
 - [ ] **Legal review** of gate hardness, donation-ask, receipt, and acknowledgment language (nonprofit counsel / CPA).
-- [ ] Decide **Phase 0 scope + delivery model** for the fall.
+- [ ] Decide **Phase 0 scope** for the fall.
 - [ ] On green light: build the discussion deck and a click-through prototype of the onboarding flow.
 
 ## Research

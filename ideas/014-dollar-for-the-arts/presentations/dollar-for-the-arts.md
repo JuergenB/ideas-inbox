@@ -170,9 +170,8 @@ footer: ''
     <div style="font-size: 0.78em; color: var(--body); line-height: 1.7;">A <strong>collection of sequenced podcast episodes</strong> — no dedicated listening app. You subscribe, or play it on a website. <strong>Not truly mobile:</strong> no easy gym, car, or on-the-go listening. Online radio gets little listening now; consumption has moved to on-demand podcasts, which we already have, free.</div>
   </div>
   <div class="card" style="flex: 1;">
-    <div class="kicker" style="color: var(--g);">Where it gets interesting</div>
-    <div style="font-size: 0.78em; color: var(--body); line-height: 1.7;">The gap isn't the <em>content</em> — it's <strong>delivery</strong>. An installable app gives the audio a portable, anywhere listening experience it doesn't have. <em>"Donate a dollar, install the Arterial app, take it with you"</em> makes the <strong>app itself the magnet</strong>.</div>
-    <div style="margin-top: 10px; font-size: 0.72em; color: var(--y);">⚑ Open question for us: do we launch <strong>Arterial Radio as its own iOS app?</strong></div>
+    <div class="kicker" style="color: var(--g);">What that means for the campaign</div>
+    <div style="font-size: 0.78em; color: var(--body); line-height: 1.7;">As a fundraising magnet it's the <strong>weakest asset we own</strong> — free audio, no scarcity, no delivery advantage over the podcasts. The <strong>proven ebooks lead the fall campaign</strong>. Arterial Radio stays a free content asset behind the funnel, not its front door.</div>
   </div>
 </div>
 
@@ -305,28 +304,6 @@ footer: ''
 
 ---
 
-<!-- _class: bg-dots -->
-
-### Delivery model — an open decision
-
-# Web app now, native later?
-
-<div style="margin-top: 10px; font-size: 0.72em;">
-
-| Factor | Web PWA | Native iOS |
-|---|---|---|
-| **Payment cut** | 0% via Apple Pay | 0% via Apple Pay (not IAP) — **a wash** |
-| **Ad-funnel friction** | Ad → one tap into onboarding ✓ | Ad → App Store → install → open ✗ |
-| **Build & maintenance** | One codebase, ships in weeks ✓ | Swift/RN, review cycles, iOS-only ✗ |
-| **Time-to-launch (fall)** | Weeks ✓ | + review + platform time ✗ |
-| **Best at** | **Acquisition** — cheap $1 gifts, fast | **Retention** — background audio, push, habit |
-
-</div>
-
-<div style="margin-top: 12px; font-size: 0.68em; color: var(--body);"><strong>Lean:</strong> web-first for the fall campaign; native iOS as a phase-2 option if the goal becomes a retained listening product. <span style="color: var(--y);">⚑ Apple Pay / no-IAP claims to confirm vs App Review Guidelines §3.2.1.</span></div>
-
----
-
 <!-- _class: bg-glow-orange -->
 
 ### A way to sequence it
@@ -340,11 +317,11 @@ footer: ''
   </div>
   <div class="card" style="flex: 1;">
     <div style="font-family:'Outfit'; font-weight:700; font-size:0.62em; color: var(--a); letter-spacing:0.1em;">PHASE 1 · IF IT CONVERTS</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.6; margin-top:8px;">An installable <strong>PWA</strong> bundling podcasts + ebooks + Arterial Radio — the <strong>app itself becomes the magnet</strong>: portable, anywhere listening.</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.6; margin-top:8px;">Widen the funnel, not the build. <strong>More magnets</strong> — including auto-generated exhibition books — each with its own campaign and audience pairing.</div>
   </div>
   <div class="card" style="flex: 1;">
     <div style="font-family:'Outfit'; font-weight:700; font-size:0.62em; color: var(--blue); letter-spacing:0.1em;">PHASE 2 · LATER</div>
-    <div style="font-size: 0.68em; color: var(--body); line-height: 1.6; margin-top:8px;">A <strong>native iOS app</strong> if the listening product proves out — decided against real Phase-1 numbers, not up front.</div>
+    <div style="font-size: 0.68em; color: var(--body); line-height: 1.6; margin-top:8px;">Turn <strong>one-time $1 givers into recurring donors</strong> — the breadth the public-support test rewards, compounding year over year.</div>
   </div>
 </div>
 
@@ -382,8 +359,8 @@ footer: ''
     • <strong>Gate hardness</strong> — skippable vs hard → <em>counsel's call</em><br>
     • <strong>Which magnet leads</strong> the fall campaign<br>
     • <strong>Verify the FB pixel</strong> / warm audience is building<br>
-    • <strong>App as magnet</strong>, or web content first?<br>
-    • <strong>Reuse vs rebuild</strong> existing content
+    • <strong>Reuse vs rebuild</strong> existing content<br>
+    • <strong>What defines success</strong> — breadth, or dollars raised?
     </div>
   </div>
   <div class="card" style="flex: 1; border-color: #22c55e55;">
@@ -418,8 +395,6 @@ footer: ''
 **Donation-page best practices** (single CTA, message match, $1→$5→$25 ladder, mobile-first, 501(c)(3) trust signals) — Fundraise Up, iDonate, DonorPerfect, RallyUp, 2026-07-11.
 
 **Existing NRA magnets** — <a class="ref" href="https://notrealart.com/bomb-the-art-world/">Bomb The Art World</a>, 100 Top Street Artists (live, 2026-07-11).
-
-**Apple Pay 0% for nonprofits / no IAP for donations** — <span style="color: var(--y);">UNVERIFIED</span>; confirm vs Apple App Review Guidelines §3.2.1.
 
 </div>
 
