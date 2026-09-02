@@ -248,7 +248,7 @@ That is how many of our <strong>5,646</strong> have <strong>ever</strong> had an
   <div class="card" style="flex:1;"><div style="font-size:0.62em; color:#6f6f6f; text-transform:uppercase; letter-spacing:0.1em;">Times he has bounced</div><div style="font-size:2.0em; font-weight:700; margin-top:4px;">0</div></div>
 </div>
 
-<div class="note">He is flagged, so he drops out of every send that filters on the flag - including our last three campaigns. He is not unusual: <strong>61 of the people we exclude read something in the last 90 days.</strong></div>
+<div class="note">He is flagged, so he drops out of every send that filters on the flag - including our last three campaigns. <strong>He is not unusual.</strong> Of the 197 excluded contacts we examined closely, <strong>57 read something in the last 90 days</strong> - nearly three in ten. Not one of them has unsubscribed from this list.</div>
 
 </div>
 
@@ -282,21 +282,35 @@ That is how many of our <strong>5,646</strong> have <strong>ever</strong> had an
 
 <div class="body">
 
-<div class="sub" style="margin-top:18px; font-size:0.98em;">
-Adding 800 people who have not heard from us in a while, all in one send, is how a newsletter lands in spam folders - <strong>even when every address is good</strong>.
+<div class="sub" style="margin-top:20px; font-size:1.05em; max-width:94%;">
+Adding a thousand people who have not heard from us in a while, <strong>all in one send</strong>, is how a newsletter lands in spam folders.
 </div>
 
-<div class="row" style="margin-top:18px;">
-  <div class="card" style="flex:1; border-color:#16a34a30;"><div style="font-size:0.62em; color:var(--g); text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Batch 1 &nbsp;·&nbsp; day 0</div><div style="font-size:1.5em; font-weight:700; margin-top:4px;">~250</div><div style="font-size:0.74em; color:#6f6f6f;">read us in the last 90 days</div></div>
-  <div class="card" style="flex:1;"><div style="font-size:0.62em; color:var(--blue); text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Batch 2 &nbsp;·&nbsp; day 7</div><div style="font-size:1.5em; font-weight:700; margin-top:4px;">~400</div><div style="font-size:0.74em; color:#6f6f6f;">read us within the year</div></div>
-  <div class="card" style="flex:1;"><div style="font-size:0.62em; color:#6f6f6f; text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Batch 3 &nbsp;·&nbsp; day 14</div><div style="font-size:1.5em; font-weight:700; margin-top:4px;">~475</div><div style="font-size:0.74em; color:#6f6f6f;">everyone else not suppressed</div></div>
+<div class="sub" style="margin-top:18px; font-size:1.05em; max-width:94%;">
+That happens <strong>even when every address is good</strong>. Mailbox providers watch for sudden changes in who we write to.
 </div>
 
-<div class="sub" style="margin-top:16px; max-width:100%;">
-A week apart, <strong>most engaged first</strong>. Bounces come back in hours and complaints within a day, so seven days is plenty to see whether a batch landed - and if one goes badly we have only exposed a third of the new names.
+<div class="note">Reach is the prize. Our sending reputation is the thing we cannot buy back.</div>
+
 </div>
 
-<div class="note">Driven by a <strong>Send Batch</strong> field, so the three audiences are built once and any operator can trigger the sequence without asking us.</div>
+---
+
+<!-- _class: bg-green -->
+
+### How we add them safely
+
+# Three batches, a week apart
+
+<div class="body">
+
+<div class="row" style="margin-top:20px;">
+  <div class="card" style="flex:1; border-color:#16a34a40;"><div style="font-size:0.6em; color:var(--g); text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Batch 1 &nbsp;·&nbsp; day 0</div><div style="font-size:1.7em; font-weight:700; margin-top:6px;">~250</div><div style="font-size:0.76em; color:#6f6f6f; margin-top:2px;">read us in the last 90 days</div></div>
+  <div class="card" style="flex:1;"><div style="font-size:0.6em; color:var(--blue); text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Batch 2 &nbsp;·&nbsp; day 7</div><div style="font-size:1.7em; font-weight:700; margin-top:6px;">~400</div><div style="font-size:0.76em; color:#6f6f6f; margin-top:2px;">read us within the year</div></div>
+  <div class="card" style="flex:1;"><div style="font-size:0.6em; color:#6f6f6f; text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Batch 3 &nbsp;·&nbsp; day 14</div><div style="font-size:1.7em; font-weight:700; margin-top:6px;">~475</div><div style="font-size:0.76em; color:#6f6f6f; margin-top:2px;">everyone else not suppressed</div></div>
+</div>
+
+<div class="note g">A <strong>Send Batch</strong> field drives all three, so the audiences are built once and any operator can trigger the sequence without asking us.</div>
 
 </div>
 
