@@ -124,7 +124,7 @@ would step on her toes. Restore this slide when she is in the room.
 
 ### What we actually have
 
-# 11,622 records. 5,646 we can campaign to.
+# The fundraising list is 98% of who we may email
 
 <div class="body">
 
@@ -134,9 +134,9 @@ would step on her toes. Restore this slide when she is in the room.
   <div class="barval">11,622</div>
 </div>
 <div class="barrow">
-  <div class="barlab">Still reachable</div>
-  <div class="bartrack"><div class="barfill" style="width:78%; background:linear-gradient(90deg,#0177c8,#0177c8aa);"></div></div>
-  <div class="barval">9,106</div>
+  <div class="barlab">Allowed to email</div>
+  <div class="bartrack"><div class="barfill" style="width:50%; background:linear-gradient(90deg,#0177c8,#0177c8aa);"></div></div>
+  <div class="barval">5,757</div>
 </div>
 <div class="barrow" style="margin-bottom:0;">
   <div class="barlab">On the fundraising list</div>
@@ -144,11 +144,11 @@ would step on her toes. Restore this slide when she is in the room.
   <div class="barval">5,646</div>
 </div>
 
-<div class="sub" style="margin-top:22px;">
-The 2,516 who dropped out have all <strong>bounced or unsubscribed</strong> over six years of sending. We checked every one: <strong>not a single person was missed by mistake.</strong>
+<div class="sub" style="margin-top:18px; max-width:100%;">
+Of the 5,865 who never made it: <strong>2,516 bounced or unsubscribed everywhere</strong>, and <strong>3,349 opted out of every content list</strong> and now sit on a suppression list. They told us to stop.
 </div>
 
-<div class="note g">The fundraising list was built by consolidating our other lists, and it was done thoroughly. Everyone still outside it is there <strong>on purpose</strong>.</div>
+<div class="note g">Only <strong>111</strong> people are outside the list for any other reason - 25 journalists we keep separate on purpose, and the rest signed up after it was built. <strong>The consolidation was complete.</strong></div>
 
 </div>
 
@@ -286,13 +286,17 @@ That is how many of our <strong>5,646</strong> have <strong>ever</strong> had an
 Adding 800 people who have not heard from us in a while, all in one send, is how a newsletter lands in spam folders - <strong>even when every address is good</strong>.
 </div>
 
-<div class="row" style="margin-top:22px;">
-  <div class="card" style="flex:1;"><div style="font-size:0.82em; color:var(--body);"><strong>1.</strong> Add them in batches</div></div>
-  <div class="card" style="flex:1;"><div style="font-size:0.82em; color:var(--body);"><strong>2.</strong> Most engaged first</div></div>
-  <div class="card" style="flex:1;"><div style="font-size:0.82em; color:var(--body);"><strong>3.</strong> Watch the bounce rate</div></div>
+<div class="row" style="margin-top:18px;">
+  <div class="card" style="flex:1; border-color:#16a34a30;"><div style="font-size:0.62em; color:var(--g); text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Batch 1 &nbsp;·&nbsp; day 0</div><div style="font-size:1.5em; font-weight:700; margin-top:4px;">~250</div><div style="font-size:0.74em; color:#6f6f6f;">read us in the last 90 days</div></div>
+  <div class="card" style="flex:1;"><div style="font-size:0.62em; color:var(--blue); text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Batch 2 &nbsp;·&nbsp; day 7</div><div style="font-size:1.5em; font-weight:700; margin-top:4px;">~400</div><div style="font-size:0.74em; color:#6f6f6f;">read us within the year</div></div>
+  <div class="card" style="flex:1;"><div style="font-size:0.62em; color:#6f6f6f; text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Batch 3 &nbsp;·&nbsp; day 14</div><div style="font-size:1.5em; font-weight:700; margin-top:4px;">~475</div><div style="font-size:0.74em; color:#6f6f6f;">everyone else not suppressed</div></div>
 </div>
 
-<div class="note">Reach is the prize. Our sending reputation is the thing we cannot buy back.</div>
+<div class="sub" style="margin-top:16px; max-width:100%;">
+A week apart, <strong>most engaged first</strong>. Bounces come back in hours and complaints within a day, so seven days is plenty to see whether a batch landed - and if one goes badly we have only exposed a third of the new names.
+</div>
+
+<div class="note">Driven by a <strong>Send Batch</strong> field, so the three audiences are built once and any operator can trigger the sequence without asking us.</div>
 
 </div>
 
