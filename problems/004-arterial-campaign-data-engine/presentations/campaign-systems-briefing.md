@@ -563,6 +563,50 @@ Until this week these facts lived in spreadsheets. We are adding <strong>16 fiel
 
 ---
 
+<!-- _class: bg-green -->
+
+### Built today
+
+# Seventeen new fields, in three groups
+
+<div class="body">
+
+<div class="row" style="margin-top:20px;">
+  <div class="card" style="flex:1;"><div style="font-size:0.62em; color:var(--blue); text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Web &amp; Social</div><div style="font-size:0.82em; color:var(--body); margin-top:8px;">Follower count, when we checked, whether their site is alive.</div><div style="font-size:0.74em; color:#6f6f6f; margin-top:8px;"><strong>Outlives the campaign.</strong></div></div>
+  <div class="card" style="flex:1;"><div style="font-size:0.62em; color:var(--g); text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Engagement &amp; Deliverability</div><div style="font-size:0.82em; color:var(--body); margin-top:8px;">How engaged someone is, and whether we should be emailing them at all.</div><div style="font-size:0.74em; color:#6f6f6f; margin-top:8px;"><strong>Outlives the campaign.</strong></div></div>
+  <div class="card" style="flex:1;"><div style="font-size:0.62em; color:var(--a); text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Fundraising 2026/27</div><div style="font-size:0.82em; color:var(--body); margin-top:8px;">Amplifier tier, where outreach has got to, which send batch.</div><div style="font-size:0.74em; color:#6f6f6f; margin-top:8px;"><strong>Retired when we are done.</strong></div></div>
+</div>
+
+<div class="note g">Grouped by <strong>how long they stay useful</strong>, copying what the account already does: the Arthouse campaign had its own group, and it now sits in "Legacy Fields".</div>
+
+</div>
+
+---
+
+<!-- _class: bg-gold -->
+
+### What it looks like on a record
+
+# Some fields are full. Most are not, on purpose.
+
+<div class="body">
+
+<table style="margin-top:12px;">
+<tr><th style="width:38%">Field</th><th>Why it is filled, or not</th></tr>
+<tr><td>Engagement Score, Band, Last engagement</td><td>✅ Measured from six years of history</td></tr>
+<tr><td>Instagram followers, checked date</td><td>✅ From the sweep</td></tr>
+<tr><td><strong>Mailability</strong></td><td>Empty <strong>on purpose</strong> - we have not agreed who to stop emailing</td></tr>
+<tr><td><strong>Outreach Stage</strong></td><td>Empty <strong>on purpose</strong> - only a person can say "I shared their work"</td></tr>
+<tr><td>Amplifier Tier and Rank</td><td>Empty for staff. We exclude ourselves from the artist ranking</td></tr>
+<tr><td>Instagram Last Post, Website Status</td><td>Not measured yet. Next job</td></tr>
+</table>
+
+<div class="note">An empty field is not a broken field. <strong>Three of them are empty because filling them is a decision, not a calculation.</strong></div>
+
+</div>
+
+---
+
 <!-- _class: bg-blue -->
 
 ### Why that matters to you
