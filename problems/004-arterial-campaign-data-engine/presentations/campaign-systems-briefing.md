@@ -725,18 +725,60 @@ Nobody has agreed to own the celebrate-first step
 
 ---
 
+<!-- _class: bg-gold -->
+
+### Why we stopped at twenty records
+
+# Everything past here needs a decision
+
+<div class="body">
+
+<div class="sub" style="margin-top:18px; max-width:100%; font-size:1.0em;">
+The fields exist and they work. We filled them in for <strong>twenty of our own records</strong> to prove it, and then deliberately stopped.
+</div>
+
+<div class="sub" style="margin-top:16px; max-width:100%; font-size:1.0em;">
+Filling in the other <strong>5,500</strong> is a few hours of machine time. It is not the time that is holding it up - <strong>it is that three of those fields encode a judgement we have not made together yet.</strong>
+</div>
+
+<div class="note">Once we agree today, populating everything is one afternoon.</div>
+
+</div>
+
+---
+
+<!-- _class: bg-glow -->
+
+### What I would suggest
+
+# Three calls I would like us to make today
+
+<div class="body">
+
+<table style="margin-top:14px;">
+<tr><th style="width:30%">The question</th><th style="width:34%">What I suggest</th><th>What it unblocks</th></tr>
+<tr><td><strong>Do we widen who we email?</strong></td><td><strong>Yes</strong> - stop excluding on the address check</td><td>~1,100 more people, incl. artists who read everything</td></tr>
+<tr><td><strong>When is someone truly dead?</strong></td><td><strong>100+ emails, never once opened</strong></td><td>23 people suppressed. Conservative on purpose</td></tr>
+<tr><td><strong>Mark everyone, or only the excluded?</strong></td><td><strong>Mark everyone</strong> as sendable or not</td><td>Operators cannot build the audience backwards</td></tr>
+</table>
+
+<div class="note">These are recommendations, not decisions. <strong>Any of them can go the other way</strong> and the work still stands - the fields are recomputed, not carved.</div>
+
+</div>
+
+---
+
 <!-- _class: bg-blue -->
 
 ### What we need
 
-# Four decisions, none of them one person's
+# And two that are not mine to decide
 
 <div class="body">
 
 <table style="margin-top:16px;">
 <tr><th style="width:44%">Decision</th><th>Why it matters</th></tr>
-<tr><td><strong>Do we widen who we email?</strong></td><td>1,126 more people, including artists who read everything we send</td></tr>
-<tr><td><strong>Who shares an artist's work?</strong></td><td>No software can do it, and the approach stalls without it</td></tr>
+<tr><td><strong>Who shares an artist's work?</strong></td><td>No software can do it, and the whole approach stalls without an owner</td></tr>
 <tr><td><strong>Shortlist to a person, or a mailing?</strong></td><td>25 names or 200. Same machinery, different job</td></tr>
 <tr><td><strong>Who do we already know?</strong></td><td>Our strongest signal, and it only exists in people's heads</td></tr>
 </table>
