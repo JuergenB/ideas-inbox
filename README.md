@@ -71,6 +71,7 @@ Meta content about the archive itself (not an idea) lives under [`about/`](about
 | 013 | [Arterial Impact Report (interview-driven, recurring)](ideas/013-arterial-impact-report/) | Scaffolding — design in discussion | Juergen Berkessel (Polymash) | 2026-07-03 |
 | 014 | [Dollar for the Arts (fundraising PWA + $1 donation onboarding)](ideas/014-dollar-for-the-arts/) | Research & Discussion | Juergen Berkessel (Polymash) / Scott Power | 2026-07-11 |
 | 016 | [Arterial's Fall Fundraising Campaign (introduce, then invite)](ideas/016-arterial-fall-fundraising-campaign/) | Discussion | Juergen Berkessel (Polymash) | 2026-08-12 |
+| 017 | [Campaign Sequence Tool (brief to email sequences to ActiveCampaign)](ideas/017-campaign-sequence-tool/) | Discussion — three approaches, one recommended | Juergen Berkessel (Polymash), for Arterial | 2026-09-16 |
 
 ## Current Issues
 
